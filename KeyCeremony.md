@@ -26,25 +26,25 @@ We explain how to use 4 plates with four people, each writing 6 words (A/B/C/D)
 
 All plates are closed
 
-First person opens plates 1 and 2.  
-First person writes A on plates 1 and 2.  
-First person closes plates 1 and 2.  
-First person flips plates 1 and 2.  
+First person opens plates 1 and 2.\
+First person writes A on plates 1 and 2.\
+First person closes plates 1 and 2.\
+First person flips plates 1 and 2.\
 
-Second person opens plates 3 and 4.  
-Second person writes B on plates 3 and 4.  
-Second person closes plates 3 and 4.  
-Second person flips plates 2 and 3.  
+Second person opens plates 3 and 4.\
+Second person writes B on plates 3 and 4.\
+Second person closes plates 3 and 4.\
+Second person flips plates 2 and 3.\
 
-Third person opens plates 1 and 2.  
-Third person writes C on plates 1 and 2.  
-Third person closes plates 1 and 2.  
-Plates 1 and 2 are completed.  
+Third person opens plates 1 and 2.\
+Third person writes C on plates 1 and 2.\
+Third person closes plates 1 and 2.\
+Plates 1 and 2 are completed.\
 
-Fourth person opens plates 3 and 4.  
-Fourth person writes D on plates 3 and 4.  
-Fourth person closes plates 3 and 4.  
-Plates 3 and 4 are completed.  
+Fourth person opens plates 3 and 4.\
+Fourth person writes D on plates 3 and 4.\
+Fourth person closes plates 3 and 4.\
+Plates 3 and 4 are completed.\
 
 
 ## Key ceremony, step by step
