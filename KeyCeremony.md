@@ -71,7 +71,7 @@ Each person takes the device with him alone to read the words (no one else has t
 Each one of the 4 persons will take turns in writing 6 consecutive words on steel plates, as explained above.\
 Since the last word will be visible in-between the person swap, the device will have to be covered and the press of the button to the next word will have to be performed by the master of ceremony, with the display covered.\
 The following person will then remove the cover and find the first word to transcribe.\
-If the final batch of words will be les than 6, the whole ceremony will have to be performed again.\
+If the final batch of words will be less than 6, the whole ceremony will have to be performed again.
 
 Redirect your attention to the slave devices.\
 
@@ -79,12 +79,12 @@ Slave device(s):\
 You will be prompted for "Store key slice?".\
 You may be asked to confirm the identity of the master device. (See: Device identity)\
 Redirect your attention to the web interface.\
-After some time, a successful green message should appear.\
+After some time, a successful green message should appear.
 
 Once the key ceremony is completed, a restore has to be performed so that eventual errors are immediaely identified.\
 It is recommended to include and address creation and comparison during the verification process.\
 
-We will then proceed to perform a restore with a known mnemonic phrase so that we will have some funded addresses to perform a transaction.\
+We will then proceed to perform a restore with a known mnemonic phrase so that we will have some funded addresses to perform a transaction.
 
 ### Check device identiy
 You can check the identity of each hardware device, by pressing its button when it's in an idle state.
