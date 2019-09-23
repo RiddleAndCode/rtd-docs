@@ -1,27 +1,30 @@
-# Table of Contents
+# Manual
+- [Manual](#manual)
   - [Set Up](#set-up)
   - [Web Interface](#web-interface)
   - [Settings](#settings)
+      - [Database](#database)
+      - [Currencies:](#currencies)
+      - [IMPORTANT: To apply changes, the trusted node executable has to be restarted.](#important-to-apply-changes-the-trusted-node-executable-has-to-be-restarted)
   - [PIN Change](#pin-change)
   - [Creation of Shamir Family](#creation-of-shamir-family)
   - [Precalculation of accounts](#precalculation-of-accounts)
-  - [Update Addresses](#update-addresses)
+  - [Update addresses](#update-addresses)
   - [Transaction](#transaction)
-  - [Additional Information](#additional-information):
+  - [Additional Information](#additional-information)
     - [Confirmation on hardware devices: Yes or No](#confirmation-on-hardware-devices-yes-or-no)
     - [Insert PIN](#insert-pin)
-    - [Databse](#database)
+    - [Check device identiy](#check-device-identiy)
+    - [Account Management](#account-management)
 
 ## Set Up
-
 ```
-$ ssh ubilinux@TRUSTED_NODE_IP_ADDRESS # password: ubilinux
-$ cd trusted-node
-$ docker-compose up -d
-$ export RNC_TRUSTED_NODE_PATH_TO_SETTINGS=/home/ubilinux/trusted-node
-$ ./trusted-node start
+ssh ubilinux@TRUSTED_NODE_IP_ADDRESS 
+cd trusted-node
+docker-compose up -d
+export RNC_TRUSTED_NODE_PATH_TO_SETTINGS=/home/ubilinux/trusted-node
+./trusted-node start
 ```
-
 ---
 ## Web Interface
 1. Web interface can be found at https://TRUSTED_NODE_IP_ADDRESS:5000
@@ -78,6 +81,7 @@ Example: 2 (Master Device + 1) out of 5.
     2.  You may be asked to confirm the identity of the master device. (**See: [Device identity](#check-device-identiy)**)
     3.  Redirect your attention to the web interface.
 12. After some time, a successful green message should appear.
+
 ---
 ## Precalculation of accounts
 
@@ -119,7 +123,7 @@ Used to update the **existing** accounts with a specific currency address. Examp
    1.  **"Click the button to start a shamir transaction"** will be shown and await for confirmation.
    2.  All the inputs, outputs and fees will be asked and await confirmation.
 10. Once sucessful, a green box message will be shown with the transaction ID.
----
+
 ---
 ## Additional Information
 ### Confirmation on hardware devices: Yes or No

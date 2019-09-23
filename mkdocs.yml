@@ -1,0 +1,7 @@
+site_name: Custodian Solution
+theme:
+  name: 'rtd-dropdown'
+nav:
+  - Index: 'index.md'
+  - Key Ceremony: 'KeyCeremony.md'
+  - Manual: 'Manual.md'
