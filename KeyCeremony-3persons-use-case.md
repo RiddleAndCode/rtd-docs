@@ -2,7 +2,7 @@
 
 ## Introduction
 This is our recommendation on how to perform a Key Ceremony for 3 persons and a master of ceremony.
-Please revise it and adapt to your own operations. It is your responsability to verify that it complies with your operations and internal procedures.
+Please revise it and adapt to your own operations. It is your responsibility to verify that it complies with your operations and internal procedures.
 We will use 3 steel plates to store the whole mnemonic phrase, guaranteeing confidentiality (no single person will ever see or hold all the mnemonic phrase) as well as full recovery in case a single steel plate is missing.
 
 Please read this document in full before proceeding with the full Key Ceremony.
@@ -60,12 +60,12 @@ There's a security tradeoff to be made here.
 If the same persons perform it, each person will verify the words he wrote himself, leaving space for a malicious actor to write down words in a wrong not restorable order and yet be able to perform the restoration correctly. He will effectively be needed to perform any future restoration.
 If 3 new people will perform this operation, we will have the guarantee that the words written in the plates are correct, and that future restorations will be successful, but at the same time we will end the key ceremony with 6 persons having possibly memorized a third of the mnemonic phrase, instead of three.
 
-After the Key Ceremony is performed, generate a set of addresses (see manual) and write them down publicly. This will be repeated after each restoration, and a restoration will be considered successful if the same set of addresses is generated.
+After the Key Ceremony is performed, delete all existing addresses (if they exist),  generate a set of addresses (see manual) and write them down publicly. This will be repeated after each restoration, and a restoration will be considered successful if the same set of addresses is generated.
 
 In this process, each side of all 3 plates will be used to restore the signature devices. Each one of the three persons will be assigned a set of words ('ALPHA. 'BETA', 'GAMMA'). Altogether, the 3 plates have each set of words written twice.
 The first person ('ALPHA') will privately open the first corresponding side, input the words, close the plate, then the second person ('BETA') will do the same, and finally, the third person will do the same again (with 'GAMMA').
 At this point, a set of addresses has to be generated and verified against the previously created one.
-The same operation (including the address verification) will be performed again by using the set of words written on the 'other' plates sides (the ones which have not just been used).
+The same operation (recover, addresses deletion, generation and verification) will be performed again by using the set of words written on the 'other' plates sides (the ones which have not just been used).
 The master of ceremony will be responsible to hand out the correct plates to each person so that the two restorations do not happen using the same plates side twice, as well as to make sure that no person will ever turn the plates and read the opposite side.
 Once both address verification has been executed, the stickers will be removed and the steel plates will be sealed by the master of ceremony, in presence of all people involved.
 
