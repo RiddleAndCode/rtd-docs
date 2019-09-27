@@ -4,4 +4,5 @@ theme:
 nav:
   - Index: 'index.md'
   - Key Ceremony: 'KeyCeremony.md'
+  - Key Ceremony Use Case 3 Persons: 'KeyCeremony-3persons-use-case.md'
   - Manual: 'Manual.md'
