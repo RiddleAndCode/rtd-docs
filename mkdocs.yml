@@ -1,0 +1,8 @@
+site_name: Custodian Solution
+theme:
+  name: 'rtd-dropdown'
+nav:
+  - Index: 'index.md'
+  - Key Ceremony: 'KeyCeremony.md'
+  - Key Ceremony Use Case 3 Persons: 'KeyCeremony-3persons-use-case.md'
+  - Manual: 'Manual.md'

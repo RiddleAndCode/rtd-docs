@@ -1,4 +1,12 @@
-# KEY CEREMONY
+# Key Ceremony
+
+- [Key Ceremony](#key-ceremony)
+	- [Finding the right use case](#finding-the-right-use-case)
+	- [How to use a steel plate](#how-to-use-a-steel-plate)
+	- [Implementation of the 4 plates / 4 people use case](#implementation-of-the-4-plates--4-people-use-case)
+	- [Key ceremony, step by step](#key-ceremony-step-by-step)
+		- [Check device identiy](#check-device-identiy)
+		- [Insert PIN](#insert-pin)
 
 A mnemonic phrase is a representation of a secret (private/public key) in 24 words.
 Owning those words in the correct order allows the secret, and hence the cryptographic keys, to be recreated.
