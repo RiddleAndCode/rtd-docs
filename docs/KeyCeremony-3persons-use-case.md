@@ -2,7 +2,7 @@
 
 ## Introduction
 This is our recommendation on how to perform a Key Ceremony for 3 persons and a master of ceremony.
-Please revise it and adapt to your own operations. It is your responsibility to verify that it complies with your operations and internal procedures.
+Please revise it and adapt to your own operational processes. It is your responsibility to verify that it complies with your safety and compliancy procedures/requirements. 
 We will use 3 steel plates to store the whole mnemonic phrase, guaranteeing confidentiality (no single person will ever see or hold all the mnemonic phrase) as well as full recovery in case a single steel plate is missing.
 
 Please read this document in full before proceeding with the full Key Ceremony.
