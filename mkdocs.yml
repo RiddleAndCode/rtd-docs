@@ -8,4 +8,5 @@ nav:
   - Manual: 'Manual.md'
 plugins:
   - search
-  - mkpdfs
+  - mkpdfs:
+      design: design/theme_extra.css
