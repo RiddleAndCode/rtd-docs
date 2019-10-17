@@ -5,9 +5,9 @@
 [Signing](Signing.md)  
 [Operations](Operations.md)  
 [Security](Security.md)  
-[How to](Signing.md)
-[Manual](Manual.md)
-[Key Ceremony](.md)  
+[How to](Signing.md)  
+[Manual](Manual.md)  
+[Key Ceremony](KeyCeremony.md)  
 [Manual](Manual.md)  
 
 
