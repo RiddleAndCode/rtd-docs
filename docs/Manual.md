@@ -17,7 +17,7 @@
     - [Check device identiy](#check-device-identiy)
     - [Account Management](#account-management)
 
-## Set Up
+## Set Up of the trusted node
 ```
 ssh ubilinux@TRUSTED_NODE_IP_ADDRESS 
 cd trusted-node
