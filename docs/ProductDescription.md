@@ -2,13 +2,10 @@
 
 ## Table of contents
 - [Intro](#intro)
-  - [Unique selling proposition](#USP)
-  - [Product principles ](#product-principles)
-  - [Architecture](#architecture)
-  - [Supported Currencies](#supported-currencies)
-      - [Database](#database)
-      - [Currencies:](#currencies)
-      - 
+- [Unique selling proposition](#USP)
+- [Product principles ](#product-principles)
+- [Architecture](#architecture)
+- [Supported Currencies](#supported-currencies)
 
 ## Introduction
 RIDDLE&CODE developed a new breed of digital asset management solution. It enables institutions, banks, family offices, traders and exchanges to buy/sell/trade cryptocurrencies and tokens and offer this service to its clients within the framework of the custodian model.  
@@ -19,7 +16,6 @@ Our solution underwent meticulous audit processes by renown international audit 
 In view of regular security breaches of existing digital asset management solutions, RIDDLE&CODE developed a new generation of hardware wallets with a set of innovative features and functionalities.
 
 ![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/USP.png "USP")
-
 
 ## Product principles 
 
