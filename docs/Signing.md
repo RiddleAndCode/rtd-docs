@@ -43,7 +43,7 @@ Using Shamir secret to sign transactions, RIDDLE&CODE mitigates these shortcomin
 A transaction can only be signed if the predetermined number of signees contribute their Shamir secret share. The final signing key for the transaction is generated out of these multiple signee shares. This method prevents that the signing secret is permanently stored on a single device and therefore introduces a design that avoids a single point of failure. Beyond Shamir secret, we are in the process of introducing new crypto chips and software to extend the number of supported algorithms (e.g. NIST-P256K1, Schnorr signatures, ED-25519).
 
 
-## Multi Party computing device - the Signing Process
+## Multi Party computation - the Signing Process
 
 Whenever a transaction is being created by an operator the following steps apply: 
 
@@ -58,3 +58,32 @@ Whenever a transaction is being created by an operator the following steps apply
 4. The (optional) master signature device collects and decrypts the Shamir signatures, recovers the master secret, signs the transaction and sends it back to the trusted node. After that the master secret is zeroized.
 
 5. The trusted node broadcasts the signed transaction to the target blockchain/DLT
+
+
+## Distributed signing
+
+These are examples of possible applications for the describe multi signee feature
+
+### Internal multi singees  
+
+
+High value transactions get signed by three traders in the Switzerland headquarter and by the CFO, currently on a business trip, e.g. in Japan.
+
+
+![alt text](/assets/internal%20distributed%20signing.png "Distributed signees")
+
+
+### Multi signee with client contribution 
+
+High value transactions get signed by two traders in the bank, the client gets notified and co-signs to complete the transaction.
+
+
+![alt text](/assets/Client%20signing.png "Client multi signee")
+
+### Time delayed signing
+
+In specific cases, transactions may not need to be executed immediately. Our solution features a time delay functionality to accommodate such use cases. 
+
+
+![alt text](/assets/time%20delayed%20signing.png "Time delayed")
+
