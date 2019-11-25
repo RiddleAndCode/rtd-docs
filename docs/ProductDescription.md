@@ -1,8 +1,6 @@
-#Product Description
+# Product Description
 
-
-
-# Introduction
+## Table of contents
 - [Intro](#intro)
   - [Unique selling proposition](#USP)
   - [Web Interface](#web-interface)
