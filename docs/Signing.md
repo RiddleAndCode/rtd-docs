@@ -47,7 +47,7 @@ A transaction can only be signed if the predetermined number of signees contribu
 
 Whenever a transaction is being created by an operator the following steps apply: 
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Signing architecture")
+![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Step%20by%20Step%20Process.png "Signing architecture")
 
 1. Via the web interface transactions are prepared and initiated 
 
