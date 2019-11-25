@@ -17,7 +17,7 @@ Our solution underwent meticulous audit processes by renown international audit 
 
 In view of regular security breaches of existing digital asset management solutions, RIDDLE&CODE developed a new generation of hardware wallets with a set of innovative features and functionalities.
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/usp.png "USP")
+![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/USP.png "USP")
 
 
 ## Product principles 
