@@ -1,4 +1,5 @@
-# Manual
+# Manual for setting up the Trusted Node and signature devices 
+
 - [Manual](#manual)
   - [Set Up](#set-up)
   - [Web Interface](#web-interface)

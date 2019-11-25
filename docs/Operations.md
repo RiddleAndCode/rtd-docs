@@ -1,4 +1,4 @@
-# Operations
+#Operations
 
 - [Audit logs](#audit-logs)
 - [Reconcilliation](#reconcilliation)
@@ -80,6 +80,12 @@ Using forward deterministic key derivation our solution provides an unlimited nu
 
 
 ## Available currencies
+
+Through the combination of Signature Device and the Trusted Node, RIDDLE&CODE’s digital asset management solution allows for the scalability of operations while preserving the convenience of a single wallet for an institutional organization. 
+
+RIDDLE&CODE digital asset management solution can be extended to almost any currency/token, allowing the institution’s clients to sell/buy/trade numerous cryptocurrencies or tokens without the inconvenience of managing a wallet per crypto asset, thanks to the custodian service model.
+
+Even the most basic version of RIDDLE&CODE’s asset management solution supports the most important and relevant cryptocurrencies and tokens:
 
 The solution currently supports 32 types of crypto assets (and derivatives thereof). Bitcoin-forked or ERC-20 assets are counted as one type. 
 Additional cryptocurrencies and tokens can be implemented on request. 

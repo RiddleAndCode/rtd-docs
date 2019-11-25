@@ -9,16 +9,6 @@
   	-[Multi signee with client contribution](#distributed-signing)
   	-[Time delayed signing](#Time-delayed-signing)
 
-  - [Creation of Shamir Family](#creation-of-shamir-family)
-  - [Precalculation of accounts](#precalculation-of-accounts)
-  - [Update addresses](#update-addresses)
-  - [Transaction](#transaction)
-  - [Additional Information](#additional-information)
-    - [Confirmation on hardware devices: Yes or No](#confirmation-on-hardware-devices-yes-or-no)
-    - [Insert PIN](#insert-pin)
-    - [Check device identiy](#check-device-identiy)
-    - [Account Management](#account-management)
-
 ## Shamir Secret sharing
 
 Secret sharing refers to methods for distributing a secret amongst a group of participants, each of whom is allocated a share of the secret. The secret can be reconstructed only when a sufficient number, of possibly different types, of shares are combined together; individual shares are of no use on their own.
