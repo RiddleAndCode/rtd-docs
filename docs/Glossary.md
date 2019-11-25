@@ -9,7 +9,6 @@ Owning those words in the correct order allows the secret, and hence the cryptog
 ##Shamir Secret Sharing
 Secret sharing refers to methods for distributing a secret amongst a group of participants, each of whom is allocated a share of the secret. The secret can be reconstructed only when a sufficient number, of possibly different types, of shares are combined together; individual shares are of no use on their own.
 
-
 ##Trusted Node
 
 A TN is a dedicated on-premise device to create, orchestrate and broadcast crypto transactions. The TN is the only device connected to the internet but never holds any keys. The TN orchestrates the Signatures Devices that connect either via cable-based USB, Web USB or Bluetooth. In addition, it hosts the web interface and provides the APIs for external system integrations. 

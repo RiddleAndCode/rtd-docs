@@ -9,10 +9,11 @@
 		- [Insert PIN](#insert-pin)
 
 This is our recommendation on how to perform a Key Ceremony with four (4) persons.
+
 For a Key ceremony with three (3) persons and a master of ceremony: [Our recommended process for three parties.](/blob/master/docs/KeyCeremony-3persons-use-case.md)
 
 
-##Introdcution 
+##Introduction 
 
 A mnemonic phrase is a representation of a secret (private/public key) in 24 words.
 Owning those words in the correct order allows the secret, and hence the cryptographic keys, to be recreated.
