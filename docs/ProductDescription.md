@@ -3,8 +3,8 @@
 ## Table of contents
 - [Intro](#intro)
   - [Unique selling proposition](#USP)
-  - [Web Interface](#web-interface)
-  - [Settings](#settings)
+  - [Product principles ](#product-principles)
+  - [Supported Currencies](#supported-currencies)
       - [Database](#database)
       - [Currencies:](#currencies)
       - [IMPORTANT: To apply changes, the trusted node executable has to be restarted.](#important-to-apply-changes-the-trusted-node-executable-has-to-be-restarted)
@@ -17,7 +17,7 @@ Our solution underwent meticulous audit processes by renown international audit 
 
 In view of regular security breaches of existing digital asset management solutions, RIDDLE&CODE developed a new generation of hardware wallets with a set of innovative features and functionalities.
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/USP.png "USP")
+![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/usp.png "USP")
 
 
 ## Product principles 
@@ -39,34 +39,31 @@ In view of regular security breaches of existing digital asset management soluti
 **Compliance** : We aim for full compliance with legal and regulatory provisions.
 ---
 ## Architecture
-1. Web interface can be found at https://TRUSTED_NODE_IP_ADDRESS:5000
-2. Database symbol (left side of Home button) should be green. If red, please check that the database connection is up.
+
+RIDDLE&CODE digital asset management solution combines hardware and software to store, secure and manage cryptocurrencies and various categories of tokens. It provides multi-device signing and approval processes based on multi-signee signatures policies and allows institutional organizations to offer these functionalities to clients under custodian service model. 
+
+![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/architecture.png "Architecture")
 
 ---
-## Settings
+## Supported currencies
 
-Trusted node comes with a database (MariaDB), syslog (graylog) and phpmyadmin (port 8080) locally set up. [Blockbook](https://github.com/trezor/blockbook/) nodes for each currency need to be provided.
+Through the combination of Signature Device and the Trusted Node, RIDDLE&CODE’s digital asset management solution allows for the scalability of operations while preserving the convenience of a single wallet for an institutional organization. 
 
-Hover **Admin** button, and click **Settings**.
+RIDDLE&CODE digital asset management solution can be extended to almost any currency/token, allowing the institution’s clients to sell/buy/trade numerous cryptocurrencies or tokens without the inconvenience of managing a wallet per crypto asset, thanks to the custodian service model.
 
-#### Database
-DB SID and DB mode fields are used only for Oracle DB, however they should still be filled with  literally anything.
-#### Currencies:
-For each one, provide the [Blockbook](https://github.com/trezor/blockbook/) address and port. 
+Even the most basic version of RIDDLE&CODE’s asset management solution supports the most important and relevant cryptocurrencies and tokens:
 
-Example:
-- Address: eval.riddleandcode.com (make sure **it is not** **https://** eval.riddleandcode.com)
-- Port: 9130
+The solution currently supports 32 types of crypto assets (and derivatives thereof). Bitcoin-forked or ERC-20 assets are counted as one type. 
+Additional cryptocurrencies and tokens can be implemented on request. 
 
-#### IMPORTANT: To apply changes, the trusted node executable has to be restarted.
-   
----
-## PIN Change
-1. Connect one or more devices to the trusted node. (Recommended: one)
-2. Hover **Admin** button, and click **Change Pin**
-3. You will be asked for the current PIN. (**See: [Insert Pin](#insert-pin)**)
-   1. If it's the first time, default pin is **11111**.
-4. Choose from the dropdown list the device you want to change the pin.
-5. Click the button **Change pin**, and follow the steps. [Current PIN -> New Pin -> New Pin Again -> New PIN (for starting session)]
-
-
+|        |  |        |  |
+| ------------- | -------------| ------------- | -------------|
+| Bitcoin |  DASH | ELEMENT| ZENCASH |  
+| BITCOIN CASH |  BINANCE | QTUM| RAVENCOIN |  
+| BITCOIN GOLD |  STELLAR | CORDA R3| DIGIBYTE |  
+| BITCOIN DIAMOND |  CARDANO | LISK| KOMODO |  
+| IOTA |  MONERO | PIVX| MAIDSAFECOIN |  
+| Ethereum |  TEZOS | DOGECOIN| MONACOIN |  
+| RIPPLE |  AUGUR | DECRED| FUJICOIN |  
+| LITECOIN |  NEM | TENDERMINT| WANCHAIN |  
+| TETHER |  ZCASH | LIQUID|  |  
