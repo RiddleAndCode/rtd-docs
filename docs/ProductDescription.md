@@ -4,10 +4,11 @@
 - [Intro](#intro)
   - [Unique selling proposition](#USP)
   - [Product principles ](#product-principles)
+  - [Architecture](#architecture)
   - [Supported Currencies](#supported-currencies)
       - [Database](#database)
       - [Currencies:](#currencies)
-      - [IMPORTANT: To apply changes, the trusted node executable has to be restarted.](#important-to-apply-changes-the-trusted-node-executable-has-to-be-restarted)
+      - 
 
 ## Introduction
 RIDDLE&CODE developed a new breed of digital asset management solution. It enables institutions, banks, family offices, traders and exchanges to buy/sell/trade cryptocurrencies and tokens and offer this service to its clients within the framework of the custodian model.  
@@ -34,9 +35,10 @@ In view of regular security breaches of existing digital asset management soluti
 
 **Multi-purpose secure devices (signature devices)**: Our hardware wallets can also be used for other security-sensitive online activities. Logins with U2F, managing trust certificates on customer level, co-key-management with customers, secure self-encoding data storage for customers, etc.  are only some examples for the broad range of possible extensions. 
 
-**Support of non-fungible, physical assets classes** : Development of our digital asset management solution not only focused on cryptocurrencies but also incorporated a design to support the emerging tokenised economy incl. the related secure tagging and chipping of physical objects. 
+**Support of non-fungible, physical assets classes**: Development of our digital asset management solution not only focused on cryptocurrencies but also incorporated a design to support the emerging tokenised economy incl. the related secure tagging and chipping of physical objects. 
 
-**Compliance** : We aim for full compliance with legal and regulatory provisions.
+**Compliance**: We aim for full compliance with legal and regulatory provisions.
+
 ---
 ## Architecture
 
