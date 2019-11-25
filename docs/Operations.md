@@ -78,7 +78,6 @@ Using forward deterministic key derivation our solution provides an unlimited nu
 
 
 
-
 ## Available currencies
 
 Through the combination of Signature Device and the Trusted Node, RIDDLE&CODE’s digital asset management solution allows for the scalability of operations while preserving the convenience of a single wallet for an institutional organization. 
