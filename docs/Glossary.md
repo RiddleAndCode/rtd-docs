@@ -19,3 +19,6 @@ An SD is a separate physical device that handles the identities (private and pub
 
 ##Dedicated Webinterface
 A web interface is hosted on the Trusted Node and provides the essential functionalities incl. a clear separation of roles between admin and execution. It offers the functionalities required to set-up the solution, create and secure keys, configure the Shamir family and execute transactions. 
+
+##White Room
+<TBD>
