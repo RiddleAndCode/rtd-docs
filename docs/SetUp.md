@@ -1,4 +1,4 @@
-#Setting up the Digital Asset Management Solution
+# Setting up the Digital Asset Management Solution
 
 
 Setting up the DAM solution includes the following steps
@@ -17,7 +17,7 @@ And the following set of information
 * A URL to set up the Administrator Signing Devices (https://<IP of DAM node>:5000)
 
 
-##Set up & enable Admin Signing Devices
+## Set up & enable Admin Signing Devices
 
 The administrators sign off with their Administrator Signing Devices. The administrators perform with their devices a Secure Multi-Party Computation (SMPC) to recreate the key to sign the communication to access the administrative pages and sign off the changes. Thereby a multi eye principle is applied to the process of changing the settings of the DAM solution.
 
