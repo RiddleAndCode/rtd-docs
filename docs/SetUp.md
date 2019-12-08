@@ -3,25 +3,20 @@
 
 Setting up the DAM solution includes the following steps
 
-1. [Prepare the system](#prepare-the-system)
-3. [Set up & enable Admin Signing devices (backup 2 person)](#Set-up-&-enable-Admin-Signing-Devices)
+1. [Set up & enable Admin Signing devices (backup 2 person)](#Set-up-&-enable-Admin-Signing-Devices)
 2. [Set up basic System features](#set-up-system-features)
-4. [Define PINs and labels for all Signing Devices (all devices)]
-5. [Define policies on DAM]
-6. [Setup Distributed Signing Family]
-7. [Store backups]
+3. [Define PINs and labels for all Signing Devices (all devices)]
+4. [Define policies on DAM]
+5. [Setup Distributed Signing Family]
+6. [Store backups]
 
-The product is shipped with a basic setup (step 2 completed). This includes a basic Webinterface to sign transactions.
-And the following set of information
+The product is shipped with a basic setup containing an operation system, basic system/CPU configuration, and inital parts of the application. This includes a basic Webinterface to sign transactions.
+And the following set of information is also part of the initial hardware delivery:
 
 * User and password combination to access the DAM node remotely or locally
 * A URL to set up the Administrator Signing Devices (https://<IP of DAM node>:5000)
 
-## 1. Prepare the system
-
-Describe the Wipeing steps, see Manual https://docs.google.com/document/d/15SrOEG0_FqSn_YWyTiPchxtD7EwogN3kOagrRrDiMPk/edit#heading=h.jetg6wi9mbda
-
-## 2. Set up & enable Admin Signing Devices
+## 1. Set up & enable Admin Signing Devices
 
 To provide a secure process of managing the core system features the solution provides a dedicated Admin interface. This interface is only accessible with the help of dedicated Administrator Signing Devices (ADS) to unlock these features of the interface. The ASD are being set up as a Secure Multi-Party Computation (SMPC) device family with a quorum of 2 out of 2.
 
@@ -35,13 +30,13 @@ To set up the Admin Signing Devices follow the instructions below:
 2. Enter the URL to set up the Administrator Signing Devices
 3. Follow the steps on the interface and device screens
 
-## 3. Set up system features
+## 2. Set up system features
 
 After the initial set up of the Admin Signing Devices the administrators can access the dedicated admin page through the interface and set up the various endpoints and settings required to operate the DAM solution
 
 **ADD screenshots of DB etc.** 
 
-## 4. Set up  Policy Service
+## 3. Set up  Policy Service
 
 This is the interface to create, manage and add new transaction policies. The policy service is a highly secure feature that provides the possibility to have a policie based execution of transactions. 
 
