@@ -36,38 +36,41 @@ After the initial set up of the Admin Signing Devices the administrators can acc
 
 **ADD screenshots of DB etc.** 
 
-## 3. Set up  Policy Service
+## 3. Set up Policy Service
 
-This is the interface to create, manage and add new transaction policies. The policy service is a highly secure feature that provides the possibility to have a policie based execution of transactions. 
+This is the interface to create, manage and add new transaction policies. The policy service is a highly secure feature that provides the possibility to have a policy-based execution of transactions. It provides the foundation to create agile and secure processes and governance tailormade to the requirements of the client.
 
 Access to this service is limited to the owners of the ADS
 
 ### Define policies
 
-The two policies currently implemented for the evaluation phase are the following: 
+The definition of the policies is done via the web interface and are crpyotgraphically attested to the Trusted Node 2.0.
 
-1. Operation process **WITH** limited limits
+ADD Screenshot policy 
+
+Examples of these policies: 
+
+1. Operation process **WITH** limits
 >* Objective: To replenish the stocks of semi-cold wallets to hot wallets
 >* Involved signing parties: two operations staff members who are allowed to release 
->Transactions to a limited extent (e.g head of operations + one of his employees) (up to a maximum of 200k EUR).
+>transactions to a limited extent (e.g head of operations + one of his employees) (up to a maximum of xx thousand EUR).
 
-2. Operation process **WITHOUT** limited limits
+2. Operation process **WITHOUT** limits
 >* Objective: To replenish the stocks of semi-cold wallets to hot wallets
->* Involved signing parties: The C-Level members who are allowed to release 
->Transactions to an unlimited extent (e.g head of operations + one of the C-level) (without a limit).
+>* Involved signing parties: The management members who are allowed to release 
+>transactions to an unlimited extent (e.g head of operations + additional high level management) (without a limit).
 
-* Note: For all transactions,the presence of the Head of operations is a hard requirement to be able to execute a succesfull transaction 
+* Note: For all transactions,the presence of the Head of operations is a hard requirement to be able to execute a succesfull transaction *
 
 ## Setup Distributed Signing Family
 
-The distributed signing family is the enabling concept behind RIDDLE&CODE Digital Asset Management Solution that empowers institutions to deploy various (N) Signature Devices and enable an arbitrary subset to sign a transaction.
+The distributed signing family is the enabling concept behind the RIDDLE&CODE Digital Asset Management Solution. It empowers institutions to deploy various (N) Signature Devices and enable an arbitrary subset to sign a transaction.
 
-This process will create a unique identity (Key pair) for the Multi Signature with the corresponding mnemonic phrase.
+This process will create a unique identity (Key pair) for the distributed signing family with the corresponding mnemonic phrase.
 
 ADD SCREEN SHOT
 To start the process the user has to click:
-DESCRIBE PROCESS BASED ON nbaming of interface
-
+DESCRIBE PROCESS BASED ON naming of interface
 
 Having computed the slices, the Master SD will connect to all other devices and share their slice via an encrypted communication channel. The other SDs will prompt their users to enter their PINs.
 
