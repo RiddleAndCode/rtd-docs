@@ -6,10 +6,12 @@ nav:
   - Product Description: 'ProductDescription.md'
   - Initial Set Up: 'SetUp.md'
   - Signing: 'Signing.md'
+  - Manual: 'Manual.md'
   - Operations: 'Operations.md'
   - Security: 'Security.md'
-  - Manual: 'Manual.md'
   - Key Ceremony: 'KeyCeremony.md'
+  - Key Ceremony 2 persons: 'KeyCeremony-2persons.md'
+  - Key Ceremony 3 persons: 'KeyCeremony-3persons-user-case.md'
   - Backup: 'Backup.md'
   - Glossary: 'Glossary.md'
   
