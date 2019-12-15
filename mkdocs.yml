@@ -1,10 +1,18 @@
-site_name: Custodian Solution
+site_name: RIDDLE&CODE Digital Asset Management
 theme:
   name: 'rtd-dropdown'
 nav:
-  - Index: 'index.md'
-  - Key Ceremony: 'KeyCeremony.md'
-  - Key Ceremony Use Case 3 Persons: 'KeyCeremony-3persons-use-case.md'
+  - Introduction: 'index.md'
+  - Product Description: 'ProductDescription.md'
+  - Initial Set Up: 'SetUp.md'
+  - Signing: 'Signing.md'
+  - Operations: 'Operations.md'
+  - Security: 'Security.md'
   - Manual: 'Manual.md'
+  - Key Ceremony: 'KeyCeremony.md'
+  - Backup: 'Backup.md'
+  - Glossary: 'Glossary.md'
+  
+
 plugins:
   - search
