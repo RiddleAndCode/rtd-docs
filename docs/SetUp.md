@@ -2,7 +2,7 @@
 
 The RIDDLE&CODE Digital asset management solution is a combination of hardware and software to safekeep digital assets and provides a agile governance and policy service to cater to regulatory and process requirements.
 
-The solution consists of a Trusted Node2.0 and a set of dedicated Signature devices.
+The solution consists of a Tusted Node2.0 and a set of dedicated Signature devices.
 
 Setting up the DAM solution includes the following steps
 
@@ -25,47 +25,50 @@ And the following set of information is also part of the initial hardware delive
 
 ## 1. Initial set up of the DAM solution
 
-Please login to the DAM node and with the credentials provide and perform the following steps:
+Please login to the Trusted Node2.0 with the credentials provided to perform the following steps:
 
 1. 'passwd' to set a new password.
 2. 'mkdir ~/dam' to create a directory for the solution.
 3. 'cd ~/dam' to enter the solution directory.
 3. Copy the settings.json to the dam folder
 4. Copy the docker-compose.yml to the dam folder
-5. 'docker login' to download the Trusted Execution Environments. Please keep in mind to get the account registered by RIDDLE&CODE.
+5. 'docker login' to download the Trusted Execution Environments. 
+*Please keep in mind to get your docker account registered by RIDDLE&CODE by sending an e-mail to support@riddleandcode.com*
 6. 'docker-compose up' to set up the TEEs 
 
 
-## Set up & enable Admin Signing Devices
+## Set up & configure Admin Devices
 
-To provide a secure process of managing the core system features the solution provides a dedicated Admin interface. This interface is only accessible with the help of dedicated Administrator Signing Devices (ADS) to unlock these features of the interface. The ASD are being set up as a Secure Multi-Party Computation (SMPC) device family with a quorum of 2 out of 2.
+To provide a secure process of managing the core system features the solution provides a dedicated Admin interface. This interface is only accessible with the help of dedicated Administrator Devices (AD) to unlock these features of the interface. The AD are being set up as a Secure Multi-Party Computation (SMPC) device family with a quorum of 2 out of 2.
+*Please note: the AD require a dedicated Key Ceremony vis a vis the Key ceremony for the Signing Devices to validate value transactions*
 
-e.g. To create policy rules the two ADS must be connected to the Trusted Node 2.0 and collaboratively sign the process. 
+e.g. To create policy rules the two AD must be connected to the Trusted Node 2.0 and collaboratively sign the process. 
 
-The administrators sign off with their Administrator Signing Devices. The administrators perform with their devices a Secure Multi-Party Computation (SMPC) to recreate the key to sign the communication to access the administrative pages and sign off the changes. Thereby a multi eye principle is applied to the process of changing the settings of the DAM solution.
+Every change and configruation inside the admin area needs to be signed by the two AD as a Secure Multi-Party Computation (SMPC). Thereby a multi-eye principle is applied to the process of changing the settings of the DAM solution.
 
-The URL to start the process is received with the hardware (see above).
-To set up the Admin Signing Devices follow the instructions below:
-1. Connect the Administrator Signing Devices
-2. Enter the URL to set up the Administrator Signing Devices
+The URL to start the set up process for the AD is physically included in the hardware delivery (see above).
+
+To set up the Admin Devices follow the instructions below:
+1. Connect the Administrator Devices to the Trusted Node2.0
+2. Enter the URL to set up the Administrator Devices
 3. Follow the steps on the interface and device screens
 
 ## Set up system features
 
-After the initial set up of the Admin Signing Devices the administrators can access the dedicated admin page through the interface and set up the various endpoints and settings required to operate the DAM solution.
+After the initial set up of the Admin Devices the administrators can access the dedicated admin page through the interface and set up the various endpoints and settings required to operate the DAM solution.
 The solution by default is preconfigured. 
 
 **ADD screenshots of DB etc.** 
 
-## Policy service on DAM
+## Policy Configurator on DAM
 
-This is the interface to create, manage and add new transaction policies. The policy service is a highly secure feature that provides the possibility to have a policy-based execution of transactions. It provides the foundation to create agile and secure processes and governance tailormade to the requirements of the client.
+This is the interface area to create, manage and add new transaction policies. The policy service is a highly secure feature that provides the possibility to add rules that govern the execution of transactions. The policy is protected and executed inside the Trusted Execution Environment (TEE) and each change to aformentioned policies requires the AD to sign the change. It provides the foundation to create agile and secure processes and governance tailormade to the requirements of the client.
 
-Access to this service is limited to the owners of the ADS
+Access to this service is limited to the owners of the AD
 
 ### Define policies on DAM
 
-The setup of the policies is done via the web interface. The are then crpyotgraphically attested to the Trusted Node 2.0.
+The setup of the policies is done via the web interface. They are then crpyotgraphically attested to the Trusted Node 2.0.
 To attest any new rules to the policy service, the ADS are required. 
 
 ADD Screenshot policy 
