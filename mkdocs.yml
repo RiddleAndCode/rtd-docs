@@ -1,8 +1,10 @@
-site_name: RIDDLE&CODE Digital Asset Management
+site_name: RIDDLE&CODE
 theme:
   name: 'rtd-dropdown'
+  
 nav:
-  - Introduction: 'index.md'
+- Digital Asset Management: 
+  - Introduction: 'index.md'  
   - Product Description: 'ProductDescription.md'
   - Initial Set Up: 'SetUp.md'
   - Signing: 'Signing.md'
@@ -15,6 +17,5 @@ nav:
   - Backup: 'Backup.md'
   - Glossary: 'Glossary.md'
   
-
 plugins:
   - search
