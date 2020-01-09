@@ -1,7 +1,8 @@
-# Solution Architecture
+#Solution Architecture#
 
+With the latest release the Digital Asset management solution RIDDLE&CODE updated the underlying hardware of the Trusted Node and made some improvements to the work- and userflow.
 
-With the release of the new Trusted Node2.0 to the Digital Asset management solution RIDDLE&CODE updated the unterlying Archicture to improve the process security. 
+These changes enhance the overall security and usability of the solution and are the foundation 
 
 ## Table of contents
 - [Architecture](#architecture)
@@ -12,9 +13,9 @@ With the release of the new Trusted Node2.0 to the Digital Asset management solu
 
 ## Architecture
 
-The architecture of the Digital Asset Management Solution has ben enhanced to serve enhance the security and usability of the overall solution.
+The architecture of the Digital Asset Management solution has ben enhanced to serve enhance the security and usability of the overall solution.
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/fee.png "Architecture.png")
+![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Architecture.png "Architecture.png")
 
 With the new Trusted Node2.0 RIDDLE&CODE updated the underlying hardware to reflect the new requirements in regard of security and performances as well as the software architecture
 
@@ -22,7 +23,7 @@ Additionally the updated Digital Asset Management solution has been extended wit
 
 ## New Deployment of Updates
 
-RIDDLE&CODE pivoted from providing signed binaries and move to Docker Images to provide updates to the Trusted Node 2.0
+RIDDLE&CODE pivoted from providing signed binaries and moved to provide signed Docker images to provide updates to the Trusted Node 2.0
 
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
 
@@ -37,16 +38,27 @@ One specific application in this regard and a cornerstone of the Digital asset m
 
 RIDDLE&CODE updated the webinterface to improve the usability and performance of the solution.
 
+![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/landingpage.png "Landingpage")
+
+The major improvements are: 
+
+*New design and userflows*
+*Admin area can only be accessed with connected Admin Devices*
+
+**Note: to access the Admin area the two Admin devices need to be connected to the Trusted Node and the on device messages need to be confirmed**
+
 
 ## New Admin area 
 
-The admin area has been updated to reflect the new feature set and access process. 
-***Note: to access the Admin area the two Admin devices need to be connected to the Trusted Node and the on device messages need to be confirmed***
+The admin area has been updated to reflect the new feature set and access process.
+At the first onsite installation of the updated solution, operators will be briefed on the crucial first steps in creating and setting up the new Admin devices with dedicated documents. 
 
 At the initial access to the Trusted Node2.0 the following steps are required: 
 
+![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Setupadmin.png "Setup admin devices")
+
 **Step 1** 
-Select one of the two Admin Devices 
+Select one of the two admin devices 
 
 **Step 2**
 Select new signing quorum 
@@ -61,7 +73,7 @@ Minimum number of slices to sign: 2
 Create
 
 **Step 6**
-Follow the on device screen instructions and perform a 2 person Key ceremony: https://riddlecode-digital-asset-management-manuals.readthedocs-hosted.com/en/latest/KeyCeremony-2persons/
+Follow the on device screen instructions and perform a two party key ceremony: https://riddlecode-digital-asset-management-manuals.readthedocs-hosted.com/en/latest/KeyCeremony-2persons/
 
 **Step 7**
 Note down the Public Key shown on the interface and send it to support@riddleandcode.com
