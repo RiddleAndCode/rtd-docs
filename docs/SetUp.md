@@ -6,14 +6,11 @@ The solution consists of a Tusted Node2.0 and a set of dedicated Signature devic
 
 Setting up the DAM solution includes the following steps
 
-- [Initial set up of the DAM solution]
-- [Set up & enable Admin Signing devices (backup 2 person)](#Set-up-&-enable-Admin-Signing-Devices)
-- [Set up basic system features](#Set-up-system-features)
-- [Define PINs and labels for all Signing Devices (all devices)](#set-up-system-features)
-- [Policy service on DAM](#Set-up-policy-services)
-- [Setup Distributed Signing Family](#Set-up-system-features)
-- [Store quourm backups](#store-quorum-backups)
-- [Verify quorum backups](#Verify-quorum-backup)
+- [Initial set up of the DAM solution](#Initial-set-up-of-the-DAM-solution)
+- [Set up and configure Admin Signing devices](#Set-up-&-configure-Admin-Devices)
+- [Set up system features](#Set-up-system-features)
+- [Policy configurator](#Policy-configurator)
+- [Define signing quorum](#Define-signing-quorum)
 
 The product is shipped with a basic setup containing an operation system, basic system/CPU configuration, and inital parts of the application. This includes a basic Webinterface to sign transactions.
 And the following set of information is also part of the initial hardware delivery:
@@ -23,7 +20,7 @@ And the following set of information is also part of the initial hardware delive
 * A docker-compose file to install the Trusted Execution Environements.
 * A settings file to start the DAM solution with.
 
-## 1. Initial set up of the DAM solution
+## Initial set up of the DAM solution
 
 Please login to the Trusted Node2.0 with the credentials provided to perform the following steps:
 
@@ -40,7 +37,50 @@ Please login to the Trusted Node2.0 with the credentials provided to perform the
 ## Set up & configure Admin Devices
 
 To provide a secure process of managing the core system features the solution provides a dedicated Admin interface. This interface is only accessible with the help of dedicated Administrator Devices (AD) to unlock these features of the interface. The AD are being set up as a Secure Multi-Party Computation (SMPC) device family with a quorum of 2 out of 2.
-*Please note: the AD require a dedicated Key Ceremony vis a vis the Key ceremony for the Signing Devices to validate value transactions*
+* Please note: the AD require a dedicated Key Ceremony vis a vis the Key ceremony for the Signing Devices to validate value transactions
+
+At the initial set up follow the on device screen instructions and perform a two party key ceremony: https://riddlecode-digital-asset-management-manuals.readthedocs-hosted.com/en/latest/KeyCeremony-2persons/
+
+### How to set up the admin devices
+
+![Initial Set up](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Setupadmin.png "Setup admin devices")
+
+** Step 1 
+Select one of the two admin devices 
+
+** Step 2
+Select new signing quorum 
+
+** Step 3
+Total number of slices: 2
+
+** Step 4
+Minimum number of slices to sign: 2
+
+** Step 5
+Create
+
+** Step 6
+Follow the on device screen instructions and perform a two party key ceremony: https://riddlecode-digital-asset-management-manuals.readthedocs-hosted.com/en/latest/KeyCeremony-2persons/
+
+** Step 7 
+Note down the Public Key shown on the interface and send it to support@riddleandcode.com
+
+** Step 8 
+RIDDLE&CODE sends you an updated docker-compose file with the public key of step 7 provisioned to the policy layer.
+
+** Step 9 
+Access the Trusted Node and login with the provided credentials 
+Copy the updated docker-compose file sent by RIDDLE&CODE to /home/dam/dam
+
+** Step 10 
+On the Trusted Node issue this bash-command:
+run /home/dam/dam/update.sh
+
+After the update has been processed issue this bash-command:
+sudo service dam restart
+
+When the Admin devices are required:
 
 e.g. To create policy rules the two AD must be connected to the Trusted Node 2.0 and collaboratively sign the process. 
 
@@ -56,11 +96,12 @@ To set up the Admin Devices follow the instructions below:
 ## Set up system features
 
 After the initial set up of the Admin Devices the administrators can access the dedicated admin page through the interface and set up the various endpoints and settings required to operate the DAM solution.
+
 The solution by default is preconfigured. 
 
-**ADD screenshots of DB etc.** 
+![Settingspage](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/settingspage.png "Setup admin devices")
 
-## Policy Configurator on DAM
+## Policy Configurator
 
 This is the interface area to create, manage and add new transaction policies. The policy service is a highly secure feature that provides the possibility to add rules that govern the execution of transactions. The policy is protected and executed inside the Trusted Execution Environment (TEE) and each change to aformentioned policies requires the AD to sign the change. It provides the foundation to create agile and secure processes and governance tailormade to the requirements of the client.
 
@@ -71,7 +112,7 @@ Access to this service is limited to the owners of the AD
 The setup of the policies is done via the web interface. They are then crpyotgraphically attested to the Trusted Node 2.0.
 To attest any new rules to the policy service, the ADS are required. 
 
-ADD Screenshot policy 
+![Policy configurator](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/policyconfigurator.png "Policy Configurator")
 
 Examples of these policies: 
 
@@ -87,7 +128,7 @@ Examples of these policies:
 
 * Note: For all transactions,the presence of the Head of operations is a hard requirement to be able to execute a succesfull transaction *
 
-## Setup Distributed Signing Family
+## Setup signing quorum
 
 The distributed signing family is the enabling concept behind the RIDDLE&CODE Digital Asset Management Solution. It empowers institutions to deploy various (N) Signature Devices and enable an arbitrary subset to sign a transaction.
 
@@ -99,24 +140,14 @@ DESCRIBE PROCESS BASED ON naming of interface
 
 Having computed the slices, the Master SD will connect to all other devices and share their slice via an encrypted communication channel. The other SDs will prompt their users to enter their PINs.
 
-
-## Store quorum backups
+### Store quorum backups
 
 The initial creation of the Distributed Signees will also create a mnemonic phrase which needs to be backed up. With the mnemonic phrase it is possible to restore or recreate devices in case one or some get lost, malfunction or the system is to be re-set up due to changing compliance requirements.
 
 The basic requirement of the creation and the restoration process is the active connection of all N Signature Devices. One Signature Device will be identified as the Master Signature Device and start the creation/restoration process. While setting up the first wallet a mnemonic phrase consisting of 24 words will be displayed on the Master Signature Device. The phrase is displayed word by word and the user will be only able to go through this process once. Pressing the button once proceeds to the next word.
 
-Implement Screenshots to walk through the step by step creation of the mneomonic back up.
-
-
-## Verify quorum backup
-
-
-Implement Screenshots to walk through the step by step back up verification 
-
-
 ## Operation of the Digital Asset management solution 
 
 After the initial set up of all devices, the succesfull backup of the two (2) quroums the solution is no ready an doperational. 
 
-For the detailed walk through the features please head over to the dedicated [Manual](/blob/master/docs/Manual.md/)
+For the detailed walk through the settings and components please head over to the dedicated [Manual](/blob/master/docs/Manual.md/)
