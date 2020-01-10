@@ -4,17 +4,18 @@ RIDDLE&CODE provides an integrated gas/fees calculation performed for all crypto
 
 ![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/fee.png "Fee estimates")
 
-By choosing one of the defaults, the recommended ammount of fees is automatically copied to the fee input field. 
+The ammount of fees determines the execution speed 
+By choosing one of the defaults, the recommended ammount of fees is automatically transfered to the fee input field. 
 
-*Economic* minimum required fees for a succesfull transaction, slower average exectution time
-*Normal* normal fee for a timely exectuion of a transaction
-*Priority* higher then avergage fee for a priority execution of a transaction
+Description of the recommandations: 
 
-To prioritise transaction based on the fees the user one of the three provided defaults.
-Note: the fees provided via our solution are recommendataions only, the user can alter the presets accordingly.
+* Economic - minimum required fees for a succesfull transaction, slower average exectution time
+* Normal - normal fee for a timely exectuion of a transaction
+* Priority - higher then avergage fee for a priority execution of a transaction
 
-*Ethereum* 
-The gas limit is set at the settings page 
+Alternatively the user can manually enter the desired fee.
+
+* Ethereum - The gas limit is defined at the settings page
 
 
 ## Data source
