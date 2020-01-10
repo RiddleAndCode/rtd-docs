@@ -59,7 +59,7 @@ Example:
 5. Click the button **Change pin**, and follow the steps. [Current PIN -> New Pin -> New Pin Again -> New PIN (for starting session)]
 
 ---
-## Creation of Shamir Family
+## Creation of new Signing quorum
 Example: 2 (Master Device + 1) out of 5.
 
 1. Connect all 5 devices to trusted node.
