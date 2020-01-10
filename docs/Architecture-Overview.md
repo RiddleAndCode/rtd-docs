@@ -6,7 +6,7 @@ These changes enhance the overall security and usability of the solution and are
 
 ## Addons
 
-- [Fee estimates](../blob/master/docs/Fee%20estimates.md)
+- [Fee estimates](../blob/master/docs/Fee-estimates.md)
 - [Reconciliation](../blob/master/docs/Reconciliation.md)
 
 ### Table of contents

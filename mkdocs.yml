@@ -4,16 +4,19 @@ theme:
   
 nav:
 - Digital Asset Management: 
-  - Introduction: 'index.md'  
+  - Introduction: 'index.md'
   - Product Description: 'ProductDescription.md'
+  - Architecture Overview: 'Architecture-Overview.md'
   - Initial Set Up: 'SetUp.md'
   - Signing: 'Signing.md'
   - Manual: 'Manual.md'
   - Operations: 'Operations.md'
   - Security: 'Security.md'
+  - Reconciliation: 'Reconciliation.md'
+  - Fee Addon: 'Fee-estimates.md'
   - Key Ceremony: 'KeyCeremony.md'
-  - Key Ceremony 2 persons: 'KeyCeremony-2persons.md'
-  - Key Ceremony 3 persons: 'KeyCeremony-3persons-user-case.md'
+  -   Key Ceremony 2 parties: 'KeyCeremony-2parties.md'
+  -   Key Ceremony 3 parties: 'KeyCeremony-3parties-user-case.md'
   - Backup: 'Backup.md'
   - Glossary: 'Glossary.md'
   

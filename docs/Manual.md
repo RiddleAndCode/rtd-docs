@@ -19,13 +19,20 @@
     - [Account Management](#account-management)
 
 ## Set Up of the trusted node
-```
-ssh ubilinux@TRUSTED_NODE_IP_ADDRESS 
-cd trusted-node
-docker-compose up -d
-export RNC_TRUSTED_NODE_PATH_TO_SETTINGS=/home/ubilinux/trusted-node
-./trusted-node start
-```
+
+Initial set up of the DAM solution
+
+Please login to the Trusted Node2.0 with the credentials provided to perform the following steps:
+
+1. 'passwd' to set a new password.
+2. 'mkdir ~/dam' to create a directory for the solution.
+3. 'cd ~/dam' to enter the solution directory.
+3. Copy the settings.json to the dam folder
+4. Copy the docker-compose.yml to the dam folder
+5. 'docker login' to download the Trusted Execution Environments. 
+*Please keep in mind to get your docker account registered by RIDDLE&CODE by sending an e-mail to support@riddleandcode.com*
+6. 'docker-compose up' to set up the TEEs 
+
 ---
 ## Web Interface
 1. Web interface can be found at https://TRUSTED_NODE_IP_ADDRESS:5000
@@ -59,7 +66,7 @@ Example:
 5. Click the button **Change pin**, and follow the steps. [Current PIN -> New Pin -> New Pin Again -> New PIN (for starting session)]
 
 ---
-## Creation of new Signing quorum
+## Creation of new signing quorum
 Example: 2 (Master Device + 1) out of 5.
 
 1. Connect all 5 devices to trusted node.

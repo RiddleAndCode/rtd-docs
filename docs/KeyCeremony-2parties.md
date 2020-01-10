@@ -1,7 +1,7 @@
-# Key ceremony: 2 persons, 2 plates.
+# Key ceremony: 2 parties, 2 plates.
 
 ## Introduction
-This is our recommendation on how to perform a Key Ceremony for 2 persons and a master of ceremony.
+This is our recommendation on how to perform a Key Ceremony for 2 parties and a master of ceremony.
 Please revise it and adapt to your own operational processes. It is your responsibility to verify that it complies with your safety and compliancy procedures/requirements. 
 We will use 2 steel plates to store the whole mnemonic phrase, guaranteeing confidentiality (no single person will ever see or hold all the mnemonic phrase) as well as full recovery in case a single steel plate is missing.
 
