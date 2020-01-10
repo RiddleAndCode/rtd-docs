@@ -1,21 +1,23 @@
-#Solution Architecture#
+# Solution Architecture
 
-With the latest release the Digital Asset management solution RIDDLE&CODE updated the underlying hardware of the Trusted Node and made some improvements to the work- and userflow.
+With the latest release the Digital Asset management solution RIDDLE&CODE updated the underlying hardware of the Trusted Node and made some improvements to the workflow and userflow.
 
 These changes enhance the overall security and usability of the solution and are the foundation 
 
 ## Table of contents
 - [Architecture](#architecture)
-- [New Deployment of Updates](#new-deployement-of-updates)
-- [The trusted Execution enclave](#the-trusted-execution-enclave)
-- [New Webinterface](#new-webinterface)
-- [New Admin area](#new-admin-area)
+- [New deployment method](#new-deployement-of-updates)
+- [The trusted execution enclave](#the-trusted-execution-enclave)
+- [New webinterface](#new-webinterface)
+- [New admin area](#new-admin-area)
+- [Policy configurator](#policy-configurator)
+
 
 ## Architecture
 
 The architecture of the Digital Asset Management solution has ben enhanced to serve enhance the security and usability of the overall solution.
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Architecture.png "Architecture.png")
+![Architecture](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/architecture.png "Architecture.png")
 
 With the new Trusted Node2.0 RIDDLE&CODE updated the underlying hardware to reflect the new requirements in regard of security and performances as well as the software architecture
 
@@ -38,24 +40,40 @@ One specific application in this regard and a cornerstone of the Digital asset m
 
 RIDDLE&CODE updated the webinterface to improve the usability and performance of the solution.
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/landingpage.png "Landingpage")
+![Interface New](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/landingpage.png "Landingpage")
 
 The major improvements are: 
 
 *New design and userflows*
 *Admin area can only be accessed with connected Admin Devices*
 
-**Note: to access the Admin area the two Admin devices need to be connected to the Trusted Node and the on device messages need to be confirmed**
+**Note:** to access the Admin area the two Admin devices have to be connected to the Trusted Node and the on device messages need to be confirmed
 
 
 ## New Admin area 
 
 The admin area has been updated to reflect the new feature set and access process.
+
+The Admin Area hosts the following pages:
+
+* Settings page
+* Define Signing Quorum
+* Set master device
+* Change Pin
+* Precalculate accounts
+* Policy configurator
+* Update addresses
+* Set device label
+* Prove address ownership
+
+
+![Settingspage](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/settingspage.png "Setup admin devices")
+
 At the first onsite installation of the updated solution, operators will be briefed on the crucial first steps in creating and setting up the new Admin devices with dedicated documents. 
 
 At the initial access to the Trusted Node2.0 the following steps are required: 
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Setupadmin.png "Setup admin devices")
+![Initial Set up](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Setupadmin.png "Setup admin devices")
 
 **Step 1** 
 Select one of the two admin devices 
@@ -92,4 +110,13 @@ run /home/dam/dam/update.sh
 After the update has been processed issue this bash-command
 sudo service dam restart
 
-## 
+## Policy Configurator 
+
+Generally speaking, the policy layer is a set of rules that can be defined by the client. The underlying rules govern the transactions and how they are executed.
+
+![Policy configurator](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/policyconfigurator.png "Policy Configurator")
+
+
+
+
+
