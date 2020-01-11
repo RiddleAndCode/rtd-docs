@@ -15,7 +15,7 @@ Our solution underwent meticulous audit processes by renown international audit 
 
 In view of regular security breaches of existing digital asset management solutions, RIDDLE&CODE developed a new generation of hardware wallets with a set of innovative features and functionalities.
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/USP.png "USP")
+![USP](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/USP.png "USP")
 
 ## Product principles 
 
@@ -40,7 +40,7 @@ In view of regular security breaches of existing digital asset management soluti
 
 RIDDLE&CODE digital asset management solution combines hardware and software to store, secure and manage cryptocurrencies and various categories of tokens. It provides multi-device signing and approval processes based on multi-signee signatures policies and allows institutional organizations to offer these functionalities to clients under custodian service model. 
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/architecture.png "Architecture")
+![Architecture](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/architecture.png "Architecture")
 
 ---
 ## Supported currencies

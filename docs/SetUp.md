@@ -43,37 +43,53 @@ At the initial set up follow the on device screen instructions and perform a two
 
 ### How to set up the admin devices
 
+The dedicated Admin devices are required:
+
+e.g. To create policy rules the two AD must be connected to the Trusted Node 2.0 and collaboratively sign the process. 
+
+Every change and configruation inside the admin area needs to be signed by the two AD as a Secure Multi-Party Computation (SMPC). Thereby a multi-eye principle is applied to the process of changing the settings of the DAM solution.
+
+The URL to start the set up process for the AD is physically included in the hardware delivery (see above).
+
+To set up the Admin Devices follow the instructions below:
+1. Connect the Administrator Devices to the Trusted Node2.0
+2. Enter the URL to set up the Administrator Devices
+3. Follow the steps on the interface and device screens
+At the first onsite installation of the solution, the administrator(s) will be briefed on the crucial first step in creating and setting up the new admin devices with dedicated documents. 
+
+At the initial set up the user needs to perform the following steps:
+
 ![Initial Set up](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Setupadmin.png "Setup admin devices")
 
-** Step 1 
+* Step 1 
 Select one of the two admin devices 
 
-** Step 2
-Select new signing quorum 
+* Step 2
+Select "new signing quorum" 
 
-** Step 3
+* Step 3
 Total number of slices: 2
 
-** Step 4
+* Step 4
 Minimum number of slices to sign: 2
 
-** Step 5
-Create
+* Step 5
+Click on create
 
-** Step 6
+* Step 6
 Follow the on device screen instructions and perform a two party key ceremony: https://riddlecode-digital-asset-management-manuals.readthedocs-hosted.com/en/latest/KeyCeremony-2persons/
 
-** Step 7 
+* Step 7 
 Note down the Public Key shown on the interface and send it to support@riddleandcode.com
 
-** Step 8 
+* Step 8 
 RIDDLE&CODE sends you an updated docker-compose file with the public key of step 7 provisioned to the policy layer.
 
-** Step 9 
+* Step 9 
 Access the Trusted Node and login with the provided credentials 
 Copy the updated docker-compose file sent by RIDDLE&CODE to /home/dam/dam
 
-** Step 10 
+* Step 10 
 On the Trusted Node issue this bash-command:
 run /home/dam/dam/update.sh
 
@@ -105,7 +121,7 @@ The solution by default is preconfigured.
 
 This is the interface area to create, manage and add new transaction policies. The policy service is a highly secure feature that provides the possibility to add rules that govern the execution of transactions. The policy is protected and executed inside the Trusted Execution Environment (TEE) and each change to aformentioned policies requires the AD to sign the change. It provides the foundation to create agile and secure processes and governance tailormade to the requirements of the client.
 
-Access to this service is limited to the owners of the AD
+Access to this service is limited to the owners of the AD.
 
 ### Define policies on DAM
 
