@@ -13,9 +13,10 @@ These changes enhance the overall security and usability of the solution and are
 
 - [Architecture](#architecture)
 - [Deployment method](#deployement-method)
-- [The trusted execution enclave](#the-trusted-execution-enclave)
+- [The trusted execution environment](#the-trusted-execution-environment)
 - [Webinterface](#webinterface)
 - [New admin area](#new-admin-area)
+- [Set up of admin devices](#set-up-admin-devices)
 - [Policy configurator](#policy-configurator)
 
 ### Architecture
@@ -34,7 +35,7 @@ RIDDLE&CODE pivoted from providing signed binaries and moved now provide signed 
 
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
 
-### The trusted execution enclave
+### The trusted execution environment
 
 A trusted execution environment (TEE) is a secure, integrity-protected processing environment, consisting of processing, memory and storage capabilities. It is isolated from the “normal” processing environment, sometimes called the rich execution environment (REE), where the device operating system and applications run. TEEs were designed to provide protection so that sensitive operations are restricted to the TEE and sensitive data, like cryptographic keys, never leave the TEE. 
 
@@ -57,6 +58,8 @@ The major improvements are:
 
 The admin area has been updated to reflect the new feature set and access process.
 
+![Settingspage](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/settingspage.png "Setup admin devices")
+
 It hosts the following pages:
 
 * Settings page
@@ -69,43 +72,43 @@ It hosts the following pages:
 * Set device label
 * Prove address ownership
 
-![Settingspage](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/settingspage.png "Setup admin devices")
+#### Set up Admin devices
 
-At the first onsite installation of the solution, operators will be briefed on the crucial first step in creating and setting up the new admin devices with dedicated documents. 
+At the first onsite installation of the solution, the administrator(s) will be briefed on the crucial first step in creating and setting up the new admin devices with dedicated documents. 
 
-To access the Trusted Node 2.0 the following steps are required: 
+At the initial set up the user needs to perform the following steps:
 
 ![Initial Set up](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Setupadmin.png "Setup admin devices")
 
-** Step 1 
+* Step 1 
 Select one of the two admin devices 
 
-** Step 2
-Select new signing quorum 
+* Step 2
+Select "new signing quorum" 
 
-** Step 3
+* Step 3
 Total number of slices: 2
 
-** Step 4
+* Step 4
 Minimum number of slices to sign: 2
 
-** Step 5
-Create
+* Step 5
+Click on create
 
-** Step 6
+* Step 6
 Follow the on device screen instructions and perform a two party key ceremony: https://riddlecode-digital-asset-management-manuals.readthedocs-hosted.com/en/latest/KeyCeremony-2persons/
 
-** Step 7 
+* Step 7 
 Note down the Public Key shown on the interface and send it to support@riddleandcode.com
 
-** Step 8 
+* Step 8 
 RIDDLE&CODE sends you an updated docker-compose file with the public key of step 7 provisioned to the policy layer.
 
-** Step 9 
+* Step 9 
 Access the Trusted Node and login with the provided credentials 
 Copy the updated docker-compose file sent by RIDDLE&CODE to /home/dam/dam
 
-** Step 10 
+* Step 10 
 On the Trusted Node issue this bash-command:
 run /home/dam/dam/update.sh
 
@@ -118,7 +121,13 @@ Generally speaking, the policy layer is a set of rules that can be defined by th
 
 ![Policy configurator](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/policyconfigurator.png "Policy Configurator")
 
+By default the Digital Asset Management solution denies all outgoing transactions as long as the administrator does not set up the admin devices and creates the first policy: 
 
+RIDDLE&CODE recommends to always implement at least the following rule:
 
+> No limit for all transactions where the master signature device is connected. With a minimum number of signatures of 1 out of 1.
+
+# Support
+For all inquiries on not already covered in this manual feel free to contact us directly via: support@riddleandcode.com
 
 

@@ -152,3 +152,6 @@ You can check the identity of each hardware device, by pressing its button when 
 In the database there is a table called Account with two columns: Account ID and Container ID. 
 
 The table grows when precalculation of accounts is executed. The account ID column is automatically incremented, **however** container ID is always 0. It requires to be filled manually using a database management tool (eg: phpmyadmin). Without this step, making a [Transaction](#transaction) will be impossible.
+
+# Support
+For all inquiries on not already covered in this manual feel free to contact us directly via: support@riddleandcode.com
