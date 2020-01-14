@@ -2,7 +2,7 @@
 
 RIDDLE&CODE provides an integrated gas/fees calculation performed for all crypto currencies available in the Digital Asset Management Solution. 
 
-![alt text](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/fee.png "Fee estimates")
+![alt text](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/fee.png "Fee estimates")
 
 The ammount of fees determines the execution speed 
 By choosing one of the defaults, the recommended ammount of fees is automatically transfered to the fee input field. 

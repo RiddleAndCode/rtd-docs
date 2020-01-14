@@ -37,7 +37,7 @@ A transaction can only be signed if the predetermined number of signees contribu
 
 Whenever a transaction is being created by an operator the following steps apply: 
 
-![Signing Architecture](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Step%20by%20Step%20Process.png "Signing architecture")
+![Signing Architecture](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/Step%20by%20Step%20Process.png "Signing architecture")
 
 1. Via the web interface transactions are prepared and initiated 
 
@@ -60,7 +60,7 @@ These are examples of possible applications for the describe multi signee featur
 High value transactions get signed by three traders in the Switzerland headquarter and by the CFO, currently on a business trip, e.g. in Japan.
 
 
-![Distributed signees](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/internal%20distributed%20signing.png "Distributed signees")
+![Distributed signees](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/internal%20distributed%20signing.png "Distributed signees")
 
 
 ### Multi signee with client contribution 
@@ -68,12 +68,12 @@ High value transactions get signed by three traders in the Switzerland headquart
 High value transactions get signed by two traders in the bank, the client gets notified and co-signs to complete the transaction.
 
 
-![Client multi signee](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Client%20signing.png "Client multi signee")
+![Client multi signee](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/Client%20signing.png "Client multi signee")
 
 ### Time delayed signing
 
 In specific cases, transactions may not need to be executed immediately. Our solution features a time delay functionality to accommodate such use cases. 
 
 
-![Time delayed](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/time%20delayed%20signing.png "Time delayed")
+![Time delayed](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/time%20delayed%20signing.png "Time delayed")
 

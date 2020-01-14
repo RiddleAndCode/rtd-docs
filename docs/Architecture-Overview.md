@@ -6,8 +6,8 @@ These changes enhance the overall security and usability of the solution and are
 
 ## Addons
 
-- [Fee estimates](../blob/master/docs/Fee-estimates.md)
-- [Reconciliation](../blob/master/docs/Reconciliation.md)
+- [Fee estimates](https://riddlecode-rtd-docs.readthedocs-hosted.com/Fee-estimates/)
+- [Reconciliation](https://riddlecode-rtd-docs.readthedocs-hosted.com/Reconciliation.md)
 
 ### Table of contents
 
@@ -23,7 +23,7 @@ These changes enhance the overall security and usability of the solution and are
 
 The architecture of the Digital Asset Management solution has been enhanced to improved the security and usability of the overall solution.
 
-![Architecture](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/architecture.png "Architecture.png")
+![Architecture](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/architecture.png "Architecture.png")
 
 With the new Trusted Node2.0, RIDDLE&CODE updated the underlying hardware to reflect the new requirements in regard of security and performance as well as the software architecture
 
@@ -45,7 +45,7 @@ One specific application in this regard and a cornerstone of the Digital asset m
 
 RIDDLE&CODE updated the webinterface to enhance the usability and performance of the solution.
 
-![Interface New](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/landingpage.png "Landingpage")
+![Interface New](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/landingpage.png "Landingpage")
 
 The major improvements are: 
 
@@ -58,7 +58,7 @@ The major improvements are:
 
 The admin area has been updated to reflect the new feature set and access process.
 
-![Settingspage](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/settingspage.png "Setup admin devices")
+![Settingspage](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/settingspage.png "Setup admin devices")
 
 It hosts the following pages:
 
@@ -78,7 +78,7 @@ At the first onsite installation of the solution, the administrator(s) will be b
 
 At the initial set up the user needs to perform the following steps:
 
-![Initial Set up](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Setupadmin.png "Setup admin devices")
+![Initial Set up](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/Setupadmin.png "Setup admin devices")
 
 * Step 1 
 Select one of the two admin devices 
@@ -119,7 +119,7 @@ sudo service dam restart
 
 Generally speaking, the policy layer is a set of rules that can be defined by the client. The underlying rules govern the transactions and how they are executed.
 
-![Policy configurator](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/policyconfigurator.png "Policy Configurator")
+![Policy configurator](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/policyconfigurator.png "Policy Configurator")
 
 By default the Digital Asset Management solution denies all outgoing transactions as long as the administrator does not set up the admin devices and creates the first policy: 
 
