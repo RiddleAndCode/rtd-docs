@@ -59,7 +59,7 @@ At the first onsite installation of the solution, the administrator(s) will be b
 
 At the initial set up the user needs to perform the following steps:
 
-![Initial Set up](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/Setupadmin.png "Setup admin devices")
+![Initial Set up](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/Setupadmin.png "Setup admin devices")
 
 * Step 1 
 Select one of the two admin devices 
@@ -115,7 +115,7 @@ After the initial set up of the Admin Devices the administrators can access the 
 
 The solution by default is preconfigured. 
 
-![Settingspage](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/settingspage.png "Setup admin devices")
+![Settingspage](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/settingspage.png "Setup admin devices")
 
 ## Policy Configurator
 
@@ -128,7 +128,7 @@ Access to this service is limited to the owners of the AD.
 The setup of the policies is done via the web interface. They are then crpyotgraphically attested to the Trusted Node 2.0.
 To attest any new rules to the policy service, the ADS are required. 
 
-![Policy configurator](https://github.com/RiddleAndCode/trusted-node-manuals/blob/master/assets/policyconfigurator.png "Policy Configurator")
+![Policy configurator](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/policyconfigurator.png "Policy Configurator")
 
 Examples of these policies: 
 
@@ -166,4 +166,4 @@ The basic requirement of the creation and the restoration process is the active 
 
 After the initial set up of all devices, the succesfull backup of the two (2) quroums the solution is no ready an doperational. 
 
-For the detailed walk through the settings and components please head over to the dedicated [Manual](/blob/master/docs/Manual.md/)
+For the detailed walk through the settings and components please head over to the dedicated [Manual](https://riddlecode-rtd-docs.readthedocs-hosted.com/Manual/)
