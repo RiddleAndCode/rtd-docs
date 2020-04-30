@@ -17,7 +17,7 @@ Our solution underwent meticulous audit processes by renown international audit 
 
 **Full control of the assets**: At RIDDLE&CODE, we believe that clients should have complete control over their assets. And Digital Asset Custody was developed with this in mind. Your keys and your tokens belong to you. We only develop the tools to manage and secure assets and private keys, without claiming any kind of ownership on any asset managed with our solution.
 
-**Algorithmic flexibility for quick adaptation to ever-evolving market**: Keeping the pace with the thriving crypto industry, requires a solution that allows quick and easy integration of new crypto algorithms. 
+**Algorithmic flexibility for quick adaptation to ever-evolving market**: Keeping the pace with the thriving crypto industry, requires a solution that allows quick and easy integration of new crypto algorithms.
 Our Digital Asset Custody is powered with design new crypto algorithms to the hardware wallets in reliable and fast implementation cycles in order to cope with the required speed of future crypto-asset innovation.
 
 **Peer reviews for code and product sovereignty**: The complexity of cryptography related developments requires constant reviews and research. Closed systems can't deliver the necessary trustworthiness any longer. Our solution follows a strict open-source hardware and software approach and is completely transparent. Code and hardware designs are made public and are shared with our clients. Thanks to this approach, customers are in control of the solution. At any time, they can fork and even own our developments. There is no vendor lock-in.
@@ -41,7 +41,7 @@ RIDDLE&CODE digital asset management solution combines hardware and software to 
 
 Through the combination of Signature Device and the Trusted Node, RIDDLE&CODE’s digital asset management solution allows for the scalability of operations while preserving the convenience of a single wallet for an institutional organization.
 
-RIDDLE&CODE digital asset management solution can be extended to almost any currency/token, allowing the institution’s clients to sell/buy/trade numerous cryptocurrencies or tokens without the inconvenience of managing a wallet per crypto asset, thanks to the custodian service model.
+RIDDLE&CODE digital asset management solution can be extended to almost any currency/token, allowing the institution’s clients to sell/buy/trade numerous cryptocurrencies or tokens without the inconvenience of managing a wallet per crypto asset.
 
 Even the most basic version of RIDDLE&CODE’s asset management solution supports the most important and relevant cryptocurrencies and tokens:
 
