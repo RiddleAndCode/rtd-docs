@@ -45,8 +45,8 @@ RIDDLE&CODE digital asset management solution can be extended to almost any curr
 
 Even the most basic version of RIDDLE&CODE’s asset management solution supports the most important and relevant cryptocurrencies and tokens:
 
-The solution currently supports 32 types of crypto assets (and derivatives thereof). Bitcoin-forked or ERC-20 assets are counted as one type.
-Additional cryptocurrencies and tokens can be implemented on request.
+At the moment, our solution supports 32 types of the most important and relevant crypto assets and their derivatives, where bitcoin-forked or ERC-20 assets are counted as one type.
+Since Digital Asset Custody can be extended to almost any currency/token, even those out-of-the-box, additional cryptocurrencies and tokens can be implemented on request.
 
 |        |  |        |  |
 | ------------- | -------------| ------------- | -------------|
