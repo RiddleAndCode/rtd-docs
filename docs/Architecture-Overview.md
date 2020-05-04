@@ -2,7 +2,7 @@
 
 With the latest release the Digital Asset management solution RIDDLE&CODE updated the hardware of the Trusted Node and made some improvements to the workflow and userflow.
 
-These changes enhance the overall security and usability of the solution and are the foundation 
+These changes enhance the overall security and usability of the solution and are the foundation
 
 ## Addons
 
@@ -21,25 +21,53 @@ These changes enhance the overall security and usability of the solution and are
 
 ### Architecture
 
-The architecture of the Digital Asset Management solution has been enhanced to improved the security and usability of the overall solution.
+#### Hardware elements:
+
+**Trusted Node** is a dedicated, (tamper-proof), physical device whose role is to create, organize and sign transactions. Trusted Node is the only device connected to the Internet, and for that reason, it never holds any sensitive information such as a private key. Trusted Node also hosts the web interface and provides APIs required for external system integration. Trusted Node contains the following features: Trusted Execution Environment (TEE), web interface with access to the crypto asset network, policy layer, and full node. With Trusted Node, our clients can create and sign multi-signature signing schemes for any asset, manage crypto addresses including account balance, connect with core banking system API (if required), initialize signature devices, and create an unlimited number of the custodial wallets.
+
+**Signature devices** are physical devices that are always cold and allow safe access and release of the funds stored in the wallet. Signature devices are orchestrated and connected to Trusted Node either via cable-based USB, web  USB or Bluetooth. Signature Devices enable clients to securely create and manage keys and protect storage, provides PIN Authentication, secure transaction confirmation, mnemonic phrase recovery, access to web interface, and validate transaction execution.
+
+
+#### Software:
+
+**Web interface** is hosted on the Trusted Node and provides all the essential functionalities necessary for conducting operations with Digital Asset Custody. Web interface separates roles between administration and execution. Operations done via web interface include: initial wallet set up, multiple signature configuration, policy management (optional), key and address management, whitelisting and blacklisting, transaction signature, validation, and execution, broadcasting of signed transactions to blockchain networks.
+
+**Trusted Execution Environment** is a secure environment isolated from the regular processing environment where the operating system and applications run. The purpose of TEE is to protect sensitive data and information cryptographic keys and to make sure that they never leave the highly protected environment. 
 
 ![Architecture](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/architecture.png "Architecture.png")
 
-With the new Trusted Node2.0, RIDDLE&CODE updated the underlying hardware to reflect the new requirements in regard of security and performance as well as the software architecture
 
-Additionally, the updated DAM solution has been extended with a dedicated Admin device family to increase and streamline the adminstrative workflow.
 
-### Deployment method
+### Deployment methods
 
-RIDDLE&CODE pivoted from providing signed binaries and moved now provide signed Docker images to provide updates to the Trusted Node 2.0.
+On-premise:
+Deployment and installation of digital asset custody on-premise with:
+* Trusted Execution Environment on site
+* Policy Engine on site
+* Signature devices on site
 
-Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+
+Self-Hosted:
+With hosted deployment, Trusted Node is hosted in your existing Data center while you sign your transactions on-premise. We offer:
+* Trusted Node server edition
+* Policy Engine as a service
+* Signature devices on site
+
+
+
+Hybrid:
+In case our on-premise or fully hosted deployment doesn’t fit your needs, we can provide you with a hybrid deployment model. Here is an example:
+* Trusted Node on site
+* Policy Engine as a service
+* HSM in your Data center
+* Signature devices on site
+
 
 ### The trusted execution environment
 
-A trusted execution environment (TEE) is a secure, integrity-protected processing environment, consisting of processing, memory and storage capabilities. It is isolated from the “normal” processing environment, sometimes called the rich execution environment (REE), where the device operating system and applications run. TEEs were designed to provide protection so that sensitive operations are restricted to the TEE and sensitive data, like cryptographic keys, never leave the TEE. 
+A trusted execution environment (TEE) is a secure, integrity-protected processing environment, consisting of processing, memory and storage capabilities. It is isolated from the “normal” processing environment, sometimes called the rich execution environment (REE), where the device operating system and applications run. TEEs were designed to provide protection so that sensitive operations are restricted to the TEE and sensitive data, like cryptographic keys, never leave the TEE.
 
-One specific application in this regard and a cornerstone of the Digital asset management solution is the Intel® Software Guard Extensions (Intel® SGX). It is a set of instructions that increases the security of application code and data, giving them more protection from disclosure or modification. 
+One specific application in this regard and a cornerstone of the Digital asset management solution is the Intel® Software Guard Extensions (Intel® SGX). It is a set of instructions that increases the security of application code and data, giving them more protection from disclosure or modification.
 
 ### Webinterface
 
@@ -47,14 +75,14 @@ RIDDLE&CODE updated the webinterface to enhance the usability and performance of
 
 ![Interface New](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/landingpage.png "Landingpage")
 
-The major improvements are: 
+The major improvements are:
 
 * New design and userflows
-* Admin area can only be accessed with connected Admin Devices 
+* Admin area can only be accessed with connected Admin Devices
 
 **Note:** to access the Admin area the two Admin devices have to be connected to the Trusted Node and the on device messages need to be confirmed
 
-### New Admin area 
+### New Admin area
 
 The admin area has been updated to reflect the new feature set and access process.
 
@@ -74,17 +102,17 @@ It hosts the following pages:
 
 #### Set up Admin devices
 
-At the first onsite installation of the solution, the administrator(s) will be briefed on the crucial first step in creating and setting up the new admin devices with dedicated documents. 
+At the first onsite installation of the solution, the administrator(s) will be briefed on the crucial first step in creating and setting up the new admin devices with dedicated documents.
 
 At the initial set up the user needs to perform the following steps:
 
 ![Initial Set up](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/Setupadmin.png "Setup admin devices")
 
-* Step 1 
-Select one of the two admin devices 
+* Step 1
+Select one of the two admin devices
 
 * Step 2
-Select "new signing quorum" 
+Select "new signing quorum"
 
 * Step 3
 Total number of slices: 2
@@ -98,30 +126,30 @@ Click on create
 * Step 6
 Follow the on device screen instructions and perform a two party key ceremony: https://riddlecode-digital-asset-management-manuals.readthedocs-hosted.com/en/latest/KeyCeremony-2persons/
 
-* Step 7 
+* Step 7
 Note down the Public Key shown on the interface and send it to support@riddleandcode.com
 
-* Step 8 
+* Step 8
 RIDDLE&CODE sends you an updated docker-compose file with the public key of step 7 provisioned to the policy layer.
 
-* Step 9 
-Access the Trusted Node and login with the provided credentials 
+* Step 9
+Access the Trusted Node and login with the provided credentials
 Copy the updated docker-compose file sent by RIDDLE&CODE to /home/dam/dam
 
-* Step 10 
+* Step 10
 On the Trusted Node issue this bash-command:
 run /home/dam/dam/update.sh
 
 After the update has been processed issue this bash-command:
 sudo service dam restart
 
-### Policy Configurator 
+### Policy Configurator
 
 Generally speaking, the policy layer is a set of rules that can be defined by the client. The underlying rules govern the transactions and how they are executed.
 
 ![Policy configurator](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/policyconfigurator.png "Policy Configurator")
 
-By default the Digital Asset Management solution denies all outgoing transactions as long as the administrator does not set up the admin devices and creates the first policy: 
+By default the Digital Asset Management solution denies all outgoing transactions as long as the administrator does not set up the admin devices and creates the first policy:
 
 RIDDLE&CODE recommends to always implement at least the following rule:
 
@@ -129,5 +157,3 @@ RIDDLE&CODE recommends to always implement at least the following rule:
 
 # Support
 For all inquiries on not already covered in this manual feel free to contact us directly via: support@riddleandcode.com
-
-

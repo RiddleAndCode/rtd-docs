@@ -1,23 +1,81 @@
-# Glossary 
+# Glossary
 
-## Mnemonic Phrase
-is a representation of a secret (private/public key) in 24 words.
-Owning those words in the correct order allows the secret, and hence the cryptographic keys, to be recreated. 
+## Mnemonic phrase
+Mnemonic phrase, also known as a seed phrase, is a group of 12-24 words used for backing up wallets. The phrase is randomly generated from a wordlist of the BIP39 standard which has 2048 words, where each word is assigned to a number.
+In case of losing access to your wallet, you can use a seed phrase to regain control of your funds and recovery key. RIDDLE&CODE’s recommendation is to keep the phrase on steel-plates in an off-premise vault.
 
-## Key generation 
 
-## Shamir Secret Sharing
-Secret sharing refers to methods for distributing a secret amongst a group of participants, each of whom is allocated a share of the secret. The secret can be reconstructed only when a sufficient number, of possibly different types, of shares are combined together; individual shares are of no use on their own.
+## Key generation
+In cryptography, key generation represents the process of generating a unique pair of public/private keys and using them to encrypt and decrypt data. It’s recommended to generate and store keys, especially those encrypting sensitive data, inside dedicated and secure Hardware Security Module (HSM).
 
-## Trusted Node
 
-A TN is a dedicated on-premise device to create, orchestrate and broadcast crypto transactions. The TN is the only device connected to the internet but never holds any keys. The TN orchestrates the Signatures Devices that connect either via cable-based USB, Web USB or Bluetooth. In addition, it hosts the web interface and provides the APIs for external system integrations. 
+## White room
+White room is a safe, confidential room that shouldn’t contain devices such as cameras, microphones, mobile telephones, and it should be free of video surveillance.
 
-## Signature Device
-An SD is a separate physical device that handles the identities (private and public key, respectively the associated coin address) to access and release the funds stored in the wallet. It is important to mention that the signing secrets are never stored on a single device but are dynamically generated from various Shamir secret slices, thus increasing the security and making it far less prone to security breaches and theft.
 
-## White Room
+## Policy Configurator
+Policy configurator is an interface area for creating, managing, and adding new transaction policies. Protected by the Trusted Execution Environment (TEE), policy configurator allows you to add rules, define and customize transaction policies, signing schemes, approval workflows, rate limits, whitelisting/blacklisting, etc.
 
-## Dedicated Webinterface
-A web interface is hosted on the Trusted Node and provides the essential functionalities incl. a clear separation of roles between admin and execution. It offers the functionalities required to set-up the solution, create and secure keys, configure the Shamir family and execute transactions. 
 
+## Docker and containers
+Linux container is a standard unit of software that holds applications, while at the same time, keeps them isolated from the host system. For developers, this means packaging an application with all the necessary parts and deploying it as a single package.
+Docker is a command line tool using containers to enable developers to easily create, deploy and manage applications.
+
+
+## Trusted Execution Environments
+A Trusted Execution Environment is a secure and protected area of the main processor, isolated from the rest of the device. This way, sensitive operations and data such as cryptographic keys, stay within the safe area.
+
+
+## Secure multi-party computation (MPC)
+Multi-party computation is a subset of cryptography that enables parties to jointly compute a function using their inputs, while simultaneously, keeping these inputs private.
+DAMS utilizes multi-party computational approach to secure keys, sign/validate transactions and to eliminate single point of failure by distributing the signing secret between dedicated hardware wallets.
+
+
+## Key ceremony
+Key ceremony is a process where a unique part of a private and public key is generated. The process is usually conducted in a safe and confidential vault (we recommend white room), in the presence of reliable personnel.
+The initial setup of the DAMS devices and the creation of the master key is done in a key ceremony, which can be done with two, three, and four parties.
+
+
+## Remote signing
+Remote signing enables a location independent signing of transactions by connecting the Signature Devices to the operators individual computer. Remote signing in its current version allows users to be geographically distributed to sign transactions to fully leverage this feature please follow the prerequisites:
+
+* Operation computers with at least version 81.0.4044 of Chrome is installed available for all Operating Systems: Windows 10, Linux, MacOSX
+* All operators and users of the Digital Asset Management Solution as well as the Trusted Node are located on the same Network and access to the interface is available https://localhost:5000/#/
+* Signature Devices must be connected to the individual computers and the users must have https://localhost:5000/#/ open in their Chrome browser before any transaction is created to ensure a smooth signing process across all participants
+* Transactions need to be performed sequentially, not multiple devices
+
+
+## Segregation of roles
+Segregation of roles is the concept that reduces the risk of fraud and error by dividing processes and ensuring that no single person is responsible for every stage of the process.
+For example, our digital asset custody allows segregation of roles and separates the banking-related roles (order acceptance, creation and confirmation of transactions, etc.) from execution-related tasks.
+
+
+
+## Account wallet segregation
+Certain regulatory provisions (e.g. Switzerland) require banks to back the value of cryptocurrencies in their books with fiat (e.g. Switzerland requires a backing of 800% to cover market or credit risks).
+If banks want to offer crypto custodial services our solution allows linking keys - that are generated by forward deterministic key derivation – directly to the client account. Thus, banks can prove their clients’ ownership of custodian crypto assets achieving full segregation of assets. As a result, they do not need to back these assets with FIAT.
+
+
+
+## Whitelisting/blacklisting
+Whitelisting represents a list of approved entities that are allowed to operate within the network, while blocking everything that’s not on the list. Simply put, with whitelisting, you can operate with the chosen few.
+Blacklisting means creating a list of malicious or suspicious entities and preventing them from accessing the network and conducting operations. The entities can include anything from malicious software such as viruses, to users, IP addresses, etc.
+DAMS offers a whitelisting/blacklisting feature and allows users to create the list of approved/blocked wallet addresses.
+
+
+
+## Audit logs
+An audit log (also known as audit trail) is a set of chronologically documented changes and activities within the system.
+Digital Asset Custody enables you to use audit logs and provide evidence of activities, reconstruction of events, and ensure compliance.
+
+
+
+## Reconciliation
+Reconciliation is a process that enables comparing two sets of records to ensure they match. Reconciliation can be done at a daily, monthly or annually level.
+DAMS utilizes reconciliation and allows sending of transaction details to an external audit database for archiving and settlement purposes.
+The details include data such as timestamp, individually signed transactions (per user), the fully signed transaction, crypto protocol, amount, fee, source, return, destination address or status,failed or canceled transactions, etc.
+
+
+
+## Fee estimate
+In order to process and confirm transactions, the fee is added to each transaction. DAMS provides an integrated gas/fees calculation performed for all cryptocurrencies. The amount of fees is determined by the execution speed, which can be slow, average (recommended), and fast.
