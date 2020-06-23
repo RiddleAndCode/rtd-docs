@@ -1,10 +1,5 @@
 # Product Description
 
-## Table of contents
-- [Getting to know RIDDLE&CODE Digital Asset Custody](#getting to know RIDDLE&CODE Digital Asset Custody)
-- [Product principles ](#product-principles)
-- [Architecture](#architecture)
-- [Supported Currencies](#supported-currencies)
 
 ## Getting to know RIDDLE&CODE Digital Asset Custody Solution
 RIDDLE&CODE developed a new breed of digital asset management solution that enables financial institutions as well as individuals to buy/sell/trade cryptocurrencies and tokens and offer this service to its clients within the framework of the custodian model.
