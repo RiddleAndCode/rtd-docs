@@ -9,8 +9,6 @@ We cover technical and business details as well as all required steps to set up 
 For all inquiries on not already covered in this manual feel free to contact us directly via: support@riddleandcode.com
 
 
-# Table of Content
-
 # Table of Contents
 1. [Product description](ProductDescription.md)
 2. [Architecture overview](Architecture-Overview.md)

@@ -8,10 +8,10 @@ nav:
   - Product Description: 'ProductDescription.md'
   - Architecture Overview: 'Architecture-Overview.md'
   - Installation guide: 'Installation-Guide.md'
-  - Amin-menu-operations: 'Admin-menu-operations.md'
+  - Amin menu operations: 'Admin-menu-operations.md'
   - Key management: 'Key-management.md'
-  - Key ceremonies: 'Keyceremony.md'
+  - Key ceremonies: 'Key-ceremonies.md'
   - Signing: 'Signing-of-transactions.md'
-  - Glossary: 'glossary.md'  
+  - Glossary: 'Glossary.md'  
 plugins:
   - search
