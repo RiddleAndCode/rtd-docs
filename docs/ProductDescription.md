@@ -2,6 +2,7 @@
 
 
 ## Getting to know RIDDLE&CODE Digital Asset Custody Solution
+
 RIDDLE&CODE developed a new breed of digital asset management solution that enables financial institutions as well as individuals to buy/sell/trade cryptocurrencies and tokens and offer this service to its clients within the framework of the custodian model.
 
 Our solution underwent meticulous audit processes by renown international audit firms and received acceptance from Swiss regulatory bodies. Next to an innovative architecture of the core functionality of a wallet – to create and secure keys - the solution excels in providing the related business logic and policy layer to allow integration into regulated processes including full audit trails.
