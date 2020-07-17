@@ -12,11 +12,11 @@ For all inquiries on not already covered in this manual feel free to contact us 
 # Table of Content
 
 # Table of Contents
-1. [Product description](#ProductDescription.md)
-2. [Architecture overview](#Architecture-Overview.md)
-3. [Installation guide](#Installation-Guide.md)
-5. [Admin operations](#Admin-menu-operations.md)
-6. [Key management](#Key-management.md)
-7. [Key ceremonies](#Keyceremony.md)
-8. [Signing](#Signing-of-transactions.md)
-9. [Glossary](#glossary.md)
+1. [Product description](ProductDescription.md)
+2. [Architecture overview](Architecture-Overview.md)
+3. [Installation guide](Installation-Guide.md)
+5. [Admin operations](Admin-menu-operations.md)
+6. [Key management](Key-management.md)
+7. [Key ceremonies](Key-ceremonies.md)
+8. [Signing](Signing-of-transactions.md)
+9. [Glossary](Glossary.md)
