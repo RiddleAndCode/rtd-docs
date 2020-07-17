@@ -3,22 +3,15 @@ theme:
   name: 'rtd-dropdown'
   
 nav:
-- Digital Asset Management: 
+- Digital Asset Custody: 
   - Introduction: 'index.md'
   - Product Description: 'ProductDescription.md'
   - Architecture Overview: 'Architecture-Overview.md'
-  - Initial Set Up: 'SetUp.md'
-  - Signing: 'Signing.md'
-  - Manual: 'Manual.md'
-  - Operations: 'Operations.md'
-  - Security: 'Security.md'
-  - Reconciliation: 'Reconciliation.md'
-  - Fee Addon: 'Fee-estimates.md'
-  - Key Ceremony: 'KeyCeremony.md'
-  -   Key Ceremony 2 parties: 'KeyCeremony-2parties.md'
-  -   Key Ceremony 3 parties: 'KeyCeremony-3parties-use-case.md'
-  - Backup: 'Backup.md'
-  - Glossary: 'Glossary.md'
-  
+  - Installation guide: 'Installation-Guide.md'
+  - Amin-menu-operations: 'Admin-menu-operations.md'
+  - Key management: 'Key-management.md'
+  - Key ceremonies: 'Keyceremony.md'
+  - Signing: 'Signing-of-transactions.md'
+  - Glossary: 'glossary.md'  
 plugins:
   - search
