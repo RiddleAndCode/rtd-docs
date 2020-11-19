@@ -30,7 +30,7 @@ In addition, all key management-related operations are performed within the Trus
 The phrase is displayed on the web interface to the user.
 5. Finally, the user stores the mnemonic phrase on a steel plate. 
 
-![Key generation and Backup](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/keybackup "Fig.2 Key generation and backup")
+![Key generation and Backup](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/keybackup.png "Fig.2 Key generation and backup")
 
 Following the key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
 
@@ -76,9 +76,9 @@ This process is called a key ceremony.
 **NOTE** : The backup of the mnemonic phrase is available only once, during the key ceremony. The mnemonic phrase cannot be retrieved later.
 
 Once the mnemonic phrase is safely stored, it is time to perform the verification of the backup process. This process allows the client to verify the integrity of the mnemonic phrase and ensures that the keys being created by this mnemonic phrase equal the keys that are already in the system. 
-The backup process is done during the key ceremony: 
 
 The backup process is done during the key ceremony: 
+
 1. The user enters the parts of the mnemonic phrase to the respective web interface, 
 2. The process continues until the entire mnemonic phrase is entered,
 3. The entered mnemonic phrase is then hashed and verified against the mnemonic phrase stored in the CKaaS.
@@ -89,8 +89,9 @@ The backup process is done during the key ceremony:
 Digital Asset Management Solution provides business continuity by ensuring that even in the case of a disaster scenario, such as bankruptcy or functional failure of RIDDLE&CODE, the keys are always under full control of the client.
 
 #### Key recovery process 
-Key recovery can be triggered via the user interface, where the user will be led through the entire process, step-by-step:
-1. The key recovery process starts by clicking the Recover your keys button on the web interface.
+Key recovery can be triggered via the user interface, where the user will be led through the entire process, step-by-step outlined below:
+
+1. The Key recovery process starts by clicking the Recover your keys button on the web interface.
 2. Twenty-four fields are displayed on the web interface.
 3. The user then enters the mnemonic backup to the web interface and performs verification.
 4. According to a strict protocol, part of the mnemonic phrase is re-injected into the Confidential Keystore, which ensures that an individual operator never knows the entire mnemonic phrase. 
