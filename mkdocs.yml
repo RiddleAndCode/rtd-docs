@@ -6,5 +6,17 @@ nav:
 - Digital Asset Custody: 
   - Introduction: 'index.md'
   - Key management: 'Key-management.md'
+  - Architecture Overview: 'Archtiecture-Overview.md'
+  - Transaction Approval: 'transction-approval.md'
+  - Policy Layer: 'Policy-Layer.md'
+  - Key Managemeent: 'Key-management.md'
+  - Approval Device: 'approval-device.md'
+  - Audit Trail: 'audit-trail.md'
+  - Reconciliation: 'reconciliation.md'
+  - AML: 'aml.md'
+  - APIs: 'apis.md'
+  - Full Node Service: 'full-node-service.md'
+  - Glossary: 'Key-management.md'
+
 plugins:
   - search
