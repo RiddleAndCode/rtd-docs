@@ -12,4 +12,15 @@ for anything else please as well join us on readthedocs
 
 
 # Table of Contents
-1. [Key management](Key-management.md)
+1. [Architecture Overview](Archtiecture-Overview.md)
+2. [Transaction Approval](transction-approval.md)
+3. [Policy Layer](Policy-Layer.md)
+4. [Key Managemeent](Key-management.md)
+5. [Approval Device](approval-device.md)
+6. [Audit Trail](audit-trail.md)
+7. [Reconciliation](reconciliation.md)
+8. [AML](aml.md)
+9. [APIs](apis.md)
+10. [Full Node Service](full-node-service.md)
+11. [Key management](Key-management.md)
+12. [Glossary](Glossary.md)
