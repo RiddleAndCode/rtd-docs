@@ -1,42 +1,57 @@
-### Architecture
-
-#### Hardware elements:
-
-**Trusted Node** is a dedicated, (tamper-proof), physical device whose role is to create, organize and sign transactions. Trusted Node is the only device connected to the Internet, and for that reason, it never holds any sensitive information such as a private key. Trusted Node also hosts the web interface and provides APIs required for external system integration. Trusted Node contains the following features: Trusted Execution Environment (TEE), web interface with access to the crypto asset network, policy layer, and full node. With Trusted Node, our clients can create and sign multi-signature signing schemes for any asset, manage crypto addresses including account balance, connect with core banking system API (if required), initialize signature devices, and create an unlimited number of the custodial wallets.
-
-**Signature devices** are physical devices that are always cold and allow safe access and release of the funds stored in the wallet. Signature devices are orchestrated and connected to Trusted Node either via cable-based USB, web  USB or Bluetooth. Signature Devices enable clients to securely create and manage keys and protect storage, provides PIN Authentication, secure transaction confirmation, mnemonic phrase recovery, access to web interface, and validate transaction execution.
+## Digital Asset Management Solution Architecture
 
 
-#### Software elements:
+#### Summary:
 
-**Web interface** is hosted on the Trusted Node and provides all the essential functionalities necessary for conducting operations with Digital Asset Custody. Web interface separates roles between administration and execution. Operations done via web interface include: initial wallet set up, multiple signature configuration, policy management (optional), key and address management, whitelisting and blacklisting, transaction signature, validation, and execution, broadcasting of signed transactions to blockchain networks.
+The Digital Asset Management Solution, a powerful yet simple all-in-one platform to store, transact and manage digital assets, contains the following components:
+* Dedicated Approval Devices to access the solution, create transactions and approve the transactions based on tailor-made approval workflows.
+* Confidential computing infrastructure to protect all sensitive operations and services.
+* Segregated accounts and addresses managed by the Confidential Keystore
+* Extended AML and full node service.
+* R3C audit ledger that provides real-time, immutable audit trails of all critical operations.
 
-**Trusted Execution Environment** is a secure environment isolated from the regular processing environment where the operating system and applications run. The purpose of TEE is to protect sensitive data and information cryptographic keys and to make sure that they never leave the highly protected environment.
+RIDDLE&CODE’s Digital Asset Management Solution (DAMS) combines hardware and software to store, secure and manage various digital asset categories. The solution provides multi-device approval workflows based on multi-approver policies. The DAMS consists of the following components:
 
-![Architecture](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/architecture.png "Architecture.png")
+IMAGE MISSING
 
+#### Order Services
 
+Integration with existing client systems for the creation and management of digital asset orders.
 
-### Deployment methods
+#### Financial Services
 
-On-premise:
-Deployment and installation of digital asset custody on-premise with:
-* Trusted Execution Environment on site
-* Policy Engine on site
-* Signature Devices on site
-
-
-Self-Hosted:
-With hosted deployment, Trusted Node is hosted in your existing Data center while you sign your transactions on-premise. We offer:
-* Trusted Node server edition
-* Policy Engine as a service
-* Signature devices on site
+Interfaces to existing information and core banking systems.
 
 
+#### Client (user) interface
 
-Hybrid:
-In case our on-premise or fully hosted deployment doesn’t fit your needs, we can provide you with a hybrid deployment model. Here is an example:
-* Trusted Node on site
-* Policy Engine as a service
-* HSM in your Data center
-* Signature devices on site
+Dedicated web interface providing access to all essential operations of the Digital Asset Management Solution. It separates roles between administration and execution and facilitates operations, such as initial set-up, user onboarding and revoking, multiple approval configuration, policy management, key and address management, transaction signatures, validation, execution and broadcasting signed transactions to blockchain networks.
+
+#### Approval Devices
+
+Physical devices used for authentication and access to the web interface and transaction approval. Each Approval Device is secured by its own cryptographic identity and has the capability to limit the access and management of the settings and policies.
+
+#### Trusted Execution Environment (TEE)
+
+The TEE is a secure area of the main processor ensuring protection of the code and data loaded inside the processor. As an isolated execution environment, TEE provides integrity of applications operating within the TEE, along with confidentiality of their assets. In general terms, the TEE offers an execution space that provides a higher level of security than an operating system (OS) and more functionality than the Secure Element (SE). All critical components of the Digital Asset Management Solution are operated in a TEE.
+
+#### Policy Layer
+
+Digital Asset Management Solution provides clients with a TEE cloud solution that has a specific Policy Layer that regulates, protects and logs every type of transaction. The Policy Layer is an integral part of a universal signing server, and it is implemented using dedicated machines featuring a Trusted Execution Environment (TEE). A TEE encapsulates the program and related access keys in a specific hardware-protected memory area in the processor core.
+
+The Policy Layer is comprised of:
+* a logic to evaluate and verify a given policy set,
+* a set of policies defined by the client to govern the creation and execution of transactions, and
+* an API to administer the set of policies and access permissions.
+
+#### Transaction logic
+
+Transaction logic is a service to securely issue unsigned transactions, which are then signed by the Confidential Keystore.
+
+#### Confidential Keystore
+
+A cryptographically secured service running in a dedicated Trusted Execution Environment, the Confidential Keystore manages all operations related to the underlying keys and ensures secure key generation, storage and use.
+
+#### Notarisation Service
+
+RIDDLE&CODE integrates a dedicated notarisation and certification tracking solution to create, attest and track digital certificates across their lifecycle.
