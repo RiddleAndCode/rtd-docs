@@ -1,7 +1,7 @@
 # Glossary
 
 ## Mnemonic phrase
-Mnemonic phrase, also known as a seed phrase, is a group of 12-24 words used for backing up wallets. The phrase is randomly generated from a wordlist of the BIP39 standard which has 2048 words, where each word is assigned to a number.
+Mnemonic phrase, also known as a seed phrase, is a group of 12-24 words used for backing up wallets. The phrase is randomly generated from a wordlist of the BIP32 standard which has 2048 words, where each word is assigned to a number.
 In case of losing access to your wallet, you can use a seed phrase to regain control of your funds and recovery key. RIDDLE&CODE’s recommendation is to keep the phrase on steel-plates in an off-premise vault.
 
 
