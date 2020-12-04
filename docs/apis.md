@@ -15,7 +15,7 @@ External APIs    | Description
 **Notarisation and certificate layer** | Creation of digital certificates that allow material and process traceability throughout the lifecycle of digital assets.
 
 
-Internal APIs     | Description
+Internal APIs     | Description 
 ----------------- | ----------------
 **Transaction creation and signing** | Creates and signs transactions.
 **Transaction history** | Shows all related transaction history for any coin address.
