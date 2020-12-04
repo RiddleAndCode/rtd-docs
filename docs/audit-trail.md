@@ -62,6 +62,6 @@ The ledger consists of a network of nodes deployed across all major regions.
 
 R3C is built upon and leverages the advantages of the public, federated and decentralised IPDB network. This decentralised network is operated by IPDB Foundation, a global non-profit foundation with headquarters in Berlin that fosters research into transparent governance. The Foundation is a main custodian of the BigchainDB stack, with a global membership base operating as nodes.
 
-####GDPR compliance
+#### GDPR compliance
 
 R3C is designed to be entirely GDPR compliant. The ledger itself does not contain arbitrary data hashes as part of transactions being signed off by public-private key pairs, and as such, it does not store any private data. Instead, the data itself is associated with a storage identifier and stored in a database featuring the needs of the data/use case. This can be an SQL (e.g., MariaDB), a NoSQL database (e.g., Cassandra and MongoDB) or decentralised file storage solutions (e.g., IPFS).
