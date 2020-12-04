@@ -8,15 +8,15 @@ The Digital Asset Management Solution provides a rich and easy-to-use set of app
 
 The APIs also allow our clients to push audit and reconciliation details to client-based systems and integrate external services for KYT (Know Your Transaction) and AML (Anti Money Laundering) purposes.
 
-**External APIs** | **Description**
------------------   --------------
-**AML Coinfirm**  | AML/CTF solution for compliance in accordance with the FATF’s “Travel Rule,” the EU’s AMLD5 and other global and national regulations. This includes validating transaction history, Know-Your-Coin verification and public key handling, real-time AML risk monitoring and alert service, AML risk reports, flow of funds tracking and case analysis workflow support.
+External APIs    | Description
+---------------- |  --------------
+**AML Coinfirm** | AML/CTF solution for compliance in accordance with the FATF’s “Travel Rule,” the EU’s AMLD5 and other global and national regulations. This includes validating transaction history, Know-Your-Coin verification and public key handling, real-time AML risk monitoring and alert service, AML risk reports, flow of funds tracking and case analysis workflow support.
 **Full node service**  | Full node hosting service for all supported currencies covered by the SLA to guarantee connectivity to the relevant blockchain infrastructures.
 **Notarisation and certificate layer** | Creation of digital certificates that allow material and process traceability throughout the lifecycle of digital assets.
 
 
-**Internal APIs** | **Description**
------------------   ----------------
+Internal APIs     | Description
+----------------- | ----------------
 **Transaction creation and signing** | Creates and signs transactions.
 **Transaction history** | Shows all related transaction history for any coin address.
 **Account labelling** | Gives a human-readable name to generated accounts and child addresses and retrieves an account ID (identifies accounts ID).
