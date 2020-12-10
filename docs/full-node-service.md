@@ -18,4 +18,9 @@ Required hardware and software are installed in RIDDLE&CODE’s hosting center w
 * Continuous 24/7 monitoring of the entire infrastructure.
 * SLA with various levels of support and service availability, depending on the needs of the client.
 
-IMAGE MISSING 
+### Available Fullnodes 
+
+The following fullnodes are currently available
+
+![Screenshot](assets/CurrenciesTMP.png)
+

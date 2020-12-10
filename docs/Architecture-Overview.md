@@ -1,4 +1,4 @@
-## Digital Asset Management Solution Architecture
+# Token Management Platform
 
 
 #### Summary:
