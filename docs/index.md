@@ -12,7 +12,7 @@ for anything else please as well join us on readthedocs
 
 
 # Table of Contents
-1. [Architecture Overview](Archtiecture-Overview.md)
+1. [Architecture Overview](Architecture-Overview.md)
 2. [Transaction Approval](transction-approval.md)
 3. [Policy Layer](Policy-Layer.md)
 4. [Key Managemeent](Key-management.md)
