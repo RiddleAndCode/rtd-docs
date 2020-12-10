@@ -17,7 +17,9 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 * perform value or metadata transactions to meet the throughput and frequency requirements of mature industries, and enable revocation/withdrawal and re-creation of keys in the framework of key restoring and disaster management.
 
 #### Key generation
-IMAGE MISSING
+
+![Key generation flow Diagram](assets/Keygenflow.png)
+
 *Fig 1: Key generation flow diagram*
 
 1. To initiate the creation of the master key, a user (administrator) needs to trigger the generation of a random number via the web interface.
@@ -27,9 +29,9 @@ IMAGE MISSING
 5. The phrase is displayed on the web interface to the user.
 6. Finally, the user stores the mnemonic phrase on a steel plate.
 
-IMAGE MISSING
+![Key Backup flow Diagram](assets/keybackup.png)
 
-*Fig 2. Key generation flow diagram (high-level overview)*
+*Fig 2. Key backup flow diagram (high-level overview)*
 
 Following the key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
 
