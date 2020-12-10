@@ -4,7 +4,7 @@ theme:
   
 nav:
 - Token Management Platform: 
- - Introduction: 'index.md'
+ - Getting started: 'index.md'
  - Architecture Overview: 'Architecture-Overview.md'
  - Transaction Approval: 'transaction-approval.md'
  - Policy Layer: 'Policy-Layer.md'
