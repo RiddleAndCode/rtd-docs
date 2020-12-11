@@ -3,7 +3,15 @@ theme:
   name: 'rtd-dropdown'
   
 nav:
-- Token Management Platform: 
-  
+- Digital Asset Custody: 
+  - Introduction: 'index.md'
+  - Product Description: 'ProductDescription.md'
+  - Architecture Overview: 'Architecture-Overview.md'
+  - Installation guide: 'Installation-Guide.md'
+  - Amin menu operations: 'Admin-menu-operations.md'
+  - Key management: 'Key-management.md'
+  - Key ceremonies: 'Key-ceremonies.md'
+  - Signing: 'Signing-of-transactions.md'
+  - Glossary: 'Glossary.md'  
 plugins:
-  - search
+  - search 
