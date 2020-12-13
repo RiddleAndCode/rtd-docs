@@ -17,6 +17,7 @@ Internal settlement teams have read-only access that allows them to filter and v
 The output covers the native amount per coin and not the value of the coin converted into FIAT currency (EURO, Swiss Franc, etc.). This output is sent via file (e.g., .csv) to an accessible file system hosted by the client or provided as a service by RIDDLE&CODE.
 
 The file contains the following data:
+
 * account ID
 * timestamp
 * confirmed and unconfirmed balance

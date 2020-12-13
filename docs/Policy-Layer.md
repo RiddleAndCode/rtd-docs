@@ -1,13 +1,13 @@
-## Policy Layer
+# Policy Layer
 
-#### Summary:
+## Summary
 
 * This document presents an overview of the Policy Layer and its functionalities.
 * The document describes the process of defining the roles and access rights to the system as well as defining and customisation of approval rules.
 
 The Policy Layer is a set of rules defined by the client that performs and logs all processes preceding and following transaction authentication. It verifies that the defined roles and rules are imposed and specifies the access rights to the platform and any of its functionalities.
 
-#### Role-based permissioning
+## Role-based permissioning
 
 Role-based access and control (RBAC) is set to associate permissions to roles. The permissions define the level of access to the system.
 
@@ -15,7 +15,7 @@ The Policy Layer is cryptographically secured within the Trusted Execution Envir
 
 When a user tries to perform a certain action, the system will check the user’s roles and then evaluate to see if that role has permission to execute the action. Since different components of an operation are permissioned to different personnel, no party has sole control of the full process.
 
-#### Separation of roles
+## Separation of roles
 
 Separation of roles involves the separation of two main functions:
 * **Administrators, and**
@@ -34,7 +34,7 @@ Policy        | Description
 **Add trusted recipients** | Specifies trusted accounts/addresses that are allowed to perform transactions.
 **Disabled trusted recipients accounts** | Blocks transactions to untrusted external accounts.
 
-#### Policy based Transaction process
+## Policy based Transaction process
 
 Every new transaction can be executed only if it is in compliance with the active set of rules. Here is how the process works:
 
@@ -43,7 +43,6 @@ Every new transaction can be executed only if it is in compliance with the activ
 3. **Signing the transactions.** Every new transaction is processed through the Policy Layer, which matches the requirements for the transactions with the existing policies. The user will then be asked to approve this event with his/her approval device. This event will also be broadcast to all the users who have roles that may perform the action. The system will then keep the event and collect signatures until the event times out or passes one of its policies. If all rules applicable for the transaction are adhered to, the Policy Layer accepts and executes the transaction. If any of the rules are not followed, the Policy Layer declines the execution and rejects the transaction.
 
 
- IMAGE MISSING
  IMAGE MISSING
 
 
