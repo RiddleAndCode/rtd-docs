@@ -20,7 +20,4 @@ nav:
   - GDPR: 'gdpr.md'
   - Glossary: 'Glossary.md'
 plugins:
-  - search 
-
-    - Getting started: 'index.md'
-
+  - search
