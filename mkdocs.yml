@@ -3,7 +3,7 @@ theme:
   name: 'rtd-dropdown'
   
 nav:
-- Digital Asset Custody: 
+- Token Management Platform: 
   - Introduction: 'index.md'
   - Architecture Overview: 'Architecture-Overview.md'
   - Transaction Approval: 'transaction-approval.md'
@@ -12,11 +12,11 @@ nav:
   - Key Management: 'Key-management.md'
   - Key ceremony: 'key-ceremony.md'
   - Audit Trail: 'audit-trail.md'
-  - Reconciliation: 'reconciliation.md'
+  - Reconciliation: 'Reconciliation.md'
   - AML: 'AML.md'
   - APIs: 'apis.md'
   - Full Node Service: 'full-node-service.md'
-  - Interfacea: 'user-interface.md'
+  - Interfaces: 'user-interface.md'
   - GDPR: 'gdpr.md'
   - Glossary: 'Glossary.md'
 plugins:

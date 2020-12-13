@@ -47,27 +47,25 @@ The key functionality of Coinfirm’s AML/KYC platform is the possibility of gen
 
 Risk Reports may be Basic, Standard or Enhanced.
 
-| Report element | Enhanced (Web/pdf/API) | Standard (Web/pdf/API)|Basic ('C-Score Report')
-(Monitoring Panel/API) |
-----------------   ----------------------  -------------------------  ------------------------
-Report ID, date and block height | Yes | Yes | Yes
-Address summary (balance in crypto and in USD, tokens) | Yes | Balance in crypto and USD | USD Balance in crypto
-Profile analysis and summary | Yes | No | No
-C-Score | Yes | Yes | Yes
-C-Score analysis and summary | Yes | No | No
-Risk Level | Yes | Yes | Yes
-Network Membership | Yes | Yes | Yes
-List of identified risks | Yes | No | No
-List of informative flags | Yes | No | No
-Assets/tokens analysis and summary | Yes | No | No
-Financial analysis | Yes | No | No
-Dark web connections | Yes | No | No
-Appendix 1 – Risk Indicators | Yes | Category and subcategory | No
-Appendix 2 – Financial analysis and summary | Yes | No | No
-Appendix 3 – List of Assets/Tokens | Yes | No | No
-Disclaimer | Yes | Yes | Yes
-Glossary | Yes | Yes | Yes
-
+|Report element | Enhanced (Web/pdf/API) | Standard (Web/pdf/API)|Basic ('C-Score Report') (Monitoring Panel/API) |
+|----------------|:----------------------:|:-------------------------:|:------------------------:|
+|Report ID, date and block height | Yes | Yes | Yes| 
+|Address summary (balance in crypto and in USD, tokens) | Yes | Balance in crypto and USD | USD Balance in crypto| 
+|Profile analysis and summary | Yes | No | No| 
+|C-Score | Yes | Yes | Yes| 
+|C-Score analysis and summary | Yes | No | No| 
+|Risk Level | Yes | Yes | Yes| 
+|Network Membership | Yes | Yes | Yes| 
+|List of identified risks | Yes | No | No| 
+|List of informative flags | Yes | No | No| 
+|Assets/tokens analysis and summary | Yes | No | No| 
+|Financial analysis | Yes | No | No| 
+|Dark web connections | Yes | No | No| 
+|Appendix 1 – Risk Indicators | Yes | Category and subcategory | No| 
+|Appendix 2 – Financial analysis and summary | Yes | No | No| 
+|Appendix 3 – List of Assets/Tokens | Yes | No | No| 
+|Disclaimer | Yes | Yes | Yes| 
+|Glossary | Yes | Yes | Yes| 
 
 
 ## Monitoring Panel
