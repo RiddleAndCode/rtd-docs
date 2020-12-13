@@ -21,7 +21,7 @@ Our Digital Asset Custody is powered with design new crypto algorithms to the ha
 
 **Hardware-based security combined with software-grade convenience and flexibility**: The relationship between business and customers is shifting. New business platforms have to enable customers the very same way they enable corporations. It is not possible to outfit every customer of a financial institute with a multi-thousand-dollar HSM. But it is necessary to protect customer interactions, accounts and assets with hardware wallets - without making trade-offs in security and usability.
 
-**Multi-purpose secure devices (signature devices)**: Our hardware wallets can also be used for other security-sensitive online activities. Logins with U2F, managing trust certificates on customer level, co-key-management with customers, secure self-encoding data storage for customers, etc.  are only some examples for the broad range of possible extensions.
+**Multi-purpose secure devices (Approval Devices)**: Our hardware wallets can also be used for other security-sensitive online activities. Logins with U2F, managing trust certificates on customer level, co-key-management with customers, secure self-encoding data storage for customers, etc.  are only some examples for the broad range of possible extensions.
 
 **Support of non-fungible, physical assets classes**: Development of our digital asset management solution isn’t only focused on cryptocurrencies but also incorporated a design to support the tokenized economy including the related secure tagging and chipping of physical objects, enabling our clients to go beyond cryptocurrencies and participate in the thriving token economy.
 

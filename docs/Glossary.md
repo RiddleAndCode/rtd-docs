@@ -28,20 +28,20 @@ A Trusted Execution Environment is a secure and protected area of the main proce
 
 ## Secure multi-party computation (MPC)
 Multi-party computation is a subset of cryptography that enables parties to jointly compute a function using their inputs, while simultaneously, keeping these inputs private.
-DAMS utilizes multi-party computational approach to secure keys, sign/validate transactions and to eliminate single point of failure by distributing the signing secret between dedicated hardware wallets.
+TMP utilizes multi-party computational approach to secure keys, sign/validate transactions and to eliminate single point of failure by distributing the signing secret between dedicated hardware wallets.
 
 
 ## Key ceremony
 Key ceremony is a process where a unique part of a private and public key is generated. The process is usually conducted in a safe and confidential vault (we recommend white room), in the presence of reliable personnel.
-The initial setup of the DAMS devices and the creation of the master key is done in a key ceremony, which can be done with two, three, and four parties.
+The initial setup of the TMP devices and the creation of the master key is done in a key ceremony, which can be done with two, three, and four parties.
 
 
-## Remote signing
-Remote signing enables a location independent signing of transactions by connecting the Signature Devices to the operators individual computer. Remote signing in its current version allows users to be geographically distributed to sign transactions to fully leverage this feature please follow the prerequisites:
+## Remote approvals
+Remote approval enables a location independent approving of transactions by connecting the Approval Devices to the operators individual computer. Remote signing in its current version allows users to be geographically distributed to sign transactions to fully leverage this feature please follow the prerequisites:
 
 * Operation computers with at least version 81.0.4044 of Chrome is installed available for all Operating Systems: Windows 10, Linux, MacOSX
 * All operators and users of the Digital Asset Management Solution as well as the Trusted Node are located on the same Network and access to the interface is available https://localhost:5000/#/
-* Signature Devices must be connected to the individual computers and the users must have https://localhost:5000/#/ open in their Chrome browser before any transaction is created to ensure a smooth signing process across all participants
+* Approval Devices must be connected to the individual computers and the users must have https://localhost:5000/#/ open in their Chrome browser before any transaction is created to ensure a smooth signing process across all participants
 * Transactions need to be performed sequentially, not multiple devices
 
 
@@ -60,7 +60,7 @@ If banks want to offer crypto custodial services our solution allows linking key
 ## Whitelisting/blacklisting
 Whitelisting represents a list of approved entities that are allowed to operate within the network, while blocking everything that’s not on the list. Simply put, with whitelisting, you can operate with the chosen few.
 Blacklisting means creating a list of malicious or suspicious entities and preventing them from accessing the network and conducting operations. The entities can include anything from malicious software such as viruses, to users, IP addresses, etc.
-DAMS offers a whitelisting/blacklisting feature and allows users to create the list of approved/blocked wallet addresses.
+TMP offers a whitelisting/blacklisting feature and allows users to create the list of approved/blocked wallet addresses.
 
 
 
@@ -72,10 +72,10 @@ Digital Asset Custody enables you to use audit logs and provide evidence of acti
 
 ## Reconciliation
 Reconciliation is a process that enables comparing two sets of records to ensure they match. Reconciliation can be done at a daily, monthly or annually level.
-DAMS utilizes reconciliation and allows sending of transaction details to an external audit database for archiving and settlement purposes.
+TMP utilizes reconciliation and allows sending of transaction details to an external audit database for archiving and settlement purposes.
 The details include data such as timestamp, individually signed transactions (per user), the fully signed transaction, crypto protocol, amount, fee, source, return, destination address or status,failed or canceled transactions, etc.
 
 
 
 ## Fee estimate
-In order to process and confirm transactions, the fee is added to each transaction. DAMS provides an integrated gas/fees calculation performed for all cryptocurrencies. The amount of fees is determined by the execution speed, which can be slow, average (recommended), and fast.
+In order to process and confirm transactions, the fee is added to each transaction. TMP provides an integrated gas/fees calculation performed for all cryptocurrencies. The amount of fees is determined by the execution speed, which can be slow, average (recommended), and fast.
