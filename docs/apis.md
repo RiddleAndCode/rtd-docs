@@ -1,10 +1,10 @@
-## Complete with APIs
+# Complete with APIs
 
-####Summary:
+## Summary
 
 * Digital Asset Management Solution offers extensive API support for the flexible integration of internal and external services that automate, enhance and simplify a range of operations.
 
-The Digital Asset Management Solution provides a rich and easy-to-use set of application programming interfaces (APIs) that support interoperability with other systems to quickly and easily access the core features of the solution as well as a wide range of integration options with existing systems.
+The Token Management Platform provides a rich and easy-to-use set of application programming interfaces (APIs) that support interoperability with other systems to quickly and easily access the core features of the solution as well as a wide range of integration options with existing systems.
 
 The APIs also allow our clients to push audit and reconciliation details to client-based systems and integrate external services for KYT (Know Your Transaction) and AML (Anti Money Laundering) purposes.
 
@@ -28,4 +28,4 @@ Internal APIs     | Description
 **Order system** | Integrations for existing client systems for the creation and management of digital asset orders.
 **Financial services** | Interfaces to the existing information and core banking systems.
 
-**NOTE:** The Digital Asset Management Solution is built with APIs as an integral part of the solution. However, the concrete integration of client and ecosystem services entails bespoke development depending on the requirements and system to be included.
+**NOTE:** The Token Management Platform is built with APIs as an integral part of the solution. However, the concrete integration of client and ecosystem services entails bespoke development depending on the requirements and system to be included.

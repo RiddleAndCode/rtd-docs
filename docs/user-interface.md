@@ -1,9 +1,9 @@
-## User interface
+# User interface
 
-#### Summary:
+## Summary
 
-* The main functionalities of the Digital Asset Management Solution (DAMS) are accessed through the user interface.
-* Assigned users can access the DAMS user interface by connecting their Approval Devices with corresponding computers.
+* The main functionalities of the Digital Asset Management Solution (TMP) are accessed through the user interface.
+* Assigned users can access the TMP user interface by connecting their Approval Devices with corresponding computers.
 * User interface provides access to the cloud-based service, where clients can generate and recover keys, place and manage orders, set up and edit policies, retrieve portfolio balances, extract transaction cost analyses and offer custody service to its clients.
 
 The user interface is hosted on dedicated machines, built upon REACT, Typescript and Bootstrap, and operated by RIDDLE&CODE.
@@ -11,7 +11,7 @@ The user interface is hosted on dedicated machines, built upon REACT, Typescript
 Access to the interface is guarded with several security layers. To access, the client needs to connect the Approval Device to the computer. There are two types of authentication methods used to guarantee that only authorised Approval Devices and users can access the user interface. They are:
 1. FIDO 2 for authentication of the device, and
 2. PIN for authentication of the user on the device itself.
-All communication channels between the devices and the core components of the DAMS are hardened and strictly encrypted.
+All communication channels between the devices and the core components of the TMP are hardened and strictly encrypted.
 
 Role-based access and control (RBAC) is set to assure that only the user, with appropriate role and credentials, can access a certain area within the interface.
 Separation of roles involves the separation of two main functions:

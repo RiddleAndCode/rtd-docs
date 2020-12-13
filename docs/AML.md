@@ -1,8 +1,8 @@
-## AML service by Coinfirm
+# AML service by Coinfirm
 
-####Summary:
+**Summary**
 
-* The Digital Asset Management Solution provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
+* The Token Management Platform provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
 * All outgoing and incoming transactions are registered and verified, and any asset with a suspicious origin is flagged for a review.
 * This document describes Coinfirm’s AML integration process.
 
@@ -12,7 +12,7 @@ AML regulations require companies to submit risk reports, perform diligence proc
 
 RIDDLE&CODE integrates the services provided by leading blockchain analytics platform, Coinfirm, to the Digital Asset Management Solution.
 
-#### Coinfirm - real time analytics and compliance risk management
+## Coinfirm - real time analytics and compliance risk management
 
 **Coinfirm** is a global leader in AML and regulatory technology for blockchain and cryptocurrencies. It offers the industry’s largest blockchain coverage, supporting over 1,500 cryptocurrencies and protocols, including Bitcoin, Ethereum, Hyperledger, and many more.
 
@@ -24,7 +24,7 @@ The service will continuously monitor all coin addresses and alert the client in
 
 This process allows clients to analyse coin addresses in several ways.
 
-#### Incoming transactions
+##Incoming transactions
 
 **1. Continuous monitoring of all coin addresses: trusted recipients and coin addresses under custody**
 When funds are sent to one of the coin addresses managed by RIDDLE&CODE’s solution, Coinfirm will recognise if the incoming transaction will have an impact on the risk level of the coin address.
@@ -33,7 +33,7 @@ When funds are sent to one of the coin addresses managed by RIDDLE&CODE’s solu
 **2. Alerting in case of unexpected behavior or detection of fraud**
 The Coinfirm platform offers a notification feature that can be configured with a set of parameters to inform users via email if transactions have a critical impact on a coin address. The notifications will be sent directly by Coinfirm.
 
-#### Outgoing transactions
+## Outgoing transactions
 
 During a transaction signing request, a client can select the receiver and the sender address for a transaction. On selection, the risk level of both coin addresses will be retrieved from Coinfirm and displayed to the user.
 
@@ -41,7 +41,7 @@ Notifications are sent to the client if fraudulent activities related to one or 
 
 **The following products are available at Coinfirm’s AML/KYC platform:**
 
-#### AML Risk Reports
+# AML Risk Reports
 
 The key functionality of Coinfirm’s AML/KYC platform is the possibility of generating AML/KYC Risk Reports that evaluate money laundering risk for blockchain addresses and their owners. These reports can be downloaded as PDF documents for regulatory compliance purposes.
 
@@ -70,7 +70,7 @@ Glossary | Yes | Yes | Yes
 
 
 
-#### Monitoring Panel
+## Monitoring Panel
 
 The Monitoring Panel is a feature of the Platform that enables users to monitor and be alerted on AML risk in real-time for all provided addresses and related transactions. The Monitoring Panel include:
 
@@ -85,11 +85,11 @@ Transaction View - provides information in real time about all incoming and outg
 
 * **Notification Bell** - on the top of the tool page, provides information about all new, unread notifications on each monitored address.
 
-#### Visual Analysis Tool - Visualiser
+## Visual Analysis Tool - Visualiser
 
 The Visualiser tool allows users to visually track the flow of funds and provide evidence in the form of a graph of transactions between the cryptocurrency addresses within selected cryptocurrency networks. The Visualiser is equipped with automated source of funds and destination of funds transaction tracking, even across hundreds of consecutive blockchain transactions.
 
-#### Case Management Tool
+## Case Management Tool
 
 The Case Management tool on the Coinfirm AML Platform allows users to keep track of progress and document investigations performed. It supports case analysis workflow, including case QA and supervisor review.
 
@@ -101,9 +101,9 @@ During the process, users can add files from the AML Platform or their computers
 
 **NOTE:** The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
 
-#### Integrating Coinfirm’s AML/KYC services
+## Integrating Coinfirm’s AML/KYC services
 
-#### Create account and register coin addresses at the Coinfirm platform
+## Create account and register coin addresses at the Coinfirm platform
 
 IMAGE MISSING
 
@@ -111,11 +111,11 @@ Fig1. Flow Diagram of account and address registration
 
 To create a new account in the system, the user needs to enter a 32bit integer in hexadecimal format into the frontend. A request will be sent to RIDDLE&CODE’s solution that will derive, based on the provided number and a derivation seed, coin addresses for each supported currency. The derived addresses will be sent to the CoinfirmConnector, which handles the interaction with the services supported by Coinfirm. Each coin address will be registered to the monitoring system of Coinfirm.
 
-#### Adding of trusted recipient
+## Adding of trusted recipient
 
 The user provides an account ID in the 32bit integer hexadecimal format and a coin address. If there is no account with the provided account ID, the system will generate a new account and add the provided coin address. The coin address will be sent to the CoinfirmConnector and further to the services of Coinfirm where it is added to the monitoring system.
 
-#### Creating the transaction and retrieving risk levels
+## Creating the transaction and retrieving risk levels
 
 IMAGE MISSING
 
@@ -125,7 +125,7 @@ In order to create a transaction, a user has to visit the sign transaction page 
 
 This flow is done for the sender as well as for the receiver account. Based on the information, a user can decide if a transaction should be signed or not.
 
-#### Integrated Coinfirm API endpoints
+## Integrated Coinfirm API endpoints
 
 * A detailed API description can be found under the following link. For the authentication to the API bearer tokens are used: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/
 * To authenticate to the API and to retrieve a bearer token, please visit the following link: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Auth/post_auth_login

@@ -1,6 +1,6 @@
-## Key generation / key backup / disaster management
+# Key generation / key backup / disaster management
 
-#### Summary
+## Summary
 
 
 * This document describes the process of secure and confidential key generation, backup and recovery.
@@ -16,7 +16,7 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 * manage keys and related processes within a trusted and confidential environment,
 * perform value or metadata transactions to meet the throughput and frequency requirements of mature industries, and enable revocation/withdrawal and re-creation of keys in the framework of key restoring and disaster management.
 
-#### Key generation
+## Key generation
 
 ![Key generation flow Diagram](assets/Keygenflow.png)
 
@@ -35,7 +35,7 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 
 Following the key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
 
-#### Security measures during the key generation process
+## Security measures during the key generation process
 
 The following safety and control measures are in place during the key generation process:
 * **Confidential computing:**
@@ -49,18 +49,18 @@ The following safety and control measures are in place during the key generation
 
 * Hardened communication systems.
 
-#### The trusted source of entropy
+## The trusted source of entropy
 
 The generation of keys is initiated with the following trusted independent source of randomness:
 * The implemented hybrid random number generator complies with DRG.4 requirements, the highest security level for DRG. A physical quantum noise-based random number generator of the highest security class PTG.2 is used as the entropy source for seeding this deterministic random number generator.
 * All TEE enclaves are also protected by being operated within a secure container environment called SCONE, enabling the confidential computing of container and host programs using dedicated TEEs
 * The confidential computing setup supports Kubernetes, Docker and AZURE confidential computing, native LINUX hosts and Windows 10 Hyper V. This forms the basis of the Confidential Keystore as a Service (CKaaS) and offers trusted and confidential computing in combination with a classical HSM (e.g., SecuroSys or Utimaco) for managing and safekeeping of keys.
-* Access to the HSM and CKaaS is defined by the role-based access and control system (RBAC) and enforced by hardware wallets (authentication & identity) and the Policy Layer (control). All processes are logged within classical Syslog-files and attested and stored to R3C ledger.
-* R3C audit ledger provides real time and immutable record of all operations, including approved and rejected transactions, adding or disabling of policies and adding of trusted recipients. With R3C ledger, the client can decrypt, collect and analyse operational data processed within Digital Asset Management Solution and obtain real-time access to the respective audit logs. (link to R3C doc)
+* Access to the HSM and CKaaS is defined by the role-based access and control system (RBAC) and enforced by hardware wallets (authentication & identity) and the Policy Layer (control). All processes are logged within classical Syslog-files and attested and stored to Riddle&Code ledger.
+* Riddle&Code audit ledger provides real time and immutable record of all operations, including approved and rejected transactions, adding or disabling of policies and adding of trusted recipients. With Riddle&Code ledger, the client can decrypt, collect and analyse operational data processed within Digital Asset Management Solution and obtain real-time access to the respective audit logs. (link to Riddle&Code doc)
 
-#### Key backup and verification
+## Key backup and verification
 
-After the key is created, the backup mnemonic phrase is disclosed to an administrator on the web interface. The mnemonic phrase consists of twenty-four words and is crucial to the backup and disaster recovery process for the entire Digital Asset Management Solution (DAMS). It is used to restore keys in the case of loss or when a new initialisation of wallets is required. Due to its critical role in key management, the secret has to be safeguarded from malicious users. Here is RIDDLE&CODE’s recommendation for safely storing the phrase in the initialisation phase:
+After the key is created, the backup mnemonic phrase is disclosed to an administrator on the web interface. The mnemonic phrase consists of twenty-four words and is crucial to the backup and disaster recovery process for the entire Digital Asset Management Solution (TMP). It is used to restore keys in the case of loss or when a new initialisation of wallets is required. Due to its critical role in key management, the secret has to be safeguarded from malicious users. Here is RIDDLE&CODE’s recommendation for safely storing the phrase in the initialisation phase:
 1. The user reads the phrase from the web interface.
 2. Next, the user writes down the mnemonic phrase on a steel plate and closes the plate.
 3. The mnemonic phrase is stored in an off-premise vault.
@@ -77,11 +77,11 @@ The backup process is done during the key ceremony:
 
 If the verification is successful, the backup mnemonic phrase can be trusted. The key ceremony is, therefore, completed.
 
-#### Disaster management
+## Disaster management
 
 Digital Asset Management Solution provides business continuity by ensuring that even in the case of a disaster scenario, such as bankruptcy or functional failure of RIDDLE&CODE, the keys are always under full control of the client.
 
-#### Key recovery process
+## Key recovery process
 
 Key recovery can be triggered via the user interface, where the user will be led through the entire process, step-by-step:
 1. The key recovery process starts by clicking the **Recover your keys** button on the web interface.
