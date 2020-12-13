@@ -1,5 +1,3 @@
-# Approval Devices
-
 ## Summary
 
 * This document describes how the Digital Asset Management Solution uses dedicated Approval Devices to identify users and their roles in the operations. It also describes the operations and actions that clients can perform with Approval Devices.

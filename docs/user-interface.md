@@ -9,6 +9,7 @@
 The user interface is hosted on dedicated machines, built upon REACT, Typescript and Bootstrap, and operated by RIDDLE&CODE.
 
 Access to the interface is guarded with several security layers. To access, the client needs to connect the Approval Device to the computer. There are two types of authentication methods used to guarantee that only authorised Approval Devices and users can access the user interface. They are:
+
 1. FIDO 2 for authentication of the device, and
 2. PIN for authentication of the user on the device itself.
 All communication channels between the devices and the core components of the TMP are hardened and strictly encrypted.
@@ -19,11 +20,13 @@ Separation of roles involves the separation of two main functions:
 * Operators, who perform everyday activities like signing transactions or adding trusted recipients.
 
 The user interface is divided into three main areas:
+
 1. administration,
 2. settlement, and
 3. addresses.
 
 The **administration area** consists of six sections:
+
 1. **Policies**. Clients can see the list of all active and disabled policies, add new policies and edit their scenarios.
 2. **AML settings**. Clients can submit tokens and perform AML-related analyses.
 3. **HSM settings**. Clients can add new HSM keys or set HSM URLs.

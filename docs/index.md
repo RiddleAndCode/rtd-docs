@@ -4,13 +4,13 @@ Welcome to the RIDDL&CODE indepth manual and introduction to the Token Managemen
 
 We cover technical and business details as well as all required steps to set up and trouble shoot our solution. 
 
-# Support
+## Support
 For all inquiries not already covered in this manual feel free to contact us directly via: support@riddleandcode.com
 
 for anything else please as well join us on readthedocs
 
 
-# Table of Contents
+## Table of Contents
 1. [Architecture Overview](Architecture-Overview.md)
 2. [Transaction Approval](transaction-approval.md)
 3. [Policy Layer](Policy-Layer.md)
