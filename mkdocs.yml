@@ -19,5 +19,6 @@ nav:
   - Interfaces: 'user-interface.md'
   - GDPR: 'gdpr.md'
   - Glossary: 'Glossary.md'
+  - User Manuals: 'manuals.md'
 plugins:
   - search

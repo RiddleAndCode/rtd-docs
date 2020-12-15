@@ -25,3 +25,4 @@ for anything else please as well join us on readthedocs
 12. [Interfaces](user-interfaces.md)
 13. [GDPR](gdpr.md)
 14. [Glossary](Glossary.md)
+15. [User Manuals](manuals.md)
