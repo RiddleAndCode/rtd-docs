@@ -52,6 +52,7 @@ The following safety and control measures are in place during the key generation
 ## The trusted source of entropy
 
 The generation of keys is initiated with the following trusted independent source of randomness:
+
 * The implemented hybrid random number generator complies with DRG.4 requirements, the highest security level for DRG. A physical quantum noise-based random number generator of the highest security class PTG.2 is used as the entropy source for seeding this deterministic random number generator.
 * All TEE enclaves are also protected by being operated within a secure container environment called SCONE, enabling the confidential computing of container and host programs using dedicated TEEs
 * The confidential computing setup supports Kubernetes, Docker and AZURE confidential computing, native LINUX hosts and Windows 10 Hyper V. This forms the basis of the Confidential Keystore as a Service (CKaaS) and offers trusted and confidential computing in combination with a classical HSM (e.g., SecuroSys or Utimaco) for managing and safekeeping of keys.
@@ -61,6 +62,7 @@ The generation of keys is initiated with the following trusted independent sourc
 ## Key backup and verification
 
 After the key is created, the backup mnemonic phrase is disclosed to an administrator on the web interface. The mnemonic phrase consists of twenty-four words and is crucial to the backup and disaster recovery process for the entire Digital Asset Management Solution (TMP). It is used to restore keys in the case of loss or when a new initialisation of wallets is required. Due to its critical role in key management, the secret has to be safeguarded from malicious users. Here is RIDDLE&CODE’s recommendation for safely storing the phrase in the initialisation phase:
+
 1. The user reads the phrase from the web interface.
 2. Next, the user writes down the mnemonic phrase on a steel plate and closes the plate.
 3. The mnemonic phrase is stored in an off-premise vault.
@@ -84,6 +86,7 @@ Digital Asset Management Solution provides business continuity by ensuring that 
 ## Key recovery process
 
 Key recovery can be triggered via the user interface, where the user will be led through the entire process, step-by-step:
+
 1. The key recovery process starts by clicking the **Recover your keys** button on the web interface.
 2. Twenty-four fields are displayed on the web interface.
 3. The user then enters the mnemonic backup to the web interface and performs verification.
