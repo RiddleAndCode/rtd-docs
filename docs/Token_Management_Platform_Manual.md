@@ -9,4 +9,4 @@ To unlock the settings page and functionalities of the system, you need to regis
 6. Click Register Device,
 7. The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user (Trader/Viewer)
 
-NOTE: You must activate five devices per hour.
+**NOTE:** You must activate five devices per hour.
