@@ -120,6 +120,128 @@ As an administrator, you can set up and add Securosys HSM keys:
 2. There you can see a list of all HSM keys.
 
 
+## Set default Securosys HSM key for curve
+1. Select the **HSM tab** within the Administration section and navigate to Securosys HSM Configuration. There you can see a list of all HSM keys,
+2. Click **Set** for HSM keys that you want to be set as default.
+
+## Update Securosys HSM URL
+As an administrator, you can update Securosys HSM keys by entering the new URL:
+1. Navigate to Securosys HSM configuration,
+2. Click Set HSM URL,
+3. Enter the HSM URL.
+
+
+# Manage accounts
+## Create an account for a new customer
+When a new customer is onboarded, the admin needs to create a new account. This can be done by adding an internal account or a trusted recipient. The process is as follows: 
+1. Head over to the **Addresses section** of the web interface,
+
+2. Click **New Asset** in the top right corner,
+3. Choose to add a new account,
+4. Choose whether you want to create an internal account or add a trusted recipient,
+
+5. Enter the valid address.
+
+##Create an internal account
+To add an internal account, the admin needs to perform the following steps:
+1. Sign in to the system as an **Admin,**
+2. Head over to the **Addresses section** of the web interface,
+
+3. Click **New Asset** in the top right corner,
+4. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The account ID serves as the derivation index,
+5. Enter the values on the right side,
+
+6. Enter the Hash ID,
+7. Click **Generate.**
+
+
+##Add trusted recipient
+To enable traders to send funds to the external addresses,
+an admin needs to create the appropriate label and add trusted recipients.
+The steps are as follows:
+1. Sign in to the system as an **Admin,**
+2. Head over to the **Addresses section** of the web interface,
+
+3. Click **New Asset** in the top right corner,
+4. Enter the values on the left side,
+
+5. Enter a Hash ID,
+6. Choose a currency,
+7. Enter a coin address and click **Add.**
+
+##View accounts
+To view all the accounts within the system, select the **Addresses section* in the top main menu. 
+
+
+The table can be sorted by clicking on the header of the preferred column. 
+Please note that only one column can be sorted at a time.
+
+
+Asset: The currency of the account
+Account ID: The hash ID of the account
+Address: The actual address of the account
+Acc. typ: Account type
+
+
+## View trusted recipients
+1. Visit the **Addresses section,**
+2. Select Trusted Recipients via the dropdown filter,
+3. Now you will be able to see a table that contains the list of all trusted recipients.
+
+
+## View the risk level of a coin address
+The risk level is a value between 0 and 100, where 0 is low and 100 is high. 
+To view the risk level of a coin address:
+1. Visit the **Addresses section,**
+2. There you will be able to see all loaded addresses in a table and check their risk level.
+
+
+#Manage transactions
+##Create Transaction Request 
+As a trader, you can create the Transaction Request and transfer funds from one coin address to another. 
+Depending on the transaction amount, several traders may need to approve the request. 
+The process is as follows:
+1. Visit the **Send tab** within the Settlement section,
+
+2. Click **New Transaction** in the top right corner
+
+
+3. Select a currency that you want to transfer,
+4. Select the sender’s account (risk value will be displayed),
+5. Select the receiver’s account (risk value will be displayed),
+6. Choose fees,
+7. Enter the amount you want to transfer,
+8. Click **Send.**
+
+You submitted the Transaction Request, which now can be approved or rejected.
+
+## View transaction history
+1. Navigate to the **History** page within the Settlement section,
+2. Now you will be able to see the list of all past transactions involving account addresses.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
