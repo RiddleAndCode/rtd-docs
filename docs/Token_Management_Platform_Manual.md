@@ -59,15 +59,17 @@ The steps are as follows:
 6. Next time when you sign in, you’ll use your new PIN.
 
 
-#Set Coinfirm credentials
-##Set Coinfirm credentials
+# Set Coinfirm credentials
+## Set Coinfirm credentials
 
 To use AML Coinfirm services, you need to set your credentials.
+
+
 **NOTE:** Please bear in mind that you need to have a running subscription at Coinfirm to perform the following step:
-Visit the **AML tab**, within the Administration section,
-Add username,
-Add password,
-Click **Save.**
+1. Visit the **AML tab**, within the Administration section,
+2. Add username,
+3. Add password,
+4. Click **Save.**
 
 
 # Manage policies
@@ -99,7 +101,7 @@ no longer applies to transaction governance:
 2. Select **Disable** next to the policy you disable,
 3. The policy no longer applies.
 
-##Re-enable disabled policy
+## Re-enable disabled policy
 1. Visit the **Policy tab** within the Administration section,
 
 2. Next to the disabled policy, press **Enable,**
@@ -142,7 +144,7 @@ When a new customer is onboarded, the admin needs to create a new account. This 
 
 5. Enter the valid address.
 
-##Create an internal account
+## Create an internal account
 To add an internal account, the admin needs to perform the following steps:
 1. Sign in to the system as an **Admin,**
 2. Head over to the **Addresses section** of the web interface,
@@ -155,7 +157,7 @@ To add an internal account, the admin needs to perform the following steps:
 7. Click **Generate.**
 
 
-##Add trusted recipient
+## Add trusted recipient
 To enable traders to send funds to the external addresses,
 an admin needs to create the appropriate label and add trusted recipients.
 The steps are as follows:
@@ -169,7 +171,7 @@ The steps are as follows:
 6. Choose a currency,
 7. Enter a coin address and click **Add.**
 
-##View accounts
+## View accounts
 To view all the accounts within the system, select the **Addresses section* in the top main menu. 
 
 
@@ -196,8 +198,8 @@ To view the risk level of a coin address:
 2. There you will be able to see all loaded addresses in a table and check their risk level.
 
 
-#Manage transactions
-##Create Transaction Request 
+# Manage transactions
+## Create Transaction Request 
 As a trader, you can create the Transaction Request and transfer funds from one coin address to another. 
 Depending on the transaction amount, several traders may need to approve the request. 
 The process is as follows:
