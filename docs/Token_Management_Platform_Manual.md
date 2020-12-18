@@ -25,7 +25,7 @@ To unlock the settings page and functionalities of the system, you need to regis
 ## Sign up
 Access to the web interface is granted to pre-registered devices only. To access the web interface for the first time:
 1. Plugin your Approval Device to the computer,
-2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/signin,
+2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/,
 3. Click **Sign up,**
 
 4. Click **Sign up** again,
@@ -39,7 +39,7 @@ Access to the web interface is granted to pre-registered devices only. To access
 1. Plugin your Approval Device to the computer,
 2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/signin,
 3. Click **Sign in,**
-
+![user-manual-screens](sets/user-manual-screens/02EB1180-50E9-48BA-8C08-E8395EB29DC5.jpeg "Sign in")
 4. Enter your PIN on the device.
 
 
