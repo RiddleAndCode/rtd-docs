@@ -3,6 +3,7 @@
 ## Summary
 
 This document describes the process of transaction authorisation, approval and signing:
+
 1. To create a transaction, the client needs to access the user interface. From there, the transaction can be created in one of two ways:
   - Manually by filling out the fields on the user interface, such as recipient, amount and currency; or
   - The raw transaction can be forwarded through the client’s order system to the TMP user interface via API (bespoke development upon client request).
