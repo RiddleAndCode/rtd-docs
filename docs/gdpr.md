@@ -13,6 +13,7 @@ RIDDLE&CODE is committed to personal data protection. RIDDLE&CODE processes pers
 
 ## Transmission of personal data
 RIDDLE&CODE transmits personal data only to the extent necessary and only in the following cases:
+
 * with consent;
 * for the processing of contractual relationships or for the implementation of pre-contractual measures;
 * when legally obliged to do so;
