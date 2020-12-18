@@ -31,6 +31,7 @@ The Token Management Platform retrieves all information from the DLT to craft a 
 ## Signing process
 
 The unsigned transaction needs to be validated by the Policy Layer. The Policy Layer validates transaction requests against the following information:
+
 * UTXOs verification
 * confirmation that the transaction is funded
 * AML-related checks
