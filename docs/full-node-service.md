@@ -23,5 +23,10 @@ Required hardware and software are installed in RIDDLE&CODE’s hosting center w
 
 The following fullnodes are currently available
 
-![Screenshot](assets/CurrenciesTMP.png)
+|Fullnodes                          | by Riddle & Code           |
+|:---------------------------------:|:--------------------------:|
+|Bitcoin                            | Bitcoin Cash       		 |
+|Ethereum                           | Etherum Classic		     |
+|ERC20 Tokens                       | Bitcoin Gold        	     |
+|RIPPLE 							| Liteecoin					 |
 

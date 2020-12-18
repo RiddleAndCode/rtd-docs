@@ -1,6 +1,7 @@
 # Register and sign-in
 ## Register an Approval Device:
 To unlock the settings page and functionalities of the system, you need to register and activate the Approval Device you got from RIDDLE&CODE:  
+
 1. Plugin the Approval Device to your computer,
 2. Visit the **New Device** page within the Administration section,
 3. Click **Register**,
@@ -24,6 +25,7 @@ To unlock the settings page and functionalities of the system, you need to regis
 
 ## Sign up
 Access to the web interface is granted to pre-registered devices only. To access the web interface for the first time:
+
 1. Plugin your Approval Device to the computer,
 2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/,
 3. Click **Sign up,**
@@ -36,6 +38,7 @@ Access to the web interface is granted to pre-registered devices only. To access
 
 ## Sign in
 Access to the web interface is granted to pre-registered devices only. To access the web interface:
+
 1. Plugin your Approval Device to the computer,
 2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/signin,
 3. Click **Sign in,**
@@ -66,6 +69,7 @@ To use AML Coinfirm services, you need to set your credentials.
 
 
 **NOTE:** Please bear in mind that you need to have a running subscription at Coinfirm to perform the following step:
+
 1. Visit the **AML tab**, within the Administration section,
 2. Add username,
 3. Add password,
@@ -75,6 +79,7 @@ To use AML Coinfirm services, you need to set your credentials.
 # Manage policies
 ## Create a new policy
 As an administrator, you can create and add new policies:
+
 1. Visit the Administration section and go to the **Policy tab**,
 ![](../assets/user-manual-screens/policies.jpeg)
 2. In the right corner, click New Policy. Now create the policy's scenario. For example:
@@ -85,6 +90,7 @@ Then approve
 
 
 ## View and manage policies
+
 1. Navigate to the **Policy tab** within the Administration section,
 ![](../assets/user-manual-screens/policies.jpeg)
 2. There you can see a list of policies that have been created.
@@ -180,19 +186,21 @@ The table can be sorted by clicking on the header of the preferred column.
 Please note that only one column can be sorted at a time.
 
 
-Asset: The currency of the account
-Account ID: The hash ID of the account
-Address: The actual address of the account
-Acc. typ: Account type
+* Asset: The currency of the account
+* Account ID: The hash ID of the account
+* Address: The actual address of the account
+* Acc. typ: Account type
 
 
 ## View trusted recipients
+
 1. Visit the **Addresses section,**
 2. Select Trusted Recipients via the dropdown filter,
 3. Now you will be able to see a table that contains the list of all trusted recipients.
 
 
 ## View the risk level of a coin address
+
 The risk level is a value between 0 and 100, where 0 is low and 100 is high. 
 To view the risk level of a coin address:
 1. Visit the **Addresses section,**
@@ -204,6 +212,7 @@ To view the risk level of a coin address:
 As a trader, you can create the Transaction Request and transfer funds from one coin address to another. 
 Depending on the transaction amount, several traders may need to approve the request. 
 The process is as follows:
+
 1. Visit the **Send tab** within the Settlement section,
 ![](../assets/user-manual-screens/transaction.jpeg)
 2. Click **New Transaction** in the top right corner

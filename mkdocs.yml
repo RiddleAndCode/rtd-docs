@@ -20,5 +20,6 @@ nav:
   - GDPR: 'gdpr.md'
   - Glossary: 'Glossary.md'
   - User Manuals: 'Token_Management_Platform_Manual.md'
+  - FAQ: 'FAQ.md'
 plugins:
   - search

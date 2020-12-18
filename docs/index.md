@@ -26,3 +26,4 @@ for anything else please as well join us on readthedocs
 13. [GDPR](gdpr.md)
 14. [Glossary](Glossary.md)
 15. [User Manuals](Token_Management_Platform_Manual.md)
+16. [Frequently Asked Questions](FAQ.md)

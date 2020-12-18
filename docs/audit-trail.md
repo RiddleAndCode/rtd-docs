@@ -18,6 +18,7 @@ Riddle&Code allows the Digital Asset Management Solution to use an auditing syst
 Transactional data is stored on the corresponding DLTs and a Tendermint-based metadata ledger archiving JSON objects with associations between key derivations, coin addresses, transactions and their approval processes. In addition, information about changes to the Policy Layer is also stored on the metadata ledger.
 
 This metadata ledger is hosted as a private distributed network between the client and RIDDLE&CODE. Data is AES-GCM encrypted with a blinding key that only the client or entities authorised by the client can access to see the audit metadata. For example, the client can also share access to this data with an auditor. The following data is written on the metadata ledger:
+
   * Account ID
   * Source coin address
   * Destination coin address
@@ -35,6 +36,7 @@ The implementation with Riddle&Code allows real-time audit that is translated in
 ## How is the data stored and accessed?
 
 Since DLT cannot delete data, the data is blinded, and the information is AES encrypted. This allows the design of regulatory compliant processes to adhere to GDPR or general accounting requirements. The RIDDLE&CODE solution manages the symmetric encryption keys. By design, RIDDLE&CODE’s solution changes the blinding key every calendar year. An administrator can export these keys and destroy a previously used key after several years (e.g., ten years). Not having the key is thus equal to not having the data.
+
 * Administrators can export an AES key for a given year so that they can analyse the data on devices external to the RIDDLE&CODE solution. It is up to the administrator to decide how to secure the key.
 * Administrators can delete a key and, thereby, access to the data, making it unusable and unavailable.
 * Administrators can access encrypted ledger data via an interface so that the data can be decrypted and analysed locally.
@@ -60,16 +62,25 @@ The ledger consists of a network of nodes deployed across all major regions.
 
 ## IPDB network
 
-Riddle&Code is built upon and leverages the advantages of the public, federated and decentralised IPDB network. This decentralised network is operated by IPDB Foundation, a global non-profit foundation with headquarters in Berlin that fosters research into transparent governance. The Foundation is a main custodian of the BigchainDB stack, with a global membership base operating as nodes.
+Riddle&Code Audit layer is built upon and leverages the advantages of the public, federated and decentralised IPDB network. This decentralised network is operated by IPDB Foundation [GitHub](https://ipdb.io), a global non-profit foundation with headquarters in Berlin that fosters research into transparent governance. The Foundation is a main custodian of the BigchainDB stack, with a global membership base operating as nodes.
 
 >**Multiple sovereign Networks**
 >Customisable independent public or private IPDB networks can be set up for multiple parties to run apps on, or even for a single entity to run their apps. Key features include flexible permissioning, low latency, Byzantine fault-tolerance, rich query features with MongoDB.
 
+![](../assets/ipdb1.png)
+
+
 >**A trust anchor**
 >A self-sovereign network needs authorities, such as governments to issue credentials. Once trusted issuing authorities are set up within BigchainDB, the protocol then guarantees their integrity with its on-chain governance mechanisms such as the consensus algorithms.
 
+![](../assets/ipdb2.png)
+
+
 >**Transparent governance**
 >The IPDB foundation is governed by its general assembly and its elected board. Members that run the nodes govern the IPDB network. The protocol’s consensus mechanisms provide on-chain governance, and the Foundation’s policies define off-chain governance.
+
+![](../assets/ipdb3.png)
+
 
 ## GDPR compliance
 
