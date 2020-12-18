@@ -29,3 +29,5 @@ Internal APIs     | Description
 **Financial services** | Interfaces to the existing information and core banking systems.
 
 **NOTE:** The Token Management Platform is built with APIs as an integral part of the solution. However, the concrete integration of client and ecosystem services entails bespoke development depending on the requirements and system to be included.
+
+Developers interested in the mechanics of our APIs can find more technical information on [Swaggerhub](https://app.swaggerhub.com/apis/riddleandcode/trusted-node/)

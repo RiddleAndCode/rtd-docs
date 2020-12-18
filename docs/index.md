@@ -16,7 +16,7 @@ for anything else please as well join us on readthedocs
 3. [Policy Layer](Policy-Layer.md)
 4. [Approval Devices](approval-device.md)
 5. [Key Management](Key-management.md)
-6. [Key Ceremony](Key-ceremony.md)
+6. [Key Ceremony **soon**](Key-ceremony.md)
 7. [Audit Trail](audit-trail.md)
 8. [Reconciliation](Reconciliation.md)
 9. [AML](AML.md)
