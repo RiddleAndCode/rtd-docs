@@ -14,6 +14,7 @@ To unlock the settings page and functionalities of the system, you need to regis
 
 
 ## Register Approval Device for a user
+
 1. As an admin, you can register an Approval Device for a user and add it to the user group:
 2. Plugin the device you want to register to your computer,
 3. Visit the dedicated page: https://cs-beta.r3c.network/register-device,

@@ -3,9 +3,11 @@ theme:
   name: 'rtd-dropdown'
   
 nav:
-- Token Management Platform: 
-  - Introduction: 'index.md'
+- Home: 'index.md'
+- Product Introduction:
+  - 
   - Architecture Overview: 'Architecture-Overview.md'
+  - Design philosophy: 'design-philosophy.md'
   - Transaction Approval: 'transaction-approval.md'
   - Policy Layer: 'Policy-Layer.md'
   - Approval Device: 'approval-device.md'
@@ -19,7 +21,7 @@ nav:
   - Interfaces: 'user-interface.md'
   - GDPR: 'gdpr.md'
   - Glossary: 'Glossary.md'
-  - User Manuals: 'Token_Management_Platform_Manual.md'
-  - FAQ: 'FAQ.md'
+- User Manuals: 'Token_Management_Platform_Manual.md'
+- FAQ: 'FAQ.md'
 plugins:
   - search

@@ -1,4 +1,3 @@
-# Token Management Platform
 # Design philosophy
 
 The multifunctional Token Management Platform allows the issuing of tokens, end-to-end trading, settlement and custody services with high levels of security, auditability and regulatory compliance.
