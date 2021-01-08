@@ -1,130 +1,118 @@
-# AML service by Coinfirm
+# Token Management Platform
+# Design philosophy
 
-**Summary**
+The multifunctional Token Management Platform allows the issuing of tokens, end-to-end trading, settlement and custody services with high levels of security, auditability and regulatory compliance.
 
-* The Token Management Platform provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
-* All outgoing and incoming transactions are registered and verified, and any asset with a suspicious origin is flagged for a review.
-* This document describes Coinfirm’s AML integration process.
+The main components of this tokenization ecosystem are:
+1. Key and identity management
+2. Trusted Execution Environment (TEE)
+3. Distributed ledger infrastructure
+4. Policy Layer
+5. Interoperability and regulatory compliance (APIs)
 
-**Anti Money Laundering (AML)** is a complex framework of strategies, rules and regulations that refers to the measures used by financial institutions and governments to prevent and combat financial crimes, especially money laundering and terrorism financing. **Know Your Customer (KYC)** is a component part of AML that identifies and authenticates the customers of financial institutions based on their perceived risk profile.
-
-AML regulations require companies to submit risk reports, perform diligence processes and report suspicious activities. Incorporating these procedures is a centerpiece for companies that aim to manage digital assets in a secure manner that complies with regulatory frameworks.
-
-RIDDLE&CODE integrates the services provided by leading blockchain analytics platform, Coinfirm, to the Digital Asset Management Solution.
-
-## Coinfirm - real time analytics and compliance risk management
-
-**Coinfirm** is a global leader in AML and regulatory technology for blockchain and cryptocurrencies. It offers the industry’s largest blockchain coverage, supporting over 1,500 cryptocurrencies and protocols, including Bitcoin, Ethereum, Hyperledger, and many more.
-
-Coinfirm’s AML platform consists of 270+ risk indicators able to catch nefarious actors with red flags for anything from Anti Money Laundering (AML) and Countering the Financing of Terrorism (CTF) to combatting fraud and dark net drug trafficking. Alongside this array of indicators, Coinfirm boasts the largest coverage of cryptocurrencies being monitored in the blockchain space.
-
-All coin addresses that are managed by the Digital Asset Management Solution are registered to the monitoring system automatically, using the provided API from Coinfirm. Once registered to the monitoring system, the risk level of coin addresses is calculated by Coinfirm’s forensic algorithm in regular time intervals and after each incoming transaction.
-
-The service will continuously monitor all coin addresses and alert the client in case of unexpected behaviour or detection of fraud.
-
-This process allows clients to analyse coin addresses in several ways.
-
-##Incoming transactions
-
-**1. Continuous monitoring of all coin addresses: trusted recipients and coin addresses under custody**
-When funds are sent to one of the coin addresses managed by RIDDLE&CODE’s solution, Coinfirm will recognise if the incoming transaction will have an impact on the risk level of the coin address.
+The following section describes each of these components.
 
 
-**2. Alerting in case of unexpected behavior or detection of fraud**
-The Coinfirm platform offers a notification feature that can be configured with a set of parameters to inform users via email if transactions have a critical impact on a coin address. The notifications will be sent directly by Coinfirm.
+## Key and identity management
+Key management covers all aspects of generating, securing, exchanging/trading and revoking keys.
 
-## Outgoing transactions
-
-During a transaction signing request, a client can select the receiver and the sender address for a transaction. On selection, the risk level of both coin addresses will be retrieved from Coinfirm and displayed to the user.
-
-Notifications are sent to the client if fraudulent activities related to one or several addresses are detected. Prior to transaction signing, the user can request a report about the details and the state of the recipient of the transaction. All derived coin addresses of accounts and trusted recipients are listed in tables. For each coin address, the risk level is shown, along with a deep link that forwards the user to Coinfirm’s monitoring panel to retrieve more detailed information about the given coin address.
-
-**The following products are available at Coinfirm’s AML/KYC platform:**
-
-# AML Risk Reports
-
-The key functionality of Coinfirm’s AML/KYC platform is the possibility of generating AML/KYC Risk Reports that evaluate money laundering risk for blockchain addresses and their owners. These reports can be downloaded as PDF documents for regulatory compliance purposes.
-
-Risk Reports may be Basic, Standard or Enhanced.
-
-|Report element | Enhanced (Web/pdf/API) | Standard (Web/pdf/API)|Basic ('C-Score Report') (Monitoring Panel/API) |
-|----------------|:----------------------:|:-------------------------:|:------------------------:|
-|Report ID, date and block height | Yes | Yes | Yes| 
-|Address summary (balance in crypto and in USD, tokens) | Yes | Balance in crypto and USD | USD Balance in crypto| 
-|Profile analysis and summary | Yes | No | No| 
-|C-Score | Yes | Yes | Yes| 
-|C-Score analysis and summary | Yes | No | No| 
-|Risk Level | Yes | Yes | Yes| 
-|Network Membership | Yes | Yes | Yes| 
-|List of identified risks | Yes | No | No| 
-|List of informative flags | Yes | No | No| 
-|Assets/tokens analysis and summary | Yes | No | No| 
-|Financial analysis | Yes | No | No| 
-|Dark web connections | Yes | No | No| 
-|Appendix 1 – Risk Indicators | Yes | Category and subcategory | No| 
-|Appendix 2 – Financial analysis and summary | Yes | No | No| 
-|Appendix 3 – List of Assets/Tokens | Yes | No | No| 
-|Disclaimer | Yes | Yes | Yes| 
-|Glossary | Yes | Yes | Yes| 
+Since keys, private and public, act as a representation of indisputable identities, ownership of assets and proof-of-origin, a tokenization platform needs to provide all aspects to:
+* create keys in a secure and auditable way,
+* manage keys and related processes within a trusted and confidential environment,
+* perform value or metadata transactions in a manner that meets the throughput and frequency requirements of mature industries, and
+* enable revocation/withdrawal and re-creation of keys in the framework of key restoring and disaster management.
 
 
-## Monitoring Panel
+### Key generation
+Key generation is performed in a secure and auditable way with no possibility for others to intercept or access the keys.
+The keys are generated within HSM and then exported to the Confidential Keystore via hardened, secure communication channels. A master key is then generated within the Trusted Execution Environment (TEE), which ensures the encryption of data in transit, while being processed and at rest.
+Additional addresses are then derived from the master key within TEE. Following key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
 
-The Monitoring Panel is a feature of the Platform that enables users to monitor and be alerted on AML risk in real-time for all provided addresses and related transactions. The Monitoring Panel include:
+### Once generated, keys need to be stored
+Once generated, keys are encrypted and stored to prevent malicious use. There are different approaches when it comes to ensuring that keys are securely stored.
 
-* **Wallet View** - provides the current risk scoring for monitored wallet addresses, navigates to wallet address details and displays information about new notifications. By default, the risk scoring is recalculated after each transaction and at least once daily.
-Transaction View - provides information in real time about all incoming and outgoing transactions on monitored addresses that transfer value. It also provides the recalculated C-Score after each such transaction.
+In order to provide more accessibility and liquidity of assets, keys are often centralised in so-called hot wallets, from which all transactions either originate or depart. The advantage of these systems is that thousands of transactions per day can be carried out in dozens of digital currencies. This can be done in either an automated or, if necessary (depending on the total value of the transaction), a manual setup.
 
-* **Archive** - provides the list of all archived addresses that have been previously monitored and the option to renew them.
+However, the disadvantage of these systems is a lack of security and transparency. Most major digital asset-related breaches are hot wallet breaches. In addition, the administration of digital currencies via classic databases and hot wallets also lacks regulatory suitability. The actual change of ownership isn’t documented in the blockchain. Instead, it’s stored and managed in classical databases by the exchanges for as long as the assets (keys) remain in custody.
 
-* **Notifications** - provides the list of all notifications for each monitored address.
+Another way is to encrypt keys within HSMs to ensure that the keys are stored offline and never exposed to any malicious attack. Keys within an HSM can be decrypted only when predefined conditions are met. Yet, HSMs are designed to sign transactions on command, and, as such, they can be compelled to sign malicious transactions.
 
-* **Settings** - provides option to set up notifications and risk recalculation frequency.
+If HSMs have operational vulnerabilities and a hot wallet comes with security flaws, then how can keys be securely stored?
+RIDDLE&CODE has developed its own solution to enable the combination of these techniques and has added the required orchestration and confidentiality.
+The solution, named the Policy Gateway, combines flexibility and business logic with the protective power of hardware security models.
 
-* **Notification Bell** - on the top of the tool page, provides information about all new, unread notifications on each monitored address.
+## Trusted Execution Environment (TEE)
+RIDDLE&CODE adopted the concept of confidential computing (CC) to protect its cloud services and data-in-use through isolating computations to a hardware-based Trusted Execution Environment (TEE).
 
-## Visual Analysis Tool - Visualiser
+This represents a secure location, isolated from the regular processing environment where the operating system and applications run. CC safeguards the confidentiality of data/code, protects its integrity and prevents unauthorised access to confidential data and malicious interference.
 
-The Visualiser tool allows users to visually track the flow of funds and provide evidence in the form of a graph of transactions between the cryptocurrency addresses within selected cryptocurrency networks. The Visualiser is equipped with automated source of funds and destination of funds transaction tracking, even across hundreds of consecutive blockchain transactions.
+Without confidential computing, the cryptographic keys could be revoked, and the ownership of assets could become corrupted. Confidential computing can also achieve data compliance with legislation, such as GDPR or financial regulatory provisions. Finally, the most important aspect of RIDDLE&CODE’s approach to confidential computing is its implementation in a way that doesn’t increase the complexity for the user and, at the same time, remains cost-sensitive.
 
-## Case Management Tool
+## Distributed ledger infrastructure
+Despite the groundbreaking improvements of distributed ledgers (immutability, distributed nature, consensus mechanisms, etc.) one of the fundamental issues of current blockchains is low throughput. This limitation has been a major impediment for an industry where scalability is a prerequisite to execute and perform thousands of transactions per second.
+The results of low scalability are congested networks, high network fees, pending transactions and long confirmation times. Hence, the ledger infrastructure is not fit to cope with the vast number of transactions that can be expected once industry-wide adoption takes place. Just imagine all cars using car wallets and creating millions of transactions over the course of the day.  
 
-The Case Management tool on the Coinfirm AML Platform allows users to keep track of progress and document investigations performed. It supports case analysis workflow, including case QA and supervisor review.
+It was the goal of RIDDLE&CODE to create a ledger network that is capable of coping with the requirements of future tokenization and the high load of transactions. BigchainDB is a ledger optimised for IoT applications that supports transaction throughput on par with global credit card networks. The ledger uses a proof-of-stake consensus mechanism and offers low latency, powerful query features, decentralised control, immutable data storage and extensive built-in cryptocurrency support.
 
-The Case Management tool also allows for investigations and evidence collection for addresses from blockchains supported by the AML Platform. There are two case management options:
-1. 4-eye verification process—each case is analysed by an Analyst, Analyst QA and a Supervisor. Users receive an email communication when the case  is created or moved to the next step according to the user role in the process.
-2. 2-eye verification process—each case is analysed by an Analyst and a Supervisor. Users receive an email communication when the case is created or moved to the next step according to the user role in the process.  
+The ledger is derived from IPDB and designed in such a way that it is completely GDPR compliant. The ledger itself contains no arbitrary data hashes as part of transactions that are signed off by public/private key pairs. Instead, it associates a piece of data with a storage identifier.
 
-During the process, users can add files from the AML Platform or their computers and attach notes tied to identified risk indicators in addition to general and recommendation notes.
+BigchainDB solves some of the fundamental weaknesses of existing ledgers by:
+* achieving interoperability on the ‘infrastructure’ layer,
+* managing metadata ‘roaming,’
+* creating the right environment for business models to appear,
+* supporting high enough performance/throughput to reach scale, and
+* supporting offline/decentralised termination of transactions.
 
-**NOTE:** The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
+In combination with RIDDLE&CODE’s identity management/wallet solutions, confidential computing approach and interoperability with sidechains like Liquid, BigchainDB acts like an ‘engine’ that supports all aspects of tokenization, including the creation and issuance of tokens, management and trading, as well as burning the tokens in a fashion that is auditable and compliant with regulatory provisions.
 
-## Integrating Coinfirm’s AML/KYC services
 
-## Create account and register coin addresses at the Coinfirm platform
+## Policy layer
+The Policy Layer is a set of rules that performs and logs all processes preceding and following transaction authentication. It verifies that the defined roles and rules are imposed and specifies the access rights to the platform and any of its functionalities.
 
-IMAGE MISSING
+#### CHALLENGE 1:
+Fullfilling regulatory criteria for transparency and compliance.
 
-Fig1. Flow Diagram of account and address registration
+#### POLICY LAYER:
+Verifies that the defined roles and rules are imposed and followed in a cryptographically secured way. The Policy Layer provides trails of all conducted operations, including details like which changes have been made, who made those changes, who signed the transaction, the place and time, the amount, the fees, the accounts involved, etc.
+With policies that are fully auditable and written in a human-readable language, audit trails become the trusted source, validating that all operations were done in compliance with regulatory frameworks.
 
-To create a new account in the system, the user needs to enter a 32bit integer in hexadecimal format into the frontend. A request will be sent to RIDDLE&CODE’s solution that will derive, based on the provided number and a derivation seed, coin addresses for each supported currency. The derived addresses will be sent to the CoinfirmConnector, which handles the interaction with the services supported by Coinfirm. Each coin address will be registered to the monitoring system of Coinfirm.
 
-## Adding of trusted recipient
+#### CHALLENGE 2:
+Ensuring that transaction governance is secure and immutable.
 
-The user provides an account ID in the 32bit integer hexadecimal format and a coin address. If there is no account with the provided account ID, the system will generate a new account and add the provided coin address. The coin address will be sent to the CoinfirmConnector and further to the services of Coinfirm where it is added to the monitoring system.
+#### POLICY LAYER:
+Allows clients to set role-based access control in the operational processes and define the access rights to the Token Management Platform and any of its functionalities. For example, separation of roles can be among administrators and operators. Administrators are the only ones who can create and customise transaction rules, ensuring that no circumvention is possible.
 
-## Creating the transaction and retrieving risk levels
 
-IMAGE MISSING
+#### CHALLENGE 3:
+Preventing internal misuse.
 
-Fig2. Flow Diagram of Transaction verification
+#### POLICY LAYER:
+Allows defining of approval rules for signing transactions according to different parameters. Every new transaction can be executed only if it complies with previously set rules. If any of the rules are not followed, the Policy Layer declines the approval and rejects the transaction. This enables clients to approve and execute transactions following tailor-made, cryptographically secured approval rules and prevents internal misuse.
 
-In order to create a transaction, a user has to visit the sign transaction page and enter the IDs of the accounts to be used in the transaction. Based on the currency and the ID of an account, the associated coin address will be retrieved. The coin address is then sent to the CoinfirmConnector, which uses the Coinfirm API to retrieve the latest risk level. The risk level will be shown to the user as a number between 0 and 100, where 0 means low risk and 100 means high risk.
 
-This flow is done for the sender as well as for the receiver account. Based on the information, a user can decide if a transaction should be signed or not.
+### See it in action
 
-## Integrated Coinfirm API endpoints
+1. **Define roles.** Client sets the segregation of roles between departments and their roles in the operations. For example, an administrator can pick the approval group and pre-approve transactions based on the involved users.
 
-* A detailed API description can be found under the following link. For the authentication to the API bearer tokens are used: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/
-* To authenticate to the API and to retrieve a bearer token, please visit the following link: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Auth/post_auth_login
-* To get the latest information about a registered coin address: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Monitoring panel/post_panels_monitoring_wallet_addresses
+2. **Set rules.** Policies are defined by rules and can be customised only by the administrators utilising the multiparty computation security concept. The rules can be based on different factors, including the number of transfers, signatures, maximum amount per transaction, per-period limit, etc.
+
+3. **Sign transaction.** Every new transaction is filtered through the Policy Layer, which matches the requirements for the transactions with the existing policies. If all rules applicable for the transaction are adhered to, the Policy Layer accepts and executes the transaction.
+
+
+### Examples of policies
+
+**Policy** | **Description**
+--- | --- | ---
+**Threshold** | Defines the maximum amount allowed per transaction for a certain user group. For example, the operators can approve an amount below 50,000 euros, but transactions above this threshold require additional approval. |
+**Authorised users per amount** | Defines user groups that are allowed to participate in transaction approvals. |
+
+
+
+## Interoperability and legal/regulatory compliance
+
+Decentralised systems require a high degree of interoperability of the various subsystems. In the future, many different blockchain networks will need to communicate and exchange data to form more complex and powerful networks.
+
+In the domain of identity, interoperability is achieved by a broad range of crypto chips, HW/SW deployment options and support of the majority of relevant cryptographic algorithms. In the realm of confidential computing, this is achieved by combining certified and/or compliant technology with the ability to interact with other components in an agile way.
+
+The BigchainDB ledger establishes the interoperability with other networks and technologies via peg-in/peg-out mechanisms. This allows the ledger to focus on its strength when it comes to storing identities and metadata while performing other functions via interoperability with specific sidechains, such as Liquid. In addition, a severe regime of recurring technical and process audits of our technology and the implementation of online audit trails via BigchainDB renders the Token Management Platform compliant with regulatory provisions.
