@@ -5,7 +5,6 @@ theme:
 nav:
 - Home: 'index.md'
 - Product Introduction:
-  - 
   - Architecture Overview: 'Architecture-Overview.md'
   - Design philosophy: 'design-philosophy.md'
   - Transaction Approval: 'transaction-approval.md'
@@ -20,8 +19,8 @@ nav:
   - Full Node Service: 'full-node-service.md'
   - Interfaces: 'user-interface.md'
   - GDPR: 'gdpr.md'
-  - Glossary: 'Glossary.md'
 - User Manuals: 'Token_Management_Platform_Manual.md'
+- Glossary: 'Glossary.md'
 - FAQ: 'FAQ.md'
 plugins:
   - search
