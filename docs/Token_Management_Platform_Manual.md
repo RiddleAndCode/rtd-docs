@@ -1,4 +1,4 @@
-# Register and sign-in
+
 ## Register an Approval Device:
 To unlock the settings page and functionalities of the system, you need to register and activate the Approval Device you got from RIDDLE&CODE:  
 
@@ -54,6 +54,7 @@ The device is protected with a default PIN, which can be changed to a personalis
 **NOTE:** For a trader, this is mandatory when logging for the first time.
 
 The steps are as follows:
+
 1. Go to the **Device Manager** tab, within the Administration section,
 2. Click **Change PIN,**
 ![](../assets/user-manual-screens/change_pin.jpeg)

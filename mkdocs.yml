@@ -5,22 +5,26 @@ theme:
 nav:
 - Home: 'index.md'
 - Product Introduction:
-  - Architecture Overview: 'Architecture-Overview.md'
-  - Design philosophy: 'design-philosophy.md'
-  - Transaction Approval: 'transaction-approval.md'
-  - Policy Layer: 'Policy-Layer.md'
-  - Approval Device: 'approval-device.md'
-  - Key Management: 'Key-management.md'
-  - Key ceremony: 'key-ceremony.md'
-  - Audit Trail: 'audit-trail.md'
-  - Reconciliation: 'Reconciliation.md'
-  - AML: 'AML.md'
-  - APIs: 'apis.md'
-  - Full Node Service: 'full-node-service.md'
-  - Interfaces: 'user-interface.md'
-  - GDPR: 'gdpr.md'
-- User Manuals: 'Token_Management_Platform_Manual.md'
-- Glossary: 'Glossary.md'
-- FAQ: 'FAQ.md'
+        - 'Architecture Overview': 'Product-Introduction/Architecture-Overview.md'
+        - Design philosophy: 'Product-Introduction/design-philosophy.md'
+        - Transaction Approval: 'Product-Introduction/transaction-approval.md'
+        - Policy Layer: 'Product-Introduction/Policy-Layer.md'
+        - Approval Device: 'Product-Introduction/approval-device.md'
+        - Key Management: 'Product-Introduction/Key-management.md'
+        - Key ceremony: 'Product-Introduction/key-ceremony.md'
+        - Audit Trail: 'Product-Introduction/audit-trail.md'
+        - Reconciliation: 'Product-Introduction/Reconciliation.md'
+        - AML: 'Product-Introduction/AML.md'
+        - APIs: 'Product-Introduction/apis.md'
+        - Full Node Service: 'Product-Introduction/full-node-service.md'
+        - Interfaces: 'Product-Introduction/user-interface.md'
+        - GDPR: 'Product-Introduction/gdpr.md'
+
+- Manuals:
+  - User Manuals: 'Token_Management_Platform_Manual.md'
+- Glossary: 
+  - Glossary: 'Glossary.md'
+- FAQ:
+  - FAQ: 'FAQ.md'
 plugins:
   - search
