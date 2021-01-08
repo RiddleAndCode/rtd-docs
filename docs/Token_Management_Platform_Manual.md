@@ -64,7 +64,7 @@ The steps are as follows:
 6. Next time when you sign in, you’ll use your new PIN.
 
 
-# Set Coinfirm credentials
+# Coinfirm AML Service
 ## Set Coinfirm credentials
 
 To use AML Coinfirm services, you need to set your credentials.
@@ -145,6 +145,7 @@ As an administrator, you can update Securosys HSM keys by entering the new URL:
 # Manage accounts
 ## Create an account for a new customer
 When a new customer is onboarded, the admin needs to create a new account. This can be done by adding an internal account or a trusted recipient. The process is as follows: 
+
 1. Head over to the **Addresses section** of the web interface,
 ![Accounts](../assets/user-manual-screens/addeses_navigation.jpeg)
 2. Click **New Asset** in the top right corner,
@@ -155,6 +156,7 @@ When a new customer is onboarded, the admin needs to create a new account. This 
 
 ## Create an internal account
 To add an internal account, the admin needs to perform the following steps:
+
 1. Sign in to the system as an **Admin,**
 2. Head over to the **Addresses section** of the web interface,
 ![Accounts](../assets/user-manual-screens/addeses_navigation.jpeg)
@@ -170,6 +172,7 @@ To add an internal account, the admin needs to perform the following steps:
 To enable traders to send funds to the external addresses,
 an admin needs to create the appropriate label and add trusted recipients.
 The steps are as follows:
+
 1. Sign in to the system as an **Admin,**
 2. Head over to the **Addresses section** of the web interface,
 ![](../assets/user-manual-screens/addeses_navigation.jpeg)

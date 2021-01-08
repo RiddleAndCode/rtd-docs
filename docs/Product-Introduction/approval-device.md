@@ -1,7 +1,7 @@
 ## Summary
 
-* This document describes how the Digital Asset Management Solution uses dedicated Approval Devices to identify users and their roles in the operations. It also describes the operations and actions that clients can perform with Approval Devices.
-* Digital Asset Management Solution (TMP) is a cloud-based service that secures and stores the keys necessary to sign transactions. To guarantee that the client has full control over the authorisation and signing process, RIDDLE&CODE developed the Approval Devices. The devices are held by the client on the premises and by the authorised personnel of the organisation.
+* This document describes how the Token Management Platform uses dedicated Approval Devices to identify users and their roles in the operations. It also describes the operations and actions that clients can perform with Approval Devices.
+* Token Management Platform (TMP) is a cloud-based service that secures and stores the keys necessary to sign transactions. To guarantee that the client has full control over the authorisation and signing process, RIDDLE&CODE developed the Approval Devices. The devices are held by the client on the premises and by the authorised personnel of the organisation.
 * **Note:** Approval Devices are highly-sophisticated cryptographically secured devices that follow the E2E security approach and the four-eye principle. In the next paragraphs, we explain the Approval Devices’ design philosophy and purpose.
 
 IMAGE MISSING

@@ -4,7 +4,7 @@ OUTDATED
 
 ## Getting to know RIDDLE&CODE Digital Asset Custody Solution
 
-RIDDLE&CODE developed a new breed of digital asset management solution that enables financial institutions as well as individuals to buy/sell/trade cryptocurrencies and tokens and offer this service to its clients within the framework of the custodian model.
+RIDDLE&CODE developed a new breed of Token Management Platform that enables financial institutions as well as individuals to buy/sell/trade cryptocurrencies and tokens and offer this service to its clients within the framework of the custodian model.
 
 Our solution underwent meticulous audit processes by renown international audit firms and received acceptance from Swiss regulatory bodies. Next to an innovative architecture of the core functionality of a wallet – to create and secure keys - the solution excels in providing the related business logic and policy layer to allow integration into regulated processes including full audit trails.
 
@@ -23,22 +23,22 @@ Our Digital Asset Custody is powered with design new crypto algorithms to the ha
 
 **Multi-purpose secure devices (Approval Devices)**: Our hardware wallets can also be used for other security-sensitive online activities. Logins with U2F, managing trust certificates on customer level, co-key-management with customers, secure self-encoding data storage for customers, etc.  are only some examples for the broad range of possible extensions.
 
-**Support of non-fungible, physical assets classes**: Development of our digital asset management solution isn’t only focused on cryptocurrencies but also incorporated a design to support the tokenized economy including the related secure tagging and chipping of physical objects, enabling our clients to go beyond cryptocurrencies and participate in the thriving token economy.
+**Support of non-fungible, physical assets classes**: Development of our Token Management Platform isn’t only focused on cryptocurrencies but also incorporated a design to support the tokenized economy including the related secure tagging and chipping of physical objects, enabling our clients to go beyond cryptocurrencies and participate in the thriving token economy.
 
 
 ---
 ## Architecture
 
-RIDDLE&CODE digital asset management solution combines hardware and software to store, secure and manage cryptocurrencies and various categories of tokens. It provides multi-device signing and approval processes based on multi-signee signatures policies and allows institutional organizations to offer these functionalities to clients under custodian service model.
+RIDDLE&CODE Token Management Platform combines hardware and software to store, secure and manage cryptocurrencies and various categories of tokens. It provides multi-device signing and approval processes based on multi-signee signatures policies and allows institutional organizations to offer these functionalities to clients under custodian service model.
 
 ![Architecture](https://raw.githubusercontent.com/RiddleAndCode/rtd-docs/master/assets/architecture.png "Architecture")
 
 ---
 ## Supported currencies
 
-Through the combination of Signature Device and the Trusted Node, RIDDLE&CODE’s digital asset management solution allows for the scalability of operations while preserving the convenience of a single wallet for an institutional organization.
+Through the combination of Signature Device and the Trusted Node, RIDDLE&CODE’s Token Management Platform allows for the scalability of operations while preserving the convenience of a single wallet for an institutional organization.
 
-RIDDLE&CODE digital asset management solution can be extended to almost any currency/token, allowing the institution’s clients to sell/buy/trade numerous cryptocurrencies or tokens without the inconvenience of managing a wallet per crypto asset.
+RIDDLE&CODE Token Management Platform can be extended to almost any currency/token, allowing the institution’s clients to sell/buy/trade numerous cryptocurrencies or tokens without the inconvenience of managing a wallet per crypto asset.
 
 Even the most basic version of RIDDLE&CODE’s asset management solution supports the most important and relevant cryptocurrencies and tokens:
 

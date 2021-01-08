@@ -2,7 +2,7 @@
 
 ## Summary
 
-* Full node service is an integrative part of the Digital Asset Management Solution (TMP) for each client that comes without extra cost.
+* Full node service is an integrative part of the Token Management Platform (TMP) for each client that comes without extra cost.
 * The service is developed to reduce the dependency on third-party node uptime and provide stable and reliable full node connectivity to the respective blockchain/DLT networks.
 
 By definition, Distributed Ledger Technology is distributed. This distributed nature means that a stable connection to a full node of each currency is a prerequisite for seamless and swift execution and verification of a transaction against various ledgers, including Bitcoin and Ethereum.

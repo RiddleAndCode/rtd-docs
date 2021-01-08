@@ -2,7 +2,7 @@
 
 ## Summary
 
-* Digital Asset Management Solution offers extensive API support for the flexible integration of internal and external services that automate, enhance and simplify a range of operations.
+* Token Management Platform offers extensive API support for the flexible integration of internal and external services that automate, enhance and simplify a range of operations.
 
 The Token Management Platform provides a rich and easy-to-use set of application programming interfaces (APIs) that support interoperability with other systems to quickly and easily access the core features of the solution as well as a wide range of integration options with existing systems.
 

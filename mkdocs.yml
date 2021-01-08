@@ -6,7 +6,7 @@ theme:
 nav:
 - Home: index.md
 - Product Introduction:
-        - 'Architecture Overview': Product-Introduction/Architecture-Overview.md
+        - Architecture Overview: Product-Introduction/Architecture-Overview.md
         - Design philosophy: Product-Introduction/design-philosophy.md
         - Transaction Approval: Product-Introduction/transaction-approval.md
         - Policy Layer: Product-Introduction/Policy-Layer.md
@@ -21,11 +21,11 @@ nav:
         - Interfaces: Product-Introduction/user-interface.md
         - GDPR: Product-Introduction/gdpr.md
 - Manuals:
-  - User Manuals: Token_Management_Platform_Manual.md
+        - User Manuals: Token_Management_Platform_Manual.md
 - Glossary: 
-  - Glossary: Glossary.md
+        - Glossary: Glossary.md
 - FAQ:
-  - FAQ: FAQ.md
+        - FAQ: FAQ.md
 
 extra_css:
   - design/extra_css

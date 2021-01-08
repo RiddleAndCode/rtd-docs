@@ -3,13 +3,13 @@
 ## Summary
 
 * Riddle&Code audit ledger provides a real-time, immutable record of all operations, including approved and rejected transactions, added or disabled policies and adding of trusted recipients.
-* With the Riddle&Code ledger, the client can decrypt, collect and analyse all operational data processed within the Digital Asset Management Solution and obtain real-time access to the respective audit logs.
+* With the Riddle&Code ledger, the client can decrypt, collect and analyse all operational data processed within the Token Management Platform and obtain real-time access to the respective audit logs.
 * The client receives a node that has all the capabilities of the Riddle&Code ledger and can be used to collect the data about all processed steps.
 * The client can provide access to these operational data to the respective auditors and regulatory bodies.
 
 ## Reports based on real-time audit trails
 
-Riddle&Code allows the Digital Asset Management Solution to use an auditing system that:
+Riddle&Code allows the Token Management Platform to use an auditing system that:
 * stores data necessary for auditing within a single system;
 * collects more data than, for instance, the Bitcoin blockchain network;
 * uses immutable blockchain to record these data; and
