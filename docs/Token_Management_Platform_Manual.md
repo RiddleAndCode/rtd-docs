@@ -120,7 +120,7 @@ no longer applies to transaction governance:
 ## Create Securosys HSM key
 As an administrator, you can set up and add Securosys HSM keys:
 1. Navigate to Securosys HSM Configuration by selecting the **HSM tab** within the Administration section,
-![](../assets/user-manual-screens/hsm.jpeg)
+![HSM](../assets/user-manual-screens/hsm.jpeg)
 2. Click **Add HSM Key,**
 3. Enter the HSM Key ID.
 
@@ -145,7 +145,7 @@ As an administrator, you can update Securosys HSM keys by entering the new URL:
 ## Create an account for a new customer
 When a new customer is onboarded, the admin needs to create a new account. This can be done by adding an internal account or a trusted recipient. The process is as follows: 
 1. Head over to the **Addresses section** of the web interface,
-![](../assets/user-manual-screens/addeses_navigation.jpeg)
+![Accounts](../assets/user-manual-screens/addeses_navigation.jpeg)
 2. Click **New Asset** in the top right corner,
 3. Choose to add a new account,
 4. Choose whether you want to create an internal account or add a trusted recipient,
@@ -156,11 +156,11 @@ When a new customer is onboarded, the admin needs to create a new account. This 
 To add an internal account, the admin needs to perform the following steps:
 1. Sign in to the system as an **Admin,**
 2. Head over to the **Addresses section** of the web interface,
-![](../assets/user-manual-screens/addeses_navigation.jpeg)
+![Accounts](../assets/user-manual-screens/addeses_navigation.jpeg)
 3. Click **New Asset** in the top right corner,
 4. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The account ID serves as the derivation index,
 5. Enter the values on the right side,
-![](../assets/user-manual-screens/add_new_account.jpeg)
+![New Account](../assets/user-manual-screens/add_new_account.jpeg)
 6. Enter the Hash ID,
 7. Click **Generate.**
 
@@ -180,8 +180,7 @@ The steps are as follows:
 7. Enter a coin address and click **Add.**
 
 ## View accounts
-To view all the accounts within the system, select the **Addresses section* in the top main menu. 
-
+To view all the accounts within the system, select the **Addresses section** in the top main menu. 
 
 The table can be sorted by clicking on the header of the preferred column. 
 Please note that only one column can be sorted at a time.

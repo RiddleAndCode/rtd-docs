@@ -1,5 +1,3 @@
-# Introduction
-
 Welcome to the RIDDL&CODE indepth manual and introduction to the Token Management Platform. 
 
 We cover technical and business details as well as all required steps to set up and trouble shoot our solution. 

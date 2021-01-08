@@ -30,4 +30,4 @@ Internal APIs     | Description
 
 **NOTE:** The Token Management Platform is built with APIs as an integral part of the solution. However, the concrete integration of client and ecosystem services entails bespoke development depending on the requirements and system to be included.
 
-Developers interested in the mechanics of our APIs can find more technical information on [Swaggerhub](https://app.swaggerhub.com/apis/riddleandcode/trusted-node/)
+Developers interested in the mechanics of our APIs feel free to contact us directly via: support@riddleandcode.com or via your designated Riddle&Code contact. 
