@@ -1,24 +1,34 @@
 site_name: RIDDLE&CODE
+
 theme:
   name: 'rtd-dropdown'
-  
+
 nav:
-- Digital Asset Management: 
-  - Introduction: 'index.md'
-  - Product Description: 'ProductDescription.md'
-  - Architecture Overview: 'Architecture-Overview.md'
-  - Initial Set Up: 'SetUp.md'
-  - Signing: 'Signing.md'
-  - Manual: 'Manual.md'
-  - Operations: 'Operations.md'
-  - Security: 'Security.md'
-  - Reconciliation: 'Reconciliation.md'
-  - Fee Addon: 'Fee-estimates.md'
-  - Key Ceremony: 'KeyCeremony.md'
-  -   Key Ceremony 2 parties: 'KeyCeremony-2parties.md'
-  -   Key Ceremony 3 parties: 'KeyCeremony-3parties-use-case.md'
-  - Backup: 'Backup.md'
-  - Glossary: 'Glossary.md'
+- Home: index.md
+- Product Introduction:
+        - Architecture Overview: Product-Introduction/Architecture-Overview.md
+        - Design philosophy: Product-Introduction/design-philosophy.md
+        - Transaction Approval: Product-Introduction/transaction-approval.md
+        - Policy Layer: Product-Introduction/Policy-Layer.md
+        - Approval Device: Product-Introduction/approval-device.md
+        - Key Management: Product-Introduction/Key-management.md
+        - Key ceremony: Product-Introduction/key-ceremony.md
+        - Audit Trail: Product-Introduction/audit-trail.md
+        - Reconciliation: Product-Introduction/Reconciliation.md
+        - AML: Product-Introduction/AML.md
+        - APIs: Product-Introduction/apis.md
+        - Full Node Service: Product-Introduction/full-node-service.md
+        - Interfaces: Product-Introduction/user-interface.md
+        - GDPR: Product-Introduction/gdpr.md
+- Manuals:
+        - User Manuals: Token_Management_Platform_Manual.md
+- Glossary: 
+        - Glossary: Glossary.md
+- FAQ:
+        - FAQ: FAQ.md
+
+extra_css:
+  - design/extra_css
   
 plugins:
   - search
