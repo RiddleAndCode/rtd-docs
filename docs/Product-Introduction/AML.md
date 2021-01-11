@@ -18,7 +18,7 @@ RIDDLE&CODE integrates the services provided by leading blockchain analytics pla
 
 Coinfirm’s AML platform consists of 270+ risk indicators able to catch nefarious actors with red flags for anything from Anti Money Laundering (AML) and Countering the Financing of Terrorism (CTF) to combatting fraud and dark net drug trafficking. Alongside this array of indicators, Coinfirm boasts the largest coverage of cryptocurrencies being monitored in the blockchain space.
 
-All coin addresses that are managed by the Digital Asset Management Solution are registered to the monitoring system automatically, using the provided API from Coinfirm. Once registered to the monitoring system, the risk level of coin addresses is calculated by Coinfirm’s forensic algorithm in regular time intervals and after each incoming transaction.
+All coin addresses that are managed by the Token Management Platform are registered to the monitoring system automatically, using the provided API from Coinfirm. Once registered to the monitoring system, the risk level of coin addresses is calculated by Coinfirm’s forensic algorithm in regular time intervals and after each incoming transaction.
 
 The service will continuously monitor all coin addresses and alert the client in case of unexpected behaviour or detection of fraud.
 

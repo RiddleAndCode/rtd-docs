@@ -4,7 +4,7 @@
 
 
 * This document describes the process of secure and confidential key generation, backup and recovery.
-* RIDDLE&CODE’s Digital Asset Management Solution ensures that the entire process, from key generation and backup to key recovery, is entirely managed by the client.
+* RIDDLE&CODE’s Token Management Platform ensures that the entire process, from key generation and backup to key recovery, is entirely managed by the client.
 * All key management-related operations are performed within the Trusted Execution Environment (TEE), which provides hardware-enforced code and data-in-use isolation.
 * The client is the only entity that can access the Trusted Execution Environment and, therefore, has full ownership and control over the keys. RIDDLE&CODE, as the solution provider, does not have access to the keys and related processes at any time.
 * Keys are generated in a secure and auditable way without a possibility for others to intercept or access the keys.
@@ -57,11 +57,11 @@ The generation of keys is initiated with the following trusted independent sourc
 * All TEE enclaves are also protected by being operated within a secure container environment called SCONE, enabling the confidential computing of container and host programs using dedicated TEEs
 * The confidential computing setup supports Kubernetes, Docker and AZURE confidential computing, native LINUX hosts and Windows 10 Hyper V. This forms the basis of the Confidential Keystore as a Service (CKaaS) and offers trusted and confidential computing in combination with a classical HSM (e.g., SecuroSys or Utimaco) for managing and safekeeping of keys.
 * Access to the HSM and CKaaS is defined by the role-based access and control system (RBAC) and enforced by hardware wallets (authentication & identity) and the Policy Layer (control). All processes are logged within classical Syslog-files and attested and stored to Riddle&Code ledger.
-* Riddle&Code audit ledger provides real time and immutable record of all operations, including approved and rejected transactions, adding or disabling of policies and adding of trusted recipients. With Riddle&Code ledger, the client can decrypt, collect and analyse operational data processed within Digital Asset Management Solution and obtain real-time access to the respective audit logs. (link to Riddle&Code doc)
+* Riddle&Code audit ledger provides real time and immutable record of all operations, including approved and rejected transactions, adding or disabling of policies and adding of trusted recipients. With Riddle&Code ledger, the client can decrypt, collect and analyse operational data processed within Token Management Platform and obtain real-time access to the respective audit logs. (link to Riddle&Code doc)
 
 ## Key backup and verification
 
-After the key is created, the backup mnemonic phrase is disclosed to an administrator on the web interface. The mnemonic phrase consists of twenty-four words and is crucial to the backup and disaster recovery process for the entire Digital Asset Management Solution (TMP). It is used to restore keys in the case of loss or when a new initialisation of wallets is required. Due to its critical role in key management, the secret has to be safeguarded from malicious users. Here is RIDDLE&CODE’s recommendation for safely storing the phrase in the initialisation phase:
+After the key is created, the backup mnemonic phrase is disclosed to an administrator on the web interface. The mnemonic phrase consists of twenty-four words and is crucial to the backup and disaster recovery process for the entire Token Management Platform (TMP). It is used to restore keys in the case of loss or when a new initialisation of wallets is required. Due to its critical role in key management, the secret has to be safeguarded from malicious users. Here is RIDDLE&CODE’s recommendation for safely storing the phrase in the initialisation phase:
 
 1. The user reads the phrase from the web interface.
 2. Next, the user writes down the mnemonic phrase on a steel plate and closes the plate.
@@ -81,7 +81,7 @@ If the verification is successful, the backup mnemonic phrase can be trusted. Th
 
 ## Disaster management
 
-Digital Asset Management Solution provides business continuity by ensuring that even in the case of a disaster scenario, such as bankruptcy or functional failure of RIDDLE&CODE, the keys are always under full control of the client.
+Token Management Platform provides business continuity by ensuring that even in the case of a disaster scenario, such as bankruptcy or functional failure of RIDDLE&CODE, the keys are always under full control of the client.
 
 ## Key recovery process
 

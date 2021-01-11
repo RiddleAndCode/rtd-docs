@@ -1,6 +1,3 @@
-# Token Management Platform
-
-
 ## Summary
 
 The Token Management Platform, a powerful yet simple all-in-one platform to store, transact and manage digital assets, contains the following components:
@@ -10,7 +7,7 @@ The Token Management Platform, a powerful yet simple all-in-one platform to stor
 * Extended AML and full node service.
 * Riddle&Code audit ledger that provides real-time, immutable audit trails of all critical operations.
 
-RIDDLE&CODE’s Digital Asset Management Solution (TMP) combines hardware and software to store, secure and manage various digital asset categories. The solution provides multi-device approval workflows based on multi-approver policies. The TMP consists of the following components:
+RIDDLE&CODE’s Token Management Platform (TMP) combines hardware and software to store, secure and manage various digital asset categories. The solution provides multi-device approval workflows based on multi-approver policies. The TMP consists of the following components:
 
 IMAGE MISSING
 
@@ -32,11 +29,11 @@ Physical devices used for authentication and access to the web interface and tra
 
 ## Trusted Execution Environment (TEE)
 
-The TEE is a secure area of the main processor ensuring protection of the code and data loaded inside the processor. As an isolated execution environment, TEE provides integrity of applications operating within the TEE, along with confidentiality of their assets. In general terms, the TEE offers an execution space that provides a higher level of security than an operating system (OS) and more functionality than the Secure Element (SE). All critical components of the Digital Asset Management Solution are operated in a TEE.
+The TEE is a secure area of the main processor ensuring protection of the code and data loaded inside the processor. As an isolated execution environment, TEE provides integrity of applications operating within the TEE, along with confidentiality of their assets. In general terms, the TEE offers an execution space that provides a higher level of security than an operating system (OS) and more functionality than the Secure Element (SE). All critical components of the Token Management Platform are operated in a TEE.
 
 ## Policy Layer
 
-Digital Asset Management Solution provides clients with a TEE cloud solution that has a specific Policy Layer that regulates, protects and logs every type of transaction. The Policy Layer is an integral part of a universal signing server, and it is implemented using dedicated machines featuring a Trusted Execution Environment (TEE). A TEE encapsulates the program and related access keys in a specific hardware-protected memory area in the processor core.
+Token Management Platform provides clients with a TEE cloud solution that has a specific Policy Layer that regulates, protects and logs every type of transaction. The Policy Layer is an integral part of a universal signing server, and it is implemented using dedicated machines featuring a Trusted Execution Environment (TEE). A TEE encapsulates the program and related access keys in a specific hardware-protected memory area in the processor core.
 
 The Policy Layer is comprised of:
 * a logic to evaluate and verify a given policy set,

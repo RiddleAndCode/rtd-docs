@@ -6,7 +6,7 @@ In case of losing access to your wallet, you can use a seed phrase to regain con
 
 
 ## Key generation
-In cryptography, key generation represents the process of generating a unique pair of public/private keys and using them to encrypt and decrypt data. It’s recommended to generate and store keys, especially those encrypting sensitive data, inside dedicated and secure Hardware Security Module (HSM).
+In cryptography, key generation represents the process of generating a unique pair of public/private keys and using them to encrypt and decrypt data. It’s recommended to generate and store keys, especially those encrypting sensitive data, inside dedicated and secure Confidential Keystores or Hardware Security Module (HSM).
 
 
 ## White room
@@ -37,12 +37,9 @@ The initial setup of the TMP devices and the creation of the master key is done 
 
 
 ## Remote approvals
-Remote approval enables a location independent approving of transactions by connecting the Approval Devices to the operators individual computer. Remote signing in its current version allows users to be geographically distributed to sign transactions to fully leverage this feature please follow the prerequisites:
+Remote approval enables a location independent approving of transactions by connecting the Approval Devices to the operators individual computer. Remote approval in its current version allows users to be geographically distributed to approve transactions to fully leverage this feature please follow the prerequisites:
 
 * Operation computers with at least version 81.0.4044 of Chrome is installed available for all Operating Systems: Windows 10, Linux, MacOSX
-* All operators and users of the Digital Asset Management Solution as well as the Trusted Node are located on the same Network and access to the interface is available https://localhost:5000/#/
-* Approval Devices must be connected to the individual computers and the users must have https://localhost:5000/#/ open in their Chrome browser before any transaction is created to ensure a smooth signing process across all participants
-* Transactions need to be performed sequentially, not multiple devices
 
 
 ## Segregation of roles
@@ -57,9 +54,9 @@ If banks want to offer crypto custodial services our solution allows linking key
 
 
 
-## Whitelisting/blacklisting
-Whitelisting represents a list of approved entities that are allowed to operate within the network, while blocking everything that’s not on the list. Simply put, with whitelisting, you can operate with the chosen few.
-Blacklisting means creating a list of malicious or suspicious entities and preventing them from accessing the network and conducting operations. The entities can include anything from malicious software such as viruses, to users, IP addresses, etc.
+## Trusted Recipients/Blocked Recipients
+Adding a trusted recipient represents a list of approved entities that are allowed to operate within the network, while blocking everything that’s not on the list. Simply put, with this feature, you can operate with the chosen few.
+Blocked recipients means creating a list of malicious or suspicious entities and preventing them from accessing the network and conducting operations. The entities can include anything from malicious software such as viruses, to users, IP addresses, etc.
 TMP offers a whitelisting/blacklisting feature and allows users to create the list of approved/blocked wallet addresses.
 
 

@@ -8,7 +8,7 @@
 
 The reconciliation data are stored on the immutable Riddle&Code ledger. The ledger is designed to secure all critical operational processes and provide an easy-to-use solution to transparently store and access all relevant data.
 
-RIDDLE&CODE’s Digital Asset Management Solution (TMP) provides a reconciliation feature to archive and keep track of balances for all derived accounts and currencies. The reconciliation aims to create and submit the current balance per coin address at a certain frequency. In the case of the TMP, that frequency is once per 24 hours.
+RIDDLE&CODE’s Token Management Platform (TMP) provides a reconciliation feature to archive and keep track of balances for all derived accounts and currencies. The reconciliation aims to create and submit the current balance per coin address at a certain frequency. In the case of the TMP, that frequency is once per 24 hours.
 
 Transaction details, such as timestamps, individually and fully signed transactions, crypto protocol, amount and fees, source address, destination address and status, can be sent to an external database for archiving and settlement purposes.
 

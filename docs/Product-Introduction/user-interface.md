@@ -2,7 +2,7 @@
 
 ## Summary
 
-* The main functionalities of the Digital Asset Management Solution (TMP) are accessed through the user interface.
+* The main functionalities of the Token Management Platform (TMP) are accessed through the user interface.
 * Assigned users can access the TMP user interface by connecting their Approval Devices with corresponding computers.
 * User interface provides access to the cloud-based service, where clients can generate and recover keys, place and manage orders, set up and edit policies, retrieve portfolio balances, extract transaction cost analyses and offer custody service to its clients.
 

@@ -1,10 +1,10 @@
 # GDPR compliance
 
 ## Summary
-* Digital Asset Management Solution (TMP) is fully compliant with the General Data Protection Regulation (GDPR) requirements. The TMP associates all generated coin addresses with client accounts through an anonymous eight-digit account ID, ensuring that no personal data is stored within the solution. 
+* Token Management Platform (TMP) is fully compliant with the General Data Protection Regulation (GDPR) requirements. The TMP associates all generated coin addresses with client accounts through an anonymous eight-digit account ID, ensuring that no personal data is stored within the solution. 
 * All personal client data processed during onboarding is protected by the Data Protection Note and detailed in this document.
 
-The Digital Asset Management Solution leverages the concept of confidential computing that ensures privacy by design and default. Changes processed by and within the system are registered and stored in compliance with GDPR requirements.
+The Token Management Platform leverages the concept of confidential computing that ensures privacy by design and default. Changes processed by and within the system are registered and stored in compliance with GDPR requirements.
 
 
 ## General Data Protection Notice
@@ -29,7 +29,7 @@ In this context, RIDDLE&CODE would also like to point out that any data voluntar
 ## Storing personal data 
 Unless otherwise specified in the respective processing, RIDDLE&CODE stores personal data for as long as it is necessary to ensure the fulfillment of the aforementioned purposes or as long as we are legally obliged to do so.
 
-The personal data of clients using Digital Asset Management Solution services are protected with segregation of accounts, which ensures that only duly authorised parties have access to the data relevant to them. This is done in a way that every individual account is protected with ID codes and mapped to coin addresses. The ID codes become part of the key derivation scheme and, therefore, part of the transaction data), creating a link between the assets and account holders. The TMP does not process or store any personal data, only the hash of the mapped account. 
+The personal data of clients using Token Management Platform services are protected with segregation of accounts, which ensures that only duly authorised parties have access to the data relevant to them. This is done in a way that every individual account is protected with ID codes and mapped to coin addresses. The ID codes become part of the key derivation scheme and, therefore, part of the transaction data), creating a link between the assets and account holders. The TMP does not process or store any personal data, only the hash of the mapped account. 
 
 Personal data that the client voluntarily provides will be stored by RIDDLE&CODE for the purpose of providing the associated processing and keeping records for up to 3 years after completion or termination, except when a longer storage period is required for the purpose of fulfilling a legal obligation or for the assertion or defense of legal claims.
 Rights of the data subject
