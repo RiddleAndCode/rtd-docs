@@ -10,7 +10,7 @@ for anything else please as well join us on readthedocs
 
 
 ## Table of Contents
-1. [Product Introduction](Architecture-Overview.md)
+1. [Product Introduction](Product-Introduction/Architecture-Overview.md)
 2. [Glossary](Glossary.md)
 3. [User Manuals](Token_Management_Platform_Manual.md)
 4. [Frequently Asked Questions](FAQ.md)
