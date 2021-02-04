@@ -10,7 +10,7 @@ To unlock the settings page and functionalities of the system, you need to regis
 6. Click **Register Device,**
 7. The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user (Trader/Viewer)
 
-**NOTE:** You must activate five devices per hour.
+**NOTE:** You must have only oen device plugged at the same time
 
 
 ## Register Approval Device for a user
@@ -64,8 +64,8 @@ The steps are as follows:
 6. Next time when you sign in, you’ll use your new PIN.
 
 
-# Coinfirm AML Service
-## Set Coinfirm credentials
+## Coinfirm AML Service
+### Set Coinfirm credentials
 
 To use AML Coinfirm services, you need to set your credentials.
 
@@ -78,8 +78,8 @@ To use AML Coinfirm services, you need to set your credentials.
 4. Click **Save.**
 
 
-# Manage policies
-## Create a new policy
+## Manage policies
+### Create a new policy
 As an administrator, you can create and add new policies:
 
 1. Visit the Administration section and go to the **Policy tab**,
@@ -117,8 +117,8 @@ no longer applies to transaction governance:
 3. The policy is now re-enabled and applies to transaction governance.
 
 
-# Manage Securosys HSM keys
-## Create Securosys HSM key
+## Manage Securosys HSM keys
+### Create Securosys HSM key
 As an administrator, you can set up and add Securosys HSM keys:
 1. Navigate to Securosys HSM Configuration by selecting the **HSM tab** within the Administration section,
 ![HSM](assets/user-manual-screens/hsm.jpeg)
@@ -142,8 +142,8 @@ As an administrator, you can update Securosys HSM keys by entering the new URL:
 3. Enter the HSM URL.
 
 
-# Manage accounts
-## Create an account for a new customer
+## Manage accounts
+### Create an account for a new customer
 When a new customer is onboarded, the admin needs to create a new account. This can be done by adding an internal account or a trusted recipient. The process is as follows: 
 
 1. Head over to the **Addresses section** of the web interface,
@@ -211,8 +211,8 @@ To view the risk level of a coin address:
 2. There you will be able to see all loaded addresses in a table and check their risk level.
 
 
-# Manage transactions
-## Create Transaction Request 
+## Manage transactions
+### Create Transaction Request 
 As a trader, you can create the Transaction Request and transfer funds from one coin address to another. 
 Depending on the transaction amount, several traders may need to approve the request. 
 The process is as follows:
@@ -232,48 +232,5 @@ You submitted the Transaction Request, which now can be approved or rejected.
 ## View transaction history
 1. Navigate to the **History** page within the Settlement section,
 2. Now you will be able to see the list of all past transactions involving account addresses.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
