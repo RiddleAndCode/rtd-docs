@@ -1,3 +1,4 @@
+
 ### Summary
 
 The Token Management Platform, a powerful yet simple all-in-one platform to store, transact and manage digital assets, contains the following components:
@@ -9,7 +10,7 @@ The Token Management Platform, a powerful yet simple all-in-one platform to stor
 
 RIDDLE&CODE’s Token Management Platform (TMP) combines hardware and software to store, secure and manage various digital asset categories. The solution provides multi-device approval workflows based on multi-approver policies. The TMP consists of the following components:
 
-![]./assets/210202Architecture.png)
+![](./assets/210202Architecture.png)
 
 ### Order Services
 
@@ -256,7 +257,7 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 
 ### Key generation
 
-![Key generation flow Diagram]./assets/Keygenflow.png)
+![Key generation flow Diagram](./assets/Keygenflow.png)
 
 *Fig 1: Key generation flow diagram*
 
@@ -267,7 +268,7 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 5. The phrase is displayed on the web interface to the user.
 6. Finally, the user stores the mnemonic phrase on a steel plate.
 
-![Key Backup flow Diagram]./assets/keybackup.png)
+![Key Backup flow Diagram](./assets/keybackup.png)
 
 *Fig 2. Key backup flow diagram (high-level overview)*
 
@@ -400,19 +401,19 @@ Riddle&Code Audit layer is built upon and leverages the advantages of the public
 >**Multiple sovereign Networks**
 >Customisable independent public or private IPDB networks can be set up for multiple parties to run apps on, or even for a single entity to run their apps. Key features include flexible permissioning, low latency, Byzantine fault-tolerance, rich query features with MongoDB.
 
-![]./assets/ipdb1.png)
+![](./assets/ipdb1.png)
 
 
 >**A trust anchor**
 >A self-sovereign network needs authorities, such as governments to issue credentials. Once trusted issuing authorities are set up within BigchainDB, the protocol then guarantees their integrity with its on-chain governance mechanisms such as the consensus algorithms.
 
-![]./assets/ipdb2.png)
+![](./assets/ipdb2.png)
 
 
 >**Transparent governance**
 >The IPDB foundation is governed by its general assembly and its elected board. Members that run the nodes govern the IPDB network. The protocol’s consensus mechanisms provide on-chain governance, and the Foundation’s policies define off-chain governance.
 
-![]./assets/ipdb3.png)
+![](./assets/ipdb3.png)
 
 
 ### GDPR compliance
@@ -501,7 +502,7 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 
 ### Key generation
 
-![Key generation flow Diagram]./assets/Keygenflow.png)
+![Key generation flow Diagram](./assets/Keygenflow.png)
 
 *Fig 1: Key generation flow diagram*
 
@@ -512,7 +513,7 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 5. The phrase is displayed on the web interface to the user.
 6. Finally, the user stores the mnemonic phrase on a steel plate.
 
-![Key Backup flow Diagram]./assets/keybackup.png)
+![Key Backup flow Diagram](./assets/keybackup.png)
 
 *Fig 2. Key backup flow diagram (high-level overview)*
 
