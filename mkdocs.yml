@@ -5,25 +5,14 @@ theme:
 
 nav:
 - Home: index.md
-- Product Introduction:
-        - Architecture Overview: Product-Introduction/Architecture-Overview.md
-        - Design philosophy: Product-Introduction/design-philosophy.md
-        - Transaction Approval: Product-Introduction/transaction-approval.md
-        - Policy Layer: Product-Introduction/Policy-Layer.md
-        - Approval Device: Product-Introduction/approval-device.md
-        - Key Management: Product-Introduction/Key-management.md
-        - Key ceremony: Product-Introduction/Key-ceremony.md
-        - Audit Trail: Product-Introduction/audit-trail.md
-        - Reconciliation: Product-Introduction/Reconciliation.md
-        - AML: Product-Introduction/AML.md
-        - APIs: Product-Introduction/apis.md
-        - Full Node Service: Product-Introduction/full-node-service.md
-        - Interfaces: Product-Introduction/user-interface.md
-        - GDPR: Product-Introduction/gdpr.md
+- Token Management Platform:
+        - Product Introduction: Product-Description.md
+
 - Manuals:
         - User Manuals: Token_Management_Platform_Manual.md
+
 - Glossary: 
-        - Glossary: Glossary.md
+        - : Glossary.md
 - FAQ:
         - FAQ: FAQ.md
 
