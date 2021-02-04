@@ -1,5 +1,5 @@
 
-## Register an Approval Device:
+### Register an Approval Device:
 To unlock the settings page and functionalities of the system, you need to register and activate the Approval Device you got from RIDDLE&CODE:  
 
 1. Plugin the Approval Device to your computer,
@@ -13,7 +13,7 @@ To unlock the settings page and functionalities of the system, you need to regis
 **NOTE:** You must have only oen device plugged at the same time
 
 
-## Register Approval Device for a user
+### Register Approval Device for a user
 
 1. As an admin, you can register an Approval Device for a user and add it to the user group:
 2. Plugin the device you want to register to your computer,
@@ -24,7 +24,7 @@ To unlock the settings page and functionalities of the system, you need to regis
 6. Hand over the device to the onboarded user, who is now able to access the system.
 
 
-## Sign up
+### Sign up
 Access to the web interface is granted to pre-registered devices only. To access the web interface for the first time:
 
 1. Plugin your Approval Device to the computer,
@@ -37,7 +37,7 @@ Access to the web interface is granted to pre-registered devices only. To access
 
 
 
-## Sign in
+### Sign in
 Access to the web interface is granted to pre-registered devices only. To access the web interface:
 
 1. Plugin your Approval Device to the computer,
@@ -47,7 +47,7 @@ Access to the web interface is granted to pre-registered devices only. To access
 4. Enter your PIN on the device.
 
 
-## Change PIN
+### Change PIN
 To access the web interface, you need to unlock your Approval Device. 
 The device is protected with a default PIN, which can be changed to a personalised one.
 
@@ -64,8 +64,8 @@ The steps are as follows:
 6. Next time when you sign in, you’ll use your new PIN.
 
 
-## Coinfirm AML Service
-### Set Coinfirm credentials
+### Coinfirm AML Service
+#### Set Coinfirm credentials
 
 To use AML Coinfirm services, you need to set your credentials.
 
@@ -91,7 +91,7 @@ Then approve
 3. Click **Create Policy.**
 
 
-## View and manage policies
+** View and manage policies **
 
 1. Navigate to the **Policy tab** within the Administration section,
 ![](assets/user-manual-screens/policies.jpeg)
@@ -118,24 +118,23 @@ no longer applies to transaction governance:
 
 
 ## Manage Securosys HSM keys
-### Create Securosys HSM key
+** Create Securosys HSM key
 As an administrator, you can set up and add Securosys HSM keys:
 1. Navigate to Securosys HSM Configuration by selecting the **HSM tab** within the Administration section,
 ![HSM](assets/user-manual-screens/hsm.jpeg)
 2. Click **Add HSM Key,**
 3. Enter the HSM Key ID.
 
-
-## View Securosys HSM keys
+** View Securosys HSM keys
 1. Visit the **HSM tab** within the Administration section and navigate to Securosys Configuration Screen,
 2. There you can see a list of all HSM keys.
 
 
-## Set default Securosys HSM key for curve
+** Set default Securosys HSM key for curve
 1. Select the **HSM tab** within the Administration section and navigate to Securosys HSM Configuration. There you can see a list of all HSM keys,
 2. Click **Set** for HSM keys that you want to be set as default.
 
-## Update Securosys HSM URL
+** Update Securosys HSM URL
 As an administrator, you can update Securosys HSM keys by entering the new URL:
 1. Navigate to Securosys HSM configuration,
 2. Click Set HSM URL,
