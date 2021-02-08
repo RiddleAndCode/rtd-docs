@@ -10,14 +10,14 @@ To unlock the settings page and functionalities of the system, you need to regis
 6. Click **Register Device,**
 7. The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user (Trader/Viewer)
 
-**NOTE:** You must have only oen device plugged at the same time
+**NOTE:** You must have only one device plugged at the same time
 
 
 ### Register Approval Device for a user
 
 1. As an admin, you can register an Approval Device for a user and add it to the user group:
 2. Plugin the device you want to register to your computer,
-3. Visit the dedicated page: https://cs-beta.r3c.network/register-device,
+3. Visit the dedicated page: https://yourcompanyname-ck.r3c.network/register-device,
 ![](assets/user-manual-screens/new_device.jpeg)
 4. Click Pre-register,
 5. Enter the PIN on the device and click **Preregister,**
@@ -28,7 +28,7 @@ To unlock the settings page and functionalities of the system, you need to regis
 Access to the web interface is granted to pre-registered devices only. To access the web interface for the first time:
 
 1. Plugin your Approval Device to the computer,
-2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/,
+2. Open the Sign-in page by clicking on the link: https://yourcompanyname-ck.r3c.network/,
 3. Click **Sign up,**
 ![](assets/user-manual-screens/signup_overview.jpeg)
 4. Click **Sign up** again,
@@ -41,7 +41,7 @@ Access to the web interface is granted to pre-registered devices only. To access
 Access to the web interface is granted to pre-registered devices only. To access the web interface:
 
 1. Plugin your Approval Device to the computer,
-2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/signin,
+2. Open the Sign-in page by clicking on the link: https://yourcompanyname-ck.r3c.network/signin,
 3. Click **Sign in,**
 ![](assets/user-manual-screens/signin_button.jpeg)
 4. Enter your PIN on the device.
@@ -100,7 +100,7 @@ Then approve
 4. These policies can be disabled/enabled if necessary.
 
 
-## Disable the existing policy
+** Disable the existing policy **
 As an admin, you can disable the existing policy so that the policy
 no longer applies to transaction governance:
 
@@ -117,41 +117,18 @@ no longer applies to transaction governance:
 3. The policy is now re-enabled and applies to transaction governance.
 
 
-## Manage Securosys HSM keys
-** Create Securosys HSM key
-As an administrator, you can set up and add Securosys HSM keys:
-1. Navigate to Securosys HSM Configuration by selecting the **HSM tab** within the Administration section,
-![HSM](assets/user-manual-screens/hsm.jpeg)
-2. Click **Add HSM Key,**
-3. Enter the HSM Key ID.
-
-** View Securosys HSM keys
-1. Visit the **HSM tab** within the Administration section and navigate to Securosys Configuration Screen,
-2. There you can see a list of all HSM keys.
-
-
-** Set default Securosys HSM key for curve
-1. Select the **HSM tab** within the Administration section and navigate to Securosys HSM Configuration. There you can see a list of all HSM keys,
-2. Click **Set** for HSM keys that you want to be set as default.
-
-** Update Securosys HSM URL
-As an administrator, you can update Securosys HSM keys by entering the new URL:
-1. Navigate to Securosys HSM configuration,
-2. Click Set HSM URL,
-3. Enter the HSM URL.
 
 
 ## Manage accounts
 ### Create an account for a new customer
-When a new customer is onboarded, the admin needs to create a new account. This can be done by adding an internal account or a trusted recipient. The process is as follows: 
+When a new customer is onboarded, the admin needs to create a new AccountID. This can be done by adding an internal account or a trusted recipient. The process is as follows: 
 
 1. Head over to the **Addresses section** of the web interface,
 ![Accounts](assets/user-manual-screens/addeses_navigation.jpeg)
 2. Click **New Asset** in the top right corner,
 3. Choose to add a new account,
 4. Choose whether you want to create an internal account or add a trusted recipient,
-
-5. Enter the valid address.
+5. Enter the valid AccountID (Hex Decimal 8 Digits).
 
 ## Create an internal account
 To add an internal account, the admin needs to perform the following steps:
@@ -160,10 +137,10 @@ To add an internal account, the admin needs to perform the following steps:
 2. Head over to the **Addresses section** of the web interface,
 ![Accounts](assets/user-manual-screens/addeses_navigation.jpeg)
 3. Click **New Asset** in the top right corner,
-4. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The account ID serves as the derivation index,
+4. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The Account ID serves as the derivation index,
 5. Enter the values on the right side,
 ![New Account](assets/user-manual-screens/add_new_account.jpeg)
-6. Enter the Hash ID,
+6. Enter the AccountID,
 7. Click **Generate.**
 
 
@@ -178,7 +155,7 @@ The steps are as follows:
 3. Click **New Asset** in the top right corner,
 4. Enter the values on the left side,
 ![](assets/user-manual-screens/add_trusted_recipient.jpeg)
-5. Enter a Hash ID,
+5. Enter a AccountID,
 6. Choose a currency,
 7. Enter a coin address and click **Add.**
 
@@ -190,7 +167,7 @@ Please note that only one column can be sorted at a time.
 
 
 * Asset: The currency of the account
-* Account ID: The hash ID of the account
+* Account ID: The 8 digit hexadecimal identifier of the account
 * Address: The actual address of the account
 * Acc. typ: Account type
 
@@ -199,7 +176,7 @@ Please note that only one column can be sorted at a time.
 
 1. Visit the **Addresses section,**
 2. Select Trusted Recipients via the dropdown filter,
-3. Now you will be able to see a table that contains the list of all trusted recipients.
+3. Now you will be able to see a table that contains the list of all available trusted recipients.
 
 
 ## View the risk level of a coin address

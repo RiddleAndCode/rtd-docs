@@ -7,12 +7,14 @@ nav:
 - Home: index.md
 - Token Management Platform:
         - Introduction: Product-Description.md
+        - Use Cases: Use-Cases.md
 
 - Manuals:
         - All Users: Token_Management_Platform_Manual.md
 
 - Glossary: 
         - What's What: Glossary.md
+        
 - FAQ:
         - Frequently asked questions: FAQ.md
 
