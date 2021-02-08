@@ -1,7 +1,7 @@
 site_name: RIDDLE&CODE
 
 theme:
-  name: 'sphinx_rtd_theme'
+  name: 'rtd_dropdown'
 
 nav:
 - Home: index.md
