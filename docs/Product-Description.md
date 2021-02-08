@@ -12,27 +12,29 @@ RIDDLE&CODE’s Token Management Platform (TMP) combines hardware and software t
 
 ![](./assets/210202Architecture.png)
 
-### Order Services
+#### Componentes
+
+**Order Services**
 
 Integration with existing client systems for the creation and management of digital asset orders.
 
-### Financial Services
+**Financial Services**
 
 Interfaces to existing information and core banking systems.
 
-### Client (user) interface
+**Client (user) interface**
 
 Dedicated web interface providing access to all essential operations of the Digital Asset Management Solution. It separates roles between administration and execution and facilitates operations, such as initial set-up, user onboarding and revoking, multiple approval configuration, policy management, key and address management, transaction signatures, validation, execution and broadcasting signed transactions to blockchain networks.
 
-### Approval Devices
+**Approval Devices**
 
 Physical devices used for authentication and access to the web interface and transaction approval. Each Approval Device is secured by its own cryptographic identity and has the capability to limit the access and management of the settings and policies.
 
-### Trusted Execution Environment (TEE)
+**Trusted Execution Environment (TEE)**
 
 The TEE is a secure area of the main processor ensuring protection of the code and data loaded inside the processor. As an isolated execution environment, TEE provides integrity of applications operating within the TEE, along with confidentiality of their assets. In general terms, the TEE offers an execution space that provides a higher level of security than an operating system (OS) and more functionality than the Secure Element (SE). All critical components of the Token Management Platform are operated in a TEE.
 
-### Policy Layer
+**Policy Layer**
 
 Token Management Platform provides clients with a TEE cloud solution that has a specific Policy Layer that regulates, protects and logs every type of transaction. The Policy Layer is an integral part of a universal signing server, and it is implemented using dedicated machines featuring a Trusted Execution Environment (TEE). A TEE encapsulates the program and related access keys in a specific hardware-protected memory area in the processor core.
 
@@ -41,20 +43,20 @@ The Policy Layer is comprised of:
 * a set of policies defined by the client to govern the creation and execution of transactions, and
 * an API to administer the set of policies and access permissions.
 
-### Transaction logic
+**Transaction logic**
 
 Transaction logic is a service to securely issue unsigned transactions, which are then signed by the Confidential Keystore.
 
-### Confidential Keystore
+**Confidential Keystore**
 
 A cryptographically secured service running in a dedicated Trusted Execution Environment, the Confidential Keystore manages all operations related to the underlying keys and ensures secure key generation, storage and use.
 
-#### Notarisation Service
+**Notarisation Service**
 
 RIDDLE&CODE integrates a dedicated notarisation and certification tracking solution to create, attest and track digital certificates across their lifecycle.
 
 
-## Design philosophy
+**Design philosophy**
 
 The multifunctional Token Management Platform allows the issuing of tokens, end-to-end trading, settlement and custody services with high levels of security, auditability and regulatory compliance.
 
@@ -85,7 +87,7 @@ Key generation is performed in a secure and auditable way with no possibility fo
 The keys are generated within HSM and then exported to the Confidential Keystore via hardened, secure communication channels. A master key is then generated within the Trusted Execution Environment (TEE), which ensures the encryption of data in transit, while being processed and at rest.
 Additional addresses are then derived from the master key within TEE. Following key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
 
-#### Once generated, keys need to be stored
+**Once generated, keys need to be stored**
 Once generated, keys are encrypted and stored to prevent malicious use. There are different approaches when it comes to ensuring that keys are securely stored.
 
 In order to provide more accessibility and liquidity of assets, keys are often centralised in so-called hot wallets, from which all transactions either originate or depart. The advantage of these systems is that thousands of transactions per day can be carried out in dozens of digital currencies. This can be done in either an automated or, if necessary (depending on the total value of the transaction), a manual setup.
@@ -98,14 +100,14 @@ If HSMs have operational vulnerabilities and a hot wallet comes with security fl
 RIDDLE&CODE has developed its own solution to enable the combination of these techniques and has added the required orchestration and confidentiality.
 The solution, named the Policy Gateway, combines flexibility and business logic with the protective power of hardware security models.
 
-### Trusted Execution Environment (TEE)
+**Trusted Execution Environment (TEE)**
 RIDDLE&CODE adopted the concept of confidential computing (CC) to protect its cloud services and data-in-use through isolating computations to a hardware-based Trusted Execution Environment (TEE).
 
 This represents a secure location, isolated from the regular processing environment where the operating system and applications run. CC safeguards the confidentiality of data/code, protects its integrity and prevents unauthorised access to confidential data and malicious interference.
 
 Without confidential computing, the cryptographic keys could be revoked, and the ownership of assets could become corrupted. Confidential computing can also achieve data compliance with legislation, such as GDPR or financial regulatory provisions. Finally, the most important aspect of RIDDLE&CODE’s approach to confidential computing is its implementation in a way that doesn’t increase the complexity for the user and, at the same time, remains cost-sensitive.
 
-### Distributed ledger infrastructure
+**Distributed ledger infrastructure**
 Despite the groundbreaking improvements of distributed ledgers (immutability, distributed nature, consensus mechanisms, etc.) one of the fundamental issues of current blockchains is low throughput. This limitation has been a major impediment for an industry where scalability is a prerequisite to execute and perform thousands of transactions per second.
 The results of low scalability are congested networks, high network fees, pending transactions and long confirmation times. Hence, the ledger infrastructure is not fit to cope with the vast number of transactions that can be expected once industry-wide adoption takes place. Just imagine all cars using car wallets and creating millions of transactions over the course of the day.  
 
@@ -127,29 +129,29 @@ In combination with RIDDLE&CODE’s identity management/wallet solutions, confid
 ### Policy layer
 The Policy Layer is a set of rules that performs and logs all processes preceding and following transaction authentication. It verifies that the defined roles and rules are imposed and specifies the access rights to the platform and any of its functionalities.
 
-##### CHALLENGE 1:
-Fullfilling regulatory criteria for transparency and compliance.
+**CHALLENGE 1**
+> Fullfilling regulatory criteria for transparency and compliance.
 
-##### POLICY LAYER:
+***Solution via POLICY LAYER***
 Verifies that the defined roles and rules are imposed and followed in a cryptographically secured way. The Policy Layer provides trails of all conducted operations, including details like which changes have been made, who made those changes, who signed the transaction, the place and time, the amount, the fees, the accounts involved, etc.
 With policies that are fully auditable and written in a human-readable language, audit trails become the trusted source, validating that all operations were done in compliance with regulatory frameworks.
 
 
-##### CHALLENGE 2:
-Ensuring that transaction governance is secure and immutable.
+**CHALLENGE 2** 
+> Ensuring that transaction governance is secure and immutable.
 
-##### POLICY LAYER:
+***Solution via Policy Layer***
 Allows clients to set role-based access control in the operational processes and define the access rights to the Token Management Platform and any of its functionalities. For example, separation of roles can be among administrators and operators. Administrators are the only ones who can create and customise transaction rules, ensuring that no circumvention is possible.
 
 
-##### CHALLENGE 3:
-Preventing internal misuse.
+**CHALLENGE 3**
+> Preventing internal misuse.
 
-##### POLICY LAYER:
+***Solution via POLICY LAYER***
 Allows defining of approval rules for signing transactions according to different parameters. Every new transaction can be executed only if it complies with previously set rules. If any of the rules are not followed, the Policy Layer declines the approval and rejects the transaction. This enables clients to approve and execute transactions following tailor-made, cryptographically secured approval rules and prevents internal misuse.
 
 
-#### See it in action
+**See it in action**
 
 1. **Define roles.** Client sets the segregation of roles between departments and their roles in the operations. For example, an administrator can pick the approval group and pre-approve transactions based on the involved users.
 
@@ -158,16 +160,15 @@ Allows defining of approval rules for signing transactions according to differen
 3. **Sign transaction.** Every new transaction is filtered through the Policy Layer, which matches the requirements for the transactions with the existing policies. If all rules applicable for the transaction are adhered to, the Policy Layer accepts and executes the transaction.
 
 
-#### Examples of policies
+**Examples of policies**
 
-**Policy** | **Description**
---- | --- | ---
-**Threshold** | Defines the maximum amount allowed per transaction for a certain user group. For example, the operators can approve an amount below 50,000 euros, but transactions above this threshold require additional approval. |
-**Authorised users per amount** | Defines user groups that are allowed to participate in transaction approvals. |
+| Policy | Description |
+|-|-|
+| Threshold | Defines the maximum amount allowed per transaction for a certain user group. For example, the operators can approve an amount below 50,000 euros, but transactions above this threshold require additional approval. |
+| Authorised users per amount | Defines user groups that are allowed to participate in transaction approvals. |
 
 
-
-### Interoperability and legal/regulatory compliance
+**Interoperability and legal/regulatory compliance**
 
 Decentralised systems require a high degree of interoperability of the various subsystems. In the future, many different blockchain networks will need to communicate and exchange data to form more complex and powerful networks.
 
@@ -175,14 +176,14 @@ In the domain of identity, interoperability is achieved by a broad range of cryp
 
 The BigchainDB ledger establishes the interoperability with other networks and technologies via peg-in/peg-out mechanisms. This allows the ledger to focus on its strength when it comes to storing identities and metadata while performing other functions via interoperability with specific sidechains, such as Liquid. In addition, a severe regime of recurring technical and process audits of our technology and the implementation of online audit trails via BigchainDB renders the Token Management Platform compliant with regulatory provisions.
 
-### Summary
+### Approval Devices
 
 * This document describes how the Token Management Platform uses dedicated Approval Devices to identify users and their roles in the operations. It also describes the operations and actions that clients can perform with Approval Devices.
 * Token Management Platform (TMP) is a cloud-based service that secures and stores the keys necessary to sign transactions. To guarantee that the client has full control over the authorisation and signing process, RIDDLE&CODE developed the Approval Devices. The devices are held by the client on the premises and by the authorised personnel of the organisation.
 
 * **Note:** Approval Devices are highly-sophisticated cryptographically secured devices that follow the E2E security approach and the four-eye principle. In the next paragraphs, we explain the Approval Devices’ design philosophy and purpose.
 
-IMAGE MISSING
+![](./assets/AD_render.png)
 *Fig.1 Approval device*
 
 Approval Devices are physical devices used for authentication and access to the web interface and for providing secure and trusted approval capabilities. Each Approval Device is secured by its own cryptographic identity, with the capability to limit the access and management of operations, settings and policies. Clients connect the Approval Device to their individual computers. All communication channels between the devices and the core components of the TMP are hardened and encrypted.
@@ -198,13 +199,13 @@ There are two types of authentication methods used to guarantee that only author
 1. FIDO 2 for authentication of the device, and
 2. PIN for authentication of the user.
 
-### RIDDLE&CODE’s Secure Element
+**RIDDLE&CODE’s Secure Element**
 
 At the core of the Approval Devices is a dedicated Secure Element, a part of RIDDLE&CODE’s “Built for Blockchain” product range featuring a dedicated CC EAL 6+ compliant crypto accelerator and crypto storage chips, which enable secure storage of the digital identity (private key) on any given device through the combination of hardware and software. The TMP’ Policy Layer checks against the Secure Element and its identity for each transaction to guarantee that only authorised devices can create and approve transactions.
 
 The devices support modern cryptographic algorithms that are focused around Elliptic Curve cryptography. The core integrity of the Approval Devices is defined by the cryptographic private-public key pair that is defined on the cryptographic processor during its first initialisation (TRNG).
 
-### Design philosophy
+**Design philosophy**
 
 These tamper-evident devices are developed as an industrial-grade cryptocurrency wallet to support trading and identity management. The following principles have been implemented during the development and design of the device:
 
@@ -216,20 +217,18 @@ These tamper-evident devices are developed as an industrial-grade cryptocurrency
 * physical security (FIPS 140-2 level 2), and
 * secure firmware update process.
 
-### Audits and certifications
+**Audits and certifications**
 
 The Approval Devices are based on existing devices that achieved FIPS 142 Level 2 compliance (with the aim of compliance with FIPS 142 Level 3) and the Secure Elements with Common Criteria EAL 6+ certification.
 
- Hardware
-:-----------:
-
-| Touch screen: 3.5"  
-| Resolution: 320x240 pixel
-| USB-C Connectivity
-| ARM STM32F4 MCU
+| Hardware |  |
+|-|-|
+| Touch screen: | 3.5" |
+| Resolution | 32x240 pixel |
+| Connectivity | USB-C |
+| MCU | ARM STM32F4 MCU |
 
 Security by design
-:-----------------:
 
 * Multiple Crypto Accelerators and Crypto Storage ICs for  highest level of security
 * Secure Boot
@@ -237,10 +236,7 @@ Security by design
 * Secure Firmware update
 * Verifiable FW (signed by R&C)  
 
-# Key generation / key backup / disaster management
-
-### Summary
-
+## Key generation / key backup / disaster management
 
 * This document describes the process of secure and confidential key generation, backup and recovery.
 * RIDDLE&CODE’s Token Management Platform ensures that the entire process, from key generation and backup to key recovery, is entirely managed by the client.
@@ -296,7 +292,7 @@ The generation of keys is initiated with the following trusted independent sourc
 * All TEE enclaves are also protected by being operated within a secure container environment called SCONE, enabling the confidential computing of container and host programs using dedicated TEEs
 * The confidential computing setup supports Kubernetes, Docker and AZURE confidential computing, native LINUX hosts and Windows 10 Hyper V. This forms the basis of the Confidential Keystore as a Service (CKaaS) and offers trusted and confidential computing in combination with a classical HSM (e.g., SecuroSys or Utimaco) for managing and safekeeping of keys.
 * Access to the HSM and CKaaS is defined by the role-based access and control system (RBAC) and enforced by hardware wallets (authentication & identity) and the Policy Layer (control). All processes are logged within classical Syslog-files and attested and stored to Riddle&Code ledger.
-* Riddle&Code audit ledger provides real time and immutable record of all operations, including approved and rejected transactions, adding or disabling of policies and adding of trusted recipients. With Riddle&Code ledger, the client can decrypt, collect and analyse operational data processed within Token Management Platform and obtain real-time access to the respective audit logs. (link to Riddle&Code doc)
+* Riddle&Code audit ledger provides real time and immutable record of all operations, including approved and rejected transactions, adding or disabling of policies and adding of trusted recipients. With Riddle&Code ledger, the client can decrypt, collect and analyse operational data processed within Token Management Platform and obtain real-time access to the respective audit logs. 
 
 ### Key backup and verification
 
@@ -318,11 +314,11 @@ The backup process is done during the key ceremony:
 
 If the verification is successful, the backup mnemonic phrase can be trusted. The key ceremony is, therefore, completed.
 
-### Disaster management
+**Disaster management**
 
 Token Management Platform provides business continuity by ensuring that even in the case of a disaster scenario, such as bankruptcy or functional failure of RIDDLE&CODE, the keys are always under full control of the client.
 
-### Key recovery process
+**Key recovery process**
 
 Key recovery can be triggered via the user interface, where the user will be led through the entire process, step-by-step:
 
@@ -334,14 +330,12 @@ With this, the process is completed, and address generation and transaction sign
 
 ## Riddle&Code Audit ledger
 
-### Summary
-
 * Riddle&Code audit ledger provides a real-time, immutable record of all operations, including approved and rejected transactions, added or disabled policies and adding of trusted recipients.
 * With the Riddle&Code ledger, the client can decrypt, collect and analyse all operational data processed within the Token Management Platform and obtain real-time access to the respective audit logs.
 * The client receives a node that has all the capabilities of the Riddle&Code ledger and can be used to collect the data about all processed steps.
 * The client can provide access to these operational data to the respective auditors and regulatory bodies.
 
-### Reports based on real-time audit trails
+**Reports based on real-time audit trails**
 
 Riddle&Code allows the Token Management Platform to use an auditing system that:
 * stores data necessary for auditing within a single system;
@@ -367,7 +361,7 @@ This metadata ledger is hosted as a private distributed network between the clie
 
 The implementation with Riddle&Code allows real-time audit that is translated into a JSON structure and provides signed, human-readable PDFs. Clients can retrieve these PDF documents and use them for audit and compliance management. Data resides at a server of the client and service provider.
 
-### How is the data stored and accessed?
+**How is the data stored and accessed?**
 
 Since DLT cannot delete data, the data is blinded, and the information is AES encrypted. This allows the design of regulatory compliant processes to adhere to GDPR or general accounting requirements. The RIDDLE&CODE solution manages the symmetric encryption keys. By design, RIDDLE&CODE’s solution changes the blinding key every calendar year. An administrator can export these keys and destroy a previously used key after several years (e.g., ten years). Not having the key is thus equal to not having the data.
 
@@ -379,7 +373,7 @@ Since DLT cannot delete data, the data is blinded, and the information is AES en
 
 Riddle&Code is a ledger optimised for IoT applications that supports transaction throughput on par with global credit card networks. The ledger uses a byzantine fault-tolerant consensus mechanism and is based on the BigchainDB ledger. It offers low latency, powerful query features, decentralised control, immutable data storage and extensive built-in cryptocurrency support.
 
-IMAGE MISSING
+![Key generation flow Diagram](./assets/Ledgersetup.png)
 
 The Riddle&Code Metadata Ledger operates on a globally distributed architecture to ensure the immutability and availability of all data stored and processed.
 The ledger consists of a network of nodes deployed across all major regions.
@@ -416,262 +410,11 @@ Riddle&Code Audit layer is built upon and leverages the advantages of the public
 ![](./assets/ipdb3.png)
 
 
-### GDPR compliance
-
-Riddle&Code is designed to be entirely GDPR compliant. The ledger itself does not contain arbitrary data hashes as part of transactions being signed off by public-private key pairs, and as such, it does not store any private data. Instead, the data itself is associated with a storage identifier and stored in a database featuring the needs of the data/use case. This can be an SQL (e.g., MariaDB), a NoSQL database (e.g., Cassandra and MongoDB) or decentralised file storage solutions (e.g., IPFS).
-
-### Summary
-
-* This document describes how the Token Management Platform uses dedicated Approval Devices to identify users and their roles in the operations. It also describes the operations and actions that clients can perform with Approval Devices.
-* Token Management Platform (TMP) is a cloud-based service that secures and stores the keys necessary to sign transactions. To guarantee that the client has full control over the authorisation and signing process, RIDDLE&CODE developed the Approval Devices. The devices are held by the client on the premises and by the authorised personnel of the organisation.
-
-* **Note:** Approval Devices are highly-sophisticated cryptographically secured devices that follow the E2E security approach and the four-eye principle. In the next paragraphs, we explain the Approval Devices’ design philosophy and purpose.
-
-IMAGE MISSING
-*Fig.1 Approval device*
-
-Approval Devices are physical devices used for authentication and access to the web interface and for providing secure and trusted approval capabilities. Each Approval Device is secured by its own cryptographic identity, with the capability to limit the access and management of operations, settings and policies. Clients connect the Approval Device to their individual computers. All communication channels between the devices and the core components of the TMP are hardened and encrypted.
-
-The Approval Devices have the following functions:
-
-1. authentication and access to the TMP,
-2. management of critical functionalities like Policy Layer rules, and
-3. approval of transactions.
-
-There are two types of authentication methods used to guarantee that only authorised Approval Devices and users can access the TMP:
-
-1. FIDO 2 for authentication of the device, and
-2. PIN for authentication of the user.
-
-### RIDDLE&CODE’s Secure Element
-
-At the core of the Approval Devices is a dedicated Secure Element, a part of RIDDLE&CODE’s “Built for Blockchain” product range featuring a dedicated CC EAL 6+ compliant crypto accelerator and crypto storage chips, which enable secure storage of the digital identity (private key) on any given device through the combination of hardware and software. The TMP’ Policy Layer checks against the Secure Element and its identity for each transaction to guarantee that only authorised devices can create and approve transactions.
-
-The devices support modern cryptographic algorithms that are focused around Elliptic Curve cryptography. The core integrity of the Approval Devices is defined by the cryptographic private-public key pair that is defined on the cryptographic processor during its first initialisation (TRNG).
-
-### Design philosophy
-
-These tamper-evident devices are developed as an industrial-grade cryptocurrency wallet to support trading and identity management. The following principles have been implemented during the development and design of the device:
-
-* zero-trust principle,
-* PIN protection,
-* single-purpose computer,
-* limiting the attack surface,
-* off-the-bus cryptographic secrets,
-* physical security (FIPS 140-2 level 2), and
-* secure firmware update process.
-
-### Audits and certifications
-
-The Approval Devices are based on existing devices that achieved FIPS 142 Level 2 compliance (with the aim of compliance with FIPS 142 Level 3) and the Secure Elements with Common Criteria EAL 6+ certification.
-
- Hardware
-:-----------:
-
-| Touch screen: 3.5"  
-| Resolution: 320x240 pixel
-| USB-C Connectivity
-| ARM STM32F4 MCU
-
-Security by design
-:-----------------:
-
-* Multiple Crypto Accelerators and Crypto Storage ICs for  highest level of security
-* Secure Boot
-* Signed Firmware
-* Secure Firmware update
-* Verifiable FW (signed by R&C)  
-
-# Key generation / key backup / disaster management
-
-### Summary
-
-
-* This document describes the process of secure and confidential key generation, backup and recovery.
-* RIDDLE&CODE’s Token Management Platform ensures that the entire process, from key generation and backup to key recovery, is entirely managed by the client.
-* All key management-related operations are performed within the Trusted Execution Environment (TEE), which provides hardware-enforced code and data-in-use isolation.
-* The client is the only entity that can access the Trusted Execution Environment and, therefore, has full ownership and control over the keys. RIDDLE&CODE, as the solution provider, does not have access to the keys and related processes at any time.
-* Keys are generated in a secure and auditable way without a possibility for others to intercept or access the keys.
-* The secure key recovery process can be performed in the case of disaster.
-
-Key management covers all aspects of the generation, securing, exchange/trading and revoking of keys. Since keys, private and public, act as a representation of indisputable identities, ownership of assets and proof-of-origin, key management needs to provide all aspects to:
-
-* create keys in a secure and auditable way,
-* manage keys and related processes within a trusted and confidential environment,
-* perform value or metadata transactions to meet the throughput and frequency requirements of mature industries, and enable revocation/withdrawal and re-creation of keys in the framework of key restoring and disaster management.
-
-### Key generation
-
-![Key generation flow Diagram](./assets/Keygenflow.png)
-
-*Fig 1: Key generation flow diagram*
-
-1. To initiate the creation of the master key, a user (administrator) needs to trigger the generation of a random number via the web interface.
-2. The random number is created inside HSM and then exported to the Confidential Keystore via hardened, secure communication channels.
-3. The Confidential Keystore generates a mnemonic phrase and a master key within the Trusted Execution Environment (TEE). Additional addresses are then derived from the master key within TEE.
-4. The mnemonic phrase is passed through the backend to the web interface.
-5. The phrase is displayed on the web interface to the user.
-6. Finally, the user stores the mnemonic phrase on a steel plate.
-
-![Key Backup flow Diagram](./assets/keybackup.png)
-
-*Fig 2. Key backup flow diagram (high-level overview)*
-
-Following the key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
-
-### Security measures during the key generation process
-
-The following safety and control measures are in place during the key generation process:
-* **Confidential computing:**
-  - Trusted Execution Environment ensures encryption of data in transit, while being processed and at rest.
-  - Decentralised attestation enclaves and identities support a hardened authenticity and integrity verification process.
-  - Secure and confidential execution within untrusted environments. (RIDDLE&CODE does not have any access to sensitive, confidential or encrypted data.)
-  - Audit logs are created for all transactions and changes. Due to the integrity and authenticity of the solution, it can be guaranteed that these events are always recorded in a federated audit ledger.
-
-* Audit logs for role-based access control and change management:
-  - Physical protection of machines (TEE, HSM) via fingerprint readers, key and access control at data-center compliant with ISO-27001 standard.
-
-* Hardened communication systems.
-
-### The trusted source of entropy
-
-The generation of keys is initiated with the following trusted independent source of randomness:
-
-* The implemented hybrid random number generator complies with DRG.4 requirements, the highest security level for DRG. A physical quantum noise-based random number generator of the highest security class PTG.2 is used as the entropy source for seeding this deterministic random number generator.
-* All TEE enclaves are also protected by being operated within a secure container environment called SCONE, enabling the confidential computing of container and host programs using dedicated TEEs
-* The confidential computing setup supports Kubernetes, Docker and AZURE confidential computing, native LINUX hosts and Windows 10 Hyper V. This forms the basis of the Confidential Keystore as a Service (CKaaS) and offers trusted and confidential computing in combination with a classical HSM (e.g., SecuroSys or Utimaco) for managing and safekeeping of keys.
-* Access to the HSM and CKaaS is defined by the role-based access and control system (RBAC) and enforced by hardware wallets (authentication & identity) and the Policy Layer (control). All processes are logged within classical Syslog-files and attested and stored to Riddle&Code ledger.
-* Riddle&Code audit ledger provides real time and immutable record of all operations, including approved and rejected transactions, adding or disabling of policies and adding of trusted recipients. With Riddle&Code ledger, the client can decrypt, collect and analyse operational data processed within Token Management Platform and obtain real-time access to the respective audit logs. (link to Riddle&Code doc)
-
-### Key backup and verification
-
-After the key is created, the backup mnemonic phrase is disclosed to an administrator on the web interface. The mnemonic phrase consists of twenty-four words and is crucial to the backup and disaster recovery process for the entire Token Management Platform (TMP). It is used to restore keys in the case of loss or when a new initialisation of wallets is required. Due to its critical role in key management, the secret has to be safeguarded from malicious users. Here is RIDDLE&CODE’s recommendation for safely storing the phrase in the initialisation phase:
-
-1. The user reads the phrase from the web interface.
-2. Next, the user writes down the mnemonic phrase on a steel plate and closes the plate.
-3. The mnemonic phrase is stored in an off-premise vault.
-This process is called a key ceremony.
-
-**NOTE:** The backup of the mnemonic phrase is available only once, during the key ceremony. The mnemonic phrase cannot be retrieved later.
-
-Once the mnemonic phrase is safely stored, it is time to perform the verification of the backup process. This process allows the client to verify the integrity of the mnemonic phrase and ensures that the keys being created by this mnemonic phrase equal the keys that are already in the system.
-
-The backup process is done during the key ceremony:
-1. The user enters the parts of the mnemonic phrase to the respective web interface,
-2. The process continues until the entire mnemonic phrase is entered,
-3. The entered mnemonic phrase is then hashed and verified against the mnemonic phrase stored in the CKaaS.
-
-If the verification is successful, the backup mnemonic phrase can be trusted. The key ceremony is, therefore, completed.
-
-### Disaster management
-
-Token Management Platform provides business continuity by ensuring that even in the case of a disaster scenario, such as bankruptcy or functional failure of RIDDLE&CODE, the keys are always under full control of the client.
-
-### Key recovery process
-
-Key recovery can be triggered via the user interface, where the user will be led through the entire process, step-by-step:
-
-1. The key recovery process starts by clicking the **Recover your keys** button on the web interface.
-2. Twenty-four fields are displayed on the web interface.
-3. The user then enters the mnemonic backup to the web interface and performs verification.
-4. According to a strict protocol, part of the mnemonic phrase is re-injected into the Confidential Keystore, which ensures that an individual operator never knows the entire mnemonic phrase.
-With this, the process is completed, and address generation and transaction signing capabilities per client are available.
-
-## Riddle&Code Audit ledger
-
-### Summary
-
-* Riddle&Code audit ledger provides a real-time, immutable record of all operations, including approved and rejected transactions, added or disabled policies and adding of trusted recipients.
-* With the Riddle&Code ledger, the client can decrypt, collect and analyse all operational data processed within the Token Management Platform and obtain real-time access to the respective audit logs.
-* The client receives a node that has all the capabilities of the Riddle&Code ledger and can be used to collect the data about all processed steps.
-* The client can provide access to these operational data to the respective auditors and regulatory bodies.
-
-### Reports based on real-time audit trails
-
-Riddle&Code allows the Token Management Platform to use an auditing system that:
-* stores data necessary for auditing within a single system;
-* collects more data than, for instance, the Bitcoin blockchain network;
-* uses immutable blockchain to record these data; and
-* provides human-readable exporting documents and direct access to auditors.
-
-Transactional data is stored on the corresponding DLTs and a Tendermint-based metadata ledger archiving JSON objects with associations between key derivations, coin addresses, transactions and their approval processes. In addition, information about changes to the Policy Layer is also stored on the metadata ledger.
-
-This metadata ledger is hosted as a private distributed network between the client and RIDDLE&CODE. Data is AES-GCM encrypted with a blinding key that only the client or entities authorised by the client can access to see the audit metadata. For example, the client can also share access to this data with an auditor. The following data is written on the metadata ledger:
-
-  * Account ID
-  * Source coin address
-  * Destination coin address
-  * Amount
-  * Fee
-  * Fee estimation
-  * Date and time
-  * Public keys that approved or signed the transaction
-  * Coin address forensics
-  * Policy Layer result
-  * Transaction status: pending, settled, canceled or no_funds
-
-The implementation with Riddle&Code allows real-time audit that is translated into a JSON structure and provides signed, human-readable PDFs. Clients can retrieve these PDF documents and use them for audit and compliance management. Data resides at a server of the client and service provider.
-
-### How is the data stored and accessed?
-
-Since DLT cannot delete data, the data is blinded, and the information is AES encrypted. This allows the design of regulatory compliant processes to adhere to GDPR or general accounting requirements. The RIDDLE&CODE solution manages the symmetric encryption keys. By design, RIDDLE&CODE’s solution changes the blinding key every calendar year. An administrator can export these keys and destroy a previously used key after several years (e.g., ten years). Not having the key is thus equal to not having the data.
-
-* Administrators can export an AES key for a given year so that they can analyse the data on devices external to the RIDDLE&CODE solution. It is up to the administrator to decide how to secure the key.
-* Administrators can delete a key and, thereby, access to the data, making it unusable and unavailable.
-* Administrators can access encrypted ledger data via an interface so that the data can be decrypted and analysed locally.
-
-### Riddle&Code — Drawing more conclusions and answering more questions
-
-Riddle&Code is a ledger optimised for IoT applications that supports transaction throughput on par with global credit card networks. The ledger uses a byzantine fault-tolerant consensus mechanism and is based on the BigchainDB ledger. It offers low latency, powerful query features, decentralised control, immutable data storage and extensive built-in cryptocurrency support.
-
-IMAGE MISSING
-
-The Riddle&Code Metadata Ledger operates on a globally distributed architecture to ensure the immutability and availability of all data stored and processed.
-The ledger consists of a network of nodes deployed across all major regions.
-
-|BigChainDB                          | by Riddle & Code                      |
-|:----------------------------------------------------:|:-----------------------------------------------:                                        |
-|High throughput, low latency                                | Verifiable smart contract language        |
-|Byzantine fault tolerance (BFT)                             | Collective signature scheme implementation|
-|Real-time auditing                                          | Human-readable audit documents            |
-|Decentralised—same copy of data is distributed to all nodes | Interoperability with sidechains and various ledgers                                                                                          |
-|Immutable metadata storage and proof of provenance          | Native support for multiple assets        |
-|GDPR compliance                                             | Oracle service executions (TEE/SEE)       |
-
-
-### IPDB network
-
-Riddle&Code Audit layer is built upon and leverages the advantages of the public, federated and decentralised IPDB network. This decentralised network is operated by IPDB Foundation [GitHub](https://ipdb.io), a global non-profit foundation with headquarters in Berlin that fosters research into transparent governance. The Foundation is a main custodian of the BigchainDB stack, with a global membership base operating as nodes.
-
->**Multiple sovereign Networks**
->Customisable independent public or private IPDB networks can be set up for multiple parties to run apps on, or even for a single entity to run their apps. Key features include flexible permissioning, low latency, Byzantine fault-tolerance, rich query features with MongoDB.
-
-![](./assets/ipdb1.png)
-
-
->**A trust anchor**
->A self-sovereign network needs authorities, such as governments to issue credentials. Once trusted issuing authorities are set up within BigchainDB, the protocol then guarantees their integrity with its on-chain governance mechanisms such as the consensus algorithms.
-
-![](./assets/ipdb2.png)
-
-
->**Transparent governance**
->The IPDB foundation is governed by its general assembly and its elected board. Members that run the nodes govern the IPDB network. The protocol’s consensus mechanisms provide on-chain governance, and the Foundation’s policies define off-chain governance.
-
-![](./assets/ipdb3.png)
-
-
-### GDPR compliance
-
-Riddle&Code is designed to be entirely GDPR compliant. The ledger itself does not contain arbitrary data hashes as part of transactions being signed off by public-private key pairs, and as such, it does not store any private data. Instead, the data itself is associated with a storage identifier and stored in a database featuring the needs of the data/use case. This can be an SQL (e.g., MariaDB), a NoSQL database (e.g., Cassandra and MongoDB) or decentralised file storage solutions (e.g., IPFS).
-
-## Reconciliation
-
-### Summary
+## Account Reconciliation
 
 * The Token Management Platform provides the functionality to run a customisable reconciliation process, supplying all address-related information in real-time, along with confirmed and unconfirmed balances.
 
-### Immutable record of reconciliation data
+**Immutable record of reconciliation data**
 
 The reconciliation data are stored on the immutable Riddle&Code ledger. The ledger is designed to secure all critical operational processes and provide an easy-to-use solution to transparently store and access all relevant data.
 
@@ -693,8 +436,6 @@ The file contains the following data:
 
 ## AML service by Coinfirm
 
-**Summary**
-
 * The Token Management Platform provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
 * All outgoing and incoming transactions are registered and verified, and any asset with a suspicious origin is flagged for a review.
 * This document describes Coinfirm’s AML integration process.
@@ -705,7 +446,7 @@ AML regulations require companies to submit risk reports, perform diligence proc
 
 RIDDLE&CODE integrates the services provided by leading blockchain analytics platform, Coinfirm, to the Digital Asset Management Solution.
 
-### Coinfirm - real time analytics and compliance risk management
+***Coinfirm - real time analytics and compliance risk management***
 
 **Coinfirm** is a global leader in AML and regulatory technology for blockchain and cryptocurrencies. It offers the industry’s largest blockchain coverage, supporting over 1,500 cryptocurrencies and protocols, including Bitcoin, Ethereum, Hyperledger, and many more.
 
@@ -717,7 +458,7 @@ The service will continuously monitor all coin addresses and alert the client in
 
 This process allows clients to analyse coin addresses in several ways.
 
-### Incoming transactions
+***Incoming transactions***
 
 **1. Continuous monitoring of all coin addresses: trusted recipients and coin addresses under custody**
 When funds are sent to one of the coin addresses managed by RIDDLE&CODE’s solution, Coinfirm will recognise if the incoming transaction will have an impact on the risk level of the coin address.
@@ -726,7 +467,7 @@ When funds are sent to one of the coin addresses managed by RIDDLE&CODE’s solu
 **2. Alerting in case of unexpected behavior or detection of fraud**
 The Coinfirm platform offers a notification feature that can be configured with a set of parameters to inform users via email if transactions have a critical impact on a coin address. The notifications will be sent directly by Coinfirm.
 
-### Outgoing transactions
+***Outgoing transactions***
 
 During a transaction signing request, a client can select the receiver and the sender address for a transaction. On selection, the risk level of both coin addresses will be retrieved from Coinfirm and displayed to the user.
 
@@ -734,7 +475,7 @@ Notifications are sent to the client if fraudulent activities related to one or 
 
 **The following products are available at Coinfirm’s AML/KYC platform:**
 
-### AML Risk Reports
+***AML Risk Reports***
 
 The key functionality of Coinfirm’s AML/KYC platform is the possibility of generating AML/KYC Risk Reports that evaluate money laundering risk for blockchain addresses and their owners. These reports can be downloaded as PDF documents for regulatory compliance purposes.
 
@@ -761,7 +502,7 @@ Risk Reports may be Basic, Standard or Enhanced.
 |Glossary | Yes | Yes | Yes| 
 
 
-### Monitoring Panel
+***Monitoring Panel***
 
 The Monitoring Panel is a feature of the Platform that enables users to monitor and be alerted on AML risk in real-time for all provided addresses and related transactions. The Monitoring Panel include:
 
@@ -776,11 +517,11 @@ Transaction View - provides information in real time about all incoming and outg
 
 * **Notification Bell** - on the top of the tool page, provides information about all new, unread notifications on each monitored address.
 
-### Visual Analysis Tool - Visualiser
+***Visual Analysis Tool - Visualiser***
 
 The Visualiser tool allows users to visually track the flow of funds and provide evidence in the form of a graph of transactions between the cryptocurrency addresses within selected cryptocurrency networks. The Visualiser is equipped with automated source of funds and destination of funds transaction tracking, even across hundreds of consecutive blockchain transactions.
 
-### Case Management Tool
+***Case Management Tool***
 
 The Case Management tool on the Coinfirm AML Platform allows users to keep track of progress and document investigations performed. It supports case analysis workflow, including case QA and supervisor review.
 
@@ -792,23 +533,23 @@ During the process, users can add files from the AML Platform or their computers
 
 **NOTE:** The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
 
-### Integrating Coinfirm’s AML/KYC services
+**Integrating Coinfirm’s AML/KYC services**
 
-### Create account and register coin addresses at the Coinfirm platform
+***Create account and register coin addresses at the Coinfirm platform***
 
-IMAGE MISSING
+![](./assets/Accountregister.png)
 
 Fig1. Flow Diagram of account and address registration
 
 To create a new account in the system, the user needs to enter a 32bit integer in hexadecimal format into the frontend. A request will be sent to RIDDLE&CODE’s solution that will derive, based on the provided number and a derivation seed, coin addresses for each supported currency. The derived addresses will be sent to the CoinfirmConnector, which handles the interaction with the services supported by Coinfirm. Each coin address will be registered to the monitoring system of Coinfirm.
 
-### Adding of trusted recipient
+**Adding of trusted recipient**
 
 The user provides an account ID in the 32bit integer hexadecimal format and a coin address. If there is no account with the provided account ID, the system will generate a new account and add the provided coin address. The coin address will be sent to the CoinfirmConnector and further to the services of Coinfirm where it is added to the monitoring system.
 
-### Creating the transaction and retrieving risk levels
+**Creating the transaction and retrieving risk levels**
 
-IMAGE MISSING
+![](./assets/TXverification.png)
 
 Fig2. Flow Diagram of Transaction verification
 
@@ -816,15 +557,13 @@ In order to create a transaction, a user has to visit the sign transaction page 
 
 This flow is done for the sender as well as for the receiver account. Based on the information, a user can decide if a transaction should be signed or not.
 
-### Integrated Coinfirm API endpoints
+**Integrated Coinfirm API endpoints**
 
 * A detailed API description can be found under the following link. For the authentication to the API bearer tokens are used: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/
 * To authenticate to the API and to retrieve a bearer token, please visit the following link: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Auth/post_auth_login
 * To get the latest information about a registered coin address: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Monitoring panel/post_panels_monitoring_wallet_addresses
 
-# Complete with APIs
-
-### Summary
+## Complete with APIs
 
 * Token Management Platform offers extensive API support for the flexible integration of internal and external services that automate, enhance and simplify a range of operations.
 
@@ -859,8 +598,6 @@ Developers interested in the mechanics of our APIs feel free to contact us direc
 
 ## Full Node service
 
-### Summary
-
 * Full node service is an integrative part of the Token Management Platform (TMP) for each client that comes without extra cost.
 * The service is developed to reduce the dependency on third-party node uptime and provide stable and reliable full node connectivity to the respective blockchain/DLT networks.
 
@@ -891,8 +628,6 @@ The following fullnodes are currently available
 
 
 ## User interface
-
-### Summary
 
 * The main functionalities of the Token Management Platform (TMP) are accessed through the user interface.
 * Assigned users can access the TMP user interface by connecting their Approval Devices with corresponding computers.
@@ -935,18 +670,17 @@ In the **Settlement area**, a client can manage operations related to transactio
 
 ## GDPR compliance
 
-### Summary
 * Token Management Platform (TMP) is fully compliant with the General Data Protection Regulation (GDPR) requirements. The TMP associates all generated coin addresses with client accounts through an anonymous eight-digit account ID, ensuring that no personal data is stored within the solution. 
 * All personal client data processed during onboarding is protected by the Data Protection Note and detailed in this document.
 
 The Token Management Platform leverages the concept of confidential computing that ensures privacy by design and default. Changes processed by and within the system are registered and stored in compliance with GDPR requirements.
 
 
-### General Data Protection Notice
+**General Data Protection Notice**
 
 RIDDLE&CODE is committed to personal data protection. RIDDLE&CODE processes personal data in compliance with the relevant data protection regulations, in particular, the General Data Protection Regulation (GDPR, Regulation [EU] 2016/679) and the Austrian Data Protection Act (DSG). Any data processing by RIDDLE&CODE will, therefore, only take place within the scope of a legal basis, which will be stated below for the individual data processing operations. All employees of RIDDLE&CODE entrusted with data processing are obliged to maintain the confidentiality of the client’s data. No automated decision making is carried out.
 
-### Transmission of personal data
+**Transmission of personal data**
 RIDDLE&CODE transmits personal data only to the extent necessary and only in the following cases:
 
 * with consent;
@@ -961,7 +695,7 @@ RIDDLE&CODE does not transfer a client’s personal data to third parties unless
 
 In this context, RIDDLE&CODE would also like to point out that any data voluntarily published by the clients about the company’s services is public and potentially accessible worldwide.
 
-### Storing personal data 
+**Storing personal data**
 Unless otherwise specified in the respective processing, RIDDLE&CODE stores personal data for as long as it is necessary to ensure the fulfillment of the aforementioned purposes or as long as we are legally obliged to do so.
 
 The personal data of clients using Token Management Platform services are protected with segregation of accounts, which ensures that only duly authorised parties have access to the data relevant to them. This is done in a way that every individual account is protected with ID codes and mapped to coin addresses. The ID codes become part of the key derivation scheme and, therefore, part of the transaction data), creating a link between the assets and account holders. The TMP does not process or store any personal data, only the hash of the mapped account. 
@@ -982,7 +716,7 @@ Right to information: You can request confirmation as to whether personal data c
 
 **Right to object to the processing of personal data**: When processing operations carried out on the basis of legitimate interests (pursuant to Art. 6 para. 1 letter of GDPR), the client has the right to object to the processing of personal data pursuant to Art. 21 GDPR, provided that there are reasons for doing so arising from a particular situation. When processing for the purpose of direct marketing, this right is unrestricted.
 
-### Changes to our Data Protection Notice
+**Changes to our Data Protection Notice**
 RIDDLE&CODE keeps its privacy policy up to date, adapting it when necessary. The current version of the company’s Data Protection Notice is available at https://www.riddleandcode.com/data-protection.
 
 
