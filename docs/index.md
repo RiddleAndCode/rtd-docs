@@ -8,7 +8,7 @@ For all inquiries not already covered in this manual feel free to contact us dir
 
 **Table of Contents**
 
-1. [Product Introduction](Product-Description.md)
+1. [Product Documentation](Product-Documentation.md)
 2. [Use Cases](Use-Cases.md)
 3. [Glossary](Glossary.md)
 4. [User Manuals](Token_Management_Platform_Manual.md)

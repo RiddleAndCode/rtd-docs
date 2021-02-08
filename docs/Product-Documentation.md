@@ -2,6 +2,7 @@
 ### Summary
 
 The Token Management Platform, a powerful yet simple all-in-one platform to store, transact and manage digital assets, contains the following components:
+
 * Dedicated Approval Devices to access the solution, create transactions and approve the transactions based on tailor-made approval workflows.
 * Confidential computing infrastructure to protect all sensitive operations and services.
 * Segregated accounts and addresses managed by the Confidential Keystore
@@ -12,7 +13,7 @@ RIDDLE&CODE’s Token Management Platform (TMP) combines hardware and software t
 
 ![](./assets/210202Architecture.png)
 
-#### Componentes
+#### Components
 
 **Order Services**
 
@@ -88,6 +89,7 @@ The keys are generated within HSM and then exported to the Confidential Keystore
 Additional addresses are then derived from the master key within TEE. Following key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
 
 **Once generated, keys need to be stored**
+
 Once generated, keys are encrypted and stored to prevent malicious use. There are different approaches when it comes to ensuring that keys are securely stored.
 
 In order to provide more accessibility and liquidity of assets, keys are often centralised in so-called hot wallets, from which all transactions either originate or depart. The advantage of these systems is that thousands of transactions per day can be carried out in dozens of digital currencies. This can be done in either an automated or, if necessary (depending on the total value of the transaction), a manual setup.
@@ -101,6 +103,7 @@ RIDDLE&CODE has developed its own solution to enable the combination of these te
 The solution, named the Policy Gateway, combines flexibility and business logic with the protective power of hardware security models.
 
 **Trusted Execution Environment (TEE)**
+
 RIDDLE&CODE adopted the concept of confidential computing (CC) to protect its cloud services and data-in-use through isolating computations to a hardware-based Trusted Execution Environment (TEE).
 
 This represents a secure location, isolated from the regular processing environment where the operating system and applications run. CC safeguards the confidentiality of data/code, protects its integrity and prevents unauthorised access to confidential data and malicious interference.
@@ -108,6 +111,7 @@ This represents a secure location, isolated from the regular processing environm
 Without confidential computing, the cryptographic keys could be revoked, and the ownership of assets could become corrupted. Confidential computing can also achieve data compliance with legislation, such as GDPR or financial regulatory provisions. Finally, the most important aspect of RIDDLE&CODE’s approach to confidential computing is its implementation in a way that doesn’t increase the complexity for the user and, at the same time, remains cost-sensitive.
 
 **Distributed ledger infrastructure**
+
 Despite the groundbreaking improvements of distributed ledgers (immutability, distributed nature, consensus mechanisms, etc.) one of the fundamental issues of current blockchains is low throughput. This limitation has been a major impediment for an industry where scalability is a prerequisite to execute and perform thousands of transactions per second.
 The results of low scalability are congested networks, high network fees, pending transactions and long confirmation times. Hence, the ledger infrastructure is not fit to cope with the vast number of transactions that can be expected once industry-wide adoption takes place. Just imagine all cars using car wallets and creating millions of transactions over the course of the day.  
 
@@ -133,6 +137,7 @@ The Policy Layer is a set of rules that performs and logs all processes precedin
 > Fullfilling regulatory criteria for transparency and compliance.
 
 ***Solution via POLICY LAYER***
+
 Verifies that the defined roles and rules are imposed and followed in a cryptographically secured way. The Policy Layer provides trails of all conducted operations, including details like which changes have been made, who made those changes, who signed the transaction, the place and time, the amount, the fees, the accounts involved, etc.
 With policies that are fully auditable and written in a human-readable language, audit trails become the trusted source, validating that all operations were done in compliance with regulatory frameworks.
 
@@ -141,6 +146,7 @@ With policies that are fully auditable and written in a human-readable language,
 > Ensuring that transaction governance is secure and immutable.
 
 ***Solution via Policy Layer***
+
 Allows clients to set role-based access control in the operational processes and define the access rights to the Token Management Platform and any of its functionalities. For example, separation of roles can be among administrators and operators. Administrators are the only ones who can create and customise transaction rules, ensuring that no circumvention is possible.
 
 
@@ -148,6 +154,7 @@ Allows clients to set role-based access control in the operational processes and
 > Preventing internal misuse.
 
 ***Solution via POLICY LAYER***
+
 Allows defining of approval rules for signing transactions according to different parameters. Every new transaction can be executed only if it complies with previously set rules. If any of the rules are not followed, the Policy Layer declines the approval and rejects the transaction. This enables clients to approve and execute transactions following tailor-made, cryptographically secured approval rules and prevents internal misuse.
 
 
