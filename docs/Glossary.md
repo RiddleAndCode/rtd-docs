@@ -1,3 +1,9 @@
+## Token Management Platform 
+
+RIDDLE&CODE built a comprehensive and unified Token Management Platform (TMP).
+
+The cloud-based platform manages all aspects of key generation, custody, AML, regulatory compliance and token management with unmatched versatility and security in the energy, finance, material and mobility sectors.
+TMP incorporates token-based incentive, payment and exchange services, including the support of staking, DeFi and agile integration of the necessary off-chain business logic.
 
 ## Mnemonic phrase
 Mnemonic phrase, also known as a seed phrase, is a group of 12-24 words used for backing up wallets. The phrase is randomly generated from a wordlist of the BIP32 standard which has 2048 words, where each word is assigned to a number.
