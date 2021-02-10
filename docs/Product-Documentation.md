@@ -569,7 +569,7 @@ This flow is done for the sender as well as for the receiver account. Based on t
 * To authenticate to the API and to retrieve a bearer token, please visit the following link: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Auth/post_auth_login
 * To get the latest information about a registered coin address: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Monitoring panel/post_panels_monitoring_wallet_addresses
 
-## Complete with APIs
+## Supported APIs
 
 * Token Management Platform offers extensive API support for the flexible integration of internal and external services that automate, enhance and simplify a range of operations.
 
@@ -605,7 +605,9 @@ Developers interested in the mechanics of our APIs feel free to contact us direc
 ## Full Node service
 
 * Full node service is an integrative part of the Token Management Platform (TMP) for each client that comes without extra cost.
-* The service is developed to reduce the dependency on third-party node uptime and provide stable and reliable full node connectivity to the respective blockchain/DLT networks.
+* The service is developed to reduce the dependency on third-party node uptime and to provide a stable and reliable connectivity to the respective blockchain/DLT networks.
+* Fullnode service is available for all supported digital assets.
+ 	See Supporte Coins for more details  
 
 By definition, Distributed Ledger Technology is distributed. This distributed nature means that a stable connection to a full node of each currency is a prerequisite for seamless and swift execution and verification of a transaction against various ledgers, including Bitcoin and Ethereum.
 

@@ -6,18 +6,14 @@ theme:
 nav:
 - Home: index.md
 - Token Management Platform:
-        - Documentation: Product-Documentation.md
+        - Product Documentation: Product-Documentation.md
+        - Manuals: Token_Management_Platform_Manual.md
         - Use Cases: Use-Cases.md
-
-- Manuals:
-        - All Users: Token_Management_Platform_Manual.md
+        - Frequently asked questions: FAQ.md
 
 - Glossary: 
         - What's What: Glossary.md
         
-- FAQ:
-        - Frequently asked questions: FAQ.md
-
 extra_css:
   - design/extra_css
   
