@@ -12,4 +12,5 @@ For all inquiries not already covered in this manual feel free to contact us dir
 2. [User Manuals](Token_Management_Platform_Manual.md)
 3. [Use Cases](Use-Cases.md)
 4. [Frequently Asked Questions](FAQ.md)
+6. [Release Notes](release-notes-tmp.md)
 5. [Glossary](Glossary.md)
