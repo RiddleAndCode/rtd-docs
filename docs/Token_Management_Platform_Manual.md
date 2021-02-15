@@ -1,4 +1,4 @@
-# Token Management Platform - Manual
+# Manual
 
 
 ## Manage Approval Devices
