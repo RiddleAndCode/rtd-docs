@@ -56,7 +56,7 @@ Together with Wien Energie, one of Austria’s largest utility providers, RIDDLE
 In return for their investments, consumers receive tokens in an amount based on the energy produced by the PV plant. The accumulated tokens can then be used to pay electricity bills or buy groceries at a supermarket.
 
 
-## Reshaping the art world
+### Reshaping the art world
 The fine arts market has recently reached $63 billion and a 20% increase in auction sales worldwide. However, this conservative industry hasn’t changed its business model for decades, and only 8% of the art auctions are performed online.
 
 Due to this fact, the art market faces several inherent problems, including a lack of transparency and digitalisation, low liquidity, high fees and copyright issues. It is estimated that billions of dollars in revenues are lost each year due to piracy, which is a massive loss for artists who often cannot prove the authenticity and ownership of their work.
@@ -67,7 +67,7 @@ Tokenizing art pieces is an efficient way to create an immutable registry of art
 And that is exactly what RIDDLE&CODE is developing in conjunction with the business innovation collective RDI Digital. The two companies are creating a blockchain-based art-patronage app for the renowned Moscow-based Tretyakov Gallery. The project will allow both individuals and smaller enterprises to make donations and become patrons of famous works of art. The collected funds will be used for the digitalisation of the gallery’s vast collection.
 
 
-## Peer-to-peer energy trading
+### Peer-to-peer energy trading
 For decades, the structure of energy providers has revolved around centralised systems of generation, storage and distribution that are limited for one-way energy and value flows. This system relies on outdated and unscalable infrastructure, raises environmental concerns and does not allow small and micro-producers to participate in the production and settlements.
 
 **Solution proposed**
@@ -82,7 +82,7 @@ After the extension is plugged into a PV system, it registers the production dat
 To track their production and consumption performance, residents of Viertel Zwei can simply visit the relevant website and if desired, switch to a different tariff or even trade the electricity they generate among themselves.
 
 
-## Converting physical assets into tokens
+### Converting physical assets into tokens
 The tokenization of physical assets involves binding a digital token to a certain physical object, such as a car, house or art piece. Creating a digital twin for such high-value objects gives them the transactional ability and the opportunity to distribute fractional ownership among investors.
 
 This is particularly useful in the traditional financial world, where investment barriers can be extremely high. Think about the amount of investment required to buy a real estate asset or a piece of art. For instance, up to now, to have ownership in real estate, one has been obligated to buy the entire property. The result has always been high transaction costs and limited investment opportunities.
