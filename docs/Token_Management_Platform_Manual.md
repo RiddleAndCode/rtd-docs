@@ -1,5 +1,8 @@
 # Token Management Platform - Manual
 
+
+## Manage Approval Devices
+
 ### Register an Approval Device:
 To unlock the settings page and functionalities of the system, you need to register and activate the Approval Device you got from RIDDLE&CODE:  
 
@@ -65,7 +68,7 @@ The steps are as follows:
 6. Next time when you sign in, you’ll use your new PIN.
 
 
-### Coinfirm AML Service
+## Coinfirm AML Service
 #### Set Coinfirm credentials
 
 To use AML Coinfirm services, you need to set your credentials.
@@ -111,7 +114,7 @@ no longer applies to transaction governance:
 3. The policy no longer applies.
 
 
-## Re-enable disabled policy
+### Re-enable disabled policy
 1. Visit the **Policy tab** within the Administration section,
 ![](assets/user-manual-screens/policies.jpeg)
 2. Next to the disabled policy, press **Enable,**
@@ -131,7 +134,7 @@ When a new customer is onboarded, the admin needs to create a new AccountID. Thi
 4. Choose whether you want to create an internal account or add a trusted recipient,
 5. Enter the valid AccountID (Hex Decimal 8 Digits).
 
-## Create an internal account
+### Create an internal account
 To add an internal account, the admin needs to perform the following steps:
 
 1. Sign in to the system as an **Admin,**
@@ -145,7 +148,7 @@ To add an internal account, the admin needs to perform the following steps:
 7. Click **Generate.**
 
 
-## Add trusted recipient
+### Add trusted recipient
 To enable traders to send funds to the external addresses,
 an admin needs to create the appropriate label and add trusted recipients.
 The steps are as follows:
@@ -160,7 +163,7 @@ The steps are as follows:
 6. Choose a currency,
 7. Enter a coin address and click **Add.**
 
-## View accounts
+### View accounts
 To view all the accounts within the system, select the **Addresses section** in the top main menu. 
 
 The table can be sorted by clicking on the header of the preferred column. 
@@ -173,14 +176,14 @@ Please note that only one column can be sorted at a time.
 * Acc. typ: Account type
 
 
-## View trusted recipients
+### View trusted recipients
 
 1. Visit the **Addresses section,**
 2. Select Trusted Recipients via the dropdown filter,
 3. Now you will be able to see a table that contains the list of all available trusted recipients.
 
 
-## View the risk level of a coin address
+### View the risk level of a coin address
 
 The risk level is a value between 0 and 100, where 0 is low and 100 is high. 
 To view the risk level of a coin address:
@@ -206,7 +209,7 @@ The process is as follows:
 
 You submitted the Transaction Request, which now can be approved or rejected.
 
-## View transaction history
+### View transaction history
 1. Navigate to the **History** page within the Settlement section,
 2. Now you will be able to see the list of all past transactions involving account addresses.
 
