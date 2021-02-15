@@ -555,7 +555,7 @@ The user provides an account ID in the 32bit integer hexadecimal format and a co
 
 **Creating the transaction and retrieving risk levels**
 
-![](./assets/TXverification.png)
+![](./assets/Txverification.png)
 
 Fig2. Flow Diagram of Transaction verification
 
