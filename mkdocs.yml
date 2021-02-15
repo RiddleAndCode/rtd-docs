@@ -1,8 +1,14 @@
 site_name: RIDDLE&CODE
 
 theme:
-  name: 'rtd-dropdown'
-
+  #name: 'rtd-dropdown'
+  name: 'readthedocs'
+  highlightjs: true
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - navigation.tabs
 nav:
 - Home: index.md
 - Token Management Platform:
@@ -15,8 +21,13 @@ nav:
 - Glossary: 
         - What's What: Glossary.md
         
-extra_css:
-  - design/extra_css
+#extra_css:
+#  - design/extra_css
   
 plugins:
   - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3
