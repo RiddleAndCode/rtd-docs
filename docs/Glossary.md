@@ -1,3 +1,5 @@
+# Glossary
+
 ## Token Management Platform 
 
 RIDDLE&CODE built a comprehensive and unified Token Management Platform (TMP).

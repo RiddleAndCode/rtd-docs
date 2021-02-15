@@ -1,3 +1,4 @@
+# Token Management Platform - Manual
 
 ### Register an Approval Device:
 To unlock the settings page and functionalities of the system, you need to register and activate the Approval Device you got from RIDDLE&CODE:  

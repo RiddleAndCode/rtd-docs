@@ -1,3 +1,4 @@
+# Use Cases
 
 ## Compelling use cases
 
