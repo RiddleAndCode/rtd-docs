@@ -13,7 +13,7 @@ RIDDLE&CODE’s Token Management Platform (TMP) combines hardware and software t
 
 ![](./assets/210202Architecture.png)
 
-#### Components
+## Components
 
 **Order Services**
 
@@ -72,7 +72,7 @@ The main components of this tokenization ecosystem are:
 The following section describes each of these components.
 
 
-#### Key and identity management
+## Key and identity management
 Key management covers all aspects of generating, securing, exchanging/trading and revoking keys.
 
 Since keys, private and public, act as a representation of indisputable identities, ownership of assets and proof-of-origin, a tokenization platform needs to provide all aspects to:
@@ -83,7 +83,7 @@ Since keys, private and public, act as a representation of indisputable identiti
 * enable revocation/withdrawal and re-creation of keys in the framework of key restoring and disaster management.
 
 
-##### Key generation
+## Key generation
 Key generation is performed in a secure and auditable way with no possibility for others to intercept or access the keys.
 The keys are generated within HSM and then exported to the Confidential Keystore via hardened, secure communication channels. A master key is then generated within the Trusted Execution Environment (TEE), which ensures the encryption of data in transit, while being processed and at rest.
 Additional addresses are then derived from the master key within TEE. Following key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
@@ -130,7 +130,7 @@ BigchainDB solves some of the fundamental weaknesses of existing ledgers by:
 In combination with RIDDLE&CODE’s identity management/wallet solutions, confidential computing approach and interoperability with sidechains like Liquid, BigchainDB acts like an ‘engine’ that supports all aspects of tokenization, including the creation and issuance of tokens, management and trading, as well as burning the tokens in a fashion that is auditable and compliant with regulatory provisions.
 
 
-### Policy layer
+## Policy layer
 The Policy Layer is a set of rules that performs and logs all processes preceding and following transaction authentication. It verifies that the defined roles and rules are imposed and specifies the access rights to the platform and any of its functionalities.
 
 **CHALLENGE 1**
@@ -183,7 +183,7 @@ In the domain of identity, interoperability is achieved by a broad range of cryp
 
 The BigchainDB ledger establishes the interoperability with other networks and technologies via peg-in/peg-out mechanisms. This allows the ledger to focus on its strength when it comes to storing identities and metadata while performing other functions via interoperability with specific sidechains, such as Liquid. In addition, a severe regime of recurring technical and process audits of our technology and the implementation of online audit trails via BigchainDB renders the Token Management Platform compliant with regulatory provisions.
 
-### Approval Devices
+## Approval Devices
 
 * This document describes how the Token Management Platform uses dedicated Approval Devices to identify users and their roles in the operations. It also describes the operations and actions that clients can perform with Approval Devices.
 * Token Management Platform (TMP) is a cloud-based service that secures and stores the keys necessary to sign transactions. To guarantee that the client has full control over the authorisation and signing process, RIDDLE&CODE developed the Approval Devices. The devices are held by the client on the premises and by the authorised personnel of the organisation.
@@ -624,7 +624,7 @@ Required hardware and software are installed in RIDDLE&CODE’s hosting center w
 * Continuous 24/7 monitoring of the entire infrastructure.
 * SLA with various levels of support and service availability, depending on the needs of the client.
 
-### Available Fullnodes 
+#### Available Fullnodes 
 
 The following fullnodes are currently available
 
