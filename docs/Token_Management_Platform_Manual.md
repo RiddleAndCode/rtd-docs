@@ -77,9 +77,8 @@ To use AML Coinfirm services, you need to set your credentials.
 **NOTE:** Please bear in mind that you need to have a running subscription at Coinfirm to perform the following step:
 
 1. Visit the **AML tab**, within the Administration section,
-2. Add username,
-3. Add password,
-4. Click **Save.**
+2. Add the Coinfirm API Key
+3. Click **Save.**
 
 
 ## Manage policies

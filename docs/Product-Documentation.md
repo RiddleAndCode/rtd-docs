@@ -85,7 +85,8 @@ Since keys, private and public, act as a representation of indisputable identiti
 
 ## Key generation
 Key generation is performed in a secure and auditable way with no possibility for others to intercept or access the keys.
-The keys are generated within HSM and then exported to the Confidential Keystore via hardened, secure communication channels. A master key is then generated within the Trusted Execution Environment (TEE), which ensures the encryption of data in transit, while being processed and at rest.
+
+The keys are generated within a dedicated Approval Device and then exported to the Confidential Keystore via hardened, secure communication channels. A master key is then generated within the Trusted Execution Environment (TEE), which ensures the encryption of data in transit, while being processed and at rest.
 Additional addresses are then derived from the master key within TEE. Following key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
 
 **Once generated, keys need to be stored**
@@ -264,16 +265,12 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 
 *Fig 1: Key generation flow diagram*
 
-1. To initiate the creation of the master key, a user (administrator) needs to trigger the generation of a random number via the web interface.
-2. The random number is created inside HSM and then exported to the Confidential Keystore via hardened, secure communication channels.
-3. The Confidential Keystore generates a mnemonic phrase and a master key within the Trusted Execution Environment (TEE). Additional addresses are then derived from the master key within TEE.
-4. The mnemonic phrase is passed through the backend to the web interface.
-5. The phrase is displayed on the web interface to the user.
-6. Finally, the user stores the mnemonic phrase on a steel plate.
+1. To initiate the creation of the master key, a user (administrator) needs to trigger the key generation process on the web interface where the user will be led through the entire process, step-by-step.
+2. The random number is created inside the Approval Device Secure Element and then exported to the Confidential Keystore via hardened, secure communication channels.
+3. The Approval Device generates a mnemonic phrase for back up purposes
+4. The phrase is displayed on the web interface to the user.
+5. Finally, the user stores the mnemonic phrase on a steel plate.
 
-![Key Backup flow Diagram](./assets/keybackup.png)
-
-*Fig 2. Key backup flow diagram (high-level overview)*
 
 Following the key generation, the key derivation path is defined according to the BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. The BIP-32 protocol can turn the seed into a so-called mnemonic phrase that can be backed up according to a disaster recovery process.
 
@@ -303,9 +300,9 @@ The generation of keys is initiated with the following trusted independent sourc
 
 ### Key backup and verification
 
-After the key is created, the backup mnemonic phrase is disclosed to an administrator on the web interface. The mnemonic phrase consists of twenty-four words and is crucial to the backup and disaster recovery process for the entire Token Management Platform (TMP). It is used to restore keys in the case of loss or when a new initialisation of wallets is required. Due to its critical role in key management, the secret has to be safeguarded from malicious users. Here is RIDDLE&CODE’s recommendation for safely storing the phrase in the initialisation phase:
+After the key is created, the backup mnemonic phrase is disclosed to an administrator on the Approval Device that has been used to issued the secure seed generation. The mnemonic phrase consists of twenty-four words and is crucial to the backup and disaster recovery process for the entire Token Management Platform (TMP). It is used to restore keys in the case of loss or when a new initialisation of wallets is required. Due to its critical role in key management, the secret has to be safeguarded from malicious users. Here is RIDDLE&CODE’s recommendation for safely storing the phrase in the initialisation phase:
 
-1. The user reads the phrase from the web interface.
+1. The user reads the phrase from Approval Device screen.
 2. Next, the user writes down the mnemonic phrase on a steel plate and closes the plate.
 3. The mnemonic phrase is stored in an off-premise vault.
 This process is called a key ceremony.
@@ -315,9 +312,8 @@ This process is called a key ceremony.
 Once the mnemonic phrase is safely stored, it is time to perform the verification of the backup process. This process allows the client to verify the integrity of the mnemonic phrase and ensures that the keys being created by this mnemonic phrase equal the keys that are already in the system.
 
 The backup process is done during the key ceremony:
-1. The user enters the parts of the mnemonic phrase to the respective web interface,
-2. The process continues until the entire mnemonic phrase is entered,
-3. The entered mnemonic phrase is then hashed and verified against the mnemonic phrase stored in the CKaaS.
+1. The user verifies the parts of the mnemonic phrase on the Approval Device screen
+2. The process continues until the mnemonic phrase is verified,
 
 If the verification is successful, the backup mnemonic phrase can be trusted. The key ceremony is, therefore, completed.
 
@@ -665,10 +661,9 @@ The **administration area** consists of six sections:
 
 1. **Policies**. Clients can see the list of all active and disabled policies, add new policies and edit their scenarios.
 2. **AML settings**. Clients can submit tokens and perform AML-related analyses.
-3. **HSM settings**. Clients can add new HSM keys or set HSM URLs.
-4. **Device manager**. The section that controls operations related to the Approval Devices.
-5. **Register user**. The section for registering new users and giving them access rights.
-6. **Key management**. Clients can generate and restore keys.
+3. **Device manager**. The section that controls operations related to the Approval Devices.
+4. **Register user**. The section for registering new users and giving them access rights.
+5. **Key management**. Clients can generate and restore keys.
 
 In the **Settlement area**, a client can manage operations related to transactions, including:
 * transaction creation,
