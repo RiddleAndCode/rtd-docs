@@ -11,11 +11,11 @@ As an admin, you can register an Approval Device for a user and add it to the us
 2. Visit the **Device Manager** page within the Administration section,
 3. Click **ADD NEW DEVICE**,
 
-! [Add new device](.. /assets/Newdevice.png)
+![Add new device](./assets/Newdevice.png)
 
 4. Select the user role (admin or trader),
 
-! [Role for the new device](.. /assets/Newdevicerole.png)
+![Role for the new device](./assets/Newdevicerole.png)
 
 5. Click **Preregister**,
 6. Select the wallet and click **Connect**
@@ -32,7 +32,7 @@ When accessing the TMP interface for the first time you need to Sign up. The pro
 4. Enter the PIN on your device.
 5. Choose your Approval Device (wallet) and click **Connect**
 
-! [Sign Up page](.. /assets/SignUp.png)
+![Sign Up page](./assets/SignUp.png)
 
 
 Done! You have successfully signed up for the first time.
@@ -45,7 +45,7 @@ To sign in and access the TMP interface:
 2. Click **Sign in**
 3. Select your Approval Device and click **Connect**
 
-! [Sign in](.. /assets/Signin.png)
+![Sign in](./assets/Signin.png)
 
 4. Press the check mark on your Approval Device to complete the action.
 
@@ -62,7 +62,7 @@ The steps are as follows:
 1. Go to the **Settings** section and click **User**,
 2. Click **Change PIN,**
 
-! [Change PIN](.. /assets/ChangePIN.png)
+![Change PIN](./assets/ChangePIN.png)
 
 3. Select your Approval Device and click **Connect**
 4. Confirm on your device that you want to change the PIN,
@@ -84,7 +84,7 @@ To use AML Coinfirm services, you need to set your credentials.
 
 1. Visit the **AML tab**, within the Administration section,
 
-! [AML Coinfirm](.. /assets/AML.png)
+![AML Coinfirm](./assets/AML.png)
 
 2. Enter the new token,
 3. Click **Submit**.
@@ -98,7 +98,7 @@ As an administrator, you can create and add new policies:
 1. Visit the Administration section and go to the **Policy** tab,
 2. In the right corner, click **NEW POLICY**,
 
-! [Policies](.. /assets/Policies.png)
+![Policies](./assets/Policies.png)
 
 3. Now create the policy's scenario. For example:
 
@@ -109,7 +109,7 @@ Then approve*
 4. Click **Submit**.
 
 
-## View and manage policies
+** View and manage policies **
 
 1. Navigate to the **Policy** tab within the **Administration** section,
 
@@ -118,18 +118,18 @@ There you can see a list of policies that have been created. Each policy is mark
 4. To manage policies just click on their **Status** where you can disable/enable them if necessary.
 
 
-## Disable the existing policy
+** Disable the existing policy **
 As an admin, you can disable the existing policy so that the policy
 no longer applies to transaction governance:
 
 1. Navigate to the **Policy** tab, within the **Administration** section,
 2. Select **Disable** next to the policy you want to disable,
 
-! [Disable policy](.. /assets/Disablepolicy.png)
+![Disable policy](./assets/Disablepolicy.png)
 
 3. Confirm that you want to update the policy status.
 
-! [Disable policy](.. /assets/Disablepolicyconfirm.png)
+![Disable policy](./assets/Disablepolicyconfirm.png)
 
 
 The policy no longer applies.
@@ -152,11 +152,11 @@ When a new customer is onboarded, an administrator needs to create a new account
 1. Head over to the **Addresses** section of the interface,
 2. Click **NEW ASSET** in the top right corner,
 
-! [Add new account](.. /assets/Newasset.png)
+![Add new account](./assets/Newasset.png)
 
 3. On the right side, add account ID to generate address for the customer. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The account ID serves as the derivation index.
 
-! [Add trusted recipient](.. /assets/Addtrustedrecipient.png)
+![Add trusted recipient](./assets/Addtrustedreceipient.png)
 
 4. Click **Generate**
 5. On the left side, enter an Account ID,
@@ -170,7 +170,7 @@ Please note that only one column can be sorted at a time.
 
 
 * Asset: The currency of the account
-* Account ID: The hash ID of the account
+* Account ID: The 8 digit hexadecimal identifier of the account
 * Address: The actual address of the account
 * Acc. typ: Account type
 
@@ -184,7 +184,7 @@ To view the risk level of a coin address:
 2. Click on the dropdown menu next to the address whose risk level you want to check,
 3. Click the **AML Risk Report** link.
 
-! [Coin risk level](.. /assets/Coinrisklevel.png)
+![Coin risk level](./assets/Coinrisklevel.png)
 
 You'll be taken to the Coinfirm website where you can see the address' risk level.
 
@@ -199,7 +199,7 @@ The process is as follows:
 1. Visit the **Settlement** section,
 2. Click **NEW TRANSACTION** in the top right corner,
 
-! [Create new transaction](.. /assets/Newtransaction.png)
+![Create new transaction](./assets/Newtransaction.png)
 
 3. Select a currency that you want to transfer,
 4. Select the sender’s account (risk value will be displayed),

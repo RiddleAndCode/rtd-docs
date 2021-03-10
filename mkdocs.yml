@@ -2,33 +2,30 @@ site_name: RIDDLE&CODE
 
 theme:
   name: 'rtd-dropdown'
-
+  highlightjs: true
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - navigation.tabs
 nav:
 - Home: index.md
-- Product Introduction:
-        - Architecture Overview: Product-Introduction/Architecture-Overview.md
-        - Design philosophy: Product-Introduction/design-philosophy.md
-        - Transaction Approval: Product-Introduction/transaction-approval.md
-        - Policy Layer: Product-Introduction/Policy-Layer.md
-        - Approval Device: Product-Introduction/approval-device.md
-        - Key Management: Product-Introduction/Key-management.md
-        - Key ceremony: Product-Introduction/key-ceremony.md
-        - Audit Trail: Product-Introduction/audit-trail.md
-        - Reconciliation: Product-Introduction/Reconciliation.md
-        - AML: Product-Introduction/AML.md
-        - APIs: Product-Introduction/apis.md
-        - Full Node Service: Product-Introduction/full-node-service.md
-        - Interfaces: Product-Introduction/user-interface.md
-        - GDPR: Product-Introduction/gdpr.md
-- Manuals:
-        - User Manuals: Token_Management_Platform_Manual.md
-- Glossary: 
+- Token Management Platform:
+        - Product Documentation: Product-Documentation.md
+        - Manual: Token_Management_Platform_Manual.md
+        - Use Cases: Use-Cases.md
+        - Frequently Asked Questions: FAQ.md
+        - Release Notes: release-notes-tmp.md
         - Glossary: Glossary.md
-- FAQ:
-        - FAQ: FAQ.md
-
-extra_css:
-  - design/extra_css
+        
+#extra_css:
+#  - design/extra_css
   
 plugins:
   - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - fontawesome_markdown
