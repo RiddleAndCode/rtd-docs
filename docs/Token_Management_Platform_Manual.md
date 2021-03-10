@@ -73,8 +73,6 @@ The steps are as follows:
 Next time when you sign in to the TMP, you’ll use your new PIN.
 
 
-# Coinfirm AML Service
-
 ## Set Coinfirm credentials
 
 To use AML Coinfirm services, you need to set your credentials.
@@ -90,9 +88,7 @@ To use AML Coinfirm services, you need to set your credentials.
 3. Click **Submit**.
 
 
-# Manage policies
-
-## Create a new policy
+## Manage policies - create a new policy
 As an administrator, you can create and add new policies:
 
 1. Visit the Administration section and go to the **Policy** tab,
@@ -144,9 +140,9 @@ The policy is now re-enabled and applies to transaction governance.
 
 
 
-# Manage customers' accounts
+## Manage customers' accounts
 
-## Create an account for a new customer
+### Create an account for a new customer
 When a new customer is onboarded, an administrator needs to create a new account for the customer. This can be done by adding an internal account or a trusted recipient. The process is as follows:
 
 1. Head over to the **Addresses** section of the interface,
@@ -164,7 +160,7 @@ When a new customer is onboarded, an administrator needs to create a new account
 7. Enter a coin address and click **Add**.
 
 
-## View accounts
+### View accounts
 To view all the accounts within the system, select the **Addresses** section in the top main menu. There you can see the list of all accounts. You can sort them by clicking on the header of the preferred column.
 Please note that only one column can be sorted at a time.
 
@@ -175,7 +171,7 @@ Please note that only one column can be sorted at a time.
 * Acc. typ: Account type
 
 
-## View the risk level of a coin address
+### View the risk level of a coin address
 
 The risk level is a value between 0 and 100, where 0 is low and 100 is high.
 
@@ -189,9 +185,9 @@ To view the risk level of a coin address:
 You'll be taken to the Coinfirm website where you can see the address' risk level.
 
 
-# Manage transactions
+## Manage transactions
 
-## Create transaction request
+### Create transaction request
 As a trader, you can create the transaction request and transfer funds from one coin address to another.
 Depending on the transaction amount, several traders may need to approve the request.
 
@@ -211,7 +207,7 @@ The process is as follows:
 You submitted the transaction request, which now can be approved or rejected.
 
 
-## View transaction history
+### View transaction history
 1. Navigate to the **History** page within the **Settlement** section,
 
 Here you will be able to see the list of all past transactions involving account addresses.
