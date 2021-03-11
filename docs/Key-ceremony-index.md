@@ -1,14 +1,13 @@
-INTROPDUCTION 
+#Guides to the key ceremony
 
-
-
-We cover technical and business details as well as all required steps to set up and trouble shoot our solution. 
+In these guides we describe the key ceremony protocol. There are different ways a key ceremony can be executed. In these documents, we give our recommendations on performing a ceremony based on experiences and requirements from the Swiss banking industry.
 
 **Support**
 
-For all inquiries not already covered in this manual feel free to contact us directly via: support@riddleandcode.com
+For all inquiries not already covered in these guides feel free to contact us directly via: support@riddleandcode.com
+
 
 **Table of Contents**
 
-1. [Key Cermeony Guide for 2 parties ]((Link to md file) 
+1. [Key Ceremony Guide for 2 parties ]((Link to md file)
 2. [Key ceremony Guide for 3 Parties ](Link to md file)
