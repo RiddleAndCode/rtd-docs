@@ -28,12 +28,12 @@ You will need the following:
 
 - The Approval Device - Seed edition.
 
-[Approval Device](../assets/Approvaldevice.png)
+![Approval Device](./assets/Approvaldevice.png)
 
 - A reliable computer with access to the Internet. RIDDLE&CODE recommends using Chrome, at least version 87.0.
 - 2 steel plates.
 
-[Steel plates](../assets/Steelplates.png)
+![Steel plates](./assets/Steelplates.png)
 
 - 2 locks that fit the steel plates.
 - A set of tweezers to help you with inserting the letters in the steel plates.
@@ -51,7 +51,7 @@ During the ceremony, you will use two steel plates to store mnemonic phrase. Thi
 
 To initiate the key ceremony, a user needs to trigger the generation of a secure seed via the web interface.
 
-[Key management](../assets/Keymanagement.png)
+![Key management](./assets/Keymanagement.png)
 
 A random number is created inside the Approval Device and then exported to the Confidential Keystore via hardened, secure communication channels.
 
@@ -93,7 +93,7 @@ The administrator connects the Approval Device - Seed generation to a computer, 
 
 This will trigger the generation of a true random number—mnemonic phrase, which then needs to be stored on the steel plates. The Approval Device remains connected to a computer during the entire process.
 
-[Key generation](../assets/Keygeneration.png)
+![Key generation](./assets/Keygeneration.png)
 
 
 ### First participant
