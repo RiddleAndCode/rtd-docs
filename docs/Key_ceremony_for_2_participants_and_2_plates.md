@@ -2,8 +2,12 @@
 
 #Two participants and two plates
 
+<<<<<<< HEAD
 ##Summary:
 
+=======
+## Summary:
+>>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 - This document describes a key ceremony protocol designed to secure the most crucial part of the Token Management Platform—the seed used to generate the initial key pair—and minimise the attack surface.
 - Please read this document in full before starting the ceremony. Revise it carefully and verify that it complies with your safety practices, compliance procedures/requirements and operational processes.
 - Chapter 1 describes the basic concepts of the key ceremony, including the importance of private/public keys and RIDDLE&CODE’s safety recommendations when performing the ceremony.
@@ -13,7 +17,12 @@
 - Finally, Chapter 5 will show you how to restore the phrase.
 
 
+<<<<<<< HEAD
 ##Chapter 1: Introduction to the key ceremony
+=======
+
+## Chapter 1: Introduction to the key ceremony
+>>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 
 Keys (private/public) are the foundation of each business case or application built upon blockchain. Whoever controls the keys, also owns and controls the digital assets. Therefore, the key ceremony is the most critical procedure to guarantee security and control over the assets.
 
@@ -24,18 +33,27 @@ RIDDLE&CODE’s recommendation is to perform the key ceremony only after you get
 In case of any unclarities or questions, please contact RIDDLE&CODE at **support@riddleandcode.com**.
 
 
+<<<<<<< HEAD
 ##Chapter 2: Equipment necessary to perform the key ceremony
+=======
+
+## Chapter 2: Equipment necessary to perform the key ceremony
+>>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 
 You will need the following:
 
 - The Approval Device - Seed edition.
 
+<<<<<<< HEAD
 [Approval Device](.. /assets/Approvaldevice.png)
+=======
+![Approval Device](./assets/Approvaldevice.png)
+>>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 
 - A reliable computer with access to the Internet. RIDDLE&CODE recommends using Chrome, at least version 87.0.
 - 2 steel plates.
 
-[Steel plates](.. /assets/Steelplates.png)
+![Steel plates](./assets/Steelplates.png)
 
 - 2 locks that fit the steel plates.
 - A set of tweezers to help you with inserting the letters in the steel plates.
@@ -48,10 +66,16 @@ Due to the importance of this procedure, RIDDLE&CODE recommends performing the c
 During the ceremony, you will use two steel plates to store mnemonic phrase. This way, confidentiality is guaranteed since no single person will ever see or hold the entire mnemonic phrase. And in case that one steel plate is missing, the mnemonic phrase can still be recovered.
 
 
+<<<<<<< HEAD
 ###Mnemonic phrase
+=======
+
+### Mnemonic phrase
+
+>>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 To initiate the key ceremony, a user needs to trigger the generation of a secure seed via the web interface.
 
-[Key management](.. /assets/Keymanagement.png)
+![Key management](./assets/Keymanagement.png)
 
 A random number is created inside the Approval Device and then exported to the Confidential Keystore via hardened, secure communication channels.
 This random number represents a 32-byte sequence as a 256-bit number and stores all the information necessary to recover a wallet and hence, assets. However, since a 32-byte sequence would be difficult to remember or write down, the concept of a human-readable and memorisable mnemonic phrase has been introduced.
@@ -64,7 +88,12 @@ RIDDLE&CODE’s recommendation for storing the mnemonic phrase is:
 - When filling out the steel plates, no person should be able to see another person’s words.
 
 
+<<<<<<< HEAD
 ###The plates
+=======
+
+### The plates
+>>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 
 Each plate is sealed with a lock. A single plate stores 24 words, 12 on each side. Each side has 3 rows, with 4 words in each row. 
 
@@ -72,7 +101,7 @@ All plates should rest on a flat, non-transparent surface so that when open, onl
 
 Our recommendation is that everyone participating in the key ceremony become familiar with basic steel plate operations such as opening, closing, turning them over, inserting the letters, etc.
 
-###Master of ceremony
+### Master of ceremony
 
 The master of ceremony is responsible for handing the plates to each participant and ensuring that no participant will turn them over unless as part of the procedure.
 
@@ -82,7 +111,7 @@ In case that procedure is not being followed correctly, the master of ceremony i
 
 
 
-##Chapter 3: The key ceremony guidelines
+## Chapter 3: The key ceremony guidelines
 
 The master of ceremony gathers all participants (among them is an administrator) and prepares one Approval Device, two steel plates, two locks that fit the steel plates, a set of tweezers to help with inserting the letters in the steel plates and a flat screwdriver (or something similar).
 
@@ -91,10 +120,10 @@ The administrator connects the Approval Device - Seed generation to a computer, 
 
 This will trigger the generation of a true random number—mnemonic phrase, which then needs to be stored on the steel plates. The Approval Device remains connected to a computer during the entire process.
 
-[Key generation](.. /assets/Keygeneration.png)
+![Key generation](./assets/Keygeneration.png)
 
 
-###First participant
+### First participant
 
 - The master of ceremony is left alone with the first participant.
 - The master of ceremony opens the plates A and B, which contain no words.
@@ -104,7 +133,7 @@ This will trigger the generation of a true random number—mnemonic phrase, whic
 - Next, the master of the ceremony asks the first participant to leave the room, and the second participant enters.
 
 
-###Second participant
+### Second participant
 
 - The master of ceremony opens the plate A, which contains no words on positions 13 to 24.
 - The second participant clicks on the Approval Device and privately reads the next 12 words.
@@ -115,14 +144,14 @@ This will trigger the generation of a true random number—mnemonic phrase, whic
 Once you have generated and stored the phrase, it is time to perform a process called mnemonic validation. This process assures that all steel plates contain the correct words and that the mnemonic phrase can be used to recover the underlying keys. If mnemonic validation is not performed, there is no guarantee that you will be able to restore a mnemonic phrase.
 
 
-##Chapter 4: Mnemonic phrase validation
+## Chapter 4: Mnemonic phrase validation
 
 Mnemonic validation is performed with steel plates marked with the stickers by the same master of ceremony and, typically, the previous participants.
 The master of ceremony is responsible for handing out the correct plates to each participant and ensuring that the same side of the plate is not used twice.
 The master of ceremony should also ensure that none of the participants turn the plates to read the opposite side.
 
 
-###Mnemonic phrase validation steps
+### Mnemonic phrase validation steps
 
 The validation process is performed with the Approval Device. You will be asked to choose the correct words from a numbered list of 3 words until at up to 8 words have been correctly verified. The master of ceremony is tasked with guiding the process.
 
@@ -134,7 +163,7 @@ Please find below an exemplary description of the process:
 
 
 
-##Chapter 5: Restore mnemonic phrase
+## Chapter 5: Restore mnemonic phrase
 In cases of disaster, for instance, when the cloud service gets destroyed, the Approval Devices end up stolen, RIDDLE&CODE shuts down its business or any other event that might jeopardise the access to the base keys, the key restoral process guarantees that a company or individual can re-create the secret and hence the control over digital assets. Besides, if the user decides to use another digital asset management tool or system, the keys can be restored independently of RIDDLE&CODE.
 
 The recovery process follows similar steps as the initial key generation. The master of ceremony prepares the steel plates and a new/unused Approval Device. All participants in the ceremony need to be present.
