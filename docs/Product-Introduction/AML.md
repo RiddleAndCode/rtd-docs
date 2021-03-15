@@ -45,43 +45,38 @@ Notifications are sent to the client if fraudulent activities related to one or 
 
 The key functionality of Coinfirm’s AML/KYC platform is the possibility of generating AML/KYC Risk Reports that evaluate money laundering risk for blockchain addresses and their owners. These reports can be downloaded as PDF documents for regulatory compliance purposes.
 
-Risk Reports may be Basic, Standard or Enhanced.
+Risk Reports may be Standard or Enhanced.
 
-|Report element | Enhanced (Web/pdf/API) | Standard (Web/pdf/API)|Basic ('C-Score Report') (Monitoring Panel/API) |
-|----------------|:----------------------:|:-------------------------:|:------------------------:|
-|Report ID, date and block height | Yes | Yes | Yes| 
-|Address summary (balance in crypto and in USD, tokens) | Yes | Balance in crypto and USD | USD Balance in crypto| 
-|Profile analysis and summary | Yes | No | No| 
-|C-Score | Yes | Yes | Yes| 
-|C-Score analysis and summary | Yes | No | No| 
-|Risk Level | Yes | Yes | Yes| 
-|Network Membership | Yes | Yes | Yes| 
-|List of identified risks | Yes | No | No| 
-|List of informative flags | Yes | No | No| 
-|Assets/tokens analysis and summary | Yes | No | No| 
-|Financial analysis | Yes | No | No| 
-|Dark web connections | Yes | No | No| 
-|Appendix 1 – Risk Indicators | Yes | Category and subcategory | No| 
-|Appendix 2 – Financial analysis and summary | Yes | No | No| 
-|Appendix 3 – List of Assets/Tokens | Yes | No | No| 
-|Disclaimer | Yes | Yes | Yes| 
-|Glossary | Yes | Yes | Yes| 
+|Report element | Enhanced (Web/pdf/API) | Standard (Web/pdf/API)|
+|----------------|:----------------------:|:-------------------------:
+|Report ID, date and block height | Yes | Yes |
+|Address summary (balance in crypto and in USD, tokens) | Yes | Yes |  
+|Profile analysis and summary | Yes | Yes |
+|C-Score | Yes | Yes |
+|C-Score analysis and summary | Yes | Yes (one key risk indicator) |
+|Risk Level | Yes | Yes |
+|Network Membership | Yes | Yes |  
+|List of identified risks | Yes | No |
+|List of informative flags | Yes | No |
+|Risk source* (additional feature)| Yes (as an additional feature) Web and API | No |
+|Assets/tokens analysis and summary | Yes | No |
+|Financial analysis | Yes | Yes |
+|Dark web connections | Yes | No |
+|Appendix 1 – Risk Indicators | Yes | No |  
+|Appendix 2 – Financial analysis and summary | Yes | No |  
+|Appendix 3 – List of Assets/Tokens | Yes | No |
+|Disclaimer | Yes | Yes |
+|Glossary | Yes | Yes |
 
 
 ## Monitoring Panel
 
-The Monitoring Panel is a feature of the Platform that enables users to monitor and be alerted on AML risk in real-time for all provided addresses and related transactions. The Monitoring Panel include:
+Monitoring Panel
+The Monitoring Panel is a feature of the Coinfirm platform that enables users to monitor and be alerted on AML risk in real-time for all provided addresses and related transactions. The Monitoring Panel includes:
+1. Dashboard with all alerts raised, grouped by date, category and alert type.
+2. List of monitored addresses with the history of transactions and alerts, as well as balance and risk level changes from the beginning of monitoring.
+3. Administration panel to the setup of the tool – setting notification preferences, categories, thresholds and mailboxes.
 
-* **Wallet View** - provides the current risk scoring for monitored wallet addresses, navigates to wallet address details and displays information about new notifications. By default, the risk scoring is recalculated after each transaction and at least once daily.
-Transaction View - provides information in real time about all incoming and outgoing transactions on monitored addresses that transfer value. It also provides the recalculated C-Score after each such transaction.
-
-* **Archive** - provides the list of all archived addresses that have been previously monitored and the option to renew them.
-
-* **Notifications** - provides the list of all notifications for each monitored address.
-
-* **Settings** - provides option to set up notifications and risk recalculation frequency.
-
-* **Notification Bell** - on the top of the tool page, provides information about all new, unread notifications on each monitored address.
 
 ## Visual Analysis Tool - Visualiser
 
