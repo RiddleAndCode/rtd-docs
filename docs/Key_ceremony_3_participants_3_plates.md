@@ -27,7 +27,7 @@ You will need the following:
 
 - The Approval Device - Seed edition.
 
-[Approval Device](./Approvaldevice.png/)
+![Approval Device](./Approvaldevice.png/)
 
 - A reliable computer with access to the Internet. RIDDLE&CODE recommends using Chrome, at least version 87.0.
 - 3 steel plates.
@@ -127,7 +127,7 @@ Mnemonic validation is performed with the steel plates marked with the stickers 
 The master of ceremony, who guides the process, is responsible for handing out the correct plates to each participant and ensuring that the same side of the plate is not used twice.
 The master of ceremony should also ensure that none of the participants turn the plates to read the opposite side.
 
-###Mnemonic phrase validation steps
+### Mnemonic phrase validation steps
 
 The validation process is performed with the Approval Device. You will be asked to choose the correct words from a numbered list of 3 words until at least 8 words have been correctly verified.
 
@@ -138,7 +138,7 @@ Below is an example of the process:
 - After completing the validation process, the Approval Device provides a success message and the web interface displays the Pubkey of the master seed.
 
 
-##Chapter 5: Restore mnemonic phrase
+## Chapter 5: Restore mnemonic phrase
 In cases of disaster, for instance, when the cloud service gets destroyed, the Approval Devices end up stolen, RIDDLE&CODE shuts down its business or any other event that might jeopardise the access to the base keys, the key restoral process guarantees that a company or individual can re-create the secret and hence the control over its digital assets. Besides, if the user decides to use another digital asset management tool or system, the keys can be restored independently of RIDDLE&CODE.
 
 The recovery process follows similar steps as the initial key generation. The master of ceremony prepares the steel plates and a new/unused Approval Device. All participants in the ceremony need to be present.

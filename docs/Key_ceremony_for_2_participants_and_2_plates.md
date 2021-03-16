@@ -12,12 +12,8 @@
 - Finally, Chapter 5 will show you how to restore the phrase.
 
 
-<<<<<<< HEAD
-##Chapter 1: Introduction to the key ceremony
-=======
-
 ## Chapter 1: Introduction to the key ceremony
->>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
+
 
 Keys (private/public) are the foundation of each business case or application built upon blockchain. Whoever controls the keys, also owns and controls the digital assets. Therefore, the key ceremony is the most critical procedure to guarantee security and control over the assets.
 
@@ -27,7 +23,7 @@ RIDDLE&CODE’s recommendation is to perform the key ceremony only after you get
 
 In case of any unclarities or questions, please contact RIDDLE&CODE at **support@riddleandcode.com**.
 
-##Chapter 2: Equipment necessary to perform the key ceremony
+## Chapter 2: Equipment necessary to perform the key ceremony
 
 
 You will need the following:
