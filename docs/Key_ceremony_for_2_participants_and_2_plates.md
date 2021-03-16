@@ -1,13 +1,8 @@
-#Key ceremony
 
-#Two participants and two plates
+# Two participants and two plates
 
-<<<<<<< HEAD
-##Summary:
-
-=======
 ## Summary:
->>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
+
 - This document describes a key ceremony protocol designed to secure the most crucial part of the Token Management Platform—the seed used to generate the initial key pair—and minimise the attack surface.
 - Please read this document in full before starting the ceremony. Revise it carefully and verify that it complies with your safety practices, compliance procedures/requirements and operational processes.
 - Chapter 1 describes the basic concepts of the key ceremony, including the importance of private/public keys and RIDDLE&CODE’s safety recommendations when performing the ceremony.
@@ -32,23 +27,15 @@ RIDDLE&CODE’s recommendation is to perform the key ceremony only after you get
 
 In case of any unclarities or questions, please contact RIDDLE&CODE at **support@riddleandcode.com**.
 
-
-<<<<<<< HEAD
 ##Chapter 2: Equipment necessary to perform the key ceremony
-=======
 
-## Chapter 2: Equipment necessary to perform the key ceremony
->>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 
 You will need the following:
 
 - The Approval Device - Seed edition.
 
-<<<<<<< HEAD
-[Approval Device](.. /assets/Approvaldevice.png)
-=======
+
 ![Approval Device](./assets/Approvaldevice.png)
->>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 
 - A reliable computer with access to the Internet. RIDDLE&CODE recommends using Chrome, at least version 87.0.
 - 2 steel plates.
@@ -66,13 +53,9 @@ Due to the importance of this procedure, RIDDLE&CODE recommends performing the c
 During the ceremony, you will use two steel plates to store mnemonic phrase. This way, confidentiality is guaranteed since no single person will ever see or hold the entire mnemonic phrase. And in case that one steel plate is missing, the mnemonic phrase can still be recovered.
 
 
-<<<<<<< HEAD
-###Mnemonic phrase
-=======
 
 ### Mnemonic phrase
 
->>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 To initiate the key ceremony, a user needs to trigger the generation of a secure seed via the web interface.
 
 ![Key management](./assets/Keymanagement.png)
@@ -83,17 +66,13 @@ This random number represents a 32-byte sequence as a 256-bit number and stores 
 The mnemonic phrase consists of 24 words defined according to the Bitcoin improvement proposal numbered BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. To recreate a wallet and access funds, the words comprising the mnemonic phrase must follow the correct, previously established sequence. The very last word always functions as a control word, validating the consistency of the original phrase.
 
 RIDDLE&CODE’s recommendation for storing the mnemonic phrase is:
+
 - No single person should know the whole mnemonic phrase. This ensures that no individual can re-create the entire secret and obtain control over assets.
 - Steel plates should be stored in separate physical locations.
 - When filling out the steel plates, no person should be able to see another person’s words.
 
 
-<<<<<<< HEAD
-###The plates
-=======
-
 ### The plates
->>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
 
 Each plate is sealed with a lock. A single plate stores 24 words, 12 on each side. Each side has 3 rows, with 4 words in each row. 
 
@@ -160,7 +139,6 @@ Please find below an exemplary description of the process:
 - The Approval device displays 3 words and asks which one of them is on position x of the backup.
 - The master of ceremony asks the participant to open the steel plate and enter the correct word on the position x. Each word displayed on the Approval Device needs to match with the corresponding word on the steel plates.
 - After completing the validation process, the Approval Device provides a success message and the web interface displays the Pubkey of the master seed.
-
 
 
 ## Chapter 5: Restore mnemonic phrase
