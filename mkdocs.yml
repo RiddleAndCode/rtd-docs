@@ -13,7 +13,7 @@ nav:
 - Token Management Platform:
         - Product Documentation: Product-Documentation.md
         - Manual: Token_Management_Platform_Manual.md
-        - Key Ceremony: Key-ceremony.md
+        - Key Ceremony: key-ceremony.md
         - Use Cases: Use-Cases.md
         - Frequently Asked Questions: FAQ.md
         - Release Notes: release-notes-tmp.md
