@@ -52,7 +52,7 @@ To sign in and access the TMP interface:
 You have signed up and now you can access the system.
 
 
-## Change the PIN
+## Change PIN
 Your Approval Device is protected with a default PIN, which can be changed to a personalised one.
 
 **NOTE:** For a trader, this is mandatory when logging for the first time.
@@ -73,12 +73,26 @@ The steps are as follows:
 Next time when you sign in to the TMP, you’ll use your new PIN.
 
 
-## Set Coinfirm credentials
+## Manage Coinfirm services
 
-To use AML Coinfirm services, you need to set your credentials.
+### Activate your Coinfirm licence access
+
+1. Please contact Coinfirm via the Token Management Platform.
+2. You'll receive an Invitation e-mail that contains the link to the page to activate your account and create a password.
+
+Please note that you need to complete this step to activate your license access.
+
+3. When the account is activated, the AML Platform Dashboard will appear. Take a look around and give it a try.
+4. After you activate your account, you'll receive another e-mail from Coinfirm, with two files attached. One of them is the instruction on how to register and efficiently use the Service Desk, where you can easily report any issues spotted and check the status of tickets reported in the past.
+
+After you successfully register at the Service Desk, you will be able to access instructions to all the tools available on the platform.
 
 
-**NOTE:** Please bear in mind that you need to have a running subscription at Coinfirm to perform the following steps:
+
+## Manage AML services by Coinfirm
+
+* If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on the product pricing. To integrate Coinfirm’s anti-money laundering services, reach out to your point of contact at RIDDLE&CODE. We will guide you through the process.
+
 
 1. Visit the **AML tab**, within the Administration section,
 
