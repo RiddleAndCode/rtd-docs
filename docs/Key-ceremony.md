@@ -10,4 +10,4 @@ For all inquiries not already covered in these guides feel free to contact us di
 **Table of Contents**
 
 1. [Key Ceremony Guide for 2 parties](Key_ceremony_for_2_participants_and_2_plates.md)
-2. [Key ceremony Guide for 3 Parties ](Link to md file)
+2. [Key ceremony Guide for 3 Parties ](Key_ceremony_3_participants_3_plates.md)

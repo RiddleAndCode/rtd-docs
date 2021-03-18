@@ -1,7 +1,6 @@
-#Key ceremony
-#Three participants and three plates
+# Three participants and three plates
 
-##Summary:
+## Summary:
 
 - This document describes a key ceremony protocol designed to secure the most crucial part of the Token Management Platform—the seed used to generate the initial key pair—and minimise the attack surface.
 - Please read this document in full before starting the ceremony. Revise it carefully and verify that it complies with your safety practices, compliance procedures/requirements and operational processes.
@@ -12,7 +11,7 @@
 - Finally, Chapter 5 will show you how to restore the phrase.
 
 
-##Chapter 1: Introduction to the key ceremony
+## Chapter 1: Introduction to the key ceremony
 Keys (private/public) are the foundation of each business case or application built upon blockchain. Whoever controls the keys, also owns and controls the digital assets. Therefore, the key ceremony is the most critical procedure to guarantee security and control over the assets.
 
 There are different ways a key ceremony can be executed. In this document, we give our recommendations on performing a ceremony based on experiences and requirements from the Swiss banking industry. In this specific example, the ceremony is performed with a master of ceremony, three participants and three plates.
@@ -22,19 +21,18 @@ RIDDLE&CODE’s recommendation is to perform the key ceremony only after you get
 In case of any unclarities or questions, please contact RIDDLE&CODE at support@riddleandcode.com.
 
 
-
-##Chapter 2: Equipment necessary to perform the key ceremony
+## Chapter 2: Equipment necessary to perform the key ceremony
 
 You will need the following:
 
 - The Approval Device - Seed edition.
 
-[Approval Device](.. /Approvaldevice.png/)
+[Approval Device](./Approvaldevice.png/)
 
 - A reliable computer with access to the Internet. RIDDLE&CODE recommends using Chrome, at least version 87.0.
 - 3 steel plates.
 
-[Steel plates](.. /assets/Steelplates.png)
+![Steel plates](./assets/Steelplates.png)
 
 - 3 locks that fit the steel plates.
 - A set of tweezers to help you with inserting the letters in the steel plates.
@@ -47,17 +45,17 @@ Due to the importance of this procedure, RIDDLE&CODE recommends performing the c
 During the ceremony, you will use three steel plates to store mnemonic phrase. This way, confidentiality is guaranteed since no single person will ever see or hold the entire mnemonic phrase. And in case that one steel plate is missing, the mnemonic phrase can still be recovered.
 
 
-###Mnemonic phrase
+### Mnemonic phrase
 
 To initiate the key ceremony, a user needs to trigger the generation of a secure seed via the web interface.
 
-[Key management](.. /assets/Keymanagement.png)
+![Key management](./assets/Keymanagement.png)
 
 A random number is created inside the designated Approval Device and then exported to the Confidential Keystore via hardened, secure communication channels.
 
 This random number represents a 32-byte sequence as a 256-bit number and stores all the information necessary to recover a wallet and hence, assets. However, since a 32-byte sequence would be difficult to remember or write down, the concept of a human-readable and memorisable mnemonic phrase has been introduced.
 
-[Mnemonic phrase](.. /assets/Mnemonicphrase.png)
+![Mnemonic phrase](./assets/Mnemonicphrase.png)
 
 The mnemonic phrase consists of 24 words defined according to the Bitcoin improvement proposal numbered BIP-32, BIP-39, BIP-44 and additional applicable cryptocurrency standards. To recreate a wallet and access funds, the words comprising the mnemonic phrase must follow the correct, previously established sequence. The very last word always functions as a control word, validating the consistency of the original phrase.
 
@@ -67,7 +65,7 @@ RIDDLE&CODE’s recommendation for storing the mnemonic phrase is:
 - When filling out the steel plates, no person should be able to see another person’s words.
 
 
-###The plates
+### The plates
 Each plate is sealed with a lock. A single plate stores 24 words, 12 on each side. Each side has 3 rows, with 4 words in each row.
 
 All plates should rest on a flat, non-transparent surface so that when open, only one side is readable. When turning a plate on the opposite side, the plate should always be closed. The sides can be marked with a removable sticker so that during the validation of the phrase, you will know which plate contains which words.
@@ -75,7 +73,7 @@ All plates should rest on a flat, non-transparent surface so that when open, onl
 Our recommendation is that everyone participating in the key ceremony become familiar with basic steel plate operations such as opening, closing, turning them over, inserting the letters, etc.
 
 
-###Master of ceremony
+### Master of ceremony
 
 The master of ceremony is responsible for handing the plates to each participant and ensuring that no participant will turn them over unless as part of the procedure.
 
@@ -84,7 +82,7 @@ In case that procedure is not being followed correctly, the master of ceremony i
 **NOTE**: The key ceremony can be filmed to prove that there was no collusion between the three participants. Please note that the film camera needs to be positioned in such a way that at no point in time, the screen of the Approval Device is visible.
 
 
-##Chapter 3: The key ceremony guidelines
+## Chapter 3: The key ceremony guidelines
 
 The master of ceremony gathers all participants (among them is an administrator) and prepares one Approval Device, three steel plates, three locks that fit the steel plates, a set of tweezers to help with inserting the letters in the steel plates and a flat screwdriver (or something similar).
 
@@ -93,9 +91,9 @@ The administrator connects the Approval Device - Seed generation to a computer, 
 
 This will trigger the generation of a true random number—mnemonic phrase, which then needs to be stored on the steel plates. The Approval Device remains connected to the computer during the entire process.
 
-[Key generation](.. /assets/Keygeneration.png)
+![Key generation](./assets/Keygeneration.png)
 
-###First participant
+### First participant
 - The master of ceremony is left alone with the first participant.
 - The master of ceremony opens the plates A and B, which contain no words.
 - The first participant clicks the button on the Approval Device. The first 8 words are displayed one after the other.
@@ -147,13 +145,14 @@ The recovery process follows similar steps as the initial key generation. The ma
 
 The administrator starts the process by accessing the web interface and navigating to the **Key Management section**. The administrator then clicks **Recover**.
 
-[Key management](.. /assets/Keymanagement.png)
+![Key management](./assets/Keymanagement.png)
 
 Next, the administrator connects the Approval Device to the computer, unlocks it with PIN and clicks **Initialize now**.
 
-[Key generation](.. /assets/Keygeneration.png)
+![Key generation](./assets/Keygeneration.png)
 
 If you open any two steel plates, you’ll see that it has four sides. Three sides are different, while the fourth one represents a copy of one of the other three sides. To perform a recovery, you should take three different sides and use a mnemonic phrase in this order:
+
 - The first participant enters the 8 words, one at a time, from the side with the first and second rows filled up.
 - Next, the master of the ceremony asks the first participant to leave the room, and the second participant enters. The second participant enters the 8 words from the side with the second and third rows filled up.
 - The third participant follows the same procedure and enters the 8 words on the side with the first and third rows filled up.
