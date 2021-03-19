@@ -10,7 +10,8 @@ For all inquiries not already covered in this manual feel free to contact us dir
 
 1. [Product Documentation](Product-Documentation.md)
 2. [User Manuals](Token_Management_Platform_Manual.md)
-3. [Use Cases](Use-Cases.md)
-4. [Frequently Asked Questions](FAQ.md)
+3. [Key Ceremony](Key-ceremony.md)
+4. [Use Cases](Use-Cases.md)
+5. [Frequently Asked Questions](FAQ.md)
 6. [Release Notes](release-notes-tmp.md)
-5. [Glossary](Glossary.md)
+7. [Glossary](Glossary.md)

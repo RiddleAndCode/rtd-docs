@@ -27,7 +27,7 @@ You will need the following:
 
 - The Approval Device - Seed edition.
 
-![Approval Device](./Approvaldevice.png/)
+![Approval Device](./assets/Approvaldevice.png)
 
 - A reliable computer with access to the Internet. RIDDLE&CODE recommends using Chrome, at least version 87.0.
 - 3 steel plates.
@@ -102,7 +102,7 @@ This will trigger the generation of a true random number—mnemonic phrase, whic
 - Next, the master of the ceremony asks the first participant to leave the room, and the second participant enters.
 
 
-###Second participant
+### Second participant
 - The master of ceremony opens the plates A (the side that doesn’t contain words) and C.
 - The second participant clicks on the Approval Device and privately reads the next 8 words.
 - The participant writes them down in plates A and C using the available slots  5 to 12 (the second and the third row).
@@ -110,7 +110,7 @@ This will trigger the generation of a true random number—mnemonic phrase, whic
 - The plate A is completed.
 
 
-###Third participant
+### Third participant
 - The master of ceremony and the third participant join the second participant, who then leaves.
 - The master of ceremony opens the plates B and C (the sides that contain no words).
 - The third participant clicks on the Approval Device and privately reads the final 8 words.
@@ -121,7 +121,7 @@ This will trigger the generation of a true random number—mnemonic phrase, whic
 Once you have generated and stored the phrase, it is time to perform a process called mnemonic validation. This process assures that all steel plates contain the correct words and that the mnemonic phrase can be used to recover the underlying keys. If mnemonic validation is not performed, there is no guarantee that you will be able to restore a mnemonic phrase.
 
 
-##Chapter 4: Mnemonic phrase validation
+## Chapter 4: Mnemonic phrase validation
 
 Mnemonic validation is performed with the steel plates marked with the stickers by the same master of ceremony and, typically, the previous participants. In this process, each side of all three plates is used to restore the mnemonic phrase.
 The master of ceremony, who guides the process, is responsible for handing out the correct plates to each participant and ensuring that the same side of the plate is not used twice.
@@ -143,13 +143,13 @@ In cases of disaster, for instance, when the cloud service gets destroyed, the A
 
 The recovery process follows similar steps as the initial key generation. The master of ceremony prepares the steel plates and a new/unused Approval Device. All participants in the ceremony need to be present.
 
-The administrator starts the process by accessing the web interface and navigating to the **Key Management section**. The administrator then clicks **Recover**.
+The administrator starts the process by accessing the web interface and navigating to the **Key Management section**. The administrator then clicks **Restore key backup**.
 
 ![Key management](./assets/Keymanagement.png)
 
 Next, the administrator connects the Approval Device to the computer, unlocks it with PIN and clicks **Initialize now**.
 
-![Key generation](./assets/Keygeneration.png)
+![Key generation](./assets/Keyrecovery.png)
 
 If you open any two steel plates, you’ll see that it has four sides. Three sides are different, while the fourth one represents a copy of one of the other three sides. To perform a recovery, you should take three different sides and use a mnemonic phrase in this order:
 
