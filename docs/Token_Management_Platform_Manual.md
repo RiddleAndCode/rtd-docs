@@ -75,24 +75,23 @@ Next time when you sign in to the TMP, you’ll use your new PIN.
 
 ## Manage Coinfirm services
 
-### Activate your Coinfirm licence access
+### Become Coinfirm customer
 
-1. Please contact Coinfirm via the Token Management Platform.
-2. You'll receive an Invitation e-mail that contains the link to the page to activate your account and create a password.
+If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on the product pricing. To integrate Coinfirm’s anti-money laundering services, reach out to your point of contact at RIDDLE&CODE. We will guide you through the process.
 
-Please note that you need to complete this step to activate your license access.
+The steps are as follows:
 
-3. When the account is activated, the AML Platform Dashboard will appear. Take a look around and give it a try.
-4. After you activate your account, you'll receive another e-mail from Coinfirm, with two files attached. One of them is the instruction on how to register and efficiently use the Service Desk, where you can easily report any issues spotted and check the status of tickets reported in the past.
+1. Please reach out to your point of contact at RIDDLE&CODE. We will connect you with the relevant person at Coinfirm and set up a demo. If you decide to use Coinfirm as an AML platform, proceed with the following steps. 
+2. You'll receive an invitation e-mail that contains the link to the page to activate your account and create a password.
+3. Go to the email received from Coinfirm and click on the activation button.
+4. When the account is activated, the AML Platform Dashboard will appear. Take a look around and give it a try.
+
+After you activated your account, you'll receive another e-mail from Coinfirm, with two files attached. One of them is the instruction on how to register and efficiently use the Service Desk, where you can easily report any issues spotted and check the status of tickets reported in the past.
 
 After you successfully register at the Service Desk, you will be able to access instructions to all the tools available on the platform.
 
 
-
-## Manage AML services by Coinfirm
-
-* If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on the product pricing. To integrate Coinfirm’s anti-money laundering services, reach out to your point of contact at RIDDLE&CODE. We will guide you through the process.
-
+### Submit new token
 
 1. Visit the **AML tab**, within the Administration section,
 
