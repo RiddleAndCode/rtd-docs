@@ -1,29 +1,62 @@
-# Frequently Asked Questions 
+# Frequently Asked Questions
 
-This section covers the most common questions, Tips and Tricks we and our users encountered while working with the Token Management Platform. 
+In this section you can find answers to frequently asked questions.
 
 
-* Question: My device is connected but doesn't seem to be paired
+* My device is connected, but it doesn't seem to be paired. How can I fix this?
 
-1. Ensure your device is unlocked 
+1. Ensure your Approval Device is unlocked,
 2. Close the TMP browser window and reopen the page.
 
-* Question: My device is paired and unlocked but I can't seem to sign in. 
 
-1. Disconnect the device
-2. Empty your Chrome cache 
-3. Plug in your device and unlock again 
-4. Now try to sign in again. 
+* My device is paired and unlocked, but I still can't sign in. How can I fix this?
 
-* Question: I have a new device what do it do now?
-
-Access to the web interface is granted to pre-registered devices only. To access the web interface:
-
-1. Plugin your Approval Device to the computer,
-2. Open the Sign-in page by clicking on the link: https://yourcompanyname-ck.r3c.network/signin,
-3. Click **Sign in,**
-![](assets/user-manual-screens/signin_button.jpeg)
-4. Enter your PIN on the device.
+1. Disconnect your Approval Device,
+2. Clear Chrome cache,
+3. Plug-in your device again and unlock it
+4. Now try to sign in again.
 
 
-In the case something is missing, please reach out to us at support@riddleandcode.com
+* Which coins are currently supported?
+
+Currently, the platform supports the following types of assets (and derivatives), where Bitcoin-forked or ERC-20 assets are counted as one type.
+
+| Cryptocurrencies  | Supported tokens   |
+|---|---|
+| Bitcoin  | ERC-20  |  
+| Ethereum  | ERC-165  |   
+| Ripple | ERC-721 |   
+| Litecoin | ERC-777 |
+| Tether | ERC-1404 |
+| Binance | ERC-1155 |
+| Stellar | Atomic DSS |
+| Cardano | T-REX |
+| Monero | R-Token |
+| Dash | DS-Token |
+| Tezos | S3 (Open Finance) |
+| IOTA |
+| NEM |
+| Zcash |
+| Dogecoin | 
+| Decred |
+| Tendermint |
+| Liquid |
+| Element |
+| Qtum |
+| Corda |
+| Lisk Augur |
+| Ravencoin |
+| DigiByte |
+| Komod |
+| MaidSafeCoin |
+| Zencash |
+| Monacoin |
+| Fullcoin |
+| Wanchain |
+| PIVX |
+| Bitcoin Cash |
+| Ethereum Classic |
+
+
+
+In case something is missing, please reach out to us at support@riddleandcode.com

@@ -2,9 +2,11 @@
 
 **Summary**
 
-* The Token Management Platform provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
-* All outgoing and incoming transactions are registered and verified, and any asset with a suspicious origin is flagged for a review.
-* This document describes Coinfirm’s AML integration process.
+* The Token Management Platform provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side.
+* Products within the Coinfirm’s platform include AML Risk Management Platform for digital assets, a solution addressing all FATF Travel Rule regulations, Trudatum, a product that ensures security of digital data and provenance and a solution that allows victims of scams to reclaim their stolen cryptocurrencies. 
+* If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on product pricing. To integrate Coinfirm’s anti-money laundering services, reach out to your point of contact at RIDDLE&CODE. We will guide you through the process.
+
+
 
 **Anti Money Laundering (AML)** is a complex framework of strategies, rules and regulations that refers to the measures used by financial institutions and governments to prevent and combat financial crimes, especially money laundering and terrorism financing. **Know Your Customer (KYC)** is a component part of AML that identifies and authenticates the customers of financial institutions based on their perceived risk profile.
 
