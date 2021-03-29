@@ -29,7 +29,7 @@ packaging==19.2
 pep562==1.0
 Pillow==7.1.0
 pycparser==2.19
-Pygments==2.5.2
+Pygments==2.7.4
 pymdown-extensions==6.2
 pyparsing==2.4.5
 Pyphen==0.9.5
