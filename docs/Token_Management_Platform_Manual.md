@@ -151,6 +151,19 @@ The policy no longer applies.
 
 The policy is now re-enabled and applies to transaction governance.
 
+## Policy Examples
+
+In the table below we have gathered templates of policies for the Token Management Platform (TMP). The templates can be copy and pasted directly to the policy engine on the TMP. Adjust the value for Threshold and quroum to tailor the ruls to your business processes. 
+
+**Note** the Threshold is defined as amount in Bitcoin. 
+
+
+| Description |  |
+|-|-|
+| Threshold rule/one approval: | Given all identities who approve henceforth the approvals<br> And the length of the approvals henceforth the `number of approvals`<br> And the threshold is 1 <br>And the quorum is 1 <br> When the amount of the input is less than the threshold <br> And the `number of approvals` is greater than or equal to the quorum <br> Then approve <br> |
+| Threshold rule/two approvals | Given all identities who approve henceforth the approvals <br> And the length of the approvals henceforth the `number of approvals`<br> And the threshold is 5<br>  And the quorum is 2 <br> When the amount of the input is less than the threshold <br> And the `number of approvals` is greater than or equal to the quorum <br> Then approve <br> |
+| Automated approval and signing | Given the threshold is 0.9<br> When the amount of the input is less than the threshold<br> Then approve |
+
 
 
 ## Manage customers' accounts
