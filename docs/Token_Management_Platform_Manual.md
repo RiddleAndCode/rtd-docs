@@ -153,7 +153,9 @@ The policy is now re-enabled and applies to transaction governance.
 
 ## Policy Examples
 
-In the table below we have gathered templates of policies for the Token Management Platform (TMP). The templates can be copy and pasted directly to the policy engine on the TMP. Adjust the value for Threshold and quroum to tailor the ruls to your business processes. 
+In the table below we have gathered templates of policies for the Token Management Platform (TMP). The templates can be copy and pasted directly to the Policy engine on the TMP. Adjust the value for Threshold and quroum to tailor the policies to your business processes. 
+
+These examples are for showcase purposes only. RIDDLE&CODE will provide you with tailormade policies in close alingment with the clients. 
 
 **Note** In the below example the Threshold is defined as amount denominated in Bitcoin. 
 
