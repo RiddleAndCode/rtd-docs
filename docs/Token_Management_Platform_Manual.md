@@ -111,7 +111,7 @@ As an administrator, you can create and add new policies:
 
 3. Now create the policy's scenario. For example:
 
-*Given the threshold is 0.00011
+*Given the threshold is 0.05
 When the amount of the input is less than the threshold   
 Then approve*
 
@@ -160,9 +160,9 @@ In the table below we have gathered templates of policies for the Token Manageme
 
 | Description |  |
 |-|-|
-| Threshold rule/one approval: | Given all identities who approve henceforth the approvals<br> And the length of the approvals henceforth the  \`number of approvals\` <br> And the threshold is 1 <br>And the quorum is 1 <br> When the amount of the input is less than the threshold <br> And the \`number of approvals\`  is greater than or equal to the quorum <br> Then approve <br> |
-| Threshold rule/two approvals | Given all identities who approve henceforth the approvals <br> And the length of the approvals henceforth the \` number of approvals\` <br> And the threshold is 5<br>  And the quorum is 2 <br> When the amount of the input is less than the threshold <br> And the \` number of approvals\`  is greater than or equal to the quorum <br> Then approve <br> |
-| Automated approval and signing | Given the threshold is 0.9<br> When the amount of the input is less than the threshold<br> Then approve |
+| Threshold rule/one approval: | Given all identities who approve henceforth the approvals<br> And the length of the approvals henceforth the  \`number of approvals\` <br> And the threshold is 3 <br>And the quorum is 1 <br> When the amount of the input is less than the threshold <br> And the \`number of approvals\`  is greater than or equal to the quorum <br> Then approve <br> |
+| Threshold rule/two approvals | Given all identities who approve henceforth the approvals <br> And the length of the approvals henceforth the \` number of approvals\` <br> And the threshold is 10<br>  And the quorum is 2 <br> When the amount of the input is less than the threshold <br> And the \` number of approvals\`  is greater than or equal to the quorum <br> Then approve <br> |
+| Automated approval and signing | Given the threshold is 0.5<br> When the amount of the input is less than the threshold<br> Then approve |
 
 
 
