@@ -18,6 +18,11 @@ nav:
         - Frequently Asked Questions: FAQ.md
         - Release Notes: release-notes-tmp.md
         - Glossary: Glossary.md
+- Confidential Key Management:
+        - Product Documentation: CKM-Product-Documentation.md
+        - Manual: CKM_Manual.md
+        - Key Ceremony: CKM-Key-ceremony.md
+
         
 #extra_css:
 #  - design/extra_css
