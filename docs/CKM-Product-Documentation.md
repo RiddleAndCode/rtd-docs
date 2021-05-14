@@ -4,9 +4,8 @@
 The main components of Confidential Key Management ecosystem are:
 
 1. Key and identity management,
-2. Trusted Execution Environment (TEE),
-3. Distributed ledger infrastructure, and
-4. Interoperability and regulatory/legal compliance.
+2. Trusted Execution Environment (TEE), and
+3. Interoperability and regulatory/legal compliance.
 
 The following sections describe each of these components.
 
@@ -25,14 +24,10 @@ Since keys, private and public, act as a representation of indisputable identiti
 
 ### Key generation
 
-![Key generation flow Diagram](./assets/Keygenflow.png)
-
-*Fig 1: Key generation flow diagram*
-
-1. To initiate the creation of the master key, a user (administrator) needs to trigger the key generation process on the web interface where the user will be led through the entire process, step-by-step.
-2. The random number is created inside of an Approval Device and then exported to the Confidential Keystore via hardened, secure communication channels.
-3. The Approval Device generates a mnemonic phrase.
-4. The phrase is displayed on the web interface.
+1. To initiate the creation of the master key, a user (administrator) needs to trigger the key generation process
+2. A random number is created inside the Confidential Keystore.
+3. The Confidential Keystore creates a mnemnomic phrase once.
+4. The phrase is exported via the API once for the purpose of disaster recovery.
 5. Finally, the user stores the mnemonic phrase on a steel plate.
 
 
@@ -115,30 +110,6 @@ The TEE is a secure area of the main processor ensuring protection of the code a
 
 
 A cryptographically secured service running in a dedicated Trusted Execution Environment, the Confidential Keystore manages all operations related to the underlying keys and ensures secure key generation, storage and use. Transaction logic securely issues unsigned transactions, which are then signed by the Confidential Keystore.
-
-
-
-
-## Distributed ledger infrastructure
-
-Despite the groundbreaking improvements of distributed ledgers (immutability, distributed nature, consensus mechanisms, etc.) one of the fundamental issues of current blockchains is low throughput. This limitation has been a major impediment for an industry where scalability is a prerequisite to execute and perform thousands of transactions per second.
-The results of low scalability are congested networks, high network fees, pending transactions and long confirmation times. Hence, the ledger infrastructure is not fit to cope with the vast number of transactions that can be expected once industry-wide adoption takes place. Just imagine all cars using car wallets and creating millions of transactions over the course of the day.  
-
-It was the goal of RIDDLE&CODE to create a ledger network that is capable of coping with the requirements of future tokenization and the high load of transactions. BigchainDB is a ledger optimised for IoT applications that supports transaction throughput on par with global credit card networks. The ledger uses a proof-of-stake consensus mechanism and offers low latency, powerful query features, decentralised control, immutable data storage and extensive built-in cryptocurrency support.
-
-The ledger is derived from IPDB and designed in such a way that it is completely GDPR compliant. The ledger itself contains no arbitrary data hashes as part of transactions that are signed off by public/private key pairs. Instead, it associates a piece of data with a storage identifier.
-
-BigchainDB solves some of the fundamental weaknesses of existing ledgers by:
-
-* achieving interoperability on the ‘infrastructure’ layer,
-* managing metadata ‘roaming,’
-* creating the right environment for business models to appear,
-* supporting high enough performance/throughput to reach scale, and
-* supporting offline/decentralised termination of transactions.
-
-The BigchainDB ledger establishes the interoperability with other networks and technologies via peg-in/peg-out mechanisms. This allows the ledger to focus on its strength when it comes to storing identities and metadata while performing other functions via interoperability with specific sidechains, such as Liquid.
-
-In combination with RIDDLE&CODE’s identity management/wallet solutions, confidential computing approach and interoperability with sidechains like Liquid, BigchainDB acts like an ‘engine’ that supports all aspects of tokenization, including the creation and issuance of tokens, management and trading, as well as burning the tokens in a fashion that is auditable and compliant with regulatory provisions.
 
 
 
