@@ -13,6 +13,7 @@ The following sections describe each of these components.
 ## Key and identity management
 
 Key management covers all aspects of generating, securing, exchanging/trading and revoking keys.
+
 The entire process, from key generation and backup to key recovery, is entirely managed by the client. The client is the only entity that can access the Trusted Execution Environment and, therefore, has full ownership and control over the keys. RIDDLE&CODE, as the solution provider, does not have access to the keys and related processes at any time. All key management-related operations are performed within the Trusted Execution Environment (TEE), which provides hardware-enforced code and data-in-use isolation.
 
 Since keys, private and public, act as a representation of indisputable identities, ownership of assets and proof-of-origin, key management needs to provide all aspects to:
@@ -26,9 +27,9 @@ Since keys, private and public, act as a representation of indisputable identiti
 
 1. To initiate the creation of the master key, a user (administrator) needs to trigger the key generation process
 2. A random number is created inside the Confidential Keystore.
-3. The Confidential Keystore creates a mnemnomic phrase once.
-4. The phrase is exported via the API once for the purpose of disaster recovery.
-5. Finally, the user stores the mnemonic phrase on a steel plate.
+3. The Confidential Keystore creates the mnemnomic phrase.
+4. The phrase is exported via the API for the purpose of disaster recovery.
+5. The user then stores the mnemonic phrase on a steel plate.
 
 
 The generation of keys is initiated with the following trusted independent source of randomness:
@@ -109,7 +110,7 @@ With this, the process is completed, and address generation and transaction sign
 The TEE is a secure area of the main processor ensuring protection of the code and data loaded inside the processor. As an isolated execution environment, TEE provides integrity of applications operating within the TEE, along with confidentiality of their assets. In general terms, the TEE offers an execution space that provides a higher level of security than an operating system (OS) and more functionality than the Secure Element (SE).
 
 
-A cryptographically secured service running in a dedicated Trusted Execution Environment, the Confidential Keystore manages all operations related to the underlying keys and ensures secure key generation, storage and use. Transaction logic securely issues unsigned transactions, which are then signed by the Confidential Keystore.
+A cryptographically secured service running in a dedicated Trusted Execution Environment—the Confidential Keystore—manages all operations related to the underlying keys and ensures secure key generation, storage and use. Transaction logic securely issues unsigned transactions, which are then signed by the Confidential Keystore.
 
 
 
@@ -122,14 +123,14 @@ In the domain of identity, interoperability is achieved by a broad range of cryp
 
 ### GDPR compliance
 
-Confidential Key Management is fully compliant with the General Data Protection Regulation (GDPR) requirements. All generated coin addresses are associated with client accounts through an anonymous eight-digit account ID, ensuring that no personal data is stored within the solution. All personal client data processed during onboarding is protected by the Data Protection Note and detailed in this document.
-
-The service leverages the concept of confidential computing that ensures privacy by design and default. Changes processed by and within the system are registered and stored in compliance with GDPR requirements.
+Confidential Key Management ensures full compliance with the General Data Protection Regulation (GDPR) requirements. All generated coin addresses are associated with client accounts through an anonymous eight-digit account ID, ensuring that no personal data is stored within the solution. All personal client data processed during onboarding is protected by the Data Protection Note and detailed in this document.
 
 
 **General Data Protection Notice**
 
-RIDDLE&CODE is committed to personal data protection. RIDDLE&CODE processes personal data in compliance with the relevant data protection regulations, in particular, the General Data Protection Regulation (GDPR, Regulation [EU] 2016/679) and the Austrian Data Protection Act (DSG). Any data processing by RIDDLE&CODE will, therefore, only take place within the scope of a legal basis, which will be stated below for the individual data processing operations. All employees of RIDDLE&CODE entrusted with data processing are obliged to maintain the confidentiality of the client’s data. No automated decision making is carried out.
+RIDDLE&CODE is committed to personal data protection.
+
+RIDDLE&CODE processes personal data in compliance with the relevant data protection regulations, in particular, the General Data Protection Regulation (GDPR, Regulation [EU] 2016/679) and the Austrian Data Protection Act (DSG). Any data processing by RIDDLE&CODE will, therefore, only take place within the scope of a legal basis, which will be stated below for the individual data processing operations. All employees of RIDDLE&CODE entrusted with data processing are obliged to maintain the confidentiality of the client’s data. No automated decision making is carried out.
 
 
 **Transmission of personal data**
@@ -152,21 +153,23 @@ In this context, RIDDLE&CODE would also like to point out that any data voluntar
 **Storing personal data**
 Unless otherwise specified in the respective processing, RIDDLE&CODE stores personal data for as long as it is necessary to ensure the fulfillment of the aforementioned purposes or as long as we are legally obliged to do so.
 
-The personal data of clients Confidential Key Management services are protected with segregation of accounts, which ensures that only duly authorised parties have access to the data relevant to them. This is done in a way that every individual account is protected with ID codes and mapped to coin addresses. The ID codes become part of the key derivation scheme and, therefore, part of the transaction data), creating a link between the assets and account holders. The TMP does not process or store any personal data, only the hash of the mapped account.
+The personal data of clients using Confidential Key Management services are protected with segregation of accounts, which ensures that only duly authorised parties have access to the data relevant to them. This is done in a way that every individual account is protected with ID codes and mapped to coin addresses. The ID codes become part of the key derivation scheme and, therefore, part of the transaction data), creating a link between the assets and account holders. The TMP does not process or store any personal data, only the hash of the mapped account.
 
 Personal data that the client voluntarily provides will be stored by RIDDLE&CODE for the purpose of providing the associated processing and keeping records for up to 3 years after completion or termination, except when a longer storage period is required for the purpose of fulfilling a legal obligation or for the assertion or defense of legal claims.
 Rights of the data subject
+
+
 Provided that the respective legal requirements are met, the client can assert the following rights of data subjects:
 
-Right to information: You can request confirmation as to whether personal data concerning you is being processed and request information about this data and the information pursuant to Art. 15 GDPR.
+**Right to information:** You can request confirmation as to whether personal data concerning you is being processed and request information about this data and the information pursuant to Art. 15 GDPR.
 
-**Right of rectification** if RIDDLE&CODE processes incorrect or incomplete data about the client (Art. 16 GDPR).
+**Right of rectification**, if RIDDLE&CODE processes incorrect or incomplete data about the client (Art. 16 GDPR).
 
-**Right to have personal data concerning the client deleted** if the conditions of Art. 17 GDPR are met.
+**Right to have personal data concerning the client deleted**, if the conditions of Art. 17 GDPR are met.
 
 **Right to limit the processing of your data (Art. 18 GDPR).**
 
-**Right to transfer the data provided by the client,** provided that the processing is based on consent (Art. 6 paragraph 1 letter a) or on a contract (Art. 6 paragraph 1 letter b) to which the client is party and that the processing is carried out using automated procedures (Art. 20 GDPR).
+**Right to transfer the data provided by the client**, provided that the processing is based on consent (Art. 6 paragraph 1 letter a) or on a contract (Art. 6 paragraph 1 letter b) to which the client is party and that the processing is carried out using automated procedures (Art. 20 GDPR).
 
 **Right to object to the processing of personal data**: When processing operations carried out on the basis of legitimate interests (pursuant to Art. 6 para. 1 letter of GDPR), the client has the right to object to the processing of personal data pursuant to Art. 21 GDPR, provided that there are reasons for doing so arising from a particular situation. When processing for the purpose of direct marketing, this right is unrestricted.
 
