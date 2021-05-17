@@ -20,5 +20,5 @@ For all inquiries not already covered in this manual feel free to contact us dir
 5. [Frequently Asked Questions](FAQ.md)
 6. [Release Notes](release-notes-tmp.md)
 7. [Confidential Key Management](CKM-Product-Documentation.md)
-8. [User Manual](CKM_Getting_Started_Guide.md)
+8. [Getting Started Guide](CKM_Getting_Started_Guide.md)
 9. [Key Ceremony](CKM-Key-ceremony.md)
