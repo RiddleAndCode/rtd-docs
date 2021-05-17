@@ -1,5 +1,3 @@
-# Confidential Key Management 
-
 # Getting Started Guide
 
 
