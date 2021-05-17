@@ -1,5 +1,3 @@
-# Confidential Key Management 
-
 # Getting Started Guide
 
 
@@ -9,6 +7,7 @@ This **Getting Started Guide** covers the steps necessary to set up and start op
 
 
 The steps are as follows:
+
 * Set up secure communication. Ensure that keys are protected with 2-way TLS communication, with client and server authenticating each other’s identities.
 * Set up the master key/seed with the help of the [API](https://app.swaggerhub.com/apis/riddleandcode/key-management/1.0.8#/Master%20Key/create_master_key).
 * Prepare for disaster recovery by backing up the mnemonic phrase. (See [Key Ceremony](CKM-Key-ceremony.md))
@@ -23,6 +22,7 @@ The following sections provide instruction on how to perform the above steps.
 Confidential Key Management service is secured through 2-way TLS connection.
 
 In order to access the service, the following steps are required:
+
 * Certification authority (CA) defined by the client needs to be injected into the service.
 * The interaction key pair has to be signed by the CA.
 * The service will then verify if the request was signed by the key that has been previously approved by the client CA.
@@ -34,6 +34,7 @@ In order to access the service, the following steps are required:
 ### Setting up 2-way TLS connection via Chrome
 
 The steps are as follows:
+
 * Create a PKCS#12 file by using the client’s key and certificate: ```openssl pkcs12 -export -out client.p12 -inkey client-key.pem -in client-cert.pem ```
 * Add the PKCS#12 file to Google Chrome.
 * Go to Settings —> Security —> Manage certificates —> Your certificates —> Import
@@ -53,6 +54,7 @@ Accounts can be randomly [created](https://app.swaggerhub.com/apis/riddleandcode
 ## Coin addresses and transaction signing
 
 Deriving addresses with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) requires the following set of information:
+
 * Coin type,
 * Account,
 * Change, and
