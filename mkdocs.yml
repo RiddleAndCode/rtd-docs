@@ -20,7 +20,7 @@ nav:
         - Glossary: Glossary.md
 - Confidential Key Management:
         - Product Documentation: CKM-Product-Documentation.md
-        - Manual: CKM_Manual.md
+        - Manual: CKM_Getting_Started_Guide.md
         - Key Ceremony: CKM-Key-ceremony.md
 
         
