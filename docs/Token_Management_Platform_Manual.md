@@ -11,31 +11,33 @@ As an admin, you can register an Approval Device for a user and add it to the us
 2. Visit the **Device Manager** page within the Administration section,
 3. Click **ADD NEW DEVICE**,
 
-![Add new device](./assets/Newdevice.png)
+![Add new device](./assets/New_device_new.png)
 
-4. Select the user role (admin or trader),
+5. Select the user role (admin or trader),
 
-![Role for the new device](./assets/Newdevicerole.png)
+![Role for the new device](./assets/New_device_role_new.png)
 
-5. Click **Preregister**,
-6. Select the wallet and click **Connect**
+6. Add **Approval Device ID**
 
-The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user. Hand over the device to the onboarded user, who is now able to access the system.
+7. Click **Preregister**,
+8. Select the wallet and click **Connect**
+
+The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user. Hand over the device to a user, who is now able to access the system.
 
 
 ## Sign up
-When accessing the TMP interface for the first time you need to Sign up. The process is as follows:
+When accessing the TMP interface for the first time you need to **Sign up**. The process is as follows:
 
 1. Plug-in your Approval Device to the computer,
-2. Open the Sign-un page by clicking on the link provided to you by RIDDLE&CODE.
+2. Open the Sign up page by clicking on the link provided to you by RIDDLE&CODE.
 3. Click **Sign up,**
 4. Enter the PIN on your device.
 5. Choose your Approval Device (wallet) and click **Connect**
 
-![Sign Up page](./assets/SignUp.png)
+![Sign Up page](./assets/Sign_up_new.png)
 
 
-Done! You have successfully signed up for the first time.
+You have successfully signed up.
 
 
 ## Sign in
@@ -45,24 +47,24 @@ To sign in and access the TMP interface:
 2. Click **Sign in**
 3. Select your Approval Device and click **Connect**
 
-![Sign in](./assets/Signin.png)
+![Sign in](./assets/Sign_in_new.png)
 
 4. Press the check mark on your Approval Device to complete the action.
 
-You have signed up and now you can access the system.
+You have successfully signed in.
 
 
 ## Change PIN
 Your Approval Device is protected with a default PIN, which can be changed to a personalised one.
 
-**NOTE:** For a trader, this is mandatory when logging for the first time.
+**NOTE:** For a trader, this is mandatory when logging in for the first time.
 
 The steps are as follows:
 
 1. Go to the **Settings** section and click **User**,
 2. Click **Change PIN,**
 
-![Change PIN](./assets/ChangePIN.png)
+![Change PIN](./assets/Change_PIN_new.png)
 
 3. Select your Approval Device and click **Connect**
 4. Confirm on your device that you want to change the PIN,
@@ -81,7 +83,7 @@ If a client decides to use Coinfirm’s AML service, it will require a paid subs
 
 The steps are as follows:
 
-1. Please reach out to your point of contact at RIDDLE&CODE. We will connect you with the relevant person at Coinfirm and set up a demo. If you decide to use Coinfirm as an AML platform, proceed with the following steps. 
+1. Please reach out to your point of contact at RIDDLE&CODE. We will connect you with the relevant person at Coinfirm and set up a demo. If you decide to use Coinfirm as an AML platform, we will continue the process.
 2. You'll receive an invitation e-mail that contains the link to the page to activate your account and create a password.
 3. Go to the email received from Coinfirm and click on the activation button.
 4. When the account is activated, the AML Platform Dashboard will appear. Take a look around and give it a try.
@@ -95,13 +97,15 @@ After you successfully register at the Service Desk, you will be able to access 
 
 1. Visit the **AML tab**, within the Administration section,
 
-![AML Coinfirm](./assets/AML.png)
+![AML Coinfirm](./assets/AML_new.png)
 
 2. Enter the new token,
 3. Click **Submit**.
 
 
-## Manage policies - create a new policy
+## Manage policies
+
+### Create a new policy
 As an administrator, you can create and add new policies:
 
 1. Visit the Administration section and go to the **Policy** tab,
@@ -109,7 +113,7 @@ As an administrator, you can create and add new policies:
 
 ![Policies](./assets/Policies.png)
 
-3. Now create the policy's scenario. For example:
+3. Create the policy's scenario. For example:
 
 *Given the threshold is 0.05
 When the amount of the input is less than the threshold   
@@ -118,7 +122,7 @@ Then approve*
 4. Click **Submit**.
 
 
-** View and manage policies **
+### View and manage policies
 
 1. Navigate to the **Policy** tab within the **Administration** section,
 
@@ -127,14 +131,14 @@ There you can see a list of policies that have been created. Each policy is mark
 4. To manage policies just click on their **Status** where you can disable/enable them if necessary.
 
 
-** Disable the existing policy **
+### Disable the existing policy
 As an admin, you can disable the existing policy so that the policy
 no longer applies to transaction governance:
 
 1. Navigate to the **Policy** tab, within the **Administration** section,
 2. Select **Disable** next to the policy you want to disable,
 
-![Disable policy](./assets/Disablepolicy.png)
+![Disable policy](./assets/Disable_policy_new.png)
 
 3. Confirm that you want to update the policy status.
 
@@ -144,7 +148,7 @@ no longer applies to transaction governance:
 The policy no longer applies.
 
 
-## Re-enable disabled policy
+### Re-enable disabled policy
 1. Visit the **Policy tab** within the Administration section,
 2. Next to the disabled policy, click **Enable**,
 3. Confirm that you want to update the policy status.
@@ -176,16 +180,16 @@ When a new customer is onboarded, an administrator needs to create a new account
 1. Head over to the **Addresses** section of the interface,
 2. Click **NEW ASSET** in the top right corner,
 
-![Add new account](./assets/Newasset.png)
+![Add new account](./assets/New_asset_new.png)
 
-3. On the right side, add account ID to generate address for the customer. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The account ID serves as the derivation index.
+3. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The account ID serves as the derivation index. On the right side, add account ID to generate address for the customer.
 
 ![Add trusted recipient](./assets/Addtrustedreceipient.png)
 
 4. Click **Generate**
-5. On the left side, enter an Account ID,
-6. Choose a currency,
-7. Enter a coin address and click **Add**.
+5. On the left side, enter *Account ID*,
+6. Select *Currency*,
+7. Enter coin *Address* and click **Add**.
 
 
 ### View accounts
@@ -195,18 +199,17 @@ Please note that only one column can be sorted at a time.
 
 * Asset: The currency of the account
 * Account ID: The 8 digit hexadecimal identifier of the account
-* Address: The actual address of the account
+* Address: The address of the account
 * Acc. typ: Account type
 
 
 ### View the risk level of a coin address
-
 The risk level is a value between 0 and 100, where 0 is low and 100 is high.
 
 To view the risk level of a coin address:
 1. Visit the **Addresses** section,
 2. Click on the dropdown menu next to the address whose risk level you want to check,
-3. Click the **AML Risk Report** link.
+3. Click the **AML Risk Report**.
 
 ![Coin risk level](./assets/Coinrisklevel.png)
 
@@ -233,9 +236,3 @@ The process is as follows:
 8. Click **Send**.
 
 You submitted the transaction request, which now can be approved or rejected.
-
-
-### View transaction history
-1. Navigate to the **History** page within the **Settlement** section,
-
-Here you will be able to see the list of all past transactions involving account addresses.
