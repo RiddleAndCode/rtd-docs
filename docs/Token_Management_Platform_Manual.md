@@ -1,7 +1,6 @@
 This manual describes operations and actions you can perform with the TMP as an administrator or a trader.
 
 
-
 # Getting started
 
 ## Register an Approval Device:
