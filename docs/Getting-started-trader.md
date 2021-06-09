@@ -204,7 +204,7 @@ Shamir Basic lets you generate up to 16 recovery shares—as a sequence of 33 wo
 
 Unlike Shamir Basic, Shamir Group sets a threshold for groups, where each group can be divided into another 16 shares. Each group has its own individual member threshold.
 
-! [Shamir Group](./assets/shamir-group.png)
+![Shamir Group](./assets/shamir-group.png)
 
 
 ### BIP-39 backup vs Shamir’s algorithm
