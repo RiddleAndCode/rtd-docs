@@ -2,6 +2,14 @@
 
 This manual describes operations that you can perform with the TMP as an administrator.
 
+## Note: Reference System
+
+RIDDLE&CODEs Token Management Platform designed and tested to enable the best User Experience on the following reference system: 
+
+` Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77 `
+
+Other Operating Systems and Browser configurations are untested and officially not recommended. Please reach outto your RIDDLE&CODE single point of contact for any inquiries about other system and browser configrations.
+
 
 ## Register an Approval Device:
 As an admin, you can register an Approval Device for a user and add it to the user group:
