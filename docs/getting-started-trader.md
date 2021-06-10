@@ -16,7 +16,7 @@ RIDDLE&CODEs Token Management Platform designed and tested to enable the best Us
 
 ` Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77 `
 
-Other Operating Systems and Browser configurations are untested and officially not recommended. Please reach outto your RIDDLE&CODE single point of contact for any inquiries about other system and browser configrations.
+Other Operating Systems and Browser configurations are untested and officially not recommended. Please reach out to your RIDDLE&CODE single point of contact for any inquiries about other system and browser configurations.
 
 ## Accessing TMP - First step
 
