@@ -1,3 +1,4 @@
+HEAD
 # Presetup - Setting up Digital Asset Custody (DAC) on your NUC
 
 ## Important information before setting up DAC on your NUC

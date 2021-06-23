@@ -1,130 +1,89 @@
-# AML service by Coinfirm
+# Token Management Platform
+# Compelling use cases
 
-**Summary**
+Token-based business models will only flourish if the various players have indisputable identities, remain protected from malicious intrusion, dispose of transactional capabilities and adhere to regulatory frameworks.
 
-* The Token Management Platform provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
-* All outgoing and incoming transactions are registered and verified, and any asset with a suspicious origin is flagged for a review.
-* This document describes Coinfirm’s AML integration process.
-
-**Anti Money Laundering (AML)** is a complex framework of strategies, rules and regulations that refers to the measures used by financial institutions and governments to prevent and combat financial crimes, especially money laundering and terrorism financing. **Know Your Customer (KYC)** is a component part of AML that identifies and authenticates the customers of financial institutions based on their perceived risk profile.
-
-AML regulations require companies to submit risk reports, perform diligence processes and report suspicious activities. Incorporating these procedures is a centerpiece for companies that aim to manage digital assets in a secure manner that complies with regulatory frameworks.
-
-RIDDLE&CODE integrates the services provided by leading blockchain analytics platform, Coinfirm, to the Digital Asset Management Solution.
-
-## Coinfirm - real time analytics and compliance risk management
-
-**Coinfirm** is a global leader in AML and regulatory technology for blockchain and cryptocurrencies. It offers the industry’s largest blockchain coverage, supporting over 1,500 cryptocurrencies and protocols, including Bitcoin, Ethereum, Hyperledger, and many more.
-
-Coinfirm’s AML platform consists of 270+ risk indicators able to catch nefarious actors with red flags for anything from Anti Money Laundering (AML) and Countering the Financing of Terrorism (CTF) to combatting fraud and dark net drug trafficking. Alongside this array of indicators, Coinfirm boasts the largest coverage of cryptocurrencies being monitored in the blockchain space.
-
-All coin addresses that are managed by the Token Management Platform are registered to the monitoring system automatically, using the provided API from Coinfirm. Once registered to the monitoring system, the risk level of coin addresses is calculated by Coinfirm’s forensic algorithm in regular time intervals and after each incoming transaction.
-
-The service will continuously monitor all coin addresses and alert the client in case of unexpected behaviour or detection of fraud.
-
-This process allows clients to analyse coin addresses in several ways.
-
-##Incoming transactions
-
-**1. Continuous monitoring of all coin addresses: trusted recipients and coin addresses under custody**
-When funds are sent to one of the coin addresses managed by RIDDLE&CODE’s solution, Coinfirm will recognise if the incoming transaction will have an impact on the risk level of the coin address.
+RIDDLE&CODE Token Management Platform (TMP) provides solutions for all of these aspects and embraces the full spectrum of use cases. This section describes concrete examples, business models and applications that are enabled by the platform.
 
 
-**2. Alerting in case of unexpected behavior or detection of fraud**
-The Coinfirm platform offers a notification feature that can be configured with a set of parameters to inform users via email if transactions have a critical impact on a coin address. The notifications will be sent directly by Coinfirm.
+## Proof-of-origin business models
 
-## Outgoing transactions
+### Proving the authenticity of luxury goods
+It is estimated that the global luxury market will reach €1.3 trillion (~$1.5 trillion) by 2025, with millennials representing 50% of the total market. However, the rapid expansion comes with the challenge of ensuring that luxury products are produced in a fair and sustainable manner for both manufacturers and consumers.
 
-During a transaction signing request, a client can select the receiver and the sender address for a transaction. On selection, the risk level of both coin addresses will be retrieved from Coinfirm and displayed to the user.
+The luxury sector has waged a battle against counterfeiters for years, spending a fortune on distribution control and legal fees. According to a report by Research and Markets, fraud and identity theft have raised strong consumer distrust while luxury brands lost $30.3 billion (€27 billion) to counterfeited goods through the Internet in 2017. The main challenges within the sector remain:
+* QR codes and certificates can be forged and are limited to one-way information transactions.
+* RFIDs and holograms cannot eliminate theft and counterfeiting.
+* Online registries expose consumers to identity theft and private data hacks.
 
-Notifications are sent to the client if fraudulent activities related to one or several addresses are detected. Prior to transaction signing, the user can request a report about the details and the state of the recipient of the transaction. All derived coin addresses of accounts and trusted recipients are listed in tables. For each coin address, the risk level is shown, along with a deep link that forwards the user to Coinfirm’s monitoring panel to retrieve more detailed information about the given coin address.
-
-**The following products are available at Coinfirm’s AML/KYC platform:**
-
-# AML Risk Reports
-
-The key functionality of Coinfirm’s AML/KYC platform is the possibility of generating AML/KYC Risk Reports that evaluate money laundering risk for blockchain addresses and their owners. These reports can be downloaded as PDF documents for regulatory compliance purposes.
-
-Risk Reports may be Basic, Standard or Enhanced.
-
-|Report element | Enhanced (Web/pdf/API) | Standard (Web/pdf/API)|Basic ('C-Score Report') (Monitoring Panel/API) |
-|----------------|:----------------------:|:-------------------------:|:------------------------:|
-|Report ID, date and block height | Yes | Yes | Yes| 
-|Address summary (balance in crypto and in USD, tokens) | Yes | Balance in crypto and USD | USD Balance in crypto| 
-|Profile analysis and summary | Yes | No | No| 
-|C-Score | Yes | Yes | Yes| 
-|C-Score analysis and summary | Yes | No | No| 
-|Risk Level | Yes | Yes | Yes| 
-|Network Membership | Yes | Yes | Yes| 
-|List of identified risks | Yes | No | No| 
-|List of informative flags | Yes | No | No| 
-|Assets/tokens analysis and summary | Yes | No | No| 
-|Financial analysis | Yes | No | No| 
-|Dark web connections | Yes | No | No| 
-|Appendix 1 – Risk Indicators | Yes | Category and subcategory | No| 
-|Appendix 2 – Financial analysis and summary | Yes | No | No| 
-|Appendix 3 – List of Assets/Tokens | Yes | No | No| 
-|Disclaimer | Yes | Yes | Yes| 
-|Glossary | Yes | Yes | Yes| 
+**Solution proposed**
+For this use case, the TMP can assign unique identities for high-value luxury goods and create their respective digital twins on the ledger. This allows brands to:
+* Digitise, track and trace the entire lifecycle of a luxury product,
+* Create an immutable record of every step in the supply chain,
+* Capture specific data points and offer public access to that data.
 
 
-## Monitoring Panel
+### Proving the origin of the machine data
+As a digitalised society, we empower physical objects by creating their so-called ‘digital twins’ and giving them the ability to transact with online platforms, thereby collecting massive amounts of data.
 
-The Monitoring Panel is a feature of the Platform that enables users to monitor and be alerted on AML risk in real-time for all provided addresses and related transactions. The Monitoring Panel include:
+However, with the current operating systems, connected objects are never truly autonomous, and they require human assistance. In addition, digital twins are connected and communicate through a centrally controlled network, which always represents a single point of failure.
 
-* **Wallet View** - provides the current risk scoring for monitored wallet addresses, navigates to wallet address details and displays information about new notifications. By default, the risk scoring is recalculated after each transaction and at least once daily.
-Transaction View - provides information in real time about all incoming and outgoing transactions on monitored addresses that transfer value. It also provides the recalculated C-Score after each such transaction.
+**Solution proposed**
+RIDDLE&CODE’s platform provides features and functions that allow for scalability and interoperability of smart city systems. It provides a single data repository where any system and any number of new objects can plugin without the need to commit additional resources. Attesting and verifying the data source for any operational data means that we can rely on the produced data without actually owning a machine.
 
-* **Archive** - provides the list of all archived addresses that have been previously monitored and the option to renew them.
 
-* **Notifications** - provides the list of all notifications for each monitored address.
+## Blockchain-based data notary services
+Blockchain-based data notary services can solve critical issues of traceability within complex supply chains. Let’s take the metal industry as an example. The supply chain within the metal industry is highly complex, fragmented and not digitalised.
 
-* **Settings** - provides option to set up notifications and risk recalculation frequency.
+In fact, saying that the metal industry is paper-based is an understatement. Only in Europe 500 steel production sites and 500,000 metal processing companies exchange around 100 million paper certificates every year to meet regulatory requirements for material quality documentation.
 
-* **Notification Bell** - on the top of the tool page, provides information about all new, unread notifications on each monitored address.
+While more and more machines are being connected to the Internet, these documents remain paper-based and non-machine readable. This makes product tracking and identification extremely challenging and has caused an increase in opportunities for fraud and negligence.
 
-## Visual Analysis Tool - Visualiser
+**Solution proposed**
+In 2020, RIDDLE&CODE joined forces with S1Seven to mitigate these traditional inefficiencies by building a blockchain-based notarisation service for metal certificates that provides a product with a tamper-proof digital identity and traces each step of its journey from raw material to the final application. The service allows steel manufacturers to replace mandatory hard copy documents with digital records for smart manufacturing and assessing CO2 emissions, immutably stored on a decentralised platform.
 
-The Visualiser tool allows users to visually track the flow of funds and provide evidence in the form of a graph of transactions between the cryptocurrency addresses within selected cryptocurrency networks. The Visualiser is equipped with automated source of funds and destination of funds transaction tracking, even across hundreds of consecutive blockchain transactions.
 
-## Case Management Tool
+## Fractional ownership models through tokenization
 
-The Case Management tool on the Coinfirm AML Platform allows users to keep track of progress and document investigations performed. It supports case analysis workflow, including case QA and supervisor review.
+### Shares in renewable energy production
+Local energy communities and microgrids are expected to play an increasingly important role in addressing climate change challenges and transitioning towards renewable and sustainable energy systems. However, the current structure of energy and electricity markets is inadequate to achieve this vision, as consumers are practically excluded and unable to participate in energy production and settlements.
 
-The Case Management tool also allows for investigations and evidence collection for addresses from blockchains supported by the AML Platform. There are two case management options:
-1. 4-eye verification process—each case is analysed by an Analyst, Analyst QA and a Supervisor. Users receive an email communication when the case  is created or moved to the next step according to the user role in the process.
-2. 2-eye verification process—each case is analysed by an Analyst and a Supervisor. Users receive an email communication when the case is created or moved to the next step according to the user role in the process.  
+**Solution proposed**
+Together with Wien Energie, one of Austria’s largest utility providers, RIDDLE&CODE set out to bridge this gap and launch a blockchain-powered platform—MeiPower. The platform enables consumers to participate in both energy consumption and production and benefit from partial ownership of renewable energy sources. MeiPower tokenizes Solar Photovoltaic (PV) assets and allows consumers to purchase shares of PV plants across the country.
 
-During the process, users can add files from the AML Platform or their computers and attach notes tied to identified risk indicators in addition to general and recommendation notes.
+In return for their investments, consumers receive tokens in an amount based on the energy produced by the PV plant. The accumulated tokens can then be used to pay electricity bills or buy groceries at a supermarket.
 
-**NOTE:** The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
 
-## Integrating Coinfirm’s AML/KYC services
+## Reshaping the art world
+The fine arts market has recently reached $63 billion and a 20% increase in auction sales worldwide. However, this conservative industry hasn’t changed its business model for decades, and only 8% of the art auctions are performed online.
 
-## Create account and register coin addresses at the Coinfirm platform
+Due to this fact, the art market faces several inherent problems, including a lack of transparency and digitalisation, low liquidity, high fees and copyright issues. It is estimated that billions of dollars in revenues are lost each year due to piracy, which is a massive loss for artists who often cannot prove the authenticity and ownership of their work.
 
-IMAGE MISSING
+**Solution proposed**
+Tokenizing art pieces is an efficient way to create an immutable registry of art copyright records, provide liquidity with lower fees, increase transparency for all participants in the ecosystem and reduce onboarding costs.
 
-Fig1. Flow Diagram of account and address registration
+And that is exactly what RIDDLE&CODE is developing in conjunction with the business innovation collective RDI Digital. The two companies are creating a blockchain-based art-patronage app for the renowned Moscow-based Tretyakov Gallery. The project will allow both individuals and smaller enterprises to make donations and become patrons of famous works of art. The collected funds will be used for the digitalisation of the gallery’s vast collection.
 
-To create a new account in the system, the user needs to enter a 32bit integer in hexadecimal format into the frontend. A request will be sent to RIDDLE&CODE’s solution that will derive, based on the provided number and a derivation seed, coin addresses for each supported currency. The derived addresses will be sent to the CoinfirmConnector, which handles the interaction with the services supported by Coinfirm. Each coin address will be registered to the monitoring system of Coinfirm.
 
-## Adding of trusted recipient
+## Peer-to-peer energy trading
+For decades, the structure of energy providers has revolved around centralised systems of generation, storage and distribution that are limited for one-way energy and value flows. This system relies on outdated and unscalable infrastructure, raises environmental concerns and does not allow small and micro-producers to participate in the production and settlements.
 
-The user provides an account ID in the 32bit integer hexadecimal format and a coin address. If there is no account with the provided account ID, the system will generate a new account and add the provided coin address. The coin address will be sent to the CoinfirmConnector and further to the services of Coinfirm where it is added to the monitoring system.
+**Solution proposed**
+Blockchain technology can solve many of the centralised grid’s issues, including unbundling networks, automating infrastructure and operations, lowering maintenance costs and creating a positive environmental impact. In addition, since blockchain was developed to operate as a distributed network of nodes that facilitates and verifies transactions, it is perfectly suitable for supporting small and micro-energy producers to generate their own energy, share surpluses through the peer-to-peer network and reduce the overall cost for communities.
 
-## Creating the transaction and retrieving risk levels
+In 2018, Wien Energie, one of the largest utility providers in Austria, partnered with RIDDLE&CODE to explore blockchain technology and see if it could adopt decentralised energy grids and improve its infrastructure to better suit the needs of its consumers.
 
-IMAGE MISSING
+RIDDLE&CODE provided a blockchain-powered energy extension that represents a Proof of Concept (PoC) solution that can be connected and fully integrated into an external device. Once it is connected, the extension establishes a tamper-proof identity for all devices related to the production and consumption of energy and turns them into trusted data sources that can read related sensor data, attest these data on the ledger and perform value transactions and settlements. In this way, each connected device is transformed into a wallet that can perform transactions.
 
-Fig2. Flow Diagram of Transaction verification
+After the extension is plugged into a PV system, it registers the production data of Viertel Zwei (district in Vienna) residents, sends it to the ledger and creates an immutable log. Consumers can then buy energy from the PV system, which is cheaper than buying energy from the grid. The more consumers use locally produced energy, the cheaper their electricity bills become, and the energy becomes greener.
 
-In order to create a transaction, a user has to visit the sign transaction page and enter the IDs of the accounts to be used in the transaction. Based on the currency and the ID of an account, the associated coin address will be retrieved. The coin address is then sent to the CoinfirmConnector, which uses the Coinfirm API to retrieve the latest risk level. The risk level will be shown to the user as a number between 0 and 100, where 0 means low risk and 100 means high risk.
+To track their production and consumption performance, residents of Viertel Zwei can simply visit the relevant website and if desired, switch to a different tariff or even trade the electricity they generate among themselves.
 
-This flow is done for the sender as well as for the receiver account. Based on the information, a user can decide if a transaction should be signed or not.
 
-## Integrated Coinfirm API endpoints
+## Converting physical assets into tokens
+The tokenization of physical assets involves binding a digital token to a certain physical object, such as a car, house or art piece. Creating a digital twin for such high-value objects gives them the transactional ability and the opportunity to distribute fractional ownership among investors.
 
-* A detailed API description can be found under the following link. For the authentication to the API bearer tokens are used: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/
-* To authenticate to the API and to retrieve a bearer token, please visit the following link: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Auth/post_auth_login
-* To get the latest information about a registered coin address: https://app.swaggerhub.com/apis/Coinfirm-swagger/API/3.0.4#/Monitoring panel/post_panels_monitoring_wallet_addresses
+This is particularly useful in the traditional financial world, where investment barriers can be extremely high. Think about the amount of investment required to buy a real estate asset or a piece of art. For instance, up to now, to have ownership in real estate, one has been obligated to buy the entire property. The result has always been high transaction costs and limited investment opportunities.
+
+**Solution proposed**
+Tokenization, on the other hand, allows for the creation of divisible real estate property with fractional ownership functionality, reduced fees and increased transparency. Unnecessary delays related to legacy property rights registration systems could be eliminated, barriers to entry could be lowered and the friction between real estate buyers and sellers could be reduced. Small retail investors can diversify their portfolios and enter the previously exclusive markets that were only for the large investors.

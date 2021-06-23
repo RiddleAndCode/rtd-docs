@@ -2,9 +2,11 @@
 
 **Summary**
 
-* The Token Management Platform provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side. If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on Coinfirm’s product pricing.
-* All outgoing and incoming transactions are registered and verified, and any asset with a suspicious origin is flagged for a review.
-* This document describes Coinfirm’s AML integration process.
+* The Token Management Platform provides clients with a built-in Anti Money Laundering (AML) service powered by Coinfirm. The client is free to choose another AML provider, but the advantage of Coinfirm is that the API and the service are already built-in and does not require additional implementation on the client’s side.
+* Products within the Coinfirm’s platform include AML Risk Management Platform for digital assets, a solution addressing all FATF Travel Rule regulations, Trudatum, a product that ensures security of digital data and provenance and a solution that allows victims of scams to reclaim their stolen cryptocurrencies.
+* If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on product pricing. To integrate Coinfirm’s anti-money laundering services, reach out to your point of contact at RIDDLE&CODE. We will guide you through the process.
+
+
 
 **Anti Money Laundering (AML)** is a complex framework of strategies, rules and regulations that refers to the measures used by financial institutions and governments to prevent and combat financial crimes, especially money laundering and terrorism financing. **Know Your Customer (KYC)** is a component part of AML that identifies and authenticates the customers of financial institutions based on their perceived risk profile.
 
@@ -14,9 +16,9 @@ RIDDLE&CODE integrates the services provided by leading blockchain analytics pla
 
 ## Coinfirm - real time analytics and compliance risk management
 
-**Coinfirm** is a global leader in AML and regulatory technology for blockchain and cryptocurrencies. It offers the industry’s largest blockchain coverage, supporting over 1,500 cryptocurrencies and protocols, including Bitcoin, Ethereum, Hyperledger, and many more.
+**Coinfirm** is a global leader in AML and regulatory technology for blockchain and cryptocurrencies. It offers the industry’s largest blockchain coverage and supports over 1,500 cryptocurrencies and protocols, including Bitcoin, Ethereum, Hyperledger, and many more.
 
-Coinfirm’s AML platform consists of 270+ risk indicators able to catch nefarious actors with red flags for anything from Anti Money Laundering (AML) and Countering the Financing of Terrorism (CTF) to combatting fraud and dark net drug trafficking. Alongside this array of indicators, Coinfirm boasts the largest coverage of cryptocurrencies being monitored in the blockchain space.
+Coinfirm’s AML platform consists of 270+ risk indicators able to catch nefarious actors with red flags for anything from Anti Money Laundering (AML) and Countering the Financing of Terrorism (CTF) to combatting fraud and dark net drug trafficking.
 
 All coin addresses that are managed by the Token Management Platform are registered to the monitoring system automatically, using the provided API from Coinfirm. Once registered to the monitoring system, the risk level of coin addresses is calculated by Coinfirm’s forensic algorithm in regular time intervals and after each incoming transaction.
 
@@ -45,43 +47,44 @@ Notifications are sent to the client if fraudulent activities related to one or 
 
 The key functionality of Coinfirm’s AML/KYC platform is the possibility of generating AML/KYC Risk Reports that evaluate money laundering risk for blockchain addresses and their owners. These reports can be downloaded as PDF documents for regulatory compliance purposes.
 
-Risk Reports may be Basic, Standard or Enhanced.
+Risk Reports may be Standard or Enhanced.
 
-|Report element | Enhanced (Web/pdf/API) | Standard (Web/pdf/API)|Basic ('C-Score Report') (Monitoring Panel/API) |
-|----------------|:----------------------:|:-------------------------:|:------------------------:|
-|Report ID, date and block height | Yes | Yes | Yes| 
-|Address summary (balance in crypto and in USD, tokens) | Yes | Balance in crypto and USD | USD Balance in crypto| 
-|Profile analysis and summary | Yes | No | No| 
-|C-Score | Yes | Yes | Yes| 
-|C-Score analysis and summary | Yes | No | No| 
-|Risk Level | Yes | Yes | Yes| 
-|Network Membership | Yes | Yes | Yes| 
-|List of identified risks | Yes | No | No| 
-|List of informative flags | Yes | No | No| 
-|Assets/tokens analysis and summary | Yes | No | No| 
-|Financial analysis | Yes | No | No| 
-|Dark web connections | Yes | No | No| 
-|Appendix 1 – Risk Indicators | Yes | Category and subcategory | No| 
-|Appendix 2 – Financial analysis and summary | Yes | No | No| 
-|Appendix 3 – List of Assets/Tokens | Yes | No | No| 
-|Disclaimer | Yes | Yes | Yes| 
-|Glossary | Yes | Yes | Yes| 
+|Report element | Enhanced (Web/pdf/API) | Standard (Web/pdf/API)|
+|----------------|:----------------------:|:-------------------------:
+|Report ID, date and block height | Yes | Yes |
+|Address summary (balance in crypto and in USD, tokens) | Yes | Yes |  
+|Profile analysis and summary | Yes | Yes |
+|C-Score | Yes | Yes |
+|C-Score analysis and summary | Yes | Yes (one key risk indicator) |
+|Risk Level | Yes | Yes |
+|Network Membership | Yes | Yes |  
+|List of identified risks | Yes | No |
+|List of informative flags | Yes | No |
+|Risk source* (additional feature)| Yes (as an additional feature) Web and API | No |
+|Assets/tokens analysis and summary | Yes | No |
+|Financial analysis | Yes | Yes |
+|Dark web connections | Yes | No |
+|Appendix 1 – Risk Indicators | Yes | No |  
+|Appendix 2 – Financial analysis and summary | Yes | No |  
+|Appendix 3 – List of Assets/Tokens | Yes | No |
+|Disclaimer | Yes | Yes |
+|Glossary | Yes | Yes |
 
 
 ## Monitoring Panel
 
-The Monitoring Panel is a feature of the Platform that enables users to monitor and be alerted on AML risk in real-time for all provided addresses and related transactions. The Monitoring Panel include:
+Monitoring Panel
+The Monitoring Panel is a feature of the Coinfirm platform that enables users to monitor and be alerted on AML risk in real-time for all provided addresses and related transactions. The Monitoring Panel includes:
+1. Dashboard with all alerts raised, grouped by date, category and alert type.
+2. List of monitored addresses with the history of transactions and alerts, as well as balance and risk level changes from the beginning of monitoring.
+3. Administration panel to the setup of the tool – setting notification preferences, categories, thresholds and mailboxes.
 
-* **Wallet View** - provides the current risk scoring for monitored wallet addresses, navigates to wallet address details and displays information about new notifications. By default, the risk scoring is recalculated after each transaction and at least once daily.
-Transaction View - provides information in real time about all incoming and outgoing transactions on monitored addresses that transfer value. It also provides the recalculated C-Score after each such transaction.
+Recently, the tool has been revamped and upgraded. Brand new technical architecture enables the tracing of tens of thousands of addresses and generates alerts straight after every transaction. Alerts are available on the platform dashboard via API or by e-mail.
 
-* **Archive** - provides the list of all archived addresses that have been previously monitored and the option to renew them.
+By using the new Monitoring Panel, a user does not have to actively request AML Risk reports for every transaction. Instead, compliance officers can input all of their chosen addresses for monitoring and only be notified if any suspicious activity is detected on them. In addition, due to enabling configuring certain thresholds, compliance teams can choose the transaction thresholds relevant to their operational jurisdiction (e.g. the EU’s 5AMLD, the US’ Bank Secrecy Act and the FATF’s guidelines).
 
-* **Notifications** - provides the list of all notifications for each monitored address.
+More information about Monitoring Panel 2.0 can be found [here](https://www.coinfirm.com/blog/crypto-aml-monitoring/).
 
-* **Settings** - provides option to set up notifications and risk recalculation frequency.
-
-* **Notification Bell** - on the top of the tool page, provides information about all new, unread notifications on each monitored address.
 
 ## Visual Analysis Tool - Visualiser
 

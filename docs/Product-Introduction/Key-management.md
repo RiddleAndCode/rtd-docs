@@ -18,7 +18,7 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 
 ## Key generation
 
-![Key generation flow Diagram](assets/Keygenflow.png)
+![Key generation flow Diagram](../assets/Keygenflow.png)
 
 *Fig 1: Key generation flow diagram*
 
@@ -29,7 +29,7 @@ Key management covers all aspects of the generation, securing, exchange/trading 
 5. The phrase is displayed on the web interface to the user.
 6. Finally, the user stores the mnemonic phrase on a steel plate.
 
-![Key Backup flow Diagram](assets/keybackup.png)
+![Key Backup flow Diagram](../assets/keybackup.png)
 
 *Fig 2. Key backup flow diagram (high-level overview)*
 

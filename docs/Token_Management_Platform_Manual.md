@@ -1,279 +1,237 @@
+This manual describes operations and actions you can perform with the TMP as an administrator or a trader.
+
+
+# Getting started
 
 ## Register an Approval Device:
-To unlock the settings page and functionalities of the system, you need to register and activate the Approval Device you got from RIDDLE&CODE:  
+As an admin, you can register an Approval Device for a user and add it to the user group:
 
-1. Plugin the Approval Device to your computer,
-2. Visit the **New Device** page within the Administration section,
-3. Click **Register**,
-4. Select the device on the interface,
-5. Select the user role,
-6. Click **Register Device,**
-7. The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user (Trader/Viewer)
+1. Plug-in the Approval Device to your computer,
+2. Visit the **Device Manager** page within the Administration section,
+3. Click **ADD NEW DEVICE**,
 
-**NOTE:** You must activate five devices per hour.
+![Add new device](./assets/New_device_new.png)
 
+5. Select the user role (admin or trader),
 
-## Register Approval Device for a user
+![Role for the new device](./assets/New_device_role_new.png)
 
-1. As an admin, you can register an Approval Device for a user and add it to the user group:
-2. Plugin the device you want to register to your computer,
-3. Visit the dedicated page: https://cs-beta.r3c.network/register-device,
-![](../assets/user-manual-screens/new_device.jpeg)
-4. Click Pre-register,
-5. Enter the PIN on the device and click **Preregister,**
-6. Hand over the device to the onboarded user, who is now able to access the system.
+6. Add **Approval Device ID**
+
+7. Click **Preregister**,
+8. Select the wallet and click **Connect**
+
+The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user. Hand over the device to a user, who is now able to access the system.
 
 
 ## Sign up
-Access to the web interface is granted to pre-registered devices only. To access the web interface for the first time:
+When accessing the TMP interface for the first time you need to **Sign up**. The process is as follows:
 
-1. Plugin your Approval Device to the computer,
-2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/,
+1. Plug-in your Approval Device to the computer,
+2. Open the Sign up page by clicking on the link provided to you by RIDDLE&CODE.
 3. Click **Sign up,**
-![](../assets/user-manual-screens/signup_overview.jpeg)
-4. Click **Sign up** again,
-![](../assets/user-manual-screens/signup_button.jpeg)
-5. Enter your PIN on the device.
+4. Enter the PIN on your device.
+5. Choose your Approval Device (wallet) and click **Connect**
 
+![Sign Up page](./assets/Sign_up_new.png)
+
+
+You have successfully signed up.
 
 
 ## Sign in
-Access to the web interface is granted to pre-registered devices only. To access the web interface:
+To sign in and access the TMP interface:
 
-1. Plugin your Approval Device to the computer,
-2. Open the Sign-in page by clicking on the link: https://cs-beta.r3c.network/signin,
-3. Click **Sign in,**
-![](../assets/user-manual-screens/signin_button.jpeg)
-4. Enter your PIN on the device.
+1. Plug-in your Approval Device to the computer,
+2. Click **Sign in**
+3. Select your Approval Device and click **Connect**
+
+![Sign in](./assets/Sign_in_new.png)
+
+4. Press the check mark on your Approval Device to complete the action.
+
+You have successfully signed in.
 
 
 ## Change PIN
-To access the web interface, you need to unlock your Approval Device. 
-The device is protected with a default PIN, which can be changed to a personalised one.
+Your Approval Device is protected with a default PIN, which can be changed to a personalised one.
 
-**NOTE:** For a trader, this is mandatory when logging for the first time.
+**NOTE:** For a trader, this is mandatory when logging in for the first time.
 
 The steps are as follows:
 
-1. Go to the **Device Manager** tab, within the Administration section,
+1. Go to the **Settings** section and click **User**,
 2. Click **Change PIN,**
-![](../assets/user-manual-screens/change_pin.jpeg)
-3. Enter the current PIN on your device,
-4. Now enter the new PIN on your device,
-5. Re-enter the new PIN on the device to confirm it,
-6. Next time when you sign in, you’ll use your new PIN.
+
+![Change PIN](./assets/Change_PIN_new.png)
+
+3. Select your Approval Device and click **Connect**
+4. Confirm on your device that you want to change the PIN,
+5. Enter the current PIN on your device,
+6. Now enter the new PIN on your device,
+7. Re-enter the new PIN on the device to confirm it.
+
+Next time when you sign in to the TMP, you’ll use your new PIN.
 
 
-# Coinfirm AML Service
-## Set Coinfirm credentials
+## Manage Coinfirm services
 
-To use AML Coinfirm services, you need to set your credentials.
+### Become Coinfirm customer
+
+If a client decides to use Coinfirm’s AML service, it will require a paid subscription based on the product pricing. To integrate Coinfirm’s anti-money laundering services, reach out to your point of contact at RIDDLE&CODE. We will guide you through the process.
+
+The steps are as follows:
+
+1. Please reach out to your point of contact at RIDDLE&CODE. We will connect you with the relevant person at Coinfirm and set up a demo. If you decide to use Coinfirm as an AML platform, we will continue the process.
+2. You'll receive an invitation e-mail that contains the link to the page to activate your account and create a password.
+3. Go to the email received from Coinfirm and click on the activation button.
+4. When the account is activated, the AML Platform Dashboard will appear. Take a look around and give it a try.
+
+After you activated your account, you'll receive another e-mail from Coinfirm, with two files attached. One of them is the instruction on how to register and efficiently use the Service Desk, where you can easily report any issues spotted and check the status of tickets reported in the past.
+
+After you successfully register at the Service Desk, you will be able to access instructions to all the tools available on the platform.
 
 
-**NOTE:** Please bear in mind that you need to have a running subscription at Coinfirm to perform the following step:
+### Submit new token
 
 1. Visit the **AML tab**, within the Administration section,
-2. Add username,
-3. Add password,
-4. Click **Save.**
+
+![AML Coinfirm](./assets/AML_new.png)
+
+2. Enter the new token,
+3. Click **Submit**.
 
 
-# Manage policies
-## Create a new policy
+## Manage policies
+
+### Create a new policy
 As an administrator, you can create and add new policies:
 
-1. Visit the Administration section and go to the **Policy tab**,
-![](../assets/user-manual-screens/policies.jpeg)
-2. In the right corner, click New Policy. Now create the policy's scenario. For example:
-Given the threshold is 0.00011
+1. Visit the Administration section and go to the **Policy** tab,
+2. In the right corner, click **NEW POLICY**,
+
+![Policies](./assets/Policies.png)
+
+3. Create the policy's scenario. For example:
+
+*Given the threshold is 0.05
 When the amount of the input is less than the threshold   
-Then approve
-3. Click **Create Policy.**
+Then approve*
+
+4. Click **Submit**.
 
 
-## View and manage policies
+### View and manage policies
 
-1. Navigate to the **Policy tab** within the Administration section,
-![](../assets/user-manual-screens/policies.jpeg)
-2. There you can see a list of policies that have been created.
-3. Each policy is marked with a label, text (description) and current status (active/inactive).
-4. These policies can be disabled/enabled if necessary.
+1. Navigate to the **Policy** tab within the **Administration** section,
+
+There you can see a list of policies that have been created. Each policy is marked with a label, text (description) and current status (active/inactive).
+
+4. To manage policies just click on their **Status** where you can disable/enable them if necessary.
 
 
-## Disable the existing policy
+### Disable the existing policy
 As an admin, you can disable the existing policy so that the policy
 no longer applies to transaction governance:
 
-1. Navigate to the **Policy tab**, within the Administration section,
-![](../assets/user-manual-screens/policies.jpeg)
-2. Select **Disable** next to the policy you disable,
-3. The policy no longer applies.
+1. Navigate to the **Policy** tab, within the **Administration** section,
+2. Select **Disable** next to the policy you want to disable,
+
+![Disable policy](./assets/Disable_policy_new.png)
+
+3. Confirm that you want to update the policy status.
+
+![Disable policy](./assets/Disablepolicyconfirm.png)
 
 
-## Re-enable disabled policy
+The policy no longer applies.
+
+
+### Re-enable disabled policy
 1. Visit the **Policy tab** within the Administration section,
-![](../assets/user-manual-screens/policies.jpeg)
-2. Next to the disabled policy, press **Enable,**
-3. The policy is now re-enabled and applies to transaction governance.
+2. Next to the disabled policy, click **Enable**,
+3. Confirm that you want to update the policy status.
+
+The policy is now re-enabled and applies to transaction governance.
+
+## Policy Examples
+
+In the table below we have gathered templates of policies for the Token Management Platform (TMP). The templates can be copy and pasted directly to the Policy engine on the TMP. Adjust the value for Threshold and quroum to tailor the policies to your business processes. 
+
+These examples are for showcase purposes only. RIDDLE&CODE will provide you with tailormade policies in close alingment with the clients. 
+
+**Note** In the below example the Threshold is defined as amount denominated in Bitcoin. 
 
 
-# Manage Securosys HSM keys
-## Create Securosys HSM key
-As an administrator, you can set up and add Securosys HSM keys:
-1. Navigate to Securosys HSM Configuration by selecting the **HSM tab** within the Administration section,
-![HSM](../assets/user-manual-screens/hsm.jpeg)
-2. Click **Add HSM Key,**
-3. Enter the HSM Key ID.
+| Description |  |
+|-|-|
+| Threshold rule/one approval: | Given all identities who approve henceforth the approvals<br> And the length of the approvals henceforth the  \`number of approvals\` <br> And the threshold is 3 <br>And the quorum is 1 <br> When the amount of the input is less than the threshold <br> And the \`number of approvals\`  is greater than or equal to the quorum <br> Then approve <br> |
+| Threshold rule/two approvals | Given all identities who approve henceforth the approvals <br> And the length of the approvals henceforth the \` number of approvals\` <br> And the threshold is 10<br>  And the quorum is 2 <br> When the amount of the input is less than the threshold <br> And the \` number of approvals\`  is greater than or equal to the quorum <br> Then approve <br> |
+| Automated approval and signing | Given the threshold is 0.5<br> When the amount of the input is less than the threshold<br> Then approve |
 
 
-## View Securosys HSM keys
-1. Visit the **HSM tab** within the Administration section and navigate to Securosys Configuration Screen,
-2. There you can see a list of all HSM keys.
+
+## Manage customers' accounts
+
+### Create an account for a new customer
+When a new customer is onboarded, an administrator needs to create a new account for the customer. This can be done by adding an internal account or a trusted recipient. The process is as follows:
+
+1. Head over to the **Addresses** section of the interface,
+2. Click **NEW ASSET** in the top right corner,
+
+![Add new account](./assets/New_asset_new.png)
+
+3. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The account ID serves as the derivation index. On the right side, add account ID to generate address for the customer.
+
+![Add trusted recipient](./assets/Addtrustedreceipient.png)
+
+4. Click **Generate**
+5. On the left side, enter *Account ID*,
+6. Select *Currency*,
+7. Enter coin *Address* and click **Add**.
 
 
-## Set default Securosys HSM key for curve
-1. Select the **HSM tab** within the Administration section and navigate to Securosys HSM Configuration. There you can see a list of all HSM keys,
-2. Click **Set** for HSM keys that you want to be set as default.
-
-## Update Securosys HSM URL
-As an administrator, you can update Securosys HSM keys by entering the new URL:
-1. Navigate to Securosys HSM configuration,
-2. Click Set HSM URL,
-3. Enter the HSM URL.
-
-
-# Manage accounts
-## Create an account for a new customer
-When a new customer is onboarded, the admin needs to create a new account. This can be done by adding an internal account or a trusted recipient. The process is as follows: 
-
-1. Head over to the **Addresses section** of the web interface,
-![Accounts](../assets/user-manual-screens/addeses_navigation.jpeg)
-2. Click **New Asset** in the top right corner,
-3. Choose to add a new account,
-4. Choose whether you want to create an internal account or add a trusted recipient,
-
-5. Enter the valid address.
-
-## Create an internal account
-To add an internal account, the admin needs to perform the following steps:
-
-1. Sign in to the system as an **Admin,**
-2. Head over to the **Addresses section** of the web interface,
-![Accounts](../assets/user-manual-screens/addeses_navigation.jpeg)
-3. Click **New Asset** in the top right corner,
-4. You need to prepare a list of unique account IDs that are in a 32bit hexadecimal format. The account ID serves as the derivation index,
-5. Enter the values on the right side,
-![New Account](../assets/user-manual-screens/add_new_account.jpeg)
-6. Enter the Hash ID,
-7. Click **Generate.**
-
-
-## Add trusted recipient
-To enable traders to send funds to the external addresses,
-an admin needs to create the appropriate label and add trusted recipients.
-The steps are as follows:
-
-1. Sign in to the system as an **Admin,**
-2. Head over to the **Addresses section** of the web interface,
-![](../assets/user-manual-screens/addeses_navigation.jpeg)
-3. Click **New Asset** in the top right corner,
-4. Enter the values on the left side,
-![](../assets/user-manual-screens/add_trusted_recipient.jpeg)
-5. Enter a Hash ID,
-6. Choose a currency,
-7. Enter a coin address and click **Add.**
-
-## View accounts
-To view all the accounts within the system, select the **Addresses section** in the top main menu. 
-
-The table can be sorted by clicking on the header of the preferred column. 
+### View accounts
+To view all the accounts within the system, select the **Addresses** section in the top main menu. There you can see the list of all accounts. You can sort them by clicking on the header of the preferred column.
 Please note that only one column can be sorted at a time.
 
 
 * Asset: The currency of the account
-* Account ID: The hash ID of the account
-* Address: The actual address of the account
+* Account ID: The 8 digit hexadecimal identifier of the account
+* Address: The address of the account
 * Acc. typ: Account type
 
 
-## View trusted recipients
+### View the risk level of a coin address
+The risk level is a value between 0 and 100, where 0 is low and 100 is high.
 
-1. Visit the **Addresses section,**
-2. Select Trusted Recipients via the dropdown filter,
-3. Now you will be able to see a table that contains the list of all trusted recipients.
-
-
-## View the risk level of a coin address
-
-The risk level is a value between 0 and 100, where 0 is low and 100 is high. 
 To view the risk level of a coin address:
-1. Visit the **Addresses section,**
-2. There you will be able to see all loaded addresses in a table and check their risk level.
+1. Visit the **Addresses** section,
+2. Click on the dropdown menu next to the address whose risk level you want to check,
+3. Click the **AML Risk Report**.
+
+![Coin risk level](./assets/Coinrisklevel.png)
+
+You'll be taken to the Coinfirm website where you can see the address' risk level.
 
 
-# Manage transactions
-## Create Transaction Request 
-As a trader, you can create the Transaction Request and transfer funds from one coin address to another. 
-Depending on the transaction amount, several traders may need to approve the request. 
+## Manage transactions
+
+### Create transaction request
+As a trader, you can create the transaction request and transfer funds from one coin address to another.
+Depending on the transaction amount, several traders may need to approve the request.
+
 The process is as follows:
+1. Visit the **Settlement** section,
+2. Click **NEW TRANSACTION** in the top right corner,
 
-1. Visit the **Send tab** within the Settlement section,
-![](../assets/user-manual-screens/transaction.jpeg)
-2. Click **New Transaction** in the top right corner
+![Create new transaction](./assets/Newtransaction.png)
+
 3. Select a currency that you want to transfer,
 4. Select the sender’s account (risk value will be displayed),
 5. Select the receiver’s account (risk value will be displayed),
 6. Choose fees,
 7. Enter the amount you want to transfer,
-8. Click **Send.**
+8. Click **Send**.
 
-You submitted the Transaction Request, which now can be approved or rejected.
-
-## View transaction history
-1. Navigate to the **History** page within the Settlement section,
-2. Now you will be able to see the list of all past transactions involving account addresses.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+You submitted the transaction request, which now can be approved or rejected.

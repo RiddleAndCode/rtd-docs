@@ -3,6 +3,7 @@
 The multifunctional Token Management Platform allows the issuing of tokens, end-to-end trading, settlement and custody services with high levels of security, auditability and regulatory compliance.
 
 The main components of this tokenization ecosystem are:
+
 1. Key and identity management
 2. Trusted Execution Environment (TEE)
 3. Distributed ledger infrastructure
@@ -16,6 +17,7 @@ The following section describes each of these components.
 Key management covers all aspects of generating, securing, exchanging/trading and revoking keys.
 
 Since keys, private and public, act as a representation of indisputable identities, ownership of assets and proof-of-origin, a tokenization platform needs to provide all aspects to:
+
 * create keys in a secure and auditable way,
 * manage keys and related processes within a trusted and confidential environment,
 * perform value or metadata transactions in a manner that meets the throughput and frequency requirements of mature industries, and
@@ -56,6 +58,7 @@ It was the goal of RIDDLE&CODE to create a ledger network that is capable of cop
 The ledger is derived from IPDB and designed in such a way that it is completely GDPR compliant. The ledger itself contains no arbitrary data hashes as part of transactions that are signed off by public/private key pairs. Instead, it associates a piece of data with a storage identifier.
 
 BigchainDB solves some of the fundamental weaknesses of existing ledgers by:
+
 * achieving interoperability on the ‘infrastructure’ layer,
 * managing metadata ‘roaming,’
 * creating the right environment for business models to appear,
