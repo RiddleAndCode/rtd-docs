@@ -605,8 +605,8 @@ Developers interested in the mechanics of our APIs feel free to contact us direc
 
 * Full node service is an integrative part of the Token Management Platform (TMP) for each client that comes without extra cost.
 * The service is developed to reduce the dependency on third-party node uptime and to provide a stable and reliable connectivity to the respective blockchain/DLT networks.
-* Fullnode service is available for all supported digital assets.
- 	See Supporte Coins for more details  
+* Fullnode service is available for specific digital assets.
+ 	See Supported Coins for more details  
 
 By definition, Distributed Ledger Technology is distributed. This distributed nature means that a stable connection to a full node of each currency is a prerequisite for seamless and swift execution and verification of a transaction against various ledgers, including Bitcoin and Ethereum.
 
@@ -614,7 +614,7 @@ In most cases, the crypto transactions are confirmed without any issues. There a
 
 The connection to the DLT is usually achieved by a single node. The uptime of a single DLT full node is difficult to determine as it is unclear with what availability a single full node is hosted. This results in unstable, broken connectivity to the various DLT nodes and the inability to execute transactions.
 
-In order to reduce the dependency on third-party node uptime, RIDDLE&CODE built a full node hosting service for all supported currencies covered by the SLA. The service provides stable and reliable full node connectivity to the respective blockchain/DLT networks and allows the client to securely verify transactions. The downtime of the overall system is expected to be close to zero.
+In order to reduce the dependency on third-party node uptime, RIDDLE&CODE built a full node hosting service for the supported currencies covered by the SLA. The service provides stable and reliable full node connectivity to the respective blockchain/DLT networks and allows the client to securely verify transactions. The downtime of the overall system is expected to be close to zero.
 
 Required hardware and software are installed in RIDDLE&CODE’s hosting center with the following operations and monitoring services:
 
@@ -631,7 +631,7 @@ The following fullnodes are currently available
 |Bitcoin                            | Bitcoin Cash       		 |
 |Ethereum                           | Etherum Classic		     |
 |ERC20 Tokens                       | Bitcoin Gold        	     |
-|RIPPLE 							| Liteecoin					 |
+|RIPPLE 							| Litecoin					 |
 
 
 ## User interface
