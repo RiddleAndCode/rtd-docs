@@ -10,6 +10,16 @@ Traders, or operators, can create transaction requests, approve transactions, ad
 
 To access the TMP as a trader, you need an Approval Device and the link (e.g., customer-tmp.r3c.network) to the user interface. This link is provided by RIDDLE&CODE.
 
+## Note: Reference System
+
+RIDDLE&CODEs Token Management Platform designed and tested to enable the best User Experience on the following reference system: 
+
+` Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77 `
+
+Other Operating Systems and Browser configurations are untested and officially not recommended. Please reach out to your RIDDLE&CODE single point of contact for any inquiries about other system and browser configurations.
+
+## Accessing TMP - First step
+
 
 When accessing the TMP for the first time, you’ll have to use your Approval Device to:
 1. Get the device ID and share it with the administrator,
