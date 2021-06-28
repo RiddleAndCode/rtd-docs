@@ -1,30 +1,32 @@
 # Frequently Asked Questions
 
-In this section you can find answers to frequently asked questions.
+In this section, you can find answers to frequently asked questions.
 
-* Which opereating systems are recommended
 
-RIDDLE&CODEs Token Management Platform designed and tested to enable the best User Experience on the following reference system: 
+1. Which operating systems are compatible with the TMP?
+
+RIDDLE&CODEs Token Management Platform enables the best user experience on the following reference system:
 
 ` Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77 `
 
-Other Operating Systems and Browser configurations are untested and officially not recommended. Please reach out to your RIDDLE&CODE single point of contact for any inquiries about other system and browser configurations.
-
-* My device is connected, but it doesn't seem to be paired. How can I fix this?
-
-1. Ensure your Approval Device is unlocked,
-2. Close the TMP browser window and reopen the page.
+Other operating systems and browser configurations are untested and officially not recommended. Please reach out to your single point of contact at RIDDLE&CODE for any inquiries about other system and browser configurations.
 
 
-* My device is paired and unlocked, but I still can't sign in. How can I fix this?
+2. My device is connected, but it doesn't seem to be paired. How can I fix this?
 
-1. Disconnect your Approval Device,
-2. Clear Chrome cache,
-3. Plug-in your device again and unlock it
-4. Now try to sign in again.
+* First, ensure that your Approval Device is unlocked.
+* Close the TMP browser window and then reopen it.
 
 
-* Which coins are currently supported?
+3. My device is paired and unlocked, but I still can't sign in. How can I fix this?
+
+* Disconnect your Approval Device.
+* Clear Chrome cache.
+* Plug in and unlock your device.
+* Now try to sign in again.
+
+
+4. Which assets are currently supported?
 
 Currently, the platform supports the following types of assets (and derivatives), where Bitcoin-forked or ERC-20 assets are counted as one type.
 
@@ -55,6 +57,36 @@ Currently, the platform supports the following types of assets (and derivatives)
 
 
 
+4. I am using a MacBook. Do I need to install any additional applications to access and use the TMP?
+
+Yes, you will need to install the RIDDLE&CODE Bridge Service application. The steps are as follows:
+* Download the RnC Bridge 2.0.31. You can find the latest version [here](https://riddlecode.app.box.com/s/ksud48m25jytzhrhcg81hay9c378jp0y).
+* Next, run "rncbridge-2.0.31.pkg". You'll see that **Security and Privacy Centre** will block the action. This means that you have to save the app as an exception to the security settings.
+
+![Action blocked](./bridge-images/image6.png)
+
+* Open the **Security and Privacy** service on your MacBook.
+
+![Security and Privacy](./bridge-images/image5.png)
+
+* Navigate to *Allow apps downloaded from:*.
+
+![Allow apps downloaded from](./bridge-images/image8.png)
+
+* Click **Open Anyway**. Confirm that you want to open the app.
+
+![Open Anyway](./bridge-images/image7.png)
+
+* Start the installation process and follow the steps on the screen.
+
+![Installation](./bridge-images/image1.png)
 
 
-In case something is missing, please reach out to us at support@riddleandcode.com
+![Installation](./bridge-images/image2.png)
+
+![Installation](./bridge-images/image3.png)
+
+After the app is successfully installed, you are ready to access and use the Token Management Platform.
+
+
+Couldn't find the answer? Please reach out to us at support@riddleandcode.com.

@@ -12,14 +12,14 @@ To access the TMP as a trader, you need an Approval Device and the link (e.g., c
 
 ## Note: Reference System
 
-RIDDLE&CODEs Token Management Platform designed and tested to enable the best User Experience on the following reference system: 
+RIDDLE&CODEs Token Management Platform enables the best user experience on the following reference system:
 
 ` Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77 `
 
-Other Operating Systems and Browser configurations are untested and officially not recommended. Please reach out to your RIDDLE&CODE single point of contact for any inquiries about other system and browser configurations.
+Other operating systems and browser configurations are untested and officially not recommended. Please reach out to your single point of contact at RIDDLE&CODE for any inquiries about other system and browser configurations.
 
-## Accessing TMP - First step
 
+## Accessing the TMP - First steps
 
 When accessing the TMP for the first time, you’ll have to use your Approval Device to:
 1. Get the device ID and share it with the administrator,
@@ -51,8 +51,6 @@ When accessing the TMP interface for the first time, you have to sign up. The pr
 
 You should see a message stating that you’ve successfully signed up. Now, it is time to sign in.
 
-![Sign Up page](./assets/Sign_up_new.png)
-
 
 ## Sign in
 
@@ -60,9 +58,6 @@ The steps to sign in are:
 1. Plug your Approval Device into a computer.
 2. Click **Sign in**.
 3. Select your Approval Device (wallet) and click **Connect**.
-
-![Sign in](./assets/Sign_in_new.png)
-
 4. Press the check mark on your device to complete the action.
 
 You should see a message stating that you’ve successfully signed in.
@@ -75,7 +70,7 @@ But before you start adding new accounts, approving transactions, and other exci
 The steps are as follows:
 1. Go to *Settings* and in the dropdown menu click **User**.
 
-![Change PIN](./assets/Change_PIN_new.png)
+![Change PIN](./new-screenshots/user-change-PIN.png)
 
 2. Click **Change PIN**. You’ll see this question on your Approval Device: Do you really want to change your PIN?
 3. Press the check mark to confirm that you want to change the PIN.
@@ -108,7 +103,7 @@ The process is as follows:
 1. Head over to *Addresses*.
 2. Click **NEW ASSET** in the top right corner.
 
-![Add new account](./assets/New_asset_new.png)
+![Add new account](./new-screenshots/add-new-account.png)
 
 3. On the right side, add an account ID to generate the address for the customer.
 4. Click **Generate**.
@@ -118,7 +113,7 @@ The process is as follows:
 Before you can send funds to external addresses (e.g., brokers or exchanges), you need to add and mark the address as a trusted recipient. The steps are as follows:
 1. Head over to *Addresses* and click **NEW ACCOUNT**.
 
-![Add trusted recipient](./assets/Addtrustedreceipient.png)
+![Add trusted recipient](./new-screenshots/add-trusted-recipient.png)
 
 2. On the left side, enter Account ID.
 3. Select currency.
@@ -144,7 +139,7 @@ To view the risk level of a coin address:
 2. Click on the dropdown menu next to the address whose risk level you want to check.
 3. Click the AML Risk Report.
 
-![Coin risk level](./assets/Coinrisklevel.png)
+![Coin risk level](./new-screenshots/aml-risk-report.png)
 
 You’ll be taken to the Coinfirm website where you can see the risk level of the address.
 
@@ -158,7 +153,7 @@ The process is as follows:
 1. Visit *Settlement*.
 2. Click **NEW TRANSACTION** in the top right corner.
 
-![Create new transaction](./assets/Newtransaction.png)
+![Create new transaction](./new-screenshots/new-transaction.png)
 
 3. Select a currency that you want to transfer.
 4. Select the sender’s account (risk value will be displayed).
@@ -172,4 +167,3 @@ You have submitted the transaction request, which can now be approved or rejecte
 
 ### View list of all transactions
 To view the list of all transactions, navigate to **Settlement —> Order**. Here you can view the list of all (approved, expired or rejected) transactions, along with details like asset, address, amount, risk level, creation date, etc.
-
