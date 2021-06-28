@@ -12,12 +12,8 @@
 - Finally, Chapter 5 will show you how to restore the phrase.
 
 
-<<<<<<< HEAD
-##Chapter 1: Introduction to the key ceremony
-=======
-
 ## Chapter 1: Introduction to the key ceremony
->>>>>>> 6af76499450da828a693a48446eb4b7a453c1c14
+
 
 Keys (private/public) are the foundation of each business case or application built upon blockchain. Whoever controls the keys, also owns and controls the digital assets. Therefore, the key ceremony is the most critical procedure to guarantee security and control over the assets.
 
@@ -27,7 +23,7 @@ RIDDLE&CODE’s recommendation is to perform the key ceremony only after you get
 
 In case of any unclarities or questions, please contact RIDDLE&CODE at **support@riddleandcode.com**.
 
-##Chapter 2: Equipment necessary to perform the key ceremony
+## Chapter 2: Equipment necessary to perform the key ceremony
 
 
 You will need the following:
@@ -95,7 +91,7 @@ In case that procedure is not being followed correctly, the master of ceremony i
 The master of ceremony gathers all participants (among them is an administrator) and prepares one Approval Device, two steel plates, two locks that fit the steel plates, a set of tweezers to help with inserting the letters in the steel plates and a flat screwdriver (or something similar).
 
 The administrator signs in to the dedicated interface via provided link: **https://<company-name>-ckm.r3c.network/**.
-The administrator connects the Approval Device - Seed generation to a computer, unlocks the device with the PIN (default PIN: 234) and clicks **Generate new master seed**.
+The administrator connects the Approval Device - Seed generation to a computer, unlocks the device with the PIN (default PIN: 234) and clicks **Generate new key**.
 
 This will trigger the generation of a true random number—mnemonic phrase, which then needs to be stored on the steel plates. The Approval Device remains connected to a computer during the entire process.
 
@@ -146,7 +142,7 @@ In cases of disaster, for instance, when the cloud service gets destroyed, the A
 
 The recovery process follows similar steps as the initial key generation. The master of ceremony prepares the steel plates and a new/unused Approval Device. All participants in the ceremony need to be present.
 
-The administrator starts the process by accessing the web interface and navigating to the **Key Management** section. The administrator then clicks **Restore master seed backup**. Next, the administrator connects the Approval Device to the computer, unlocks it with PIN and clicks **Initialize now**.
+The administrator starts the process by accessing the web interface and navigating to the **Key Management** section. The administrator then clicks **Restore key backup**. Next, the administrator connects the Approval Device to the computer, unlocks it with PIN and clicks **Continue**.
 
 The hash of the mnemonic phrase is displayed on the interface. The hash can be compared and verified against the one stored in the initial key generation process—if you open a steel plate, you’ll see that it has 2 sides with 12 words. Each plate contains the mnemonic phrase as a whole. If these hashes match, the original mnemonic phrase has been entered correctly.
 

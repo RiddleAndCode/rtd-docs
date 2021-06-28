@@ -2,6 +2,13 @@
 
 In this section you can find answers to frequently asked questions.
 
+* Which opereating systems are recommended
+
+RIDDLE&CODEs Token Management Platform designed and tested to enable the best User Experience on the following reference system: 
+
+` Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77 `
+
+Other Operating Systems and Browser configurations are untested and officially not recommended. Please reach out to your RIDDLE&CODE single point of contact for any inquiries about other system and browser configurations.
 
 * My device is connected, but it doesn't seem to be paired. How can I fix this?
 
@@ -34,28 +41,19 @@ Currently, the platform supports the following types of assets (and derivatives)
 | Monero | R-Token |
 | Dash | DS-Token |
 | Tezos | S3 (Open Finance) |
-| IOTA |
-| NEM |
-| Zcash |
-| Dogecoin | 
-| Decred |
-| Tendermint |
-| Liquid |
-| Element |
-| Qtum |
-| Corda |
-| Lisk Augur |
-| Ravencoin |
-| DigiByte |
-| Komod |
-| MaidSafeCoin |
-| Zencash |
-| Monacoin |
-| Fullcoin |
-| Wanchain |
-| PIVX |
-| Bitcoin Cash |
-| Ethereum Classic |
+| IOTA | Ethereum Classic |
+| NEM | Bitcoin Cash |
+| Zcash | PIVX |
+| Dogecoin | Wanchain |
+| Decred | Fullcoin |
+| Tendermint | Monacoin |
+| Liquid | Zencash |
+| Element | MaidSafeCoin |
+| Qtum | Komodo |
+| Corda | DigiByte |
+| Lisk Augur | Ravencoin |
+
+
 
 
 

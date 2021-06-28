@@ -135,6 +135,7 @@ In combination with RIDDLE&CODE’s identity management/wallet solutions, confid
 The Policy Layer is a set of rules that performs and logs all processes preceding and following transaction authentication. It verifies that the defined roles and rules are imposed and specifies the access rights to the platform and any of its functionalities.
 
 **CHALLENGE 1**
+
 > Fullfilling regulatory criteria for transparency and compliance.
 
 ***Solution via POLICY LAYER***
@@ -252,6 +253,7 @@ Security by design
 * The client is the only entity that can access the Trusted Execution Environment and, therefore, has full ownership and control over the keys. RIDDLE&CODE, as the solution provider, does not have access to the keys and related processes at any time.
 * Keys are generated in a secure and auditable way without a possibility for others to intercept or access the keys.
 * The secure key recovery process can be performed in the case of disaster.
+* RIDDLE&CODE provides a detailed step by step guide for performing secure and trusted key generation and recovery ceremonies: Key ceremony
 
 Key management covers all aspects of the generation, securing, exchange/trading and revoking of keys. Since keys, private and public, act as a representation of indisputable identities, ownership of assets and proof-of-origin, key management needs to provide all aspects to:
 
@@ -393,7 +395,7 @@ The ledger consists of a network of nodes deployed across all major regions.
 
 ### IPDB network
 
-Riddle&Code Audit layer is built upon and leverages the advantages of the public, federated and decentralised IPDB network. This decentralised network is operated by IPDB Foundation [GitHub](https://ipdb.io), a global non-profit foundation with headquarters in Berlin that fosters research into transparent governance. The Foundation is a main custodian of the BigchainDB stack, with a global membership base operating as nodes.
+Riddle&Code Audit layer is built upon and leverages the advantages of the public, federated and decentralised IPDB network. This decentralised network is operated by IPDB Foundation [IPDB](https://ipdb.io), a global non-profit foundation with headquarters in Berlin that fosters research into transparent governance. The Foundation is a main custodian of the BigchainDB stack, with a global membership base operating as nodes.
 
 >**Multiple sovereign Networks**
 >Customisable independent public or private IPDB networks can be set up for multiple parties to run apps on, or even for a single entity to run their apps. Key features include flexible permissioning, low latency, Byzantine fault-tolerance, rich query features with MongoDB.
@@ -603,8 +605,8 @@ Developers interested in the mechanics of our APIs feel free to contact us direc
 
 * Full node service is an integrative part of the Token Management Platform (TMP) for each client that comes without extra cost.
 * The service is developed to reduce the dependency on third-party node uptime and to provide a stable and reliable connectivity to the respective blockchain/DLT networks.
-* Fullnode service is available for all supported digital assets.
- 	See Supporte Coins for more details  
+* Fullnode service is available for specific digital assets.
+ 	See Supported Coins for more details  
 
 By definition, Distributed Ledger Technology is distributed. This distributed nature means that a stable connection to a full node of each currency is a prerequisite for seamless and swift execution and verification of a transaction against various ledgers, including Bitcoin and Ethereum.
 
@@ -612,7 +614,7 @@ In most cases, the crypto transactions are confirmed without any issues. There a
 
 The connection to the DLT is usually achieved by a single node. The uptime of a single DLT full node is difficult to determine as it is unclear with what availability a single full node is hosted. This results in unstable, broken connectivity to the various DLT nodes and the inability to execute transactions.
 
-In order to reduce the dependency on third-party node uptime, RIDDLE&CODE built a full node hosting service for all supported currencies covered by the SLA. The service provides stable and reliable full node connectivity to the respective blockchain/DLT networks and allows the client to securely verify transactions. The downtime of the overall system is expected to be close to zero.
+In order to reduce the dependency on third-party node uptime, RIDDLE&CODE built a full node hosting service for the supported currencies covered by the SLA. The service provides stable and reliable full node connectivity to the respective blockchain/DLT networks and allows the client to securely verify transactions. The downtime of the overall system is expected to be close to zero.
 
 Required hardware and software are installed in RIDDLE&CODE’s hosting center with the following operations and monitoring services:
 
@@ -629,7 +631,7 @@ The following fullnodes are currently available
 |Bitcoin                            | Bitcoin Cash       		 |
 |Ethereum                           | Etherum Classic		     |
 |ERC20 Tokens                       | Bitcoin Gold        	     |
-|RIPPLE 							| Liteecoin					 |
+|RIPPLE 							| Litecoin					 |
 
 
 ## User interface

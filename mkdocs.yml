@@ -12,12 +12,19 @@ nav:
 - Home: index.md
 - Token Management Platform:
         - Product Documentation: Product-Documentation.md
-        - Manual: Token_Management_Platform_Manual.md
+        - Getting started guide for Administrators: getting-started-administrators.md
+        - Getting started guide for Traders: getting-started-trader.md
         - Key Ceremony: Key-ceremony.md
+        - Shamir-based Key generation: Shamir-based-key-generation.md
         - Use Cases: Use-Cases.md
         - Frequently Asked Questions: FAQ.md
         - Release Notes: release-notes-tmp.md
         - Glossary: Glossary.md
+- Confidential Key Management:
+        - Product Documentation: CKM-Product-Documentation.md
+        - Getting Started Guide: CKM_Getting_Started_Guide.md
+        - Key Ceremony: CKM-Key-ceremony.md
+
         
 #extra_css:
 #  - design/extra_css
