@@ -4,11 +4,11 @@ This manual describes operations that you can perform with the TMP as an adminis
 
 ## Note: Reference System
 
-RIDDLE&CODEs Token Management Platform designed and tested to enable the best User Experience on the following reference system: 
+RIDDLE&CODEs Token Management Platform enables the best user experience on the following reference system:
 
 ` Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77 `
 
-Other Operating Systems and Browser configurations are untested and officially not recommended. Please reach out to your RIDDLE&CODE single point of contact for any inquiries about other system and browser configurations.
+Other operating systems and browser configurations are untested and officially not recommended. Please reach out to your single point of contact at RIDDLE&CODE for any inquiries about other system and browser configurations.
 
 
 ## Register an Approval Device:
@@ -18,11 +18,11 @@ As an admin, you can register an Approval Device for a user and add it to the us
 2. Visit the *Device Manager* page within the Administration section.
 3. Click **ADD NEW DEVICE**.
 
-![Add new device](./assets/New_device_new.png)
+![Add new device](./new-screenshots/admin-add-new-device.png)
 
 5. Select the user role (admin or trader).
 
-![Role for the new device](./assets/New_device_role_new.png)
+![Role for the new device](./new-screenshots/new-device-role.png)
 
 6. Add **Approval Device ID**.
 
@@ -41,9 +41,6 @@ When accessing the TMP interface for the first time you need to sign up. The pro
 4. Enter the PIN on your device.
 5. Choose your Approval Device (wallet) and click **Connect**.
 
-![Sign Up page](./assets/Sign_up_new.png)
-
-
 You have successfully signed up.
 
 
@@ -53,9 +50,6 @@ To sign in and access the TMP interface:
 1. Plug-in your Approval Device to the computer.
 2. Click **Sign in**.
 3. Select your Approval Device and click **Connect**.
-
-![Sign in](./assets/Sign_in_new.png)
-
 4. Press the check mark on your Approval Device to complete the action.
 
 You have successfully signed in.
@@ -68,7 +62,7 @@ The steps are as follows:
 1. Go to *Settings* and in the dropdown menu click **User**.
 2. Click **Change PIN**.
 
-![Change PIN](./assets/Change_PIN_new.png)
+![Change PIN](./new-screenshots/user-change-PIN.png)
 
 3. Select your Approval Device and click **Connect**.
 4. Confirm on your device that you want to change the PIN.
@@ -101,7 +95,7 @@ After you successfully register at the Service Desk, you will be able to access 
 
 1. Visit the *AML tab*, within the Administration section.
 
-![AML Coinfirm](./assets/AML_new.png)
+![AML Coinfirm](./new-screenshots/aml-submit-token.png)
 
 2. Enter the new token.
 3. Click **Submit**.
@@ -115,7 +109,7 @@ As an administrator, you can create and add new policies:
 1. Visit the Administration section and go to *Policy*.
 2. In the right corner, click **NEW POLICY**.
 
-![Policies](./assets/Policies.png)
+![Policies](./new-screenshots/new-policy.png)
 
 3. Create the policy's scenario. For example:
 
@@ -142,11 +136,11 @@ no longer applies to transaction governance:
 1. Navigate to *Policy*.
 2. Select **Disable** next to the policy you want to disable.
 
-![Disable policy](./assets/Disable_policy_new.png)
+![Disable policy](./new-screenshots/disable-policy.png)
 
 3. Confirm that you want to update the policy status.
 
-![Disable policy](./assets/Disablepolicyconfirm.png)
+![Disable policy](./new-screenshots/confirm-disable-policy.png)
 
 
 The policy no longer applies.
