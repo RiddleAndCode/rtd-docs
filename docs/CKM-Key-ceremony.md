@@ -21,6 +21,7 @@ The mnemonic phrase consists of 24 words defined according to the Bitcoin improv
 ## Before you start
 
 Below, you’ll find RIDDLE&CODE’s recommendation for performing the ceremony for the initial key generation process. In this guide, the ceremony is performed with:
+
 1. the master of ceremony,
 2. two (2) participants,  
 3. two (2) steel plates, and
