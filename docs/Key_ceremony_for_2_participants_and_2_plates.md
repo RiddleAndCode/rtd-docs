@@ -1,5 +1,5 @@
 
-# Two participants and two plates
+# Key ceremony with two participants and two plates (based on BIP39 and 24-word mnemonic phrase)
 
 ## Summary:
 
@@ -70,7 +70,7 @@ RIDDLE&CODE’s recommendation for storing the mnemonic phrase is:
 
 ### The plates
 
-Each plate is sealed with a lock. A single plate stores 24 words, 12 on each side. Each side has 3 rows, with 4 words in each row. 
+Each plate is sealed with a lock. A single plate stores 24 words, 12 on each side. Each side has 3 rows, with 4 words in each row.
 
 All plates should rest on a flat, non-transparent surface so that when open, only one side is readable. When turning a plate on the opposite side, the plate should always be closed. The sides can be marked with a removable sticker so that during the validation of the phrase, you will know which plate contains which words.
 
