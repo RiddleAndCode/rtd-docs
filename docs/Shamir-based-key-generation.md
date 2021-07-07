@@ -48,7 +48,7 @@ Unlike Shamir Basic, Shamir Group sets a threshold for groups, where each group 
 | Available shares  | 1              | 1-16 or 1-16 x 1-16|  
 | Available threshold|1              | 2-maximum number of shares created.|
 | Phrase length     |12, 18, or 24 words|33 words|
-| Word order        |The word order is important.|The word order doesn't affect key recovery.|
+| Word order        |The word order is important.|The word order is important.|
 | Wordlist          |BIP-39          |SLIP-39               |
 | Operational complexity| Simple               |Medium/high complexity |
 
