@@ -2,7 +2,7 @@
 
 In this section, you can find answers to frequently asked questions.
 
-1. Which operating systems are compatible with the TMP?
+## 1. Which operating systems are compatible with the TMP?
 
 RIDDLE&CODEs Token Management Platform enables the best user experience on the following reference system:
 
@@ -10,12 +10,12 @@ RIDDLE&CODEs Token Management Platform enables the best user experience on the f
 
 Other operating systems and browser configurations are untested and officially not recommended. Please reach out to your single point of contact at RIDDLE&CODE for any inquiries about other system and browser configurations.
 
-2. **My device is connected, but it doesn't seem to be paired. How can I fix this?**
+## 2. ** My device is connected, but it doesn't seem to be paired. How can I fix this?**
 
 * First, ensure that your Approval Device is unlocked.
 * Close the TMP browser window and then reopen it
 
-3. **My device is paired and unlocked, but I still can't sign in. How can I fix this?**
+## 3. ** My device is paired and unlocked, but I still can't sign in. How can I fix this?**
 
 * Disconnect your Approval Device.
 * Clear Chrome cache.
@@ -23,7 +23,7 @@ Other operating systems and browser configurations are untested and officially n
 * Now try to sign in again.
 
 
-4. **Which assets are currently supported?**
+## 4. **Which assets are currently supported?**
 
 Currently, the platform supports a wide a following types of assets (and derivatives), where Bitcoin-forked or ERC-20 assets are counted as one type.
 
@@ -53,7 +53,7 @@ Currently, the platform supports a wide a following types of assets (and derivat
 | Lisk Augur |  |
 
 
-4. **I am using a MacBook. Do I need to install any additional applications to access and use the TMP?**
+## 4. **I am using a MacBook. Do I need to install any additional applications to access and use the TMP?**
 
 Yes, thou you will need to install the RIDDLE&CODE Bridge Service application. 
 
