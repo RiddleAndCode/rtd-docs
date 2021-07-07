@@ -1,4 +1,4 @@
-# Three participants and three plates
+# Key ceremony with three participants and three plates (based on BIP39 and 24-word mnemonic phrase)
 
 ## Summary:
 
