@@ -1,12 +1,12 @@
 # Frequently Asked Questions
 
-In this section, you can find answers to frequently asked questions.
+In this section, you can find answers to the most frequently asked questions on the Token Management Platform
 
 ## 1. Which operating systems are compatible with the TMP?
 
 RIDDLE&CODEs Token Management Platform enables the best user experience on the following reference system:
 
-`Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77`
+**Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77**
 
 Other operating systems and browser configurations are untested and officially not recommended. Please reach out to your single point of contact at RIDDLE&CODE for any inquiries about other system and browser configurations.
 

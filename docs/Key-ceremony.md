@@ -11,4 +11,4 @@ For all inquiries not already covered in these guides feel free to contact us di
 
 1. [BIP-039 Key ceremony guide for 2 parties](Key_ceremony_for_2_participants_and_2_plates.md)
 2. [BIP-039 Key ceremony guide for 3 parties ](Key_ceremony_3_participants_3_plates.md)
-3. [SLIP-039 Shamir-based key ceremony guide ](Shamir-based-key-generation.md)
+3. [SLIP-039 Shamir-based key ceremony guide ](Key_ceremony_Shamir_backup.md)
