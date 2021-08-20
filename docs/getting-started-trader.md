@@ -164,6 +164,24 @@ The process is as follows:
 
 You have submitted the transaction request, which can now be approved or rejected.
 
+## Available Currencies
+Currencies used in TMP are labelled as:
+* Orange Icons refer to public mainnets
+* Grey Icons refer to public testnets
+* Black Icons refer to R&C Testnets. 
+
+| Icon | Name |
+|-|-|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/tltc.svg)|Litecoin Testnet|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/tbtc.svg)|Bitcoin Testnet|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/tbch.svg)|Bitcoin Cash Testnet|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/teth.svg)|Ethereum Testnet Ropsten|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/btc.svg)|Bitcoin|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/ltc.svg)|Litecoin|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/bch.svg)|Bitcoin Cash|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/eth.svg)|Ethereum|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/rbtc.svg)|R&C Testnet|
+|![](https://github.com/RiddleAndCode/rtd-docs/tree/master/docs/assets/currencies/txrp.svg)|Ripple Testnet|
 
 ### View list of all transactions
 To view the list of all transactions, navigate to **Settlement —> Order**. Here you can view the list of all (approved, expired or rejected) transactions, along with details like asset, address, amount, risk level, creation date, etc.
