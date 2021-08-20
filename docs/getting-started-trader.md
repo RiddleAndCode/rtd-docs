@@ -172,16 +172,16 @@ Currencies used in TMP are labelled as:
 
 | Icon | Name |
 |-|-|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/tltc.svg)|Litecoin Testnet|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/tbtc.svg)|Bitcoin Testnet|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/tbch.svg)|Bitcoin Cash Testnet|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/teth.svg)|Ethereum Testnet Ropsten|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/btc.svg)|Bitcoin|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/ltc.svg)|Litecoin|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/bch.svg)|Bitcoin Cash|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/eth.svg)|Ethereum|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/rbtc.svg)|R&C Testnet|
-|![](https://github.com/RiddleAndCode/rtd-docs/tree/currency-list/docs/assets/currencies/txrp.svg)|Ripple Testnet|
+|![](./assets/currencies/btc.svg =100px)|Bitcoin|
+|![](./assets/currencies/tltc.svg)|Litecoin Testnet|
+|![](./assets/currencies/tbtc.svg)|Bitcoin Testnet|
+|![](./assets/currencies/tbch.svg)|Bitcoin Cash Testnet|
+|![](./assets/currencies/teth.svg)|Ethereum Testnet Ropsten|
+|![](./assets/currencies/ltc.svg)|Litecoin|
+|![](./assets/currencies/bch.svg)|Bitcoin Cash|
+|![](./assets/currencies/eth.svg)|Ethereum|
+|![](./assets/currencies/rbtc.svg)|R&C Testnet|
+|![](./assets/currencies/xrp.svg)|Ripple Testnet|
 
 ### View list of all transactions
 To view the list of all transactions, navigate to **Settlement —> Order**. Here you can view the list of all (approved, expired or rejected) transactions, along with details like asset, address, amount, risk level, creation date, etc.
