@@ -22,6 +22,7 @@ Other operating systems and browser configurations are untested and officially n
 ## Accessing the TMP - First steps
 
 When accessing the TMP for the first time, you’ll have to use your Approval Device to:
+
 1. Get the device ID and share it with the administrator,
 2. Sign up,
 3. Sign in, and
@@ -32,6 +33,7 @@ The steps for performing these actions are described below.
 ## Get the device ID
 
 Before signing up, you need to get the ID of the Approval Device you’ll be using. This ID must be shared with the administrator, who will add your device to the system. The steps are as follows:
+
 1. Click **Sign Up**.
 2. The device ID will be displayed on the interface.
 3. Copy device ID and share it with your administrator.
@@ -43,6 +45,7 @@ After the administrator confirms that your device has been added, you can contin
 ## Sign up
 
 When accessing the TMP interface for the first time, you have to sign up. The process is as follows:
+
 1. Plug your Approval Device into a computer.
 2. Click on the link provided to you by RIDDLE&CODE to open the sign-up page (e.g., customer-tmp.r3c.network)
 3. Click **Sign up**.
@@ -55,6 +58,7 @@ You should see a message stating that you’ve successfully signed up. Now, it i
 ## Sign in
 
 The steps to sign in are:
+
 1. Plug your Approval Device into a computer.
 2. Click **Sign in**.
 3. Select your Approval Device (wallet) and click **Connect**.
@@ -84,6 +88,7 @@ The device will display a message that you have successfully changed your PIN. N
 ## Firmware update
 
 RIDDLE&CODE recommends that you always keep your Approval Device up to date for security and functionality purposes. To check and update your device, please do the following:
+
 1. Head over to *Settings*.
 2. In the dropdown menu, click **Firmware Update**.
 3. Click **CHECK FOR UPDATE** to see if there is a need to update your device. If yes, follow the instructions displayed on the interface:
@@ -100,6 +105,7 @@ RIDDLE&CODE recommends that you always keep your Approval Device up to date for 
 ### Create account for a new customer
 Onboarding a new customer requires the creation of a new account. This is done by adding an internal account. You need to prepare a list of unique account IDs that are in a 32-bit hexadecimal format. The account ID serves as the derivation index.
 The process is as follows:
+
 1. Head over to *Addresses*.
 2. Click **NEW ASSET** in the top right corner.
 
@@ -111,6 +117,7 @@ The process is as follows:
 
 ### Add an external address as a trusted recipient
 Before you can send funds to external addresses (e.g., brokers or exchanges), you need to add and mark the address as a trusted recipient. The steps are as follows:
+
 1. Head over to *Addresses* and click **NEW ACCOUNT**.
 
 ![Add trusted recipient](./new-screenshots/add-trusted-recipient.png)
@@ -124,6 +131,7 @@ The address is now marked as a trusted recipient.
 
 ### View accounts
 To view all the accounts within the system, navigate to *Addresses* in the top main menu. There, you can see the list of all accounts, which you can sort by clicking on the header of the preferred column. Please note that only one column can be sorted at a time. The columns include:
+
 * Asset—the currency of the account.
 * Account ID—the 8-digit hexadecimal identifier of the account.
 * Address—the address of the account.
@@ -135,6 +143,7 @@ NOTE: This only applies if you are using Coinfirm's AML services.
 
 The risk level is a value between 0 and 100, where 0 is low and 100 is high.
 To view the risk level of a coin address:
+
 1. Visit *Addresses*.
 2. Click on the dropdown menu next to the address whose risk level you want to check.
 3. Click the AML Risk Report.
@@ -149,6 +158,7 @@ You’ll be taken to the Coinfirm website where you can see the risk level of th
 ### Create transaction request
 As a trader, you can create the transaction request and transfer funds from one address to another. Please note that, depending on the transaction amount, several traders may need to approve the request.
 The process is as follows:
+
 1. Visit *Settlement*.
 2. Click **NEW TRANSACTION** in the top right corner.
 
@@ -166,6 +176,7 @@ You have submitted the transaction request, which can now be approved or rejecte
 ## Available Currencies
 
 Currencies used in TMP are labelled as:
+
 * Orange Icons refer to public mainnets
 * Grey Icons refer to public testnets
 * Black Icons refer to Testnets operated by RIDDLE&CODE. 
