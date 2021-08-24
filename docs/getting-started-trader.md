@@ -173,15 +173,16 @@ Currencies used in TMP are labelled as:
 | Icon | Name |
 |-|-|
 |![](./assets/currencies/btc.svg =100px)|Bitcoin|
-|![](./assets/currencies/tltc.svg)|Litecoin Testnet|
-|![](./assets/currencies/tbtc.svg)|Bitcoin Testnet|
-|![](./assets/currencies/tbch.svg)|Bitcoin Cash Testnet|
-|![](./assets/currencies/teth.svg)|Ethereum Testnet Ropsten|
-|![](./assets/currencies/ltc.svg)|Litecoin|
-|![](./assets/currencies/bch.svg)|Bitcoin Cash|
-|![](./assets/currencies/eth.svg)|Ethereum|
-|![](./assets/currencies/rbtc.svg)|R&C Testnet|
-|![](./assets/currencies/xrp.svg)|Ripple Testnet|
+|<img src="./assets/currencies/btc.svg" width="50%">|Bitcoin|
+|<img src="./assets/currencies/tltc.svg" width="50%">|Litecoin Testnet|
+|<img src="./assets/currencies/tbtc.svg" width="50%">|Bitcoin Testnet|
+|<img src="./assets/currencies/tbch.svg" width="50%">|Bitcoin Cash Testnet|
+|<img src="./assets/currencies/teth.svg" width="50%">|Ethereum Testnet Ropsten|
+|<img src="./assets/currencies/ltc.svg" width="50%">|Litecoin|
+|<img src="./assets/currencies/bch.svg" width="50%">|Bitcoin Cash|
+|<img src="./assets/currencies/eth.svg" width="50%">|Ethereum|
+|<img src="./assets/currencies/rbtc.svg" width="50%">|R&C Testnet|
+|<img src="./assets/currencies/txrp.svg" width="50%">|Ripple Testnet|
 
 ### View list of all transactions
 To view the list of all transactions, navigate to **Settlement —> Order**. Here you can view the list of all (approved, expired or rejected) transactions, along with details like asset, address, amount, risk level, creation date, etc.
