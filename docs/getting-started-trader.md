@@ -172,7 +172,6 @@ Currencies used in TMP are labelled as:
 
 | Icon | Name |
 |-|-|
-|![](./assets/currencies/btc.svg =100px)|Bitcoin|
 |<img src="./assets/currencies/btc.svg" width="50%">|Bitcoin|
 |<img src="./assets/currencies/tltc.svg" width="50%">|Litecoin Testnet|
 |<img src="./assets/currencies/tbtc.svg" width="50%">|Bitcoin Testnet|
