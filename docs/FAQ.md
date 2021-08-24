@@ -28,6 +28,7 @@ Other operating systems and browser configurations are untested and officially n
 Currently, the platform supports a the following types of assets (and derivatives), where Bitcoin-forked or ERC-20 assets are counted as one type.
 
 Currencies used in TMP are labelled as:
+
 * Orange Icons refer to public mainnets
 * Grey Icons refer to public testnets
 * Black Icons refer to Testnets operated by RIDDLE&CODE. 
