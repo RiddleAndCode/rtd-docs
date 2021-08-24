@@ -144,7 +144,6 @@ To view the risk level of a coin address:
 You’ll be taken to the Coinfirm website where you can see the risk level of the address.
 
 
-
 ## Manage transactions
 
 ### Create transaction request
@@ -165,23 +164,14 @@ The process is as follows:
 You have submitted the transaction request, which can now be approved or rejected.
 
 ## Available Currencies
+
 Currencies used in TMP are labelled as:
 * Orange Icons refer to public mainnets
 * Grey Icons refer to public testnets
-* Black Icons refer to R&C Testnets. 
+* Black Icons refer to Testnets operated by RIDDLE&CODE. 
 
-| Icon | Name |
-|-|-|
-|<img src="./assets/currencies/tbtc.svg" width="50%">|Bitcoin Testnet|
-|<img src="./assets/currencies/tltc.svg" width="50%">|Litecoin Testnet|
-|<img src="./assets/currencies/tbch.svg" width="50%">|Bitcoin Cash Testnet|
-|<img src="./assets/currencies/teth.svg" width="50%">|Ethereum Testnet Ropsten|
-|<img src="./assets/currencies/btc.svg" width="50%">|Bitcoin|
-|<img src="./assets/currencies/ltc.svg" width="50%">|Litecoin|
-|<img src="./assets/currencies/bch.svg" width="50%">|Bitcoin Cash|
-|<img src="./assets/currencies/eth.svg" width="50%">|Ethereum|
-|<img src="./assets/currencies/txrp.svg" width="50%">|Ripple Testnet|
-|<img src="./assets/currencies/rbtc.svg" width="50%">|R&C Testnet|
+for a complete list of the available currencies please refer to: [Available currencies](./Product-Documentation.md#available-currencies)
+
 
 ### View list of all transactions
 To view the list of all transactions, navigate to **Settlement —> Order**. Here you can view the list of all (approved, expired or rejected) transactions, along with details like asset, address, amount, risk level, creation date, etc.

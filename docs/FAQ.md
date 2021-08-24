@@ -25,33 +25,14 @@ Other operating systems and browser configurations are untested and officially n
 
 ## 4. **Which assets are currently supported?**
 
-Currently, the platform supports a wide a following types of assets (and derivatives), where Bitcoin-forked or ERC-20 assets are counted as one type.
+Currently, the platform supports a the following types of assets (and derivatives), where Bitcoin-forked or ERC-20 assets are counted as one type.
 
-| Cryptocurrencies  | Supported tokens   |
-|---|---|
-| Bitcoin  | ERC-20  |  
-| Ethereum  | ERC-165  |   
-| Ripple | ERC-721 |   
-| Litecoin | ERC-777 |
-| Tether | ERC-1404 |
-| Binance | ERC-1155 |
-| Stellar | Atomic DSS |
-| Cardano | T-REX |
-| Monero | R-Token |
-| Dash | DS-Token |
-| Tezos | S3 (Open Finance) |
-| IOTA | Ethereum Classic |
-| NEM | Bitcoin Cash |
-| Zcash | PIVX |
-| Dogecoin | Wanchain |
-| Decred | Fullcoin |
-| Ravencoin| Monacoin |
-| Liquid | Zencash |
-| Element | MaidSafeCoin |
-| Qtum | Komodo |
-| Corda | DigiByte |
-| Lisk Augur |  |
+Currencies used in TMP are labelled as:
+* Orange Icons refer to public mainnets
+* Grey Icons refer to public testnets
+* Black Icons refer to Testnets operated by RIDDLE&CODE. 
 
+for a complete list of the available currencies please refer to: [Available currencies](./Product-Documentation.md#available-currencies)
 
 ## 4. **I am using a MacBook. Do I need to install any additional applications to access and use the TMP?**
 

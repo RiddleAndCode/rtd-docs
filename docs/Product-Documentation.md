@@ -600,6 +600,25 @@ Internal APIs     | Description
 
 Developers interested in the mechanics of our APIs feel free to contact us directly via: support@riddleandcode.com or via your designated Riddle&Code contact. 
 
+## Available Currencies
+
+Currencies used in TMP are labelled as:
+* Orange Icons refer to public mainnets
+* Grey Icons refer to public testnets
+* Black Icons refer to R&C Testnets. 
+
+| Icon | Name |
+|-|-|
+|<img src="./assets/currencies/tbtc.svg" width="50%">|Bitcoin Testnet|
+|<img src="./assets/currencies/tltc.svg" width="50%">|Litecoin Testnet|
+|<img src="./assets/currencies/tbch.svg" width="50%">|Bitcoin Cash Testnet|
+|<img src="./assets/currencies/teth.svg" width="50%">|Ethereum Testnet Ropsten|
+|<img src="./assets/currencies/btc.svg" width="50%">|Bitcoin|
+|<img src="./assets/currencies/ltc.svg" width="50%">|Litecoin|
+|<img src="./assets/currencies/bch.svg" width="50%">|Bitcoin Cash|
+|<img src="./assets/currencies/eth.svg" width="50%">|Ethereum|
+|<img src="./assets/currencies/txrp.svg" width="50%">|Ripple Testnet|
+|<img src="./assets/currencies/rbtc.svg" width="50%">|R&C Bitcoin Testnet|
 
 ## Full Node service
 
@@ -621,17 +640,6 @@ Required hardware and software are installed in RIDDLE&CODE’s hosting center w
 * Certification according to the internationally accredited DIN/ISO IEC 27001 Norm standards.
 * Continuous 24/7 monitoring of the entire infrastructure.
 * SLA with various levels of support and service availability, depending on the needs of the client.
-
-#### Available Fullnodes 
-
-The following fullnodes are currently available
-
-|Fullnodes                          | by Riddle & Code           |
-|:---------------------------------:|:--------------------------:|
-|Bitcoin                            | Bitcoin Cash       		 |
-|Ethereum                           | Etherum Classic		     |
-|ERC20 Tokens                       | Bitcoin Gold        	     |
-|RIPPLE 							| Litecoin					 |
 
 
 ## User interface
