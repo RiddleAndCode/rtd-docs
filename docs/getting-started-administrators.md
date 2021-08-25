@@ -14,6 +14,12 @@ Other operating systems and browser configurations are untested and officially n
 ## Register an Approval Device:
 As an admin, you can register an Approval Device for a user and add it to the user group:
 
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/592134892?h=43b79380e5" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
+### How too add a new device
+
 1. Plug-in the Approval Device to your computer.
 2. Visit the *Device Manager* page within the Administration section.
 3. Click **ADD NEW DEVICE**.
@@ -30,6 +36,8 @@ As an admin, you can register an Approval Device for a user and add it to the us
 8. Select the wallet and click **Connect**.
 
 The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user. Hand over the device to a user, who is now able to access the system.
+
+
 
 
 ## Sign up
