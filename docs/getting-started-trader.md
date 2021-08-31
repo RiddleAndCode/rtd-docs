@@ -107,7 +107,7 @@ Onboarding a new customer requires the creation of a new account. This is done b
 The process is as follows:
 
 1. Head over to *Addresses*.
-2. Click **NEW ASSET** in the top right corner.
+2. Click **NEW ACCOUNT** in the top right corner.
 
 ![Add new account](./new-screenshots/add-new-account.png)
 
