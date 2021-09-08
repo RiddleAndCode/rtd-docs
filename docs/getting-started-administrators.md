@@ -112,6 +112,7 @@ After you successfully register at the Service Desk, you will be able to access 
 ## Manage policies
 
 ### Create a new policy
+
 As an administrator, you can create and add new policies:
 
 1. Visit the Administration section and go to *Policy*.
@@ -127,6 +128,9 @@ Then approve*
 
 4. Click **Submit**.
 
+Below you will find an How to guide that reflects the above steps: 
+
+To be added How to Add a Policy Video
 
 ### View and manage policies
 
