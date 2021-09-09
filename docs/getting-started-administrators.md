@@ -164,3 +164,17 @@ The policy no longer applies.
 3. Confirm that you want to update the policy status.
 
 The policy is now re-enabled and applies to transaction governance.
+
+
+### How to recompute new addresses
+
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/600982908?h=b9f46e7fdb" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
+1. Visit *Currency List*.
+2. Push the button "recompute all addresess".
+3. Wait until success message appears.
+
+All of the exsisting Account ID's have been updated with Addresses for the new Currencies.
+
