@@ -27,9 +27,9 @@ You will need the following:
 
 - The Approval Device - Seed edition.
 
-![Approval Device](./assets/Approvaldevice.png)
+![Approval Device](./assets/AD_render.png)
 
-- A reliable computer with access to the Internet. RIDDLE&CODE recommends using Chrome, at least version 87.0.
+- A computer running **Windows 10 pro, OS build 19041.985 in combination with Chrome Version 91.0.4472.77**s
 - 3 steel plates.
 
 ![Steel plates](./assets/Steelplates.png)

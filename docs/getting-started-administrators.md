@@ -38,8 +38,6 @@ As an admin, you can register an Approval Device for a user and add it to the us
 The device ID (public key) will be displayed on the interface. This ID is now stored in the database and linked with a user. Hand over the device to a user, who is now able to access the system.
 
 
-
-
 ## Sign up
 When accessing the TMP interface for the first time you need to sign up. The process is as follows:
 

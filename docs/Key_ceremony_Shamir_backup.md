@@ -1,6 +1,7 @@
 # Key ceremony based on SLIP-0039 and Shamir Basic backup
 
 **Summary**:
+
 * This document describes a key ceremony protocol designed to secure the most crucial part of the Token Management Platform – the seed used to generate the initial key pair – and minimise the attack surface.
 * Please read this document in full before starting the ceremony. Revise it carefully and verify that it complies with your safety practices, procedures/requirements and operational processes.
 * **Chapter 1** describes the basic concepts of the key ceremony, including the importance of private/public keys and RIDDLE&CODE’s safety recommendations when performing the ceremony.
