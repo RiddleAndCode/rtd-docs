@@ -125,7 +125,13 @@ Before you can send funds to external addresses (e.g., brokers or exchanges), yo
 
 1. Head over to *Addresses* and click **NEW ACCOUNT**.
 
-![Add trusted recipient](./new-screenshots/add-trusted-recipient.png)
+
+### How to add a Trusted Recipient
+
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/604052566?h=594c88c583" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
 
 2. On the left side, enter Account ID.
 3. Select currency.
