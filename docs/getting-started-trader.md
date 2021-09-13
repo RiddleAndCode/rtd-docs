@@ -109,7 +109,12 @@ The process is as follows:
 1. Head over to *Addresses*.
 2. Click **NEW ACCOUNT** in the top right corner.
 
-![Add new account](./new-screenshots/add-new-account.png)
+
+### How to create a new Account 
+
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/603846814?h=b1f0016e70" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 3. On the right side, add an account ID to generate the address for the customer.
 4. Click **Generate**.
