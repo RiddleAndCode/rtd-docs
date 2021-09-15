@@ -173,7 +173,9 @@ The process is as follows:
 1. Visit *Settlement*.
 2. Click **NEW TRANSACTION** in the top right corner.
 
-![Create new transaction](./new-screenshots/new-transaction.png)
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/605491443?h=8b47baf643" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 3. Select a currency that you want to transfer.
 4. Select the sender’s account (risk value will be displayed).
