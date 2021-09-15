@@ -118,7 +118,9 @@ As an administrator, you can create and add new policies:
 1. Visit the Administration section and go to *Policy*.
 2. In the right corner, click **NEW POLICY**.
 
-![Policies](./new-screenshots/new-policy.png)
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/605500184?h=8359124c68" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 3. Create the policy's scenario. For example:
 
