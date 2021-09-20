@@ -109,7 +109,12 @@ The process is as follows:
 1. Head over to *Addresses*.
 2. Click **NEW ACCOUNT** in the top right corner.
 
-![Add new account](./new-screenshots/add-new-account.png)
+
+### How to create a new Account 
+
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/603846814?h=b1f0016e70" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 3. On the right side, add an account ID to generate the address for the customer.
 4. Click **Generate**.
@@ -120,7 +125,13 @@ Before you can send funds to external addresses (e.g., brokers or exchanges), yo
 
 1. Head over to *Addresses* and click **NEW ACCOUNT**.
 
-![Add trusted recipient](./new-screenshots/add-trusted-recipient.png)
+
+### How to add a Trusted Recipient
+
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/604052566?h=594c88c583" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
 
 2. On the left side, enter Account ID.
 3. Select currency.
@@ -162,7 +173,9 @@ The process is as follows:
 1. Visit *Settlement*.
 2. Click **NEW TRANSACTION** in the top right corner.
 
-![Create new transaction](./new-screenshots/new-transaction.png)
+<figure class="video_container">
+ <iframe src="https://player.vimeo.com/video/605491443?h=8b47baf643" width="640" height="366" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 3. Select a currency that you want to transfer.
 4. Select the sender’s account (risk value will be displayed).
