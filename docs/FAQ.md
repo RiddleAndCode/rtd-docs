@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+  # Frequently Asked Questions
 
 In this section, you can find answers to the most frequently asked questions on the Token Management Platform
 

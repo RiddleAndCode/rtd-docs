@@ -87,6 +87,7 @@ The Keyman API covers the following capabilities:
 ### Mnemonic phrase
 
 RIDDLE&CODE recommends the following for storing the mnemonic phrase:
+
 * No single person should know the whole mnemonic phrase. Each person participating in the key ceremony is shown a subset of the 24 words (e.g., with two participants, each participant sees only 12 words).
 * Steel plates should be stored in separate physical locations.
 * When filling out the steel plates, no participant should be able to see the other participant’s words.
@@ -137,6 +138,7 @@ The master of ceremony is responsible for handing out the correct plates to each
 The master of ceremony should also ensure that none of the participants turn the plates to read the opposite side.
 
 The process is as follows:
+
 1. Each of the two participants is assigned a set of words. Altogether, the two plates have a set of words written twice.
 2. The first participant (**"ALPHA"**) privately opens the first corresponding side, and inputs the numbered word as requested by the CLI.
 3. The first participant continues until the random number of words has been verified successfully (as stated in the CLI).
@@ -158,6 +160,7 @@ If you open a steel plate, you’ll see that it has two sides with 12 words each
 The master of ceremony starts the process by accessing the Keyman API via a command-line interface. No other party shall be in the room when the process is initiated.
 
 The recovery process follows similar steps as the initial key generation:
+
 1. The master of ceremony prepares the two steel plates A and B.
 2. The first participant issues the command “-n 1 recover ” on the command-line interface.
 3. The first participant enters the words one at a time. After each word, the first participant must press Enter to proceed until reaching the 12th word.
