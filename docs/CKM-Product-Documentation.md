@@ -45,6 +45,7 @@ Following the key generation, the key derivation path is defined according to th
 **Security measures during the key generation process**
 
 The following safety and control measures are in place during the key generation process:
+
   - Trusted Execution Environment ensures encryption of data in transit, while being processed and at rest.
   - Decentralised attestation enclaves and identities support a hardened authenticity and integrity verification process.
   - Secure and confidential execution within untrusted environments. (RIDDLE&CODE does not have any access to sensitive, confidential or encrypted data).
@@ -82,6 +83,7 @@ This process is called a key ceremony.
 Once the mnemonic phrase is safely stored, it is time to perform the verification of the backup process. This process allows the client to verify the integrity of the mnemonic phrase and ensures that the keys being created by this mnemonic phrase equal the keys that are already in the system.
 
 The backup process is done during the key ceremony:
+
 1. The user verifies the parts of the mnemonic phrase on the Approval Device screen.
 2. The process continues until the mnemonic phrase is verified.
 
@@ -158,7 +160,6 @@ The personal data of clients using Confidential Key Management services are prot
 
 Personal data that the client voluntarily provides will be stored by RIDDLE&CODE for the purpose of providing the associated processing and keeping records for up to 3 years after completion or termination, except when a longer storage period is required for the purpose of fulfilling a legal obligation or for the assertion or defense of legal claims.
 Rights of the data subject
-
 
 Provided that the respective legal requirements are met, the client can assert the following rights of data subjects:
 
