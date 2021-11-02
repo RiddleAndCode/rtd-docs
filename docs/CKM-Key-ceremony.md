@@ -34,6 +34,7 @@ RIDDLE&CODE’s recommendation is to do a test key ceremony using pieces of pape
 Due to the importance of this procedure, RIDDLE&CODE recommends performing the ceremony in a separate room without cameras. Participants are not allowed to have cameras, mobile phones or any other recording devices. To increase security and ensure that the ceremony is performed correctly, some companies record the entire procedure in a way that never shows the mnemonic phrase on a screen or steel plate.
 
 A core requirement of the key ceremony is to enable a secure communication channel between the client and the key management service. For this purpose, the service needs to use two-way TLS, while the client needs to perform the following steps before the scheduled key ceremony:
+
 1. The client uses their certificate authority to generate a certificate/key pair and stores it as a client-ca-cert.pem
 2. The client sends client-ca-cert.pem to RIDDLE&CODE.
 3. RIDDLE&CODE provisions the key management service with the client-ca-cert.pem
