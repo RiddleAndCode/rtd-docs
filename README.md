@@ -14,4 +14,4 @@ description: Welcome to RIDDLE&CODE's Documentation Hub.
 
 
 
-Please contact support@riddleandcode.com with any questions or inquiries.\
+Please contact support@riddleandcode.com with any questions and inquiries.\
