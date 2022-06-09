@@ -1,14 +1,17 @@
-```
-pipenv shell
-pipenv sync
-```
+---
+description: Welcome to RIDDLE&CODE's Documentation Hub.
+---
 
-Serve RDT page:
-```
-mkdocs serve
-```
+# RIDDLE\&CODE Documentation Hub
 
-Build PDF
-```
-mkdocs build
-```
+{% content-ref url="token-management-platform-tmp/" %}
+[token-management-platform-tmp](token-management-platform-tmp/)
+{% endcontent-ref %}
+
+{% content-ref url="confidential-key-management/" %}
+[confidential-key-management](confidential-key-management/)
+{% endcontent-ref %}
+
+
+
+Please contact support@riddleandcode.com with any questions or inquiries.\
